@@ -81,7 +81,7 @@ while ischar(tline)
              if strcmp(obj.tag_name,[tag_identyfyer 'J'])
                 super_obj{6}=obj;
              end
-             if strcmp(obj.tag_name,[tag_identyfyer 'SIGNALS'])
+             if strcmp(obj.tag_name,[tag_identyfyer 'ASSIGNMENT'])
                 super_obj{7}=obj;
             end
             inc=inc+1;

@@ -70,7 +70,7 @@ for loop_over_content=list_of_line_break
             if contains(tag_identyfyer,[header_tag 'J'])
                 obj=extract_data_J(obj,current_line,pieces_of_information,field_separator);
             end
-            if contains(tag_identyfyer,[header_tag 'SIGNALS'])
+            if contains(tag_identyfyer,[header_tag 'ASSIGNMENT'])
                 obj=extract_data_signals(obj,current_line,pieces_of_information,field_separator);
             end
             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

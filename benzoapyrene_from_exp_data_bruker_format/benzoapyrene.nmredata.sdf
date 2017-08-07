@@ -1,0 +1,191 @@
+benza(a)pyrene
+manually generated test file from gaussian output for the structure and manually edited by Marion Pupier and Damien Jeannerat for the NMR data
+test_generationV1 1
+20 24  0  0  0  0  0  0  0  0999 V2000
+   -1.6583    2.2334    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6633    3.1556    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3753    0.8191    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7234    2.7603    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.3848    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.3852   -0.1264    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7615    3.6979    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0408    1.3655    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3147   -0.9993    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.1111   -1.5139    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.0998    3.2896    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.4081    0.9593    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7512   -1.9717    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6975   -1.3716    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4214    1.9396    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.6960   -0.4398    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5264   -3.3746    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.1687   -2.4653    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5724   -4.2723    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.9104   -3.8155    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+ 1  2  2  0  0  0
+ 1  3  1  0  0  0
+ 2  4  1  0  0  0
+ 3  5  1  0  0  0
+ 3  6  2  0  0  0
+ 4  7  1  0  0  0
+ 4  8  2  0  0  0
+ 5  8  1  0  0  0
+ 5  9  2  0  0  0
+ 6 10  1  0  0  0
+ 7 11  2  0  0  0
+ 8 12  1  0  0  0
+ 9 13  1  0  0  0
+ 9 14  1  0  0  0
+10 13  2  0  0  0
+10 18  1  0  0  0
+11 15  1  0  0  0
+12 15  2  0  0  0
+12 16  1  0  0  0
+13 17  1  0  0  0
+14 16  2  0  0  0
+17 19  2  0  0  0
+18 20  2  0  0  0
+19 20  1  0  0  0
+M  END
+ 
+>  <NMREDATA_VERSION>
+0.93
+ 
+>  <NMREDATA_ID>
+no ide yet
+ 
+>  <NMREDATA_SOLVENT>
+cdcl3
+ 
+>  <NMREDATA_TEMPERATURE>
+298.15
+ 
+>  <NMREDATA_ASSIGNMENT>
+;note that labels were selected according to the atom number of the 3D structure from DFT calculations
+H1(C2), 8.02, H1
+(2), 128.17, 1
+(3), 127.9, 2
+(4), 129.9, 3
+(5), 131.6, 4
+H6(C3), 7.94, H2
+(7), 123.8, 5
+(8), 124.8, 6
+(9), 124.9, 7
+(10), 128.3, 8
+(11), 127.4, 9
+H12(C8), 8.53, H6
+(13), 131.35, 10
+(14), 126.09, 11
+H15(C9), 8.10, H7
+(16), 131.4, 12
+(17), 128.23, 13
+(18), 122.2, 14
+(19), 125.6, 15
+H20(C14), 7.98, H11
+(21), 127.5, 16
+H22(C18), 9.07, H14
+H23(C19), 8.25, H15
+H24(C21), 8.34, H16
+(25), 123.0, 17
+(26), 128.9, 18
+(27), 125.97, 19
+H28(C27), 7.85, H19
+(29), 126.06, 20
+H30(C29), 7.79, H20
+H31(C25), 9.06, H17
+H32(C26), 8.30, H18
+Spectrum_Location =file:./nmr/10/1/pdata/1 
+
+ 
+ 
+>  <NMREDATA_1D_1H>
+;note that integrals (E) were not measured in the spectrum but set to 1
+Spectrum_Location=file:./nmr/10/pdata/1/
+Larmor=500.000000
+9.06, L=H31(C25), S=d, J=8.44(H28(C27)), E=1
+9.07, L=H22(C18), S=d, J=9.13(H24(C21)), E=1
+8.53, L=H12(C8), S=s, E=1
+8.34, L=H24(C21), S=d, J=9.13(H22(C18)), E=1
+8.30, L=H32(C26), S=d, J=8.06(H30(C29)), E=1
+8.25, L=H23(C19), S=d, J=7.65(H20(C14)), E=1
+8.10, L=H15(C9), S=d, J=7.31(H20(C14)), E=1
+8.02, L=H1(C2), S=d, J=9.07(H6(C3)), E=1
+7.98, L=H20(C14), S=dd, J=7.31(H15(C9)), 7.65(H23(C19)), E=1
+7.94, L=H6(C3), S=d, J=9.07(H1(C2)), E=1
+7.85, L=H28(C27), S=dd, J=6.77(H30(C29)), 8.44(H31(C25)), E=1
+7.79, L=H30(C29), S=dd, J=6.77(H28(C27)), 8.06(H32(C26)), E=1
+Spectrum_Location =file:./nmr/10/1/pdata/1 
+
+ 
+>  <NMREDATA_1D_13C>
+;note that intensisites were not measured in the spectrum 110 for CH 100 for Cq
+Spectrum_Location=file:./nmr/13/pdata/1/
+Larmor=125.0
+Decoupled=1H
+131.6, L=(5), I=100.00
+131.40, L=(16), I=100.00
+131.35, L=(13), I=100.00
+129.9, L=(4), I=100.00
+128.9, L=(26), I=110.00
+128.17, L=(2), I=110.00
+128.23, L=(17), I=100.00
+127.9, L=(3), I=110.00
+127.4, L=(11), I=100.00
+127.5, L=(21), I=110.00
+126.09, L=(14), I=110.00
+126.06, L=(29), I=110.00
+128.3, L=(10), I=100.00
+125.97, L=(27), I=110.00
+125.6, L=(19), I=110.00
+124.8, L=(8), I=110.00
+124.9, L=(9), I=110.00
+123.8, L=(7), I=100.00
+123.0, L=(25), I=110.00
+122.2, L=(18), I=110.00
+Spectrum_Location =file:./nmr/10/1/pdata/1 
+
+ 
+>  <NMREDATA_2D_1H_NJ_1H>
+Spectrum_Location=file:./nmr/21/pdata/1/
+Larmor=500.000000
+CorType=COSY
+H1(C2)/H6(C3)
+H15(C9)/H20(C14)
+H20(C14)/H23(C19)
+H22(C18)/H24(C21)
+H28(C27)/H30(C29)
+H28(C27)/H31(C25)
+H30(C29)/H32(C26)
+;also list signals on the other side of the diagonal
+H6(C3)/H1(C2)
+H20(C14)/H15(C9)
+H23(C19)/H20(C14)
+H24(C21)/H22(C18)
+H30(C29)/H28(C27);comment on cosy
+H31(C25)/H28(C27)
+H32(C26)/H30(C29)
+Spectrum_Location =file:./nmr/10/1/pdata/1 
+
+ 
+>  <NMREDATA_2D_13C_1J_1H>
+;one-bound correlations test of comment line
+Spectrum_Location=file:./nmr/12/pdata/1/
+Larmor=500.000000;comment 2
+CorType=HSQC
+(2)/H1(C2)
+(3)/H6(C3)
+(8)/H12(C8)
+(9)/H15(C9)
+(14)/H20(C14)
+(18)/H22(C18);comment about a first signal
+(19)/H23(C19)
+(21)/H24(C21)
+(25)/H31(C25)
+(26)/H32(C26);comment about a signal
+(27)/H28(C27)
+(29)/H30(C29) 
+Spectrum_Location =file:./nmr/10/1/pdata/1 
+
+
+$$$$
+

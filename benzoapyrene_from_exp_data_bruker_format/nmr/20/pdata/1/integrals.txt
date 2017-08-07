@@ -1,0 +1,13 @@
+   Current data set:
+   NAME =	MP_HAP_benzoapyrene	EXPNO =	22	PROCNO = 1
+   DU   =	/opt/topspin3.5pl5/data/marion/data/nmr/nmr
+
+   Number   Integrated Region     Integral
+     1      9.330      9.262         1.69856
+     2      8.886      8.830         0.54206
+     3      8.574      8.540         0.65073
+     4      8.514      8.483         0.96958
+     5      8.077      8.040         1.09980
+     6      7.926      7.887         1.37156
+     7      7.637      7.584         1.46199
+     8      7.270      7.208         1.00000

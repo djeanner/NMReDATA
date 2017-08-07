@@ -1,0 +1,38 @@
+
+Current Data Parameters
+NAME     MP_HAP_benzoapyrene              
+EXPNO                22              
+PROCNO                1              
+
+F2 - Acquisition Parameters
+Date_          20161117              
+Time              13.56 h            
+INSTRUM           spect              
+PROBHD   Z119248_0001 (              
+PULPROG              zg              
+TD                65536              
+SOLVENT           CDCl3              
+NS                    8              
+DS                    2              
+SWH            9014.423 Hz           
+FIDRES         0.275098 Hz           
+AQ            3.6350634 sec          
+RG                   32              
+DW               55.467 usec         
+DE                20.00 usec         
+TE                298.0 K            
+D1           2.00000000 sec          
+TD0                   1              
+SFO1        500.1330885 MHz          
+NUC1                 1H              
+P1                10.00 usec         
+PLW1        14.00000000 W            
+
+F2 - Processing parameters
+SI                32768              
+SF          500.1300000 MHz          
+WDW                  EM              
+SSB      0              
+LB                 0.30 Hz           
+GB       0              
+PC                 4.00              

@@ -1,0 +1,20 @@
+##TITLE= Audit trail, TOPSPIN		Version 2.1
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmr
+$$ /opt/topspin/data/jeannerat/data/nmr/nmr/djhap_benapyr/12/pdata/1000/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2013-06-08 18:33:39.413 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <add DC = 1 DATMOD = 1 of
+       1001 12 "djhap_benapyr" "nmr" "/opt/topspin/data/jeannerat"
+       1002 12 "djhap_benapyr" "nmr" "/opt/topspin/data/jeannerat"
+       data hash MD5: 2K
+       71 B8 F1 8F 8B 45 5F 0F 83 AC 92 52 C1 13 0A FE>)
+(   2,<2013-06-08 18:33:39.445 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <apk 
+       data hash MD5: 2K
+       F8 BC 3F 71 7F 77 9A F3 13 16 49 B0 EE 69 04 3F>)
+##END=
+
+$$ hash MD5
+$$ D9 4E 51 2C FC 8C BC F9 CB 98 38 8B 3C BB 33 41

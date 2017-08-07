@@ -1,0 +1,16 @@
+##TITLE= Parameter file, TopSpin 3.5 pl 5
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmr
+$$ 2016-11-17 13:42:29.518 +0100  nmr@CZC60678L0
+$$ /opt/topspin3.5pl5/data/marion/data/nmr/nmr/MP_HAP_benzoapyrene/22/pdata/1/outd
+$$ process /opt/topspin3.5pl5/prog/mod/edparproc
+##$CURPLOT= <hpbiz2800>
+##$CURPRIN= <$hpbiz2800>
+##$DFORMAT= <normdp>
+##$LAYOUT= <+/1D_H.xwp>
+##$LFORMAT= <normlp>
+##$PFORMAT= <normpl>
+##END=

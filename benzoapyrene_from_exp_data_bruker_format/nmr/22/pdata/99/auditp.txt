@@ -1,0 +1,15 @@
+##TITLE= Audit trail, TopSpin 3.5 pl 5
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmr
+$$ /opt/topspin3.5pl5/data/marion/data/nmr/nmr/MP_HAP_benzoapyrene/24/pdata/99/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2016-11-21 13:41:02.076 +0100>,<nmr>,<CZC60678L0>,<mvrow>,<TopSpin 3.5.5>,
+      <rvpp from
+       1 24 "MP_HAP_benzoapyrene" "/opt/topspin3.5pl5/data/marion/data/nmr/nmr"
+       data hash MD5: 1K
+       C5 25 9D 84 93 B4 9E 03 53 50 6C D7 C4 AD FA 11>)
+##END=
+
+$$ hash MD5
+$$ 4D B5 7C 14 B1 04 6D 81 EB FF 67 AA 31 8A CF 9C

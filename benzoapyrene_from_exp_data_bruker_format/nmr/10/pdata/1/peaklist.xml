@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PeakList>
+  <PeakList1D>
+    <PeakList1DHeader creator="nmr" date="2014-07-25T16:13:31.430+02:00" expNo="10" name="djhap_benapyr" owner="" procNo="1" source="/opt/topspin/data/jeannerat">
+      <PeakPickDetails>F1=7.290ppm, F2=7.248ppm, MI=50.00cm, MAXI=10000.00cm, PC=4.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="7.2701" intensity="100.00" type="0"/>
+  </PeakList1D>
+</PeakList>

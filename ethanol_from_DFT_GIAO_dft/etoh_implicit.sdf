@@ -1,0 +1,88 @@
+etoh
+Demo .sdf files generated from gaussian DFT/GIAO by matlab functions written by Damien Jeannerat in April 2017
+dj_test_generationV_0.93 1 06-Apr-2017
+ 3  2  0  0  0  0  0  0  0  0999 V2000
+   -1.1734   -0.4106    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.5551    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1997   -0.2144    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+ 1  2  1  0  0  0
+ 2  3  1  0  0  0
+M  END
+
+>  <NMREDATA_VERSION>
+0.93
+
+>  <NMREDATA_ID>
+no ide yet
+
+>  <NMREDATA_SOLVENT>
+cdcl3
+
+>  <NMREDATA_TEMPERATURE>
+273.15
+
+>  <NMREDATA_SIGNALS>
+CH3(2), 1.2436, H1
+(2), 18.7704, 1
+(5), 63.5132, 2
+CH2(5), 3.8300, H2
+8, 101.4098, 3
+9, 0.3412, H3
+
+>  <NMREDATA_J>
+;list abs(J(H,H))>1Hz
+;list abs(J(C,H))>1Hz
+(2), CH3(2), 120.66;1J(C,H)
+(5), CH3(2), -3.43;2J(C,H)
+CH3(2), CH2(5), 6.14;3J(H,H)
+(2), CH2(5), -2.28;2J(C,H)
+(2), 9, 9.75;3J(C,H)
+(5), CH2(5), 131.47;1J(C,H)
+(5), 9, -2.45;2J(C,H)
+CH2(5), 9, 1.11;3J(H,H)
+
+>  <NMREDATA_1D_1H>
+;J listed when the H-H couplings >1Hz
+Larmor=400.000000
+3.8300, L=CH2(5), S=qd, J=6.14(CH3(2)), 1.11(9), E=2
+1.2436, L=CH3(2), S=t, J=6.14(CH2(5)), E=3
+0.3412, L=9, S=t, J=1.11(CH2(5)), E=1
+
+>  <NMREDATA_1D_13C>
+Larmor=100.573804
+63.5132, L=(5), I=120.00
+18.7704, L=(2), I=130.00
+
+>  <NMREDATA_1D_13C>
+Larmor=100.573804
+Decoupled=1H
+Sequence=DEPT135
+63.5132, L=(5), I=-120.00
+18.7704, L=(2), I=130.00
+
+>  <NMREDATA_2D_1H_NJ_1H>
+;list correlations when abs(J) > 1.00 
+Larmor=400.000000
+CorType=COSY
+CH3(2)/CH2(5), Ja=6.14, J2=1.11(9);3J(H,H)
+CH2(5)/9, Ja=1.11, J1=6.14(CH3(2));3J(H,H)
+
+>  <NMREDATA_2D_13C_1J_1H>
+;list correlations when the number of bonds is 1 for HSQC, 2-3 for COSY and HMBC
+Larmor=400.000000
+CorType=HSQC
+(2)/CH3(2), Ja=120.66, J2=6.14(CH2(5));1J(C,H)
+(5)/CH2(5), Ja=131.47, J2=6.14(CH3(2)), 1.11(9);1J(C,H)
+
+>  <NMREDATA_2D_13C_NJ_1H>
+;list correlations when abs(J) > 1.00 
+Larmor=400.000000
+CorType=HMBC
+(2)/CH3(2), Ja=120.66, J2=6.14(CH2(5));1J(C,H)
+(2)/CH2(5), Ja=-2.28, J2=6.14(CH3(2)), 1.11(9);2J(C,H)
+(2)/9, Ja=9.75, J2=1.11(CH2(5));3J(C,H)
+(5)/CH3(2), Ja=-3.43, J2=6.14(CH2(5));2J(C,H)
+(5)/CH2(5), Ja=131.47, J2=6.14(CH3(2)), 1.11(9);1J(C,H)
+(5)/9, Ja=-2.45, J2=1.11(CH2(5));2J(C,H)
+
+$$$$

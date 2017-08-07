@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PeakList>
+  <PeakList1D>
+    <PeakList1DHeader creator="nmr" date="2013-06-08T18:12:17.578+02:00" expNo="11" name="djhap_benapyr" owner="" procNo="1" source="/opt/topspin/data/jeannerat">
+      <PeakPickDetails>F1=218.327ppm, F2=-18.334ppm, MI=0.00cm, MAXI=10000.00cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="128.9228" intensity="9.39" type="0"/>
+    <Peak1D F1="128.1661" intensity="11.60" type="0"/>
+    <Peak1D F1="127.8417" intensity="12.37" type="0"/>
+    <Peak1D F1="127.5240" intensity="11.90" type="0"/>
+    <Peak1D F1="126.0815" intensity="10.59" type="0"/>
+    <Peak1D F1="126.0575" intensity="12.46" type="0"/>
+    <Peak1D F1="125.9640" intensity="12.66" type="0"/>
+    <Peak1D F1="125.5459" intensity="11.07" type="0"/>
+    <Peak1D F1="124.8442" intensity="10.22" type="0"/>
+    <Peak1D F1="124.7725" intensity="12.64" type="0"/>
+    <Peak1D F1="123.0191" intensity="12.20" type="0"/>
+    <Peak1D F1="122.1942" intensity="15.00" type="0"/>
+    <Peak1D F1="77.2194" intensity="2.49" type="0"/>
+    <Peak1D F1="29.7180" intensity="0.41" type="0"/>
+  </PeakList1D>
+</PeakList>

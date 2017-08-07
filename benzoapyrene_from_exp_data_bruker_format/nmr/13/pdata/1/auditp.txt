@@ -1,0 +1,84 @@
+##TITLE= Audit trail, TOPSPIN		Version 2.1
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmr
+$$ /opt/topspin/data/jeannerat/data/nmr/nmr/djhap_benapyr/13/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2013-06-08 20:11:53.326 +0200>,<nmr>,<EP-10012183>,<go>,<TOPSPIN 2.1>,
+      <created by zg
+	started at 2013-06-08 19:17:40.016 +0200,
+	POWCHK enabled, PULCHK disabled,
+       configuration hash MD5:
+       25 B5 63 FC 29 04 5B 4F 20 64 0B EA DD 94 21 93
+       data hash MD5: 64K
+       9C 13 0F 13 F3 B2 7C 4A 4B E9 0C F0 E4 DF 41 16>)
+(   2,<2013-06-08 20:11:53.697 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <Start of raw data processing
+       ef LB = 1 FT_mod = 6 PKNL = 1 SI = 32K 
+       data hash MD5: 32K
+       09 FA 6D 2D 5A 51 2A 87 C3 CB 17 68 92 DB 6D F7>)
+(   3,<2013-06-08 20:11:53.972 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <apk 
+       data hash MD5: 32K
+       5C 3B D4 23 C2 3F 27 4F 1A AF 67 C5 63 2C B5 D1>)
+(   4,<2013-06-08 20:11:53.992 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <abs ABSG = 5 
+       data hash MD5: 32K
+       97 05 CE 87 97 61 6C 3A DE 53 E5 94 51 75 B6 02>)
+(   5,<2013-06-08 20:11:54.360 +0200>,<nmr>,<EP-10012183>,<audit>,<TOPSPIN 2.1>,
+      <user comment:
+       ICON-NMR User ID: nmr
+       data hash MD5: 32K
+       97 05 CE 87 97 61 6C 3A DE 53 E5 94 51 75 B6 02>)
+(   6,<2013-06-08 23:29:45.099 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <pk fgphup PHC0 = -25.63721 PHC1 = -560 
+       data hash MD5: 32K
+       36 ED 14 80 D2 4C 98 2C 31 F3 E4 BC 2E FF E5 05>)
+(   7,<2013-06-08 23:48:37.664 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <abs ABSG = 5 
+       data hash MD5: 32K
+       9D E7 52 BC 9C 57 53 43 08 17 24 84 B2 FE 3E 91>)
+(   8,<2013-06-08 23:48:38.285 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <absf ABSG = 5 ABSF2 = 170 ABSF1 = 250
+       data hash MD5: 32K
+       48 56 89 92 1E 38 88 08 27 14 33 6B D5 64 EE 0F>)
+(   9,<2013-06-08 23:48:38.934 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <absf ABSG = 5 ABSF2 = 150 ABSF1 = 170
+       data hash MD5: 32K
+       A3 25 F4 72 C6 CC 00 7B 47 C6 2E 3C 05 A7 4B 1F>)
+(  10,<2013-06-08 23:48:39.589 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <absf ABSG = 5 ABSF2 = 120 ABSF1 = 150
+       data hash MD5: 32K
+       9D C4 2E 34 1F B3 9D 4F C6 19 6B 03 11 A9 F6 EE>)
+(  11,<2013-06-08 23:48:39.854 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <absf ABSG = 5 ABSF2 = 100 ABSF1 = 120
+       data hash MD5: 32K
+       5E D2 9C 69 1D A7 DB 01 FA A6 67 D1 5D F6 E9 4D>)
+(  12,<2013-06-08 23:48:40.121 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <absf ABSG = 5 ABSF2 = 60 ABSF1 = 100
+       data hash MD5: 32K
+       72 73 98 98 38 EC CA C6 80 5D 22 13 A2 A9 E3 80>)
+(  13,<2013-06-08 23:48:40.381 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <absf ABSG = 5 ABSF2 = 20 ABSF1 = 60
+       data hash MD5: 32K
+       2F 59 83 2E 99 B7 97 FB AC CD 7D E1 98 26 2B 93>)
+(  14,<2013-06-08 23:48:40.645 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <absf ABSG = 5 ABSF2 = 0 ABSF1 = 20
+       data hash MD5: 32K
+       99 D1 AA 53 29 AD CA 46 25 57 4D BB 1D 39 A3 6F>)
+(  15,<2013-06-08 23:48:40.904 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <absf ABSG = 5 ABSF2 = -30 ABSF1 = 0
+       data hash MD5: 32K
+       ED 87 9D B0 35 28 62 76 48 70 04 52 E4 48 9B 25>)
+(  16,<2013-06-08 23:48:41.168 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <abs ABSG = 5 
+       data hash MD5: 32K
+       07 B3 88 2A CB F4 62 FB BA 44 8B 12 14 45 33 28>)
+(  17,<2015-01-09 14:51:11.780 +0100>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <pk fgphup PHC0 = 16.43563 PHC1 = -31.85 
+       data hash MD5: 32K
+       F4 C0 9C D7 11 48 B3 05 26 80 9D 10 41 FB 65 8B>)
+##END=
+
+$$ hash MD5
+$$ 9B A3 C7 5F B2 D8 6E C7 94 43 68 33 8A 68 3B 5E

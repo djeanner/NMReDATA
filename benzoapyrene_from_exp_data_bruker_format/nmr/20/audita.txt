@@ -1,0 +1,18 @@
+##TITLE= Audit trail, TopSpin 3.5 pl 5
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmr
+$$ /opt/topspin3.5pl5/data/marion/data/nmr/nmr/MP_HAP_benzoapyrene/22/audita.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2016-11-17 13:56:56.562 +0100>,<nmr>,<CZC60678L0>,<go4>,<TopSpin 3.5.5>,
+      <created by zg
+	started at 2016-11-17 13:55:52.590 +0100,
+	POWCHK enabled, PULCHK disabled,
+       configuration hash MD5:
+       9E 1E 6D 2E E9 80 23 52 88 DF 68 E6 7A 8A 14 7E
+       data hash MD5: 64K
+       2A 75 66 DD 0D 09 81 DB 7B 41 10 FF 3E 39 BB 1F>)
+##END=
+
+$$ hash MD5
+$$ AA 7B E8 DA 23 5A 9A 9D 50 68 F4 B5 53 B5 03 57

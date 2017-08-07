@@ -1,0 +1,23 @@
+##TITLE= Audit trail, TOPSPIN		Version 2.1
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmr
+$$ /opt/topspin/data/jeannerat/data/nmr/nmr/djhap_benapyr/13/audita.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2013-06-08 20:11:53.326 +0200>,<nmr>,<EP-10012183>,<go>,<TOPSPIN 2.1>,
+      <created by zg
+	started at 2013-06-08 19:17:40.016 +0200,
+	POWCHK enabled, PULCHK disabled,
+       configuration hash MD5:
+       25 B5 63 FC 29 04 5B 4F 20 64 0B EA DD 94 21 93
+       data hash MD5: 64K
+       9C 13 0F 13 F3 B2 7C 4A 4B E9 0C F0 E4 DF 41 16>)
+(   2,<2013-06-08 20:11:54.355 +0200>,<nmr>,<EP-10012183>,<audit>,<TOPSPIN 2.1>,
+      <user comment:
+       ICON-NMR User ID: nmr
+       data hash MD5: 64K
+       9C 13 0F 13 F3 B2 7C 4A 4B E9 0C F0 E4 DF 41 16>)
+##END=
+
+$$ hash MD5
+$$ 8F 51 2B 7E 5E C5 76 76 B3 D6 EB 53 E6 E7 95 FD

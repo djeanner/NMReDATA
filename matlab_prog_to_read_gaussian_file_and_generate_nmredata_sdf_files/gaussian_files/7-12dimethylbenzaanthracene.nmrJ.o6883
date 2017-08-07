@@ -1,0 +1,19 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+Error: software termination
+Error: software termination
+   rax fffffffffffffffc, rbx 0000000000000001, rcx ffffffffffffffff
+   rdx 0000000000000000, rsp 00007fff9f50dd50, rbp 00007fff9f50de20
+   rsi 00007fff9f50deec, rdi 0000000000001556, r8  00002ba779eab5e0
+   r9  00007fff9f50dd80, r10 0000000000000000, r11 0000000000000246
+   r12 00007fff9f50deec, r13 0000000000000045, r14 0000000000000000
+   r15 00007fff9f5117a0
+   rax 00002b362f56f318, rbx 00002b362f50dc30, rcx 0000000000000000
+   rdx 00002b362f5082d0, rsp 00007fff7eab0df0, rbp 00007fff7eab0ee0
+Terminated
+   rsi 00002b362f504f40, rdi 00002b362f511d80, r8  00002b362f4fb490
+   r9  00002b362f503730, r10 00002b362f509770, r11 00002b362f4ff270
+   r12 00002b362f500df0, r13 00002b362f50c0b0, r14 00002b362f4fc930
+   r15 00002b362f510570
+  --- traceback not available
+  --- traceback not available

@@ -1,0 +1,42 @@
+#!/bin/csh
+#PBS -S /bin/csh
+#PBS -m n
+#PBS -j oe
+setenv scratch /tmp
+setenv g03root /usr
+setenv G03BASIS /usr/g03/basis
+setenv GAUSS_EXEDIR /usr/g03:/usr/g03/bsd
+setenv GAUSS_ARCHDIR /home/jeannera/gaussian/androsten
+setenv PATH "$GAUSS_EXEDIR":"$PATH"
+setenv LD_LIBRARY_PATH $PATH
+
+setenv GAUSS_JOBNO $$
+setenv GAUSS_SCRDIR /tmp/gauss.$GAUSS_JOBNO
+#setenv GAUSS_SCRDIR /tmp/gauss.$$
+source /usr/g03/bsd/g03.login
+setenv _RLD_ARGS "-log /dev/null"
+mkdir -p $GAUSS_SCRDIR
+cd $GAUSS_SCRDIR
+echo "Machine name:  `uname -n`" >> androsten_better_nmrJ.o$GAUSS_JOBNO
+echo "Working dir:   /home/jeannera/gaussian/androsten" >> androsten_better_nmrJ.o$GAUSS_JOBNO
+echo "Scratch dir:   $GAUSS_SCRDIR" >> androsten_better_nmrJ.o$GAUSS_JOBNO
+echo "Scratch space: `df -h /tmp | grep /dev | tr -s ' ' | cut -f 4 -d ' '`b" >> androsten_better_nmrJ.o$GAUSS_JOBNO
+echo "G03 starting:  `date '+%d.%m.%Y %T'`" >> androsten_better_nmrJ.o$GAUSS_JOBNO
+
+cp /home/jeannera/gaussian/androsten/androsten_better_nmrJ.* $GAUSS_SCRDIR
+
+g03 < $GAUSS_SCRDIR/androsten_better_nmrJ.com > $GAUSS_SCRDIR/androsten_better_nmrJ.log
+
+echo "G03 ended:     `date '+%d.%m.%Y %T'`" >> androsten_better_nmrJ.o$GAUSS_JOBNO
+set time=(0 "Elapsed time:  %E")
+time >> androsten_better_nmrJ.o$GAUSS_JOBNO
+unset time
+grep 'cpu time' androsten_better_nmrJ.log |  cut -c2- | sed -e 's/:/#/' | sed -e 's/#  /# /' | sed -e 's/ days /-/' | sed -e 's/ 0-/ /' | sed -e 's/- /-0/' | sed -e 's/ hours /:/' | sed -e 's/ 0://' | sed -e 's/: /:0/' | sed -e 's/ minutes /:/' | sed -e 's/ seconds./5/' | sed -e 's/- /-0/' | sed -e 's/time:/time/' | sed -e 's/: /:0/' | sed -e 's/: /:0/' | sed -e 's/ 00:/ 0:/' | sed -e 's/time#/time: /' | sed -e 's/Job/G03/' | sed -e 's/:   /:  /' >> androsten_better_nmrJ.o$GAUSS_JOBNO
+echo "In scratch:    `du -h $GAUSS_SCRDIR | cut -f 1`b" >> androsten_better_nmrJ.o$GAUSS_JOBNO
+echo "Scratch space: `df -h /tmp | grep /dev | tr -s ' ' | cut -f 4 -d ' '`b" >> androsten_better_nmrJ.o$GAUSS_JOBNO
+
+cp $GAUSS_SCRDIR/androsten_better_nmrJ.* /home/jeannera/gaussian/androsten
+
+echo "Scratch dir:   `/bin/rm -rf $GAUSS_SCRDIR && echo 'deleted.' || echo 'ERROR: $GAUSS_SCRDIR DELETE FAILED'`" >> /home/jeannera/gaussian/androsten/androsten_better_nmrJ.o$GAUSS_JOBNO
+
+#

@@ -1,0 +1,1 @@
+gcc -o ../report.bin report.c

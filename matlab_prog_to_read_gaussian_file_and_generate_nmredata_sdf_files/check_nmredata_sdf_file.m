@@ -1,14 +1,23 @@
-function [super_obj, returned_value, text_of_the_problem]=check_nmredata_sdf_file(file_name)
+function [super_obj, returned_value, text_of_the_problem]=check_nmredata_sdf_file(file_name,verbose)
+% reads and verifies the integrity of .nmredata.sdf files
+% for format version V 0.98
 super_obj=[];
 tag_identyfyer='NMREDATA_';
+if nargin<2
 verbose=0;
+end
 returned_value=1;%will be set to zero in case of problem
 text_of_the_problem='';
-if nargin==0
-    file_name='../../../benzoapyrene/benzoapyrene.sdf';
-end
+% if nargin==0    
+%         file_name='./nmredata_sdf_demo_files/benzoapyrene.sdf';
+%         file_name='./nmredata_sdf_demo_files/benzocchrysene.sdf';
+%         file_name='./nmredata_sdf_demo_files/androsten.sdf';
+% end
 if ~exist(file_name,'file')
     text_of_the_problem=[text_of_the_problem 'file ' file_name ' not found'];
+    disp(text_of_the_problem)
+    
+    returned_value=0;
     return
 end
 if  verbose>0
@@ -66,9 +75,9 @@ while ischar(tline)
             if strcmp(obj.tag_name,[tag_identyfyer '1D_1H'])
                 super_obj{1}=obj;
             end
-               if strcmp(obj.tag_name,[tag_identyfyer '1D_13C'])
+            if strcmp(obj.tag_name,[tag_identyfyer '1D_13C'])
                 super_obj{2}=obj;
-               end
+            end
             if strcmp(obj.tag_name,[tag_identyfyer '2D_1H_NJ_1H'])
                 super_obj{3}=obj;
             end
@@ -78,10 +87,10 @@ while ischar(tline)
             if strcmp(obj.tag_name,[tag_identyfyer '2D_13C_NJ_1H'])
                 super_obj{5}=obj;
             end
-             if strcmp(obj.tag_name,[tag_identyfyer 'J'])
+            if strcmp(obj.tag_name,[tag_identyfyer 'J'])
                 super_obj{6}=obj;
-             end
-             if strcmp(obj.tag_name,[tag_identyfyer 'ASSIGNMENT'])
+            end
+            if strcmp(obj.tag_name,[tag_identyfyer 'ASSIGNMENT'])
                 super_obj{7}=obj;
             end
             inc=inc+1;
@@ -127,4 +136,5 @@ fclose(fid);
 if ~returned_value
     disp(text_of_the_problem)
 end
+
 end

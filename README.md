@@ -1,2 +1,2 @@
 # NMReDATA
-Examples ... comments follow
+Tools, examples of NMR records and NMReDATA sdf files

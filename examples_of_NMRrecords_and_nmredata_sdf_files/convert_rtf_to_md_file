@@ -1,0 +1,1 @@
+cat readme.rtf |textutil -stdin -convert html  -stdout | pandoc --from=html --to=markdown>readme.md

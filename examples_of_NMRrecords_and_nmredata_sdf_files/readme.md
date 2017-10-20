@@ -1,3 +1,8 @@
+## Examples of NMR records and of NMReDATA files 
+[See NMReDATA for details](http://nmredata.org/wiki)
+
+
+
 **benzopyrene record**: [link to zenodo
 upload](https://doi.org/10.5281/zenodo.825777) / [direct download
 of

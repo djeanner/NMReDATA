@@ -113,7 +113,7 @@ cdcl3
 >  <NMREDATA_TEMPERATURE>
 273.15
 
->  <NMREDATA_SIGNALS>
+>  <NMREDATA_ASSIGNMENT>
 (1), 202.9063, 1
 (2), 132.0417, 2
 (3), 179.3751, 3
@@ -158,14 +158,14 @@ CH3(33), 0.8690, 34, 35, 36
 6e, 2.2766, 46
 6a, 2.6046, 47
 
->  <NMREDATA_J>
+>  <NMREDATA_J>;this is the coupling network
 ;list abs(J(H,H))>1Hz
 ;list abs(J(C,H))>1Hz
 (1), 1e, 8.87;3J(C,H)
 (1), 1a, 1.98;3J(C,H)
 (1), 2a, -4.82;2J(C,H)
 (1), 2e, -6.01;2J(C,H)
-(1), 6a, -1.47;4J(C,H) Note this is a >3J 
+(1), 6a, -1.47;4J(C,H) ;Note this is a >3J 
 (2), 4, 151.62;1J(C,H)
 (2), 2e, 2.09;3J(C,H)
 (2), 6e, 5.61;3J(C,H)
@@ -200,14 +200,14 @@ CH3(33), 0.8690, 34, 35, 36
 (6), 1a, -2.99;2J(C,H)
 (6), 2a, 119.01;1J(C,H)
 (6), 2e, 128.55;1J(C,H)
-(12), 4, -1.09;4J(C,H) Note this is a >3J 
+(12), 4, -1.09;4J(C,H) ;Note this is a >3J 
 (18), 4, 6.79;3J(C,H)
-4, 6a, -2.29;4J(H,H) Note this is a >3J 
+4, 6a, -2.29;4J(H,H) ;Note this is a >3J 
 1e, 1a, -12.12;2J(H,H)
 1e, 2a, 4.89;3J(H,H)
 1e, 2e, 2.44;3J(H,H)
 (12), 1e, 3.54;3J(C,H)
-(18), 1e, 1.24;4J(C,H) Note this is a >3J 
+(18), 1e, 1.24;4J(C,H);Note this is a >3J 
 1a, 2a, 13.28;3J(H,H)
 1a, 2e, 4.33;3J(H,H)
 (12), 1a, 6.06;3J(C,H)
@@ -261,7 +261,7 @@ CH3(33), 0.8690, 34, 35, 36
 (21), 6e, -2.18;2J(C,H)
 (21), 6a, -5.22;2J(C,H)
 7e, 7a, -11.52;2J(H,H)
-(24), 7e, 1.01;4J(C,H) Note this is a >3J 
+(24), 7e, 1.01;4J(C,H) ;Note this is a >3J 
 (27), 7e, 1.39;3J(C,H)
 7e, 6e, 2.44;3J(H,H)
 7e, 6a, 5.02;3J(H,H)
@@ -356,7 +356,7 @@ Larmor=400.000000
 
 >  <NMREDATA_1D_13C>
 Larmor=100.573804
-228.6343, L=(45), I=100.00
+228.6343, L=(45), I=100.00 ; all intensities arbitrary 100 for Cq, 110 for HC, 120 CH2 and 130 CH3
 202.9063, L=(1), I=100.00
 179.3751, L=(3), I=100.00
 132.0417, L=(2), I=110.00

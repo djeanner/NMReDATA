@@ -32,16 +32,21 @@
   5  6  2  0  0  0  0
   6  1  1  0  0  0  0
   3  7  1  0  0  0  0
-M  ZZC   1 1
-M  ZZC   2 2
-M  ZZC   3 3
-M  ZZC   4 4
-M  ZZC   5 5
-M  ZZC   6 6
+M  ZZC   1 2
+M  ZZC   2 3
+M  ZZC   3 4
+M  ZZC   4 3'
+M  ZZC   5 2'
+M  ZZC   6 1
 M  ZZC   7 7
-M  ZZC   8 8
-M  ZZC  12 9
-M  ZZC  14 10
+M  ZZC   8 5'
+M  ZZC   9 6''''''
+M  ZZC  10 6'''''
+M  ZZC  11 6''''
+M  ZZC  12 5
+M  ZZC  13 6'
+M  ZZC  14 6
+M  ZZC  15 6''
 M  STY  2   1 SUP   2 SUP
 M  SLB  2   1   1   2   2
 M  SAL   1  4   8   9  10  11
@@ -59,24 +64,26 @@ CDCl3
 0
 
 >  <NMREDATA_ASSIGNMENT>
-1, 132.4855, 1
-H2, 7.0510, H2
-2, 114.1487, 2
-3, 147.3268, 3
-H4, 7.0510, H4
-4, 114.1487, 4
-5, 132.4855, 5
-H6, 7.2343, H6
-6, 111.5663, 6
+2, 132.4855, 1
+H3, 7.0510, H2
+3, 114.1487, 2
+4, 147.3268, 3
+H3', 7.0510, H4
+3', 114.1487, 4
+2', 132.4855, 5
+H1, 7.2343, H6
+1, 111.5663, 6
 H7, 4.0943, H7
-8, 123.4466, 8
-9, 123.4466, 12
-10, -63.3196, 14
+5', 123.4466, 8
+6'''''', -63.3196, 9
+6''''', -63.3196, 10
+6'''', -63.3196, 11
+5, 123.4466, 12
+6', -63.3196, 13
+6, -63.3196, 14
+6'', -63.3196, 15
 
 >  <NMREDATA_1D_1H>
-Larmor=500.133088507
-Pulseprogram=zg30 ;optional in V1
-Spectrum_Location=file:MP-TFM-aniline/10/pdata/1/
 Larmor=500.133088507
 Pulseprogram=zg30 ;optional in V1
 Spectrum_Location=file:MP-TFM-aniline/10/pdata/1/
@@ -101,7 +108,6 @@ Spectrum_Location=file:MP-TFM-aniline/11/pdata/1/
 >  <NMREDATA_1D_13C>
 Larmor=125.770363831
 Pulseprogram=dept135 ;optional in V1
-Spectrum_Location=file:MP-TFM-aniline/12/pdata/1/
 Spectrum_Location=file:MP-TFM-aniline/12/pdata/1/
 ;nothing for 132.4855, L=2; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:-18.290787)
 114.1333, L=3, I=1221.0503, E=46.5574;errcs=-0.015402 ppm (This is how far this peak is from the assigned resonance)

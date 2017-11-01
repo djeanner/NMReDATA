@@ -1,0 +1,116 @@
+c
+  Mnova   10031715372D
+
+ 12 12  0  0  0  0  0  0  0  0999 V2000
+  -74.3900   99.7614    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  -73.9826   99.4653    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -74.1481   98.9864    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -74.6517   98.9864    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -74.7974   99.4653    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -73.9729   99.8104    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  -73.9631   98.9833    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -73.5577   98.8820    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  -74.6463   98.6205    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  -74.1527   99.3070    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  -74.8000   99.8006    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -75.0615  100.0000    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  2  3  1  0  0  0  0
+  3  4  1  0  0  0  0
+  4  5  1  0  0  0  0
+  1  5  1  0  0  0  0
+  2  6  1  0  0  0  0
+  2  7  1  0  0  0  0
+  7  8  1  0  0  0  0
+  4  9  1  0  0  0  0
+  3 10  1  0  0  0  0
+  5 11  1  0  0  0  0
+ 11 12  1  0  0  0  0
+M  ZZC   2 2
+M  ZZC   3 3
+M  ZZC   4 4
+M  ZZC   5 5
+M  ZZC   7 1
+M  ZZC  11 6
+M  END
+
+>  <NMREDATA_SOLVENT>
+D2O
+
+>  <NMREDATA_LEVEL>
+0
+
+>  <NMREDATA_ASSIGNMENT>
+2, 98.0211, 2
+H3, 3.6328, H3
+3, 67.4881, 3
+H4, 3.7501, H4
+4, 69.6424, 4
+H5, 3.8377, H5
+5, 69.1627, 5
+H1a, 3.5615, H7
+H1b, 3.3982, H7
+H6a, 3.8639, H11
+6, 63.2750, 11
+H6b, 3.5487, H11
+
+>  <NMREDATA_1D_1H>
+Larmor=500.13234410931
+Pulseprogram=zgpr ;optional in V1
+Spectrum_Location=file:MP_ice_tea_lemon/20/pdata/1/
+;>> undefined  (label=undefined)  (shift0=3.6263 - 3.6394)  (atomRow[0]=undefined) 
+3.6394-3.6263; HAARE should be ok
+;>> undefined  (label=undefined)  (shift0=3.7391 - 3.7611)  (atomRow[0]=undefined) 
+3.7611-3.7391; HAARE should be ok
+;>> undefined  (label=undefined)  (shift0=3.8264 - 3.8490)  (atomRow[0]=undefined) 
+3.8490-3.8264; HAARE should be ok
+; > undefined'  (label=undefined')  (shift0=3.5525 - 3.5705)  (atomRow[0]=undefined') 
+3.5705-3.5525; HAARE should be ok
+; > undefined''  (label=undefined'')  (shift0=3.3952 - 3.4012)  (atomRow[0]=undefined'') 
+3.4012-3.3952; HAARE should be ok
+; > undefined'  (label=undefined')  (shift0=3.8490 - 3.8789)  (atomRow[0]=undefined') 
+3.8789-3.8490; HAARE should be ok
+; > undefined''  (label=undefined'')  (shift0=3.5291 - 3.5684)  (atomRow[0]=undefined'') 
+3.5684-3.5291; HAARE should be ok
+
+>  <NMREDATA_1D_13C>
+Larmor=125.770363831
+Pulseprogram=zgdc ;optional in V1
+Spectrum_Location=file:MP_ice_tea_lemon/16/pdata/1/
+98.0230, L=2, I=1216.5925, E=35.8463;errcs=0.001870 ppm (This is how far this peak is from the assigned resonance)
+67.4912, L=3, I=4439.9335, E=130.8206;errcs=0.003145 ppm (This is how far this peak is from the assigned resonance)
+69.6424, L=4, I=5106.1998, E=158.6583;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+69.1627, L=5, I=5820.4496, E=171.4969;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+63.2730, L=6, I=5183.7306, E=201.3342;errcs=-0.002018 ppm (This is how far this peak is from the assigned resonance)
+
+>  <NMREDATA_1D_13C>
+Larmor=125.770363831
+Pulseprogram=dept135 ;optional in V1
+Spectrum_Location=file:MP_ice_tea_lemon/17/pdata/1/
+;nothing for 98.0211, L=2; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
+;nothing for 67.4881, L=3; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
+;nothing for 69.6424, L=4; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
+;nothing for 69.1627, L=5; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
+;nothing for 63.2750, L=6; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
+
+>  <NMREDATA_2D_1H_NJ_1H>
+Larmor=500.13
+CorrType=COSY
+Pulseprogram=cosyprqf ;optional in V1
+
+>  <NMREDATA_2D_13C_1J_1H>
+Larmor=500.13234410931
+CorrType=HSQC
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
+
+>  <NMREDATA_2D_13C_NJ_1H>
+Larmor=500.13234410931
+CorrType=HMBC
+Pulseprogram=hmbcgplpndqf ;optional in V1
+
+>  <NMREDATA_2D_13C_1J_1H>
+Larmor=500.13234410931
+CorrType=HSQC
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
+
+$$$$

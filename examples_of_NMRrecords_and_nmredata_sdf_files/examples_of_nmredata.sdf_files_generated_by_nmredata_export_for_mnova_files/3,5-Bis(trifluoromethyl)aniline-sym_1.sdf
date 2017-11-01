@@ -1,0 +1,152 @@
+12
+  ChemDraw10241715392D
+
+ 15 15  0  0  0  0  0  0  0  0999 V2000
+   -0.7145    0.4678    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7145   -0.3572    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000   -0.7697    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7145   -0.3572    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7145    0.4678    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.8803    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000   -1.5947    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4289    0.8803    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8414    0.1658    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1434    1.2928    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0164    1.5947    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4289    0.8803    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0164    1.5947    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.1434    1.2928    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.8414    0.1658    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+  8  9  1  0  0  0  0
+  8 10  1  0  0  0  0
+  8 11  1  0  0  0  0
+  5  8  1  0  0  0  0
+ 12 13  1  0  0  0  0
+ 12 14  1  0  0  0  0
+ 12 15  1  0  0  0  0
+  1 12  1  0  0  0  0
+  1  2  2  0  0  0  0
+  2  3  1  0  0  0  0
+  3  4  2  0  0  0  0
+  4  5  1  0  0  0  0
+  5  6  2  0  0  0  0
+  6  1  1  0  0  0  0
+  3  7  1  0  0  0  0
+M  ZZC   1 1
+M  ZZC   2 2
+M  ZZC   3 3
+M  ZZC   4 4
+M  ZZC   5 5
+M  ZZC   6 6
+M  ZZC   7 7
+M  ZZC   8 8
+M  ZZC  12 9
+M  ZZC  14 10
+M  STY  2   1 SUP   2 SUP
+M  SLB  2   1   1   2   2
+M  SAL   1  4   8   9  10  11
+M  SBL   1  1   4
+M  SMT   1 CF3
+M  SAL   2  4  12  13  14  15
+M  SBL   2  1   8
+M  SMT   2 ^CF3
+M  END
+
+>  <NMREDATA_SOLVENT>
+CDCl3
+
+>  <NMREDATA_LEVEL>
+0
+
+>  <NMREDATA_ASSIGNMENT>
+1, 132.4855, 1
+H2, 7.0510, H2
+2, 114.1487, 2
+3, 147.3268, 3
+H4, 7.0510, H4
+4, 114.1487, 4
+5, 132.4855, 5
+H6, 7.2343, H6
+6, 111.5663, 6
+H7, 4.0943, H7
+8, 123.4466, 8
+9, 123.4466, 12
+10, -63.3196, 14
+
+>  <NMREDATA_1D_1H>
+Larmor=500.133088507
+Pulseprogram=zg30 ;optional in V1
+Spectrum_Location=file:MP-TFM-aniline/10/pdata/1/
+Larmor=500.133088507
+Pulseprogram=zg30 ;optional in V1
+Spectrum_Location=file:MP-TFM-aniline/10/pdata/1/
+;>> undefined  (label=undefined)  (shift0=7.0510 - 7.0510)  (atomRow[0]=undefined) 
+7.0510; HAARE should be ok
+;>> undefined  (label=undefined)  (shift0=7.2343 - 7.2343)  (atomRow[0]=undefined) 
+7.2343; HAARE should be ok
+;>> undefined  (label=undefined)  (shift0=4.0943 - 4.0943)  (atomRow[0]=undefined) 
+4.0943, S=s, N=2, L=7, E=265.1470; HAARE should be ok
+
+>  <NMREDATA_1D_13C>
+Larmor=125.770363831
+Pulseprogram=zgdc ;optional in V1
+Spectrum_Location=file:MP-TFM-aniline/11/pdata/1/
+132.4855, S=q, N=002, L=2&1#, J=32.96, E=13.4331; found multiplet by chemical shift 
+114.1345, L=3, I=4140.4438, E=131.9669;errcs=-0.014225 ppm (This is how far this peak is from the assigned resonance)
+147.3268, S=s, N=001, L=4, E=8.8792; found multiplet by chemical shift 
+114.1345, L=3', I=4140.4438, E=131.9669;errcs=-0.014225 ppm (This is how far this peak is from the assigned resonance)
+111.5679, L=1, I=1660.6407, E=64.4987;errcs=0.001626 ppm (This is how far this peak is from the assigned resonance)
+123.4466, S=q, N=002, L=5'&5, J=272.42, E=14.0040; found multiplet by chemical shift 
+
+>  <NMREDATA_1D_13C>
+Larmor=125.770363831
+Pulseprogram=dept135 ;optional in V1
+Spectrum_Location=file:MP-TFM-aniline/12/pdata/1/
+Spectrum_Location=file:MP-TFM-aniline/12/pdata/1/
+;nothing for 132.4855, L=2; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:-18.290787)
+114.1333, L=3, I=1221.0503, E=46.5574;errcs=-0.015402 ppm (This is how far this peak is from the assigned resonance)
+;nothing for 147.3268, L=4; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:-33.132078)
+114.1333, L=3', I=1221.0503, E=46.5574;errcs=-0.015402 ppm (This is how far this peak is from the assigned resonance)
+;nothing for 132.4855, L=2'; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:-18.290787)
+111.5660, L=1, I=470.7224, E=18.6890;errcs=-0.000258 ppm (This is how far this peak is from the assigned resonance)
+;nothing for 123.4466, L=5'; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:-9.251867)
+;nothing for 123.4466, L=5; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:-9.251867)
+
+>  <NMREDATA_2D_1H_NJ_1H>
+Larmor=500.132764225861
+CorrType=COSY
+Pulseprogram=cosygpppqf ;optional in V1
+
+>  <NMREDATA_2D_13C_1J_1H>
+Larmor=500.13300078
+CorrType=HSQC
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
+3/H3
+3'/H3'
+1/H1
+
+>  <NMREDATA_2D_13C_NJ_1H>
+Larmor=500.13
+CorrType=HMBC
+Pulseprogram=hmbcetgpl3nd ;optional in V1
+3'/H3
+3/H1
+3'/H1
+
+>  <NMREDATA_1D_19F>
+Larmor=282.376114779
+Pulseprogram=zgfhigqn.2 ;optional in V1
+Spectrum_Location=file:MP-trifluoromethyl-aniline/11/pdata/1/
+-63.3196, S=s, N=006, L=6''''''&6'''''&6''''&6'&6&6'', E=1004.3478; found multiplet by chemical shift 
+
+>  <NMREDATA_2D_19F_D_1H>
+Larmor=300.13180078
+CorrType=na
+Pulseprogram=hoesyetgp.2 ;optional in V1
+
+>  <NMREDATA_2D_1H_D_19F>
+Larmor=282.404355214
+CorrType=na
+Pulseprogram=FHAhoesytp1_2.txt ;optional in V1
+
+$$$$

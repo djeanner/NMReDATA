@@ -1,0 +1,124 @@
+lucose
+  ChemDraw09271711102D
+
+ 12 12  0  0  0  0  0  0  0  0999 V2000
+   -1.3400    0.4905    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6412   -0.7198    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7107   -0.3656    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0545   -0.7198    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3558    0.4905    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0037    0.1364    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0545    0.0780    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4381   -0.5063    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2941   -0.9490    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1132   -1.5800    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5796    0.7198    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5796    1.5448    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  2  3  1  0  0  0  0
+  3  4  1  0  0  0  0
+  4  5  1  0  0  0  0
+  5  6  1  0  0  0  0
+  6  1  1  0  0  0  0
+  1  7  1  0  0  0  0
+  2  8  1  0  0  0  0
+  3  9  1  0  0  0  0
+  4 10  1  0  0  0  0
+  6 11  1  0  0  0  0
+ 11 12  1  0  0  0  0
+M  ZZC   1 4
+M  ZZC   2 3
+M  ZZC   3 2
+M  ZZC   4 1
+M  ZZC   6 5
+M  ZZC  11 6
+M  END
+
+>  <NMREDATA_SOLVENT>
+D2O
+
+>  <NMREDATA_LEVEL>
+0
+
+>  <NMREDATA_ASSIGNMENT>
+H4, 3.2841, H1
+4, 69.5534, 1
+H3, 3.5918, H2
+3, 72.7000, 2
+H2, 3.4129, H3
+2, 71.3930, 3
+H1, 5.1107, H4
+1, 92.0019, 4
+H5, 3.7171, H6
+5, 71.3485, 6
+H6a, 3.7171, H11
+6, 60.4937, 11
+H6b, 3.6496, H11
+
+>  <NMREDATA_1D_1H>
+Larmor=500.1320755395
+Pulseprogram=zg30 ;optional in V1
+Spectrum_Location=file:MP-glucose-oct17/10/pdata/1/
+;>> undefined  (label=undefined)  (shift0=3.2518 - 3.3164)  (atomRow[0]=undefined) 
+3.3164-3.2518; HAARE should be ok
+;>> undefined  (label=undefined)  (shift0=3.5918 - 3.5918)  (atomRow[0]=undefined) 
+3.5918; HAARE should be ok
+;>> undefined  (label=undefined)  (shift0=3.4129 - 3.4129)  (atomRow[0]=undefined) 
+3.4129; HAARE should be ok
+;>> undefined  (label=undefined)  (shift0=5.1107 - 5.1107)  (atomRow[0]=undefined) 
+5.1107; HAARE should be ok
+;>> undefined  (label=undefined)  (shift0=3.6903 - 3.7439)  (atomRow[0]=undefined) 
+3.7439-3.6903; HAARE should be ok
+; > undefined'  (label=undefined')  (shift0=3.6903 - 3.7439)  (atomRow[0]=undefined') 
+; > undefined''  (label=undefined'')  (shift0=3.6261 - 3.6731)  (atomRow[0]=undefined'') 
+3.6731-3.6261; HAARE should be ok
+
+>  <NMREDATA_1D_13C>
+Larmor=125.770363831
+Pulseprogram=zgdc ;optional in V1
+Spectrum_Location=file:MP-glucose-oct17/11/pdata/1/
+69.5534, L=4, I=11008.6355, E=342.0571;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+;nothing for 72.7000, L=3; found no multiplet or at this EXACT chemical or this label no peak +/-0.005 pmm
+71.3930, L=2, I=10482.8115, E=407.1485;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+;nothing for 92.0019, L=1; found no multiplet or at this EXACT chemical or this label no peak +/-0.005 pmm
+71.3485, L=5, I=10125.3933, E=281.8624;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+60.4937, L=6, I=10400.8680, E=403.9659;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+
+>  <NMREDATA_1D_13C>
+Larmor=125.770363831
+Pulseprogram=dept135 ;optional in V1
+Spectrum_Location=file:MP-glucose-oct17/12/pdata/1/
+69.5545, L=4, I=2616.6991, E=56.1538;errcs=0.001099 ppm (This is how far this peak is from the assigned resonance)
+;nothing for 72.7000, L=3; found no multiplet or at this EXACT chemical or this label no peak +/-0.005 pmm
+71.3924, L=2, I=2701.4087, E=76.6095;errcs=-0.000628 ppm (This is how far this peak is from the assigned resonance)
+92.0064, L=1, I=2223.3921, E=63.0534;errcs=0.004448 ppm (This is how far this peak is from the assigned resonance)
+71.3454, L=5, I=2948.3667, E=96.7165;errcs=-0.003061 ppm (This is how far this peak is from the assigned resonance)
+;nothing for 60.4937, L=6; found no multiplet or at this EXACT chemical or this label no peak +/-0.005 pmm
+
+>  <NMREDATA_2D_1H_NJ_1H>
+Larmor=500.13
+CorrType=COSY
+Pulseprogram=cosygpppqf ;optional in V1
+
+>  <NMREDATA_2D_13C_1J_1H>
+Larmor=500.13
+CorrType=HSQC
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
+
+>  <NMREDATA_2D_13C_NJ_1H>
+Larmor=500.13
+CorrType=HMBC
+Pulseprogram=hmbcetgpl3nd ;optional in V1
+
+>  <NMREDATA_2D_13C_1J_1H>
+Larmor=500.13
+CorrType=HSQC
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
+4/H4
+3/H3
+2/H2
+1/H1
+5/H5
+6/H6'
+
+$$$$

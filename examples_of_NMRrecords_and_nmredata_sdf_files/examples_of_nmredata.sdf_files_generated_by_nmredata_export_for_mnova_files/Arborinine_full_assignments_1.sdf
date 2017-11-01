@@ -1,0 +1,212 @@
+e
+  ChemDraw05151715062D
+
+ 21 23  0  0  0  0  0  0  0  0999 V2000
+   -2.5006    0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.5006   -0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.7862   -0.8250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0717   -0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0717    0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.7862    0.8250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3572   -0.8250    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3572   -0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3572    0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3572    0.8250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0717   -0.8250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7862   -0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7862    0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0717    0.8250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0717    1.6500    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3572    1.6500    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3572   -1.6500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5006    0.8250    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5006    1.6500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5006   -0.8250    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5006   -1.6500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0  0  0  0
+  2  3  1  0  0  0  0
+  3  4  2  0  0  0  0
+  4  5  1  0  0  0  0
+  5  6  2  0  0  0  0
+  6  1  1  0  0  0  0
+  4  7  1  0  0  0  0
+  7  8  1  0  0  0  0
+  8  9  2  0  0  0  0
+  9 10  1  0  0  0  0
+ 10  5  1  0  0  0  0
+  8 11  1  0  0  0  0
+ 11 12  2  0  0  0  0
+ 12 13  1  0  0  0  0
+ 13 14  2  0  0  0  0
+ 14  9  1  0  0  0  0
+ 14 15  1  0  0  0  0
+ 10 16  2  0  0  0  0
+  7 17  1  0  0  0  0
+ 13 18  1  0  0  0  0
+ 18 19  1  0  0  0  0
+ 12 20  1  0  0  0  0
+ 20 21  1  0  0  0  0
+M  ZZC   1 1
+M  ZZC   2 2
+M  ZZC   3 3
+M  ZZC   4 4
+M  ZZC   5 5
+M  ZZC   6 6
+M  ZZC   8 8
+M  ZZC   9 9
+M  ZZC  10 10
+M  ZZC  11 11
+M  ZZC  12 12
+M  ZZC  13 13
+M  ZZC  14 14
+M  ZZC  15 15
+M  ZZC  17 17
+M  ZZC  19 19
+M  ZZC  21 21
+M  END
+
+>  <NMREDATA_SOLVENT>
+CDCl3
+
+>  <NMREDATA_LEVEL>
+0
+
+>  <NMREDATA_ASSIGNMENT>
+H1, 7.2778, H1
+1, 121.4541, 1
+H2, 7.7150, H2
+2, 133.9140, 2
+H3, 7.4896, H3
+3, 114.5697, 3
+4, 141.8969, 4
+5, 120.6325, 5
+H6, 8.4004, H6
+6, 126.4916, 6
+8, 140.4134, 8
+9, 105.6732, 9
+10, 180.7020, 10
+H11, 6.2315, H11
+11, 86.6660, 11
+12, 159.2546, 12
+13, 130.0779, 13
+14, 156.0749, 14
+H15, 14.7674, H15
+H17, 3.8143, H17
+17, 34.0759, 17
+H19, 3.9391, H19
+19, 60.7975, 19
+H21, 4.0186, H21
+21, 55.9780, 21
+
+>  <NMREDATA_1D_1H>
+Larmor=500.133088507
+Pulseprogram=zg30 ;optional in V1
+Spectrum_Location=file:dj_ca_2017_ernestin_EN4/10/pdata/1/
+;>> undefined  (label=undefined)  (shift0=7.2778 - 7.2778)  (atomRow[0]=undefined) 
+7.2778, S=ddd, N=1, L=1, J=7.98,6.95,0.96, E=71.9113; HAARE should be ok
+;>> undefined  (label=undefined)  (shift0=7.7150 - 7.7150)  (atomRow[0]=undefined) 
+7.7150, S=ddd, N=1, L=2, J=8.67,7.02,1.79, E=80.9392; HAARE should be ok
+;>> undefined  (label=undefined)  (shift0=7.4896 - 7.4896)  (atomRow[0]=undefined) 
+7.4896, S=d, N=1, L=3, J=8.80, E=93.7083; HAARE should be ok
+;>> undefined  (label=undefined)  (shift0=8.4004 - 8.4004)  (atomRow[0]=undefined) 
+8.4004, S=dd, N=1, L=6, J=8.05,1.72, E=83.7424; HAARE should be ok
+;>> undefined  (label=undefined)  (shift0=6.2315 - 6.2315)  (atomRow[0]=undefined) 
+6.2315, S=s, N=1, L=11, E=70.0138; HAARE should be ok
+;>> undefined  (label=undefined)  (shift0=14.7674 - 14.7674)  (atomRow[0]=undefined) 
+14.7674, S=s, N=1, L=15, E=53.6547; HAARE should be ok
+;>> undefined  (label=undefined)  (shift0=3.8143 - 3.8143)  (atomRow[0]=undefined) 
+3.8143, S=s, N=3, L=17, E=245.7392; HAARE should be ok
+;>> undefined  (label=undefined)  (shift0=3.9391 - 3.9391)  (atomRow[0]=undefined) 
+3.9391, S=s, N=3, L=19, E=247.8047; HAARE should be ok
+;>> undefined  (label=undefined)  (shift0=4.0186 - 4.0186)  (atomRow[0]=undefined) 
+4.0186, S=s, N=3, L=21, E=250.9204; HAARE should be ok
+
+>  <NMREDATA_1D_13C>
+Larmor=125.770363831
+Pulseprogram=zgdc ;optional in V1
+Spectrum_Location=file:dj_ca_2017_ernestin_EN4/11/pdata/1/
+121.4485, L=1, I=13640.9236, E=392.7700;errcs=-0.005638 ppm (This is how far this peak is from the assigned resonance)
+133.9104, L=2, I=13209.5661, E=380.3497;errcs=-0.003608 ppm (This is how far this peak is from the assigned resonance)
+114.5697, L=3, I=13089.7744, E=376.9005;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+141.8969, L=4, I=2139.8280, E=66.4881;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+120.6325, L=5, I=1997.2215, E=57.5070;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+126.4827, L=6, I=13036.1617, E=375.3568;errcs=-0.008880 ppm (This is how far this peak is from the assigned resonance)
+140.4134, L=8, I=2005.0794, E=77.8765;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+105.6732, L=9, I=1481.7299, E=46.0399;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+180.7020, L=10, I=2163.6971, E=62.3004;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+86.6638, L=11, I=12518.3119, E=360.4461;errcs=-0.002172 ppm (This is how far this peak is from the assigned resonance)
+159.2546, L=12, I=2113.3255, E=65.6646;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+130.0779, L=13, I=914.2642, E=35.5097;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+156.0749, L=14, I=2185.2032, E=62.9197;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+34.0764, L=17, I=6718.1687, E=193.4396;errcs=0.000469 ppm (This is how far this peak is from the assigned resonance)
+60.7954, L=19, I=7055.8890, E=203.1638;errcs=-0.002088 ppm (This is how far this peak is from the assigned resonance)
+55.9788, L=21, I=12614.9756, E=363.2294;errcs=0.000750 ppm (This is how far this peak is from the assigned resonance)
+
+>  <NMREDATA_1D_13C>
+Larmor=125.770363831
+Pulseprogram=dept135 ;optional in V1
+Spectrum_Location=file:dj_ca_2017_ernestin_EN4/12/pdata/1/
+121.4452, L=1, I=3613.6938, E=102.4811;errcs=-0.008935 ppm (This is how far this peak is from the assigned resonance)
+133.9096, L=2, I=3524.4651, E=73.7976;errcs=-0.004393 ppm (This is how far this peak is from the assigned resonance)
+114.5666, L=3, I=3937.7826, E=111.6719;errcs=-0.003061 ppm (This is how far this peak is from the assigned resonance)
+141.8967, L=4, I=50.0735, E=1.9881;errcs=-0.000235 ppm (This is how far this peak is from the assigned resonance)
+120.6327, L=5, I=41.2660, E=1.8724;errcs=0.000235 ppm (This is how far this peak is from the assigned resonance)
+126.4822, L=6, I=3391.6818, E=71.0173;errcs=-0.009351 ppm (This is how far this peak is from the assigned resonance)
+140.4127, L=8, I=32.6015, E=1.6642;errcs=-0.000706 ppm (This is how far this peak is from the assigned resonance)
+105.6732, L=9, I=34.6097, E=2.1593;errcs=-0.000000 ppm (This is how far this peak is from the assigned resonance)
+180.6947, L=10, I=31.6325, E=1.6147;errcs=-0.007379 ppm (This is how far this peak is from the assigned resonance)
+86.6624, L=11, I=4440.5410, E=92.9791;errcs=-0.003585 ppm (This is how far this peak is from the assigned resonance)
+159.2538, L=12, I=42.6244, E=1.2088;errcs=-0.000863 ppm (This is how far this peak is from the assigned resonance)
+130.0786, L=13, I=44.7733, E=1.2697;errcs=0.000706 ppm (This is how far this peak is from the assigned resonance)
+;nothing for 156.0749, L=14; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:-0.251343)
+34.0748, L=17, I=4560.6841, E=103.4695;errcs=-0.001101 ppm (This is how far this peak is from the assigned resonance)
+60.7947, L=19, I=4228.2071, E=88.5331;errcs=-0.002795 ppm (This is how far this peak is from the assigned resonance)
+55.9779, L=21, I=6190.8151, E=175.5659;errcs=-0.000113 ppm (This is how far this peak is from the assigned resonance)
+
+>  <NMREDATA_2D_1H_NJ_1H>
+Larmor=500.133973614509
+CorrType=COSY
+Pulseprogram=cosygpppqf ;optional in V1
+H2/H1
+H6/H1
+H1/H2
+H3/H2
+H2/H3
+H1/H6
+
+>  <NMREDATA_2D_13C_1J_1H>
+Larmor=500.13300078
+CorrType=HSQC
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
+1/H1
+2/H2
+3/H3
+6/H6
+17/H17
+19/H19
+21/H21
+
+>  <NMREDATA_2D_13C_NJ_1H>
+Larmor=500.13300078
+CorrType=HMBC
+Pulseprogram=hmbcetgpl3nd ;optional in V1
+3/H1
+5/H1
+4/H2
+6/H2
+1/H3
+2/H6
+4/H6
+10/H6
+8/H11
+9/H11
+10/H11
+12/H11
+9/H15
+14/H15
+4/H17
+8/H17
+11/H17
+12/H21
+
+$$$$

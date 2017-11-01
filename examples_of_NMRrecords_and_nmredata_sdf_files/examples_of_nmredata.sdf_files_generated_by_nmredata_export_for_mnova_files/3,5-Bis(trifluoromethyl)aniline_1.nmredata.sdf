@@ -77,6 +77,9 @@ H7, 4.0943, H7
 Larmor=500.133088507
 Pulseprogram=zg30 ;optional in V1
 Spectrum_Location=file:MP-TFM-aniline/10/pdata/1/
+Larmor=500.133088507
+Pulseprogram=zg30 ;optional in V1
+Spectrum_Location=file:MP-TFM-aniline/10/pdata/1/
 ;>> undefined  (label=undefined)  (shift0=7.0510 - 7.0510)  (atomRow[0]=undefined) 
 7.0510; HAARE should be ok
 ;>> undefined  (label=undefined)  (shift0=7.2343 - 7.2343)  (atomRow[0]=undefined) 
@@ -88,27 +91,26 @@ Spectrum_Location=file:MP-TFM-aniline/10/pdata/1/
 Larmor=125.770363831
 Pulseprogram=zgdc ;optional in V1
 Spectrum_Location=file:MP-TFM-aniline/11/pdata/1/
-132.4855, S=q, N=002, L=1&5, J=32.96, E=13.4331; found multiplet by chemical shift 
-114.1510, S=q, L=2&4, E=83.0180, J=4.3540; found multiplet by label chem shifts differ by -0.002269 ppm
-114.1345, L=2, I=4140.4438, E=131.9669;errcs=-0.014225 ppm (This is how far this peak is from the assigned resonance)
-147.3268, S=s, N=001, L=3, E=8.8792; found multiplet by chemical shift 
-114.1345, L=4, I=4140.4438, E=131.9669;errcs=-0.014225 ppm (This is how far this peak is from the assigned resonance)
-111.5410, S=hept, L=6, E=49.1521, J=3.7319; found multiplet by label chem shifts differ by 0.025264 ppm
-111.5679, L=6, I=1660.6407, E=64.4987;errcs=0.001626 ppm (This is how far this peak is from the assigned resonance)
-123.4466, S=q, N=002, L=8&9, J=272.42, E=14.0040; found multiplet by chemical shift 
+132.4855, S=q, N=002, L=2&1#, J=32.96, E=13.4331; found multiplet by chemical shift 
+114.1345, L=3, I=4140.4438, E=131.9669;errcs=-0.014225 ppm (This is how far this peak is from the assigned resonance)
+147.3268, S=s, N=001, L=4, E=8.8792; found multiplet by chemical shift 
+114.1345, L=3', I=4140.4438, E=131.9669;errcs=-0.014225 ppm (This is how far this peak is from the assigned resonance)
+111.5679, L=1, I=1660.6407, E=64.4987;errcs=0.001626 ppm (This is how far this peak is from the assigned resonance)
+123.4466, S=q, N=002, L=5'&5, J=272.42, E=14.0040; found multiplet by chemical shift 
 
 >  <NMREDATA_1D_13C>
 Larmor=125.770363831
 Pulseprogram=dept135 ;optional in V1
 Spectrum_Location=file:MP-TFM-aniline/12/pdata/1/
-;nothing for 132.4855, L=1; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:-18.290787)
-114.1333, L=2, I=1221.0503, E=46.5574;errcs=-0.015402 ppm (This is how far this peak is from the assigned resonance)
-;nothing for 147.3268, L=3; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:-33.132078)
-114.1333, L=4, I=1221.0503, E=46.5574;errcs=-0.015402 ppm (This is how far this peak is from the assigned resonance)
-;nothing for 132.4855, L=5; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:-18.290787)
-111.5660, L=6, I=470.7224, E=18.6890;errcs=-0.000258 ppm (This is how far this peak is from the assigned resonance)
-;nothing for 123.4466, L=8; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:-9.251867)
-;nothing for 123.4466, L=9; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:-9.251867)
+Spectrum_Location=file:MP-TFM-aniline/12/pdata/1/
+;nothing for 132.4855, L=2; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:-18.290787)
+114.1333, L=3, I=1221.0503, E=46.5574;errcs=-0.015402 ppm (This is how far this peak is from the assigned resonance)
+;nothing for 147.3268, L=4; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:-33.132078)
+114.1333, L=3', I=1221.0503, E=46.5574;errcs=-0.015402 ppm (This is how far this peak is from the assigned resonance)
+;nothing for 132.4855, L=2'; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:-18.290787)
+111.5660, L=1, I=470.7224, E=18.6890;errcs=-0.000258 ppm (This is how far this peak is from the assigned resonance)
+;nothing for 123.4466, L=5'; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:-9.251867)
+;nothing for 123.4466, L=5; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:-9.251867)
 
 >  <NMREDATA_2D_1H_NJ_1H>
 Larmor=500.132764225861
@@ -119,23 +121,23 @@ Pulseprogram=cosygpppqf ;optional in V1
 Larmor=500.13300078
 CorrType=HSQC
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
-2/H2
-4/H4
-6/H6
+3/H3
+3'/H3'
+1/H1
 
 >  <NMREDATA_2D_13C_NJ_1H>
 Larmor=500.13
 CorrType=HMBC
 Pulseprogram=hmbcetgpl3nd ;optional in V1
-4/H2
-2/H6
-4/H6
+3'/H3
+3/H1
+3'/H1
 
 >  <NMREDATA_1D_19F>
 Larmor=282.376114779
 Pulseprogram=zgfhigqn.2 ;optional in V1
 Spectrum_Location=file:MP-trifluoromethyl-aniline/11/pdata/1/
--63.3196, S=s, N=001, L=10, E=1004.3478; found multiplet by chemical shift 
+-63.3196, S=s, N=006, L=6''''''&6'''''&6''''&6'&6&6'', E=1004.3478; found multiplet by chemical shift 
 
 >  <NMREDATA_2D_19F_D_1H>
 Larmor=300.13180078

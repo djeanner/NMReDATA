@@ -44,19 +44,16 @@ CDCl3
 
 >  <NMREDATA_ASSIGNMENT>
 H1a, 0.8620, H1
-1, 34.5591, 1
 1, 34.5669, 1
 H1b, 1.6810, H1
 H2a, 1.6285, H2
 2, 23.0989, 2
-2, 23.1445, 2
 H2b, 1.0067, H2
 H3, 1.1282, H3
 3, 50.1583, 3
 H4, 3.4281, H4
 4, 71.5891, 4
 H5a, 1.9840, H5
-5, 45.0568, 5
 5, 45.0938, 5
 H5b, 0.9720, H5
 H6, 1.4415, H6
@@ -105,11 +102,11 @@ Spectrum_Location=file:AN-menthol/10/pdata/1/
 Larmor=125.770363831
 Pulseprogram=zgdc ;optional in V1
 Spectrum_Location=file:AN-menthol/11/pdata/1/
-34.5591, 34.5669; found multiplet by chemical shift 
-23.0989, 23.1445; found multiplet by chemical shift 
+;nothing for 34.5669, L=1; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
+;nothing for 23.0989, L=2; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
 ;nothing for 50.1583, L=3; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
 ;nothing for 71.5891, L=4; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-45.0568, 45.0938; found multiplet by chemical shift 
+;nothing for 45.0938, L=5; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
 ;nothing for 31.6232, L=6; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
 ;nothing for 22.2293, L=7; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
 ;nothing for 25.8422, L=9; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
@@ -120,11 +117,11 @@ Spectrum_Location=file:AN-menthol/11/pdata/1/
 Larmor=125.770363831
 Pulseprogram=dept135 ;optional in V1
 Spectrum_Location=file:AN-menthol/12/pdata/1/
-34.5591, 34.5669; found multiplet by chemical shift 
-23.0989, 23.1445; found multiplet by chemical shift 
+;nothing for 34.5669, L=1; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
+;nothing for 23.0989, L=2; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
 ;nothing for 50.1583, L=3; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
 ;nothing for 71.5891, L=4; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-45.0568, 45.0938; found multiplet by chemical shift 
+;nothing for 45.0938, L=5; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
 ;nothing for 31.6232, L=6; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
 ;nothing for 22.2293, L=7; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
 ;nothing for 25.8422, L=9; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)

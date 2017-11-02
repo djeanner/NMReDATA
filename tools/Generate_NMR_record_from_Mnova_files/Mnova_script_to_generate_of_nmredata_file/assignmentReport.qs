@@ -965,7 +965,7 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
     test_type,path_elements,full_path,multi,lab,//add dj
     spectra,spectrum,specIndex,found_it,found_sih,ii,ma,j,ama,apa,noEqHs,keep_type,full_path_orig,cur_spec_atom,found_one,tmpll,labArray = [],peaklist,//add dj
     separ = ", ",smallest_cs,
-    position_of_smallest_diff,debug=1,max_delta_chemshift_for_peak_to_be_assigned_to_chemical_shift = 0.05,conn,tmpi,tmparr = [],
+    position_of_smallest_diff,debug=1,max_delta_chemshift_for_peak_to_be_assigned_to_chemical_shift = 0.05,conn,tmpi,tmparr = [],chem_shift,
    // emptynmr = [],
     nmredata = [];
     nmredata_header = [];
@@ -1467,15 +1467,41 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                                 }
                                 }
                                 atomNH = aMolecule.atom(at).nHAll;
-                                mul="";
+                                mul=" ";
                                // not trusting this function...
-                                                                mul=AssignmentReporter.findInformation(4, multi, shifts, atomNH, true, true, label);
+                       //                                         mul=AssignmentReporter.findInformation(4, multi, shifts, atomNH, true, true, label);
                                 
                                 //
                                 if (mul.find(",",0) <0){// no multiplet found}
                                     found_sih=0;
                                  //   nmredata[looop_over_spectra] += "; " +  mul + ";  no multiplet found for this H\n";//.toFixed(4);//DJ_DEBUG
                                     
+                                    // determin chemical shift....
+                                    if (noEqHs.length >2 ){// there is a problem here.... may not be correct if two NE protons...
+                                        if (h === 1){
+                                            chem_shift = Number((shift[0].max + shift[0].min) / 2);
+                                            if (shift[0].max === shift[0].min){
+                                                shiftH = Number((shift[0].max + shift[0].min) / 2).toFixed(4);
+                                            }else{
+                                                shiftH = Number(shift[0].max).toFixed(4) + "-" + Number(shift[0].min).toFixed(4);
+                                            }
+                                        }
+                                        if (h === 2) {
+                                            chem_shift = Number((shift[1].max + shift[1].min) / 2);
+                                            if (shift[1].max === shift[1].min) {
+                                                shiftH = Number((shift[1].max + shift[1].min) / 2);
+                                            }else{
+                                                shiftH = Number(shift[1].max).toFixed(4) + "-" + Number(shift[1].min).toFixed(4);
+                                            }
+                                        }
+                                    }else{
+                                        chem_shift = Number((shift[0].max + shift[0].min) / 2);
+                                        if (shift[0].max === shift[0].min){
+                                            shiftH = Number((shift[0].max + shift[0].min) / 2).toFixed(4);
+                                        }else{
+                                            shiftH = Number(shift[0].max).toFixed(4) + "-" + Number(shift[0].min).toFixed(4);
+                                        }
+                                    }
                                     /// here serach for H multiplet assigned to lablel
                                     ii=0;
                                     while ((ii < multi.count) && (found_sih === 0)) {
@@ -1516,35 +1542,14 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                                                         nmredata[looop_over_spectra] +=  "," ;//DJ_DEBUG
                                                     }
                                                 }
-                                                nmredata[looop_over_spectra] +=  "; found H multiplet by label chem shifts differ by " + Number(mul- multi.at(ii).delta).toFixed(6) + " ppm\n";//DJ_DEBUG
+                                                nmredata[looop_over_spectra] +=  "; found H multiplet by label chem shifts differ by " + Number(chem_shift- multi.at(ii).delta).toFixed(6) + " ppm\n";//DJ_DEBUG
                                             }
                                             }
                                         }
                                         ii++;
                                     }
                                     if (found_sih === 0){// still not found... write comment...
-                                        if (noEqHs.length >2 ){// there is a problem here.... may not be correct if two NE protons...
-                                            if (h === 1){
-                                                if (shift[0].max === shift[0].min){
-                                                    shiftH = Number((shift[0].max + shift[0].min) / 2).toFixed(4);
-                                                }else{
-                                                    shiftH = Number(shift[0].max).toFixed(4) + "-" + Number(shift[0].min).toFixed(4);
-                                                }
-                                            }
-                                            if (h === 2){
-                                                if (shift[1].max === shift[1].min){
-                                                    shiftH = Number((shift[1].max + shift[1].min) / 2).toFixed(4);
-                                                }else{
-                                                    shiftH = Number(shift[1].max).toFixed(4) + "-" + Number(shift[1].min).toFixed(4);
-                                                }
-                                            }
-                                        }else{
-                                            if (shift[0].max === shift[0].min){
-                                                shiftH = Number((shift[0].max + shift[0].min) / 2).toFixed(4);
-                                            }else{
-                                                shiftH = Number(shift[0].max).toFixed(4) + "-" + Number(shift[0].min).toFixed(4);
-                                            }
-                                        }
+                                        
                                         
                                         nmredata[looop_over_spectra] += ";" + shiftH + ", L="  + "H" + atomLabel + ";found no H multiplet for this H\n";//.toFixed(4);//DJ_DEBUG
 

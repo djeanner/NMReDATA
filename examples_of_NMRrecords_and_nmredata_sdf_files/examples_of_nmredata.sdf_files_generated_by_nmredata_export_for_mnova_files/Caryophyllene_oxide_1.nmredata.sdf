@@ -105,45 +105,45 @@ Larmor=500.133088507
 Pulseprogram=zg30 ;optional in V1
 Spectrum_Location=file:MP-caryophyllene_oxide/10/pdata/1/
 ; > undefined'  (label=undefined')  (shift0=1.7034 - 1.7034)  (atomRow[0]=undefined') 
-1.7041, S=m, L=H2a, E=78.7292; found H multiplet by label chem shifts differ by -0.000696 ppm
+1.7041, S=m, L=H2a, E=78.7292; found H multiplet by label chem shifts differ by NaN ppm
 ; > 2a''  (label=2a'')  (shift0=1.6399 - 1.6399)  (atomRow[0]=2a'') 
-1.6352, S=m, L=H2b, E=101.8348; found H multiplet by label chem shifts differ by 0.004653 ppm
+1.6352, S=m, L=H2b, E=101.8348; found H multiplet by label chem shifts differ by NaN ppm
 ;>> 2b  (label=2b)  (shift0=1.0244 - 1.0244)  (atomRow[0]=2b) 
-1.0244, S=s, N=3, L=5, E=271.8249; found multiplet for this H Will remove...
+1.0244, S=s, L=H5, E=271.8249; found H multiplet by label chem shifts differ by NaN ppm
 ;>> 5  (label=5)  (shift0=1.0027 - 1.0027)  (atomRow[0]=5) 
-1.0027, S=s, N=3, L=5', E=275.1281; found multiplet for this H Will remove...
+1.0027, S=s, L=H5', E=275.1281; found H multiplet by label chem shifts differ by NaN ppm
 ; > 5''  (label=5'')  (shift0=2.3574 - 2.3574)  (atomRow[0]=5'') 
-2.3574, S=ddd, N=2, L=8a, J=12.65,8.12,4.40, E=86.6324; found multiplet for this H Will remove...
+2.3574, S=ddd, L=H8a, E=86.6324, J=4.4016,8.1155,12.6545; found H multiplet by label chem shifts differ by NaN ppm
 ; > 8a''  (label=8a'')  (shift0=2.1370 - 2.1370)  (atomRow[0]=8a'') 
-2.1370, S=m, N=2, L=8b, E=91.4070; found multiplet for this H Will remove...
+2.1370, S=m, L=H8b, E=91.4070; found H multiplet by label chem shifts differ by NaN ppm
 ; > 8b'  (label=8b')  (shift0=2.2663 - 2.2663)  (atomRow[0]=8b') 
-2.2663, S=m, N=2, L=9a, E=87.5953; found multiplet for this H Will remove...
+2.2663, S=m, L=H9a, E=87.5953; found H multiplet by label chem shifts differ by NaN ppm
 ; > 9a''  (label=9a'')  (shift0=1.3438 - 1.3438)  (atomRow[0]=9a'') 
-1.3438, S=dddd, N=2, L=9b, J=12.65,10.59,8.12,4.54, E=89.1483; found multiplet for this H Will remove...
+1.3438, S=dddd, L=H9b, E=89.1483, J=4.5391,8.1154,10.5912,12.6545; found H multiplet by label chem shifts differ by NaN ppm
 ;>> 9b  (label=9b)  (shift0=2.8939 - 2.8939)  (atomRow[0]=9b) 
-2.8939, S=dd, N=1, L=10, J=10.59,4.26, E=85.4128; found multiplet for this H Will remove...
+2.8939, S=dd, L=H10, E=85.4128, J=4.2640,10.5912; found H multiplet by label chem shifts differ by NaN ppm
 ; > 10'  (label=10')  (shift0=0.9757 - 0.9757)  (atomRow[0]=10') 
-0.9757, S=m, N=2, L=13a, E=82.4212; found multiplet for this H Will remove...
+0.9757, S=m, L=H13a, E=82.4212; found H multiplet by label chem shifts differ by NaN ppm
 ; > 13a''  (label=13a'')  (shift0=2.1009 - 2.1009)  (atomRow[0]=13a'') 
-2.1009, S=m, N=2, L=13b, E=84.8035; found multiplet for this H Will remove...
+2.1009, S=m, L=H13b, E=84.8035; found H multiplet by label chem shifts differ by NaN ppm
 ; > 13b'  (label=13b')  (shift0=1.4460 - 1.4460)  (atomRow[0]=13b') 
-1.4460, S=dddd, N=2, L=14a, J=14.72,13.34,10.38,4.13, E=87.1385; found multiplet for this H Will remove...
+1.4460, S=dddd, L=H14a, E=87.1385, J=4.1265,10.3850,13.3423,14.7178; found H multiplet by label chem shifts differ by NaN ppm
 ; > 14a''  (label=14a'')  (shift0=1.6656 - 1.6656)  (atomRow[0]=14a'') 
-1.6656, S=m, N=2, L=14b, E=89.2725; found multiplet for this H Will remove...
+1.6656, S=m, L=H14b, E=89.2725; found H multiplet by label chem shifts differ by NaN ppm
 ;>> 14b  (label=14b)  (shift0=1.2197 - 1.2197)  (atomRow[0]=14b) 
-1.2197, S=d, N=3, L=15, J=0.83, E=263.6407; found multiplet for this H Will remove...
+1.2197, S=d, L=H15, E=263.6407, J=0.8253; found H multiplet by label chem shifts differ by NaN ppm
 2.6339, S=m, N=1, L=16, E=85.0548; found multiplet by chemical shift 
 ; --- 2.6339, S=m, N=1, L=16, E=85.0548>>;MX El.:H lab:<16> CS 0:2.6339-2.6339
 ;>> 16  (label=16)  (shift0=2.6339 - 2.6339)  (atomRow[0]=16) 
-2.6339, S=m, N=1, L=16, E=85.0548; found multiplet for this H Will remove...
+2.6339, S=m, L=H16, E=85.0548; found H multiplet by label chem shifts differ by NaN ppm
 1.7808, S=m, N=1, L=17, E=87.0702; found multiplet by chemical shift 
 ; --- 1.7808, S=m, N=1, L=17, E=87.0702>>;MX El.:H lab:<17> CS 0:1.7808-1.7808
 ;>> 17  (label=17)  (shift0=1.7808 - 1.7808)  (atomRow[0]=17) 
-1.7808, S=m, N=1, L=17, E=87.0702; found multiplet for this H Will remove...
+1.7808, S=m, L=H17, E=87.0702; found H multiplet by label chem shifts differ by NaN ppm
 ; > 17'  (label=17')  (shift0=4.9921 - 4.9921)  (atomRow[0]=17') 
-4.9921, S=d, N=2, L=18a, J=2.06, E=87.4843; found multiplet for this H Will remove...
+4.9921, S=d, L=H18a, E=87.4843, J=2.0632; found H multiplet by label chem shifts differ by NaN ppm
 ; > 18a''  (label=18a'')  (shift0=4.8765 - 4.8765)  (atomRow[0]=18a'') 
-4.8765, S=dd, N=2, L=18b, J=1.72,0.76, E=87.0594; found multiplet for this H Will remove...
+4.8765, S=dd, L=H18b, E=87.0594, J=0.7566,1.7195; found H multiplet by label chem shifts differ by NaN ppm
 ;; for debug multiplet 0id:< {8f6f7e48-3153-4b39-bbcc-c376055c83c8}> 4.9921, S=d, Nwrong=undefined multiId <18a> peakId <> category <d> name <18a> name <87.4843247756362>, L=18a, E=87.4843, J=2.0632; HERE 
 ;; for debug multiplet 1id:< {e6b98b23-f9c0-4a12-835c-34758bd88a76}> 4.8765, S=dd, Nwrong=undefined multiId <18b> peakId <> category <dd> name <18b> name <87.05943967081606>, L=18b, E=87.0594, J=0.7566,1.7195; HERE 
 ;; for debug multiplet 2id:< {2f1e6bbc-2f6f-41f6-be33-4ab946465a14}> 2.8939, S=dd, Nwrong=undefined multiId <10> peakId <> category <dd> name <10> name <85.4128082779944>, L=10, E=85.4128, J=4.2640,10.5912; HERE 

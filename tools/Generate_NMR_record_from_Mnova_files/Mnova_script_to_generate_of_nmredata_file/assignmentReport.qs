@@ -124,12 +124,12 @@ function assignmentReport() {
         
         //		if (aFormat) {
         //			dataFile = FileDialog.getSaveFileName("*.txt", "Save report in .sdf", settings.value(reportTxtFileKey, Dir.home()));
-        dataFile = Dir.home() + "/Mnova_table_of_correlations.sdf.txt";
+     //   dataFile = Dir.home() + "/Mnova_table_of_correlations.sdf.txt";
         //		} else {
         //			dataFile = FileDialog.getSaveFileName("*.html", "Save report in HTML format", settings.value(reportHTMLFileKey, Dir.home()));
         //		}
         
-        if (dataFile !== "") {
+    /*    if (dataFile !== "") {
             
             file = new File(dataFile);
             
@@ -138,7 +138,7 @@ function assignmentReport() {
             //			} else {
             //				settings.setValue(reportHTMLFileKey, dataFile);
             //			}
-            
+            */
             /*        file.open(File.WriteOnly);
              stream = new TextStream(file);
              out_mol = mol.getMolfile();
@@ -163,8 +163,8 @@ function assignmentReport() {
              stream.writeln("");
              stream.writeln("");
              stream.flush();
-             file.close();*/
-        }
+             file.close();
+        }*/
     }
     
     
@@ -309,7 +309,7 @@ function assignmentReport() {
                             
                             
                             
-                            dataFile = Dir.home() + "/" + parameters.name_compound + ".sdf";//HERE MAIN FILENAME
+                            dataFile = Dir.home() + "/" + parameters.name_compound + ".nmredata.sdf";//HERE MAIN FILENAME
                             
                             if (dataFile !== "") {
                                 file = new File(dataFile);
@@ -963,9 +963,9 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
     stream=parameters.stream,root_path,rel_path,//add dj
     //   spectrum,//add dj
     test_type,path_elements,full_path,multi,lab,//add dj
-    spectra,spectrum,specIndex,found_it,ii,ma,j,ama,apa,noEqHs,keep_type,full_path_orig,cur_spec_atom,found_one,tmpll,labArray = [],peaklist,//add dj
+    spectra,spectrum,specIndex,found_it,found_sih,ii,ma,j,ama,apa,noEqHs,keep_type,full_path_orig,cur_spec_atom,found_one,tmpll,labArray = [],peaklist,//add dj
     separ = ", ",smallest_cs,
-    position_of_smallest_diff,debug=0,max_delta_chemshift_for_peak_to_be_assigned_to_chemical_shift = 0.05,conn,tmpi,tmparr = [],
+    position_of_smallest_diff,debug=1,max_delta_chemshift_for_peak_to_be_assigned_to_chemical_shift = 0.05,conn,tmpi,tmparr = [],
    // emptynmr = [],
     nmredata = [];
     nmredata_header = [];
@@ -1242,6 +1242,7 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                                 
                                 ///00//
                                 /// here serach for peak assigned to this...
+                               // if (found_one === 0){ // to
                                 peaklist=  spectrum.peaks();
                                 
                                 ii=0;
@@ -1318,15 +1319,23 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                                     nmredata[looop_over_spectra] +=  "\n" ;
                                     
                                 }
+                                //}// too
                                 //00//
                                 if (found_one === 0){
                                     
-                                    nmredata[looop_over_spectra] +=";nothing for " + mul ;
+                                    nmredata[looop_over_spectra] +=";nothing at " + mul + " ppm " ;
                                     if (atomLabel !== ""){
-                                        nmredata[looop_over_spectra] += separ + "L=" + atomLabel ;
+                                        nmredata[looop_over_spectra] += separ + "for signal " + atomLabel ;
                                     }
-                                    nmredata[looop_over_spectra] += "; found no multiplet or at this EXACT chemical or this label no peak +/-" + max_delta_chemshift_for_peak_to_be_assigned_to_chemical_shift + " pmm (smallest:" + smallest_cs.toFixed(6) + ")\n" ;
+                                    nmredata[looop_over_spectra] += "; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-" + max_delta_chemshift_for_peak_to_be_assigned_to_chemical_shift + " pmm in peak list";
+                                    if (smallest_cs<10000){
+                                        nmredata[looop_over_spectra] += " (smallest:" + smallest_cs.toFixed(6) + ")\n" ;
+                                    }else{
+                                        nmredata[looop_over_spectra] += "\n" ;
+
+                                    }
                                     
+                    
                                 }
                                 /// end search....
                                 
@@ -1453,8 +1462,14 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                                 atomNH = aMolecule.atom(at).nHAll;
                                 mul="";
                                 mul=AssignmentReporter.findInformation(4, multi, shifts, atomNH, true, true, label);
-                                nmredata[looop_over_spectra] +=  mul + "; HAARE should be ok\n";//.toFixed(4);//DJ_DEBUG
-                                
+                                if (mul.find(",",0) <0){// no multiplet found}
+                                    found_sih=0;
+                                    nmredata[looop_over_spectra] += "; " +  mul + ";  no multiplet found for this H\n";//.toFixed(4);//DJ_DEBUG
+                                }else{
+                                    nmredata[looop_over_spectra] +=  mul + "; found multiplet for this H\n";//.toFixed(4);//DJ_DEBUG
+                                    found_sih=1;
+
+                                }
                                 
                             }    // is now here
                             
@@ -1564,30 +1579,40 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                  nmredata[looop_over_spectra] += ";UNIX_CREATE cp -rp  \"" + root_path + path_elements[path_elements.length-5] + seppath + path_elements[path_elements.length-4] + seppath + path_elements[path_elements.length-3] + seppath + path_elements[path_elements.length-2] + "\" \"" + path_elements[path_elements.length-5] + seppath + path_elements[path_elements.length-4] + seppath + path_elements[path_elements.length-3]+ "\"\n";
                  nmredata[looop_over_spectra] += ";UNIX_CREATE cp \"" + path_elements[path_elements.length-5]  + ".mnova\"  \"" + path_elements[path_elements.length-5] + parameters.name_compound + ".mnova" + "\"\n";
                  */
-                nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo \"" + "Copy spectra for " + parameters.name_compound + "\"\n";
-                nmredata_header[looop_over_spectra] += ";UNIX_CREATE cd \"" + "UNIX_WO_PATH"  + "\"\n";
+                if ( specIndex+1 === 1){
+
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo \"" + ";Copy spectra for " + parameters.name_compound + "\"\n";
+             //   nmredata_header[looop_over_spectra] += ";UNIX_CREATE cd \"" + "CSH_NAME_CSH" + seppath + "\"\n";
+                }
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE mkdir -p \"" + "CSH_NAME_CSH" + seppath + path_elements[path_elements.length-5] + "\"\n";
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE if ( -f \"" + full_path_orig + "\" ) then \n";
-                nmredata_header[looop_over_spectra] += ";UNIX_CREATE cp -rp  \"" + root_path + path_elements[path_elements.length-5] + seppath + path_elements[path_elements.length-4] + "\" \"" + "CSH_NAME_CSH"  + seppath + path_elements[path_elements.length-5]  + "\"\n";
-                nmredata_header[looop_over_spectra] += ";UNIX_CREATE rm -r \""    + "CSH_NAME_CSH"  + seppath + path_elements[path_elements.length-5] + seppath + path_elements[path_elements.length-4] + seppath + "pdata\"\n";// this is to remove all but the used processing if more than one...
-                nmredata_header[looop_over_spectra] += ";UNIX_CREATE mkdir -p \"" + "CSH_NAME_CSH"  + seppath + path_elements[path_elements.length-5] + seppath + path_elements[path_elements.length-4] + seppath + "pdata\"\n";
-                nmredata_header[looop_over_spectra] += ";UNIX_CREATE cp -rp  \"" + root_path + path_elements[path_elements.length-5] + seppath + path_elements[path_elements.length-4] + seppath + path_elements[path_elements.length-3] + seppath + path_elements[path_elements.length-2] + "\" \"" + "CSH_NAME_CSH"  + seppath + path_elements[path_elements.length-5] + seppath + path_elements[path_elements.length-4] + seppath + path_elements[path_elements.length-3]+ "\"\n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE   cp -rp  \"" + root_path + path_elements[path_elements.length-5] + seppath + path_elements[path_elements.length-4] + "\" \"" + "CSH_NAME_CSH"  + seppath + path_elements[path_elements.length-5]  + "\"\n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE   rm -r \""    + "CSH_NAME_CSH"  + seppath + path_elements[path_elements.length-5] + seppath + path_elements[path_elements.length-4] + seppath + "pdata\"\n";// this is to remove all but the used processing if more than one...
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE   mkdir -p \"" + "CSH_NAME_CSH"  + seppath + path_elements[path_elements.length-5] + seppath + path_elements[path_elements.length-4] + seppath + "pdata\"\n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE   cp -rp  \"" + root_path + path_elements[path_elements.length-5] + seppath + path_elements[path_elements.length-4] + seppath + path_elements[path_elements.length-3] + seppath + path_elements[path_elements.length-2] + "\" \"" + "CSH_NAME_CSH"  + seppath + path_elements[path_elements.length-5] + seppath + path_elements[path_elements.length-4] + seppath + path_elements[path_elements.length-3]+ "\"\n";
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE else \n";
-                nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo \"Could not find the file :" + full_path_orig + " in " + root_path + "\"\n";
-                nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo \"Please localize the folder " + path_elements[path_elements.length-5] + "\"\n";
-                nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo \"and copy the folder " + path_elements[path_elements.length-5] + seppath + path_elements[path_elements.length-4] + " in the folder CSH_NAME_CSH" + seppath + path_elements[path_elements.length-5] + " located in UNIX_WO_PATH\"\n";
-                nmredata_header[looop_over_spectra] += ";UNIX_CREATE set notok=\"1\" \n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE   if (! $?notok) then\n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE     echo \"Could not find the file :" + full_path_orig + " in " + root_path + "\"\n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE     echo \"Please open a shell and use cd to go into the folder of " + path_elements[path_elements.length-5] + "\"\n";
+              //  nmredata_header[looop_over_spectra] += ";UNIX_CREATE     echo \"and copy in the folder CSH_NAME_CSH" + seppath + path_elements[path_elements.length-5] + " located in UNIX_WO_PATH the folder(s): \"\n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE     echo \"type the following command lines:\"\n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE     echo \"cp  \"\\\"\"" + path_elements[path_elements.length-5] + seppath + path_elements[path_elements.length-4] + "\"\\\"" + " " + "\\\"\"" + "UNIX_WO_PATH" + seppath +  "CSH_NAME_CSH" + seppath + path_elements[path_elements.length-5] +  "\"\\" + "\"\n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE     set notok=\"1\" \n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE   else\n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE     echo \"cp  \"\\\"\"" + path_elements[path_elements.length-5] + seppath + path_elements[path_elements.length-4] + "\"\\\"" + " " + "\\\"\"" + "UNIX_WO_PATH" + seppath +  "CSH_NAME_CSH" + seppath + path_elements[path_elements.length-5] +  "\"\\" + "\"\n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE   endif \n";
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE endif \n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE \n";
             }
             if ( specIndex+1 === spectra){
-                nmredata[looop_over_spectra] += ";UNIX_CREATE cat  \"" + parameters.name_compound + ".sdf\"| grep -v  UNIX_CREATE> \"CSH_NAME_CSH" + "/" + parameters.name_compound + ".sdf" + "\"\n";
+                nmredata[looop_over_spectra] += ";UNIX_CREATE cat  \"" + parameters.name_compound + ".nmredata.sdf\"| grep -v  UNIX_CREATE> \"CSH_NAME_CSH" + "/" + parameters.name_compound + ".nmredata.sdf" + "\"\n";
                 // nmredata[looop_over_spectra] += ";UNIX_CREATE cp  \"" + parameters.name_compound + ".sdf\"  \"CSH_NAME_CSH" + "/" + parameters.name_compound + ".sdf" + "\"\n";
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE if (! $?notok) then\n";
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo \"Zipping folder CSH_NAME_CSH\" \n";
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE zip -q -r \"CSH_NAME_CSH.zip\" \"CSH_NAME_CSH\" -x \"*.DS_Store\" -x \".*\" -x \"_*\"\n";
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE else\n";
-                nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo \"Could not find all spectra. When done with copy, compress the folder in unix with:\" \n";
-                nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo \"cd UNIX_WO_PATH\" \n";
+               // nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo \"Could not find all spectra. When done with copy, compress the folder in unix with:\" \n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo \"cd \"\\\"\"UNIX_WO_PATH" + seppath + "CSH_NAME_CSH" +  "\"\\" + "\"\n";
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo 'zip -r \"CSH_NAME_CSH.zip\" \"CSH_NAME_CSH\" -x \"*.DS_Store\" -x \".*\" -x \"_*\"'\n";
                 
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE endif\n";
@@ -1903,7 +1928,7 @@ AssignmentReporter.findInformation = function (decimals, multiplets, shifts, ato
                             tmpi++;
                             conn++;
                         }
-                        information += separ + "N=00" +  (conn+1);//UZ
+                        information += separ + "N=" +  (conn+1);//UZ
                     }else{
                         information += separ + "N=" + atomNH ;
                         

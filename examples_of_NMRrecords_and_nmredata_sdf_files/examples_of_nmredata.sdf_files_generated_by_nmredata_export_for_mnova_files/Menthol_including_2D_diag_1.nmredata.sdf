@@ -72,61 +72,81 @@ Larmor=500.133088507
 Pulseprogram=zg30 ;optional in V1
 Spectrum_Location=file:AN-menthol/10/pdata/1/
 ; > undefined'  (label=undefined')  (shift0=0.8620 - 0.8620)  (atomRow[0]=undefined') 
-0.8620; HAARE should be ok
+; 0.8620;  no multiplet found for this H
 ; > undefined''  (label=undefined'')  (shift0=1.6810 - 1.6810)  (atomRow[0]=undefined'') 
-1.6810; HAARE should be ok
+; 1.6810;  no multiplet found for this H
 ; > undefined'  (label=undefined')  (shift0=1.6285 - 1.6285)  (atomRow[0]=undefined') 
-1.6285; HAARE should be ok
+; 1.6285;  no multiplet found for this H
 ; > undefined''  (label=undefined'')  (shift0=1.0067 - 1.0067)  (atomRow[0]=undefined'') 
-1.0067; HAARE should be ok
+; 1.0067;  no multiplet found for this H
 ;>> undefined  (label=undefined)  (shift0=1.1282 - 1.1282)  (atomRow[0]=undefined) 
-1.1282; HAARE should be ok
+; 1.1282;  no multiplet found for this H
 ;>> undefined  (label=undefined)  (shift0=3.4281 - 3.4281)  (atomRow[0]=undefined) 
-3.4281; HAARE should be ok
+; 3.4281;  no multiplet found for this H
 ; > undefined'  (label=undefined')  (shift0=1.9840 - 1.9840)  (atomRow[0]=undefined') 
-1.9840; HAARE should be ok
+; 1.9840;  no multiplet found for this H
 ; > undefined''  (label=undefined'')  (shift0=0.9720 - 0.9720)  (atomRow[0]=undefined'') 
-0.9720; HAARE should be ok
+; 0.9720;  no multiplet found for this H
 ;>> undefined  (label=undefined)  (shift0=1.4415 - 1.4415)  (atomRow[0]=undefined) 
-1.4415; HAARE should be ok
+; 1.4415;  no multiplet found for this H
 ;>> undefined  (label=undefined)  (shift0=0.9331 - 0.9331)  (atomRow[0]=undefined) 
-0.9331; HAARE should be ok
+; 0.9331;  no multiplet found for this H
 ;>> undefined  (label=undefined)  (shift0=2.1883 - 2.1883)  (atomRow[0]=undefined) 
-2.1883; HAARE should be ok
+; 2.1883;  no multiplet found for this H
 ;>> undefined  (label=undefined)  (shift0=0.8308 - 0.8308)  (atomRow[0]=undefined) 
-0.8308; HAARE should be ok
+; 0.8308;  no multiplet found for this H
 ;>> undefined  (label=undefined)  (shift0=0.9493 - 0.9493)  (atomRow[0]=undefined) 
-0.9493; HAARE should be ok
+; 0.9493;  no multiplet found for this H
 
 >  <NMREDATA_1D_13C>
 Larmor=125.770363831
 Pulseprogram=zgdc ;optional in V1
 Spectrum_Location=file:AN-menthol/11/pdata/1/
-;nothing for 34.5669, L=1; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 23.0989, L=2; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 50.1583, L=3; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 71.5891, L=4; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 45.0938, L=5; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 31.6232, L=6; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 22.2293, L=7; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 25.8422, L=9; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 16.1017, L=10; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 20.9880, L=11; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
+;nothing at 34.5669 ppm , for signal 1; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 34.5669>>;MX El.:C lab:<1> CS 0:34.5669-34.5669
+;nothing at 23.0989 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 23.0989>>;MX El.:C lab:<2> CS 0:23.0989-23.0989
+;nothing at 50.1583 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 50.1583>>;MX El.:C lab:<3> CS 0:50.1583-50.1583
+;nothing at 71.5891 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 71.5891>>;MX El.:C lab:<4> CS 0:71.5891-71.5891
+;nothing at 45.0938 ppm , for signal 5; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 45.0938>>;MX El.:C lab:<5> CS 0:45.0938-45.0938
+;nothing at 31.6232 ppm , for signal 6; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 31.6232>>;MX El.:C lab:<6> CS 0:31.6232-31.6232
+;nothing at 22.2293 ppm , for signal 7; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 22.2293>>;MX El.:C lab:<7> CS 0:22.2293-22.2293
+;nothing at 25.8422 ppm , for signal 9; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 25.8422>>;MX El.:C lab:<9> CS 0:25.8422-25.8422
+;nothing at 16.1017 ppm , for signal 10; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 16.1017>>;MX El.:C lab:<10> CS 0:16.1017-16.1017
+;nothing at 20.9880 ppm , for signal 11; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 20.9880>>;MX El.:C lab:<11> CS 0:20.9880-20.9880
 
 >  <NMREDATA_1D_13C>
 Larmor=125.770363831
 Pulseprogram=dept135 ;optional in V1
 Spectrum_Location=file:AN-menthol/12/pdata/1/
-;nothing for 34.5669, L=1; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 23.0989, L=2; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 50.1583, L=3; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 71.5891, L=4; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 45.0938, L=5; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 31.6232, L=6; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 22.2293, L=7; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 25.8422, L=9; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 16.1017, L=10; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 20.9880, L=11; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
+;nothing at 34.5669 ppm , for signal 1; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 34.5669>>;MX El.:C lab:<1> CS 0:34.5669-34.5669
+;nothing at 23.0989 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 23.0989>>;MX El.:C lab:<2> CS 0:23.0989-23.0989
+;nothing at 50.1583 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 50.1583>>;MX El.:C lab:<3> CS 0:50.1583-50.1583
+;nothing at 71.5891 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 71.5891>>;MX El.:C lab:<4> CS 0:71.5891-71.5891
+;nothing at 45.0938 ppm , for signal 5; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 45.0938>>;MX El.:C lab:<5> CS 0:45.0938-45.0938
+;nothing at 31.6232 ppm , for signal 6; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 31.6232>>;MX El.:C lab:<6> CS 0:31.6232-31.6232
+;nothing at 22.2293 ppm , for signal 7; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 22.2293>>;MX El.:C lab:<7> CS 0:22.2293-22.2293
+;nothing at 25.8422 ppm , for signal 9; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 25.8422>>;MX El.:C lab:<9> CS 0:25.8422-25.8422
+;nothing at 16.1017 ppm , for signal 10; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 16.1017>>;MX El.:C lab:<10> CS 0:16.1017-16.1017
+;nothing at 20.9880 ppm , for signal 11; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 20.9880>>;MX El.:C lab:<11> CS 0:20.9880-20.9880
 
 >  <NMREDATA_2D_1H_NJ_1H>
 Larmor=500.13
@@ -171,31 +191,31 @@ Larmor=500.13
 Pulseprogram=bbhd_psyche_diag_apc.mb ;optional in V1
 Spectrum_Location=file:AN-menthol/18/pdata/100/
 ; > 11'  (label=11')  (shift0=0.8620 - 0.8620)  (atomRow[0]=11') 
-0.8620; HAARE should be ok
+; 0.8620;  no multiplet found for this H
 ; > 11''  (label=11'')  (shift0=1.6810 - 1.6810)  (atomRow[0]=11'') 
-1.6810; HAARE should be ok
+; 1.6810;  no multiplet found for this H
 ; > 11'  (label=11')  (shift0=1.6285 - 1.6285)  (atomRow[0]=11') 
-1.6285; HAARE should be ok
+; 1.6285;  no multiplet found for this H
 ; > 11''  (label=11'')  (shift0=1.0067 - 1.0067)  (atomRow[0]=11'') 
-1.0067; HAARE should be ok
+; 1.0067;  no multiplet found for this H
 ;>> 11  (label=11)  (shift0=1.1282 - 1.1282)  (atomRow[0]=11) 
-1.1282; HAARE should be ok
+; 1.1282;  no multiplet found for this H
 ;>> 11  (label=11)  (shift0=3.4281 - 3.4281)  (atomRow[0]=11) 
-3.4281; HAARE should be ok
+; 3.4281;  no multiplet found for this H
 ; > 11'  (label=11')  (shift0=1.9840 - 1.9840)  (atomRow[0]=11') 
-1.9840; HAARE should be ok
+; 1.9840;  no multiplet found for this H
 ; > 11''  (label=11'')  (shift0=0.9720 - 0.9720)  (atomRow[0]=11'') 
-0.9720; HAARE should be ok
+; 0.9720;  no multiplet found for this H
 ;>> 11  (label=11)  (shift0=1.4415 - 1.4415)  (atomRow[0]=11) 
-1.4415; HAARE should be ok
+; 1.4415;  no multiplet found for this H
 ;>> 11  (label=11)  (shift0=0.9331 - 0.9331)  (atomRow[0]=11) 
-0.9331; HAARE should be ok
+; 0.9331;  no multiplet found for this H
 ;>> 11  (label=11)  (shift0=2.1883 - 2.1883)  (atomRow[0]=11) 
-2.1883; HAARE should be ok
+; 2.1883;  no multiplet found for this H
 ;>> 11  (label=11)  (shift0=0.8308 - 0.8308)  (atomRow[0]=11) 
-0.8308; HAARE should be ok
+; 0.8308;  no multiplet found for this H
 ;>> 11  (label=11)  (shift0=0.9493 - 0.9493)  (atomRow[0]=11) 
-0.9493; HAARE should be ok
+; 0.9493;  no multiplet found for this H
 
 >  <NMREDATA_2D_1H_unidentified_heteronuclear_2d_spectrum_1H>
 Larmor=500.13

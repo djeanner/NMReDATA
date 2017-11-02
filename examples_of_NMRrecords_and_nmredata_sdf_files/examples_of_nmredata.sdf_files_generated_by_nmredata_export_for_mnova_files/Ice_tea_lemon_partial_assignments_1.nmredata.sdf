@@ -59,39 +59,49 @@ Larmor=500.13234410931
 Pulseprogram=zgpr ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/20/pdata/1/
 ;>> undefined  (label=undefined)  (shift0=3.6263 - 3.6394)  (atomRow[0]=undefined) 
-3.6394-3.6263; HAARE should be ok
+; 3.6394-3.6263;  no multiplet found for this H
 ;>> undefined  (label=undefined)  (shift0=3.7391 - 3.7611)  (atomRow[0]=undefined) 
-3.7611-3.7391; HAARE should be ok
+; 3.7611-3.7391;  no multiplet found for this H
 ;>> undefined  (label=undefined)  (shift0=3.8264 - 3.8490)  (atomRow[0]=undefined) 
-3.8490-3.8264; HAARE should be ok
+; 3.8490-3.8264;  no multiplet found for this H
 ; > undefined'  (label=undefined')  (shift0=3.5525 - 3.5705)  (atomRow[0]=undefined') 
-3.5705-3.5525; HAARE should be ok
+; 3.5705-3.5525;  no multiplet found for this H
 ; > undefined''  (label=undefined'')  (shift0=3.3952 - 3.4012)  (atomRow[0]=undefined'') 
-3.4012-3.3952; HAARE should be ok
+; 3.4012-3.3952;  no multiplet found for this H
 ; > undefined'  (label=undefined')  (shift0=3.8490 - 3.8789)  (atomRow[0]=undefined') 
-3.8789-3.8490; HAARE should be ok
+; 3.8789-3.8490;  no multiplet found for this H
 ; > undefined''  (label=undefined'')  (shift0=3.5291 - 3.5684)  (atomRow[0]=undefined'') 
-3.5684-3.5291; HAARE should be ok
+; 3.5684-3.5291;  no multiplet found for this H
 
 >  <NMREDATA_1D_13C>
 Larmor=125.770363831
 Pulseprogram=zgdc ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/16/pdata/1/
-98.0230, L=2, I=1216.5925, E=35.8463;errcs=0.001870 ppm (This is how far this peak is from the assigned resonance)
-67.4912, L=3, I=4439.9335, E=130.8206;errcs=0.003145 ppm (This is how far this peak is from the assigned resonance)
-69.6424, L=4, I=5106.1998, E=158.6583;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
-69.1627, L=5, I=5820.4496, E=171.4969;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
-63.2730, L=6, I=5183.7306, E=201.3342;errcs=-0.002018 ppm (This is how far this peak is from the assigned resonance)
+98.0230, L=2, I=1216.5925, E=35.8463 13Cmul <s> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <0.0018699906076591333>, w=0, v*larmor=0;errcs=0.001870 ppm (This is how far this peak is from the assigned resonance)
+; --- 98.0211>>;MX El.:C lab:<2> CS 0:98.0211-98.0211
+67.4912, L=3, I=4439.9335, E=130.8206 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <0.0031450442861284955>, w=0, v*larmor=0;errcs=0.003145 ppm (This is how far this peak is from the assigned resonance)
+; --- 67.4881>>;MX El.:C lab:<3> CS 0:67.4881-67.4881
+69.6424, L=4, I=5106.1998, E=158.6583 13Cmul <d> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <0>, w=0, v*larmor=0;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+; --- 69.6424>>;MX El.:C lab:<4> CS 0:69.6424-69.6424
+69.1627, L=5, I=5820.4496, E=171.4969 13Cmul <d> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <0>, w=0, v*larmor=0;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+; --- 69.1627>>;MX El.:C lab:<5> CS 0:69.1627-69.1627
+63.2730, L=6, I=5183.7306, E=201.3342 13Cmul <t> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <-0.0020183701343796656>, w=0, v*larmor=0;errcs=-0.002018 ppm (This is how far this peak is from the assigned resonance)
+; --- 63.2750>>;MX El.:C lab:<6> CS 0:63.2750-63.2750
 
 >  <NMREDATA_1D_13C>
 Larmor=125.770363831
 Pulseprogram=dept135 ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/17/pdata/1/
-;nothing for 98.0211, L=2; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 67.4881, L=3; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 69.6424, L=4; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 69.1627, L=5; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 63.2750, L=6; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
+;nothing at 98.0211 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 98.0211>>;MX El.:C lab:<2> CS 0:98.0211-98.0211
+;nothing at 67.4881 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 67.4881>>;MX El.:C lab:<3> CS 0:67.4881-67.4881
+;nothing at 69.6424 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 69.6424>>;MX El.:C lab:<4> CS 0:69.6424-69.6424
+;nothing at 69.1627 ppm , for signal 5; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 69.1627>>;MX El.:C lab:<5> CS 0:69.1627-69.1627
+;nothing at 63.2750 ppm , for signal 6; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 63.2750>>;MX El.:C lab:<6> CS 0:63.2750-63.2750
 
 >  <NMREDATA_2D_1H_NJ_1H>
 Larmor=500.13

@@ -105,83 +105,133 @@ Larmor=500.133088507
 Pulseprogram=zg30 ;optional in V1
 Spectrum_Location=file:MP-caryophyllene_oxide/10/pdata/1/
 ; > undefined'  (label=undefined')  (shift0=1.7034 - 1.7034)  (atomRow[0]=undefined') 
-1.7034; HAARE should be ok
+; 1.7034;  no multiplet found for this H
 ; > undefined''  (label=undefined'')  (shift0=1.6399 - 1.6399)  (atomRow[0]=undefined'') 
-1.6399; HAARE should be ok
+; 1.6399;  no multiplet found for this H
 ;>> undefined  (label=undefined)  (shift0=1.0244 - 1.0244)  (atomRow[0]=undefined) 
-1.0244, S=s, N=3, L=5, E=271.8249; HAARE should be ok
+1.0244, S=s, N=3, L=5, E=271.8249; found multiplet for this H
 ;>> undefined  (label=undefined)  (shift0=1.0027 - 1.0027)  (atomRow[0]=undefined) 
-1.0027, S=s, N=3, L=5', E=275.1281; HAARE should be ok
+1.0027, S=s, N=3, L=5', E=275.1281; found multiplet for this H
 ; > undefined'  (label=undefined')  (shift0=2.3574 - 2.3574)  (atomRow[0]=undefined') 
-2.3574, S=ddd, N=2, L=8a, J=12.65,8.12,4.40, E=86.6324; HAARE should be ok
+2.3574, S=ddd, N=2, L=8a, J=12.65,8.12,4.40, E=86.6324; found multiplet for this H
 ; > undefined''  (label=undefined'')  (shift0=2.1370 - 2.1370)  (atomRow[0]=undefined'') 
-2.1370, S=m, N=2, L=8b, E=91.4070; HAARE should be ok
+2.1370, S=m, N=2, L=8b, E=91.4070; found multiplet for this H
 ; > undefined'  (label=undefined')  (shift0=2.2663 - 2.2663)  (atomRow[0]=undefined') 
-2.2663, S=m, N=2, L=9a, E=87.5953; HAARE should be ok
+2.2663, S=m, N=2, L=9a, E=87.5953; found multiplet for this H
 ; > undefined''  (label=undefined'')  (shift0=1.3438 - 1.3438)  (atomRow[0]=undefined'') 
-1.3438, S=dddd, N=2, L=9b, J=12.65,10.59,8.12,4.54, E=89.1483; HAARE should be ok
+1.3438, S=dddd, N=2, L=9b, J=12.65,10.59,8.12,4.54, E=89.1483; found multiplet for this H
 ;>> undefined  (label=undefined)  (shift0=2.8939 - 2.8939)  (atomRow[0]=undefined) 
-2.8939, S=dd, N=1, L=10, J=10.59,4.26, E=85.4128; HAARE should be ok
+2.8939, S=dd, N=1, L=10, J=10.59,4.26, E=85.4128; found multiplet for this H
 ; > undefined'  (label=undefined')  (shift0=0.9757 - 0.9757)  (atomRow[0]=undefined') 
-0.9757, S=m, N=2, L=13a, E=82.4212; HAARE should be ok
+0.9757, S=m, N=2, L=13a, E=82.4212; found multiplet for this H
 ; > undefined''  (label=undefined'')  (shift0=2.1009 - 2.1009)  (atomRow[0]=undefined'') 
-2.1009, S=m, N=2, L=13b, E=84.8035; HAARE should be ok
+2.1009, S=m, N=2, L=13b, E=84.8035; found multiplet for this H
 ; > undefined'  (label=undefined')  (shift0=1.4460 - 1.4460)  (atomRow[0]=undefined') 
-1.4460, S=dddd, N=2, L=14a, J=14.72,13.34,10.38,4.13, E=87.1385; HAARE should be ok
+1.4460, S=dddd, N=2, L=14a, J=14.72,13.34,10.38,4.13, E=87.1385; found multiplet for this H
 ; > undefined''  (label=undefined'')  (shift0=1.6656 - 1.6656)  (atomRow[0]=undefined'') 
-1.6656, S=m, N=2, L=14b, E=89.2725; HAARE should be ok
+1.6656, S=m, N=2, L=14b, E=89.2725; found multiplet for this H
 ;>> undefined  (label=undefined)  (shift0=1.2197 - 1.2197)  (atomRow[0]=undefined) 
-1.2197, S=d, N=3, L=15, J=0.83, E=263.6407; HAARE should be ok
-2.6339, S=m, N=001, L=16, E=85.0548; found multiplet by chemical shift 
+1.2197, S=d, N=3, L=15, J=0.83, E=263.6407; found multiplet for this H
+2.6339, S=m, N=1, L=16, E=85.0548; found multiplet by chemical shift 
+; --- 2.6339, S=m, N=1, L=16, E=85.0548>>;MX El.:H lab:<16> CS 0:2.6339-2.6339
 ;>> 16  (label=16)  (shift0=2.6339 - 2.6339)  (atomRow[0]=16) 
-2.6339, S=m, N=001, L=16, E=85.0548; HAARE should be ok
-1.7808, S=m, N=001, L=17, E=87.0702; found multiplet by chemical shift 
+2.6339, S=m, N=1, L=16, E=85.0548; found multiplet for this H
+1.7808, S=m, N=1, L=17, E=87.0702; found multiplet by chemical shift 
+; --- 1.7808, S=m, N=1, L=17, E=87.0702>>;MX El.:H lab:<17> CS 0:1.7808-1.7808
 ;>> 17  (label=17)  (shift0=1.7808 - 1.7808)  (atomRow[0]=17) 
-1.7808, S=m, N=001, L=17, E=87.0702; HAARE should be ok
+1.7808, S=m, N=1, L=17, E=87.0702; found multiplet for this H
 ; > 17'  (label=17')  (shift0=4.9921 - 4.9921)  (atomRow[0]=17') 
-4.9921, S=d, N=2, L=18a, J=2.06, E=87.4843; HAARE should be ok
+4.9921, S=d, N=2, L=18a, J=2.06, E=87.4843; found multiplet for this H
 ; > 17''  (label=17'')  (shift0=4.8765 - 4.8765)  (atomRow[0]=17'') 
-4.8765, S=dd, N=2, L=18b, J=1.72,0.76, E=87.0594; HAARE should be ok
+4.8765, S=dd, N=2, L=18b, J=1.72,0.76, E=87.0594; found multiplet for this H
+;; for debug multiplet 0id:< {8f6f7e48-3153-4b39-bbcc-c376055c83c8}> 4.9921, S=d, Nwrong=undefined multiId <18a> peakId <> category <d> name <18a> name <87.4843247756362>, L=18a, E=87.4843, J=2.0632; HERE 
+;; for debug multiplet 1id:< {e6b98b23-f9c0-4a12-835c-34758bd88a76}> 4.8765, S=dd, Nwrong=undefined multiId <18b> peakId <> category <dd> name <18b> name <87.05943967081606>, L=18b, E=87.0594, J=0.7566,1.7195; HERE 
+;; for debug multiplet 2id:< {2f1e6bbc-2f6f-41f6-be33-4ab946465a14}> 2.8939, S=dd, Nwrong=undefined multiId <10> peakId <> category <dd> name <10> name <85.4128082779944>, L=10, E=85.4128, J=4.2640,10.5912; HERE 
+;; for debug multiplet 3id:< {acf4ce7f-db81-4462-982a-1af53d82d885}> 2.6339, S=m, Nwrong=undefined multiId <16> peakId <> category <m> name <16> name <85.05477059334889>, L=16, E=85.0548; HERE 
+;; for debug multiplet 4id:< {b58257de-c039-4136-9226-d897aad96d2c}> 2.3574, S=ddd, Nwrong=undefined multiId <8a> peakId <> category <ddd> name <8a> name <86.63236432833224>, L=8a, E=86.6324, J=4.4016,8.1155,12.6545; HERE 
+;; for debug multiplet 5id:< {ed8fc489-3ccb-458d-a9e7-2f13d4b3b25f}> 2.2663, S=m, Nwrong=undefined multiId <9a> peakId <> category <m> name <9a> name <87.59528656752221>, L=9a, E=87.5953; HERE 
+;; for debug multiplet 6id:< {29c0260d-4e7b-491f-9dff-dbc9bc035a0b}> 1.7808, S=m, Nwrong=undefined multiId <17> peakId <> category <m> name <17> name <87.0702254897058>, L=17, E=87.0702; HERE 
+;; for debug multiplet 7id:< {57df717c-fa44-40c0-8f2e-44cd2c14a404}> 2.1370, S=m, Nwrong=undefined multiId <8b> peakId <> category <m> name <8b> name <91.40700354311383>, L=8b, E=91.4070; HERE 
+;; for debug multiplet 8id:< {67071817-1a81-4515-955b-bc2001f25b04}> 2.1009, S=m, Nwrong=undefined multiId <13b> peakId <> category <m> name <13b> name <84.80350225639343>, L=13b, E=84.8035; HERE 
+;; for debug multiplet 9id:< {bc88b99f-357e-42a3-a434-26747c6c9575}> 1.4460, S=dddd, Nwrong=undefined multiId <14a> peakId <> category <dddd> name <14a> name <87.13851130914688>, L=14a, E=87.1385, J=4.1265,10.3850,13.3423,14.7178; HERE 
+;; for debug multiplet 10id:< {f3f54fca-8edb-492e-8fe1-5cf515a717f9}> 1.3438, S=dddd, Nwrong=undefined multiId <9b> peakId <> category <dddd> name <9b> name <89.14829868292809>, L=9b, E=89.1483, J=4.5391,8.1154,10.5912,12.6545; HERE 
+;; for debug multiplet 11id:< {a7505bdc-ad51-4e39-bbe4-8664e2c0cd12}> 1.2197, S=d, Nwrong=undefined multiId <15> peakId <> category <d> name <15> name <263.6407454175949>, L=15, E=263.6407, J=0.8253; HERE 
+;; for debug multiplet 12id:< {4855f9b5-5322-4c28-964a-c45894f3d4cb}> 1.0244, S=s, Nwrong=undefined multiId <5> peakId <> category <s> name <5> name <271.82486181640627>, L=5, E=271.8249; HERE 
+;; for debug multiplet 13id:< {f2239c35-132f-4ae9-a2f7-9fe9579917c4}> 1.0027, S=s, Nwrong=undefined multiId <5'> peakId <> category <s> name <5'> name <275.1280886230469>, L=5', E=275.1281; HERE 
+;; for debug multiplet 14id:< {8d80a826-31e4-4128-b5c8-616eb43f6630}> 1.7041, S=m, Nwrong=undefined multiId <2a> peakId <> category <m> name <2a> name <78.72915057754517>, L=2a, E=78.7292; HERE 
+;; for debug multiplet 15id:< {1b412c7b-5e66-4cda-8e35-9676beb1aadc}> 1.6656, S=m, Nwrong=undefined multiId <14b> peakId <> category <m> name <14b> name <89.27248916625976>, L=14b, E=89.2725; HERE 
+;; for debug multiplet 16id:< {22eac57a-a04b-40a2-8a2e-4f63cb845d9a}> 1.6352, S=m, Nwrong=undefined multiId <2b> peakId <> category <m> name <2b> name <101.83481097602844>, L=2b, E=101.8348; HERE 
+;; for debug multiplet 17id:< {7017e995-8b3a-4dcb-ac43-bf5b68d9b065}> 0.9757, S=m, Nwrong=undefined multiId <13a> peakId <> category <m> name <13a> name <82.42121575927735>, L=13a, E=82.4212; HERE 
 
 >  <NMREDATA_1D_13C>
 Larmor=125.770363831
 Pulseprogram=zgdc ;optional in V1
 Spectrum_Location=file:MP-caryophyllene_oxide/11/pdata/1/
-34.0319, L=1, I=586.2207, E=16.1562;errcs=0.000808 ppm (This is how far this peak is from the assigned resonance)
-39.7585, L=2, I=3266.8264, E=90.0335;errcs=0.001640 ppm (This is how far this peak is from the assigned resonance)
-48.7390, L=3, I=2100.5864, E=65.2688;errcs=-0.001289 ppm (This is how far this peak is from the assigned resonance)
-50.7269, L=4, I=1922.4833, E=74.6685;errcs=-0.001065 ppm (This is how far this peak is from the assigned resonance)
-21.6342, L=5, I=3769.9601, E=103.8999;errcs=0.001201 ppm (This is how far this peak is from the assigned resonance)
-29.9026, L=5', I=3536.8360, E=109.8955;errcs=-0.000769 ppm (This is how far this peak is from the assigned resonance)
-151.8220, L=7, I=706.1291, E=21.9406;errcs=-0.000525 ppm (This is how far this peak is from the assigned resonance)
-29.7840, L=8, I=3052.0169, E=84.1134;errcs=0.000556 ppm (This is how far this peak is from the assigned resonance)
-30.2092, L=9, I=3337.4698, E=103.7009;errcs=-0.001245 ppm (This is how far this peak is from the assigned resonance)
-63.7576, L=10, I=2330.1541, E=72.4019;errcs=0.000007 ppm (This is how far this peak is from the assigned resonance)
-59.8360, L=11, I=416.0472, E=11.4662;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
-39.1502, L=13, I=3286.2537, E=127.6369;errcs=-0.001934 ppm (This is how far this peak is from the assigned resonance)
-27.2124, L=14, I=3400.3114, E=105.6535;errcs=-0.000629 ppm (This is how far this peak is from the assigned resonance)
-17.0105, L=15, I=2494.4067, E=77.5055;errcs=-0.000245 ppm (This is how far this peak is from the assigned resonance)
-112.7597, L=18, I=3331.5470, E=129.3960;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+34.0319, L=1, I=586.2207, E=16.1562 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <0.0008077336120280165>, w=0, v*larmor=0;errcs=0.000808 ppm (This is how far this peak is from the assigned resonance)
+; --- 34.0311>>;MX El.:C lab:<1> CS 0:34.0311-34.0311
+39.7585, L=2, I=3266.8264, E=90.0335 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <0.001640025726260319>, w=0, v*larmor=0;errcs=0.001640 ppm (This is how far this peak is from the assigned resonance)
+; --- 39.7568>>;MX El.:C lab:<2> CS 0:39.7568-39.7568
+48.7390, L=3, I=2100.5864, E=65.2688 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <-0.0012888787654361522>, w=0, v*larmor=0;errcs=-0.001289 ppm (This is how far this peak is from the assigned resonance)
+; --- 48.7403>>;MX El.:C lab:<3> CS 0:48.7403-48.7403
+50.7269, L=4, I=1922.4833, E=74.6685 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <-0.001065070340864338>, w=0, v*larmor=0;errcs=-0.001065 ppm (This is how far this peak is from the assigned resonance)
+; --- 50.7280>>;MX El.:C lab:<4> CS 0:50.7280-50.7280
+21.6342, L=5, I=3769.9601, E=103.8999 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <0.0012014448463375516>, w=0, v*larmor=0;errcs=0.001201 ppm (This is how far this peak is from the assigned resonance)
+; --- 21.6330>>;MX El.:C lab:<5> CS 0:21.6330-21.6330
+29.9026, L=5', I=3536.8360, E=109.8955 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <-0.0007692905490515045>, w=0, v*larmor=0;errcs=-0.000769 ppm (This is how far this peak is from the assigned resonance)
+; --- 29.9034>>;MX El.:C lab:<5'> CS 0:29.9034-29.9034
+151.8220, L=7, I=706.1291, E=21.9406 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <-0.0005250199546651402>, w=0, v*larmor=0;errcs=-0.000525 ppm (This is how far this peak is from the assigned resonance)
+; --- 151.8225>>;MX El.:C lab:<7> CS 0:151.8225-151.8225
+29.7840, L=8, I=3052.0169, E=84.1134 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <0.0005557843270622698>, w=0, v*larmor=0;errcs=0.000556 ppm (This is how far this peak is from the assigned resonance)
+; --- 29.7834>>;MX El.:C lab:<8> CS 0:29.7834-29.7834
+30.2092, L=9, I=3337.4698, E=103.7009 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <-0.001244612322587102>, w=0, v*larmor=0;errcs=-0.001245 ppm (This is how far this peak is from the assigned resonance)
+; --- 30.2105>>;MX El.:C lab:<9> CS 0:30.2105-30.2105
+63.7576, L=10, I=2330.1541, E=72.4019 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <0.0000067480170713452026>, w=0, v*larmor=0;errcs=0.000007 ppm (This is how far this peak is from the assigned resonance)
+; --- 63.7576>>;MX El.:C lab:<10> CS 0:63.7576-63.7576
+59.8360, L=11, I=416.0472, E=11.4662 13Cmul <s> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <0>, w=0, v*larmor=0;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+; --- 59.8360>>;MX El.:C lab:<11> CS 0:59.8360-59.8360
+39.1502, L=13, I=3286.2537, E=127.6369 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <-0.00193438644652133>, w=0, v*larmor=0;errcs=-0.001934 ppm (This is how far this peak is from the assigned resonance)
+; --- 39.1521>>;MX El.:C lab:<13> CS 0:39.1521-39.1521
+27.2124, L=14, I=3400.3114, E=105.6535 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <-0.0006290649300417783>, w=0, v*larmor=0;errcs=-0.000629 ppm (This is how far this peak is from the assigned resonance)
+; --- 27.2131>>;MX El.:C lab:<14> CS 0:27.2131-27.2131
+17.0105, L=15, I=2494.4067, E=77.5055 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <-0.00024477632113928394>, w=0, v*larmor=0;errcs=-0.000245 ppm (This is how far this peak is from the assigned resonance)
+; --- 17.0107>>;MX El.:C lab:<15> CS 0:17.0107-17.0107
+112.7597, L=18, I=3331.5470, E=129.3960 13Cmul <t> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <0>, w=0, v*larmor=0;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+; --- 112.7597>>;MX El.:C lab:<18> CS 0:112.7597-112.7597
 
 >  <NMREDATA_1D_13C>
 Larmor=125.770363831
 Pulseprogram=dept135 ;optional in V1
 Spectrum_Location=file:MP-caryophyllene_oxide/12/pdata/1/
-;nothing for 34.0311, L=1; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 39.7568, L=2; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 48.7403, L=3; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 50.7280, L=4; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 21.6330, L=5; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 29.9034, L=5'; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 151.8225, L=7; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 29.7834, L=8; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 30.2105, L=9; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 63.7576, L=10; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 59.8360, L=11; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 39.1521, L=13; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 27.2131, L=14; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 17.0107, L=15; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
-;nothing for 112.7597, L=18; found no multiplet or at this EXACT chemical or this label no peak +/-0.05 pmm (smallest:1000000.000000)
+;nothing at 34.0311 ppm , for signal 1; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 34.0311>>;MX El.:C lab:<1> CS 0:34.0311-34.0311
+;nothing at 39.7568 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 39.7568>>;MX El.:C lab:<2> CS 0:39.7568-39.7568
+;nothing at 48.7403 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 48.7403>>;MX El.:C lab:<3> CS 0:48.7403-48.7403
+;nothing at 50.7280 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 50.7280>>;MX El.:C lab:<4> CS 0:50.7280-50.7280
+;nothing at 21.6330 ppm , for signal 5; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 21.6330>>;MX El.:C lab:<5> CS 0:21.6330-21.6330
+;nothing at 29.9034 ppm , for signal 5'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 29.9034>>;MX El.:C lab:<5'> CS 0:29.9034-29.9034
+;nothing at 151.8225 ppm , for signal 7; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 151.8225>>;MX El.:C lab:<7> CS 0:151.8225-151.8225
+;nothing at 29.7834 ppm , for signal 8; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 29.7834>>;MX El.:C lab:<8> CS 0:29.7834-29.7834
+;nothing at 30.2105 ppm , for signal 9; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 30.2105>>;MX El.:C lab:<9> CS 0:30.2105-30.2105
+;nothing at 63.7576 ppm , for signal 10; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 63.7576>>;MX El.:C lab:<10> CS 0:63.7576-63.7576
+;nothing at 59.8360 ppm , for signal 11; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 59.8360>>;MX El.:C lab:<11> CS 0:59.8360-59.8360
+;nothing at 39.1521 ppm , for signal 13; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 39.1521>>;MX El.:C lab:<13> CS 0:39.1521-39.1521
+;nothing at 27.2131 ppm , for signal 14; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 27.2131>>;MX El.:C lab:<14> CS 0:27.2131-27.2131
+;nothing at 17.0107 ppm , for signal 15; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 17.0107>>;MX El.:C lab:<15> CS 0:17.0107-17.0107
+;nothing at 112.7597 ppm , for signal 18; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+; --- 112.7597>>;MX El.:C lab:<18> CS 0:112.7597-112.7597
 
 >  <NMREDATA_2D_1H_NJ_1H>
 Larmor=500.13

@@ -60,41 +60,58 @@ Larmor=500.1320755395
 Pulseprogram=zg30 ;optional in V1
 Spectrum_Location=file:MP-glucose-oct17/10/pdata/1/
 ;>> undefined  (label=undefined)  (shift0=3.2518 - 3.3164)  (atomRow[0]=undefined) 
-3.3164-3.2518; HAARE should be ok
+; 3.3164-3.2518;  no multiplet found for this H
 ;>> undefined  (label=undefined)  (shift0=3.3665 - 3.3665)  (atomRow[0]=undefined) 
-3.3665; HAARE should be ok
+; 3.3665;  no multiplet found for this H
 ;>> undefined  (label=undefined)  (shift0=3.1220 - 3.1220)  (atomRow[0]=undefined) 
-3.1220; HAARE should be ok
+; 3.1220;  no multiplet found for this H
 ;>> undefined  (label=undefined)  (shift0=4.5243 - 4.5243)  (atomRow[0]=undefined) 
-4.5243; HAARE should be ok
+; 4.5243;  no multiplet found for this H
 ;>> undefined  (label=undefined)  (shift0=3.3478 - 3.3478)  (atomRow[0]=undefined) 
-3.3478; HAARE should be ok
+; 3.3478;  no multiplet found for this H
 ; > undefined'  (label=undefined')  (shift0=3.7790 - 3.7790)  (atomRow[0]=undefined') 
-3.7790; HAARE should be ok
+; 3.7790;  no multiplet found for this H
 ; > undefined''  (label=undefined'')  (shift0=3.5676 - 3.6261)  (atomRow[0]=undefined'') 
-3.6261-3.5676; HAARE should be ok
+; 3.6261-3.5676;  no multiplet found for this H
+;; for debug multiplet 0id:< {aa0f4737-f1f1-402d-bf63-26a8e639f6cb}> 5.1124, S=d, Nwrong=undefined multiId <> peakId <> category <d> name <1> name <12.944318011837021>, L=1, E=12.9443, J=3.7913; HERE 
+;; for debug multiplet 1id:< {6f036214-5ede-4b38-8f26-76f4e7d31a94}> 4.5262, S=d, Nwrong=undefined multiId <1> peakId <> category <d> name <1> name <19.270721881225434>, L=1, E=19.2707, J=7.9512; HERE 
+;; for debug multiplet 2id:< {0612c04e-cd4f-4b5e-bf2f-aaa196ec7da5}> 3.1240, S=m, Nwrong=undefined multiId <2> peakId <> category <m> name <2> name <22.724763756506647>, L=2, E=22.7248; HERE 
+;; for debug multiplet 3id:< {72dc0674-0612-43ce-8f20-05a2d76f68eb}> 3.4150, S=dd, Nwrong=undefined multiId <> peakId <> category <dd> name <2> name <11.353905865183831>, L=2, E=11.3539, J=3.7913,9.8293; HERE 
+;; for debug multiplet 4id:< {e0f3f6b8-75ec-4d2c-83fb-3cd29c182c0a}> 3.7773, S=dd, Nwrong=undefined multiId <6a> peakId <> category <dd> name <6'> name <19.946119911915087>, L=6', E=19.9461, J=2.2292,12.3041; HERE 
 
 >  <NMREDATA_1D_13C>
 Larmor=125.770363831
 Pulseprogram=zgdc ;optional in V1
 Spectrum_Location=file:MP-glucose-oct17/11/pdata/1/
-69.5089, L=4, I=17730.7730, E=493.5747;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
-75.6706, L=3, I=17694.2945, E=492.5592;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
-74.0436, L=2, I=16411.6158, E=637.4211;errcs=-0.011222 ppm (This is how far this peak is from the assigned resonance)
-95.8224, L=1, I=16487.9381, E=512.3083;errcs=-0.000859 ppm (This is how far this peak is from the assigned resonance)
-75.8635, L=5, I=18427.5275, E=572.5747;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
-60.6619, L=6, I=17311.0352, E=481.8903;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+69.5089, L=4, I=17730.7730, E=493.5747 13Cmul <d> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <0>, w=0, v*larmor=0;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+; --- 69.5089>>;MX El.:C lab:<4> CS 0:69.5089-69.5089
+75.6706, L=3, I=17694.2945, E=492.5592 13Cmul <d> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <0>, w=0, v*larmor=0;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+; --- 75.6706>>;MX El.:C lab:<3> CS 0:75.6706-75.6706
+74.0436, L=2, I=16411.6158, E=637.4211 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <-0.011222432464435883>, w=0, v*larmor=0;errcs=-0.011222 ppm (This is how far this peak is from the assigned resonance)
+; --- 74.0549>>;MX El.:C lab:<2> CS 0:74.0549-74.0549
+95.8224, L=1, I=16487.9381, E=512.3083 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <-0.0008590999944289024>, w=0, v*larmor=0;errcs=-0.000859 ppm (This is how far this peak is from the assigned resonance)
+; --- 95.8232>>;MX El.:C lab:<1> CS 0:95.8232-95.8232
+75.8635, L=5, I=18427.5275, E=572.5747 13Cmul <d> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <0>, w=0, v*larmor=0;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+; --- 75.8635>>;MX El.:C lab:<5> CS 0:75.8635-75.8635
+60.6619, L=6, I=17311.0352, E=481.8903 13Cmul <t> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <0>, w=0, v*larmor=0;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+; --- 60.6619>>;MX El.:C lab:<6> CS 0:60.6619-60.6619
 
 >  <NMREDATA_1D_13C>
 Larmor=125.770363831
 Pulseprogram=dept135 ;optional in V1
 Spectrum_Location=file:MP-glucose-oct17/12/pdata/1/
-69.5075, L=4, I=4268.7739, E=91.6069;errcs=-0.001334 ppm (This is how far this peak is from the assigned resonance)
-75.6675, L=3, I=4562.2352, E=129.3809;errcs=-0.003061 ppm (This is how far this peak is from the assigned resonance)
-74.0427, L=2, I=3966.4852, E=112.4859;errcs=-0.012164 ppm (This is how far this peak is from the assigned resonance)
-95.8230, L=1, I=4666.7379, E=153.0849;errcs=-0.000231 ppm (This is how far this peak is from the assigned resonance)
-75.8625, L=5, I=5383.8010, E=152.6797;errcs=-0.000942 ppm (This is how far this peak is from the assigned resonance)
-60.6719, L=6, I=2289.9857, E=77.9303;errcs=0.010047 ppm (This is how far this peak is from the assigned resonance)
+69.5075, L=4, I=4268.7739, E=91.6069 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <-0.0013344231403635831>, w=0, v*larmor=0;errcs=-0.001334 ppm (This is how far this peak is from the assigned resonance)
+; --- 69.5089>>;MX El.:C lab:<4> CS 0:69.5089-69.5089
+75.6675, L=3, I=4562.2352, E=129.3809 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <-0.0030613236746290795>, w=0, v*larmor=0;errcs=-0.003061 ppm (This is how far this peak is from the assigned resonance)
+; --- 75.6706>>;MX El.:C lab:<3> CS 0:75.6706-75.6706
+74.0427, L=2, I=3966.4852, E=112.4859 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <-0.012164378210599125>, w=0, v*larmor=0;errcs=-0.012164 ppm (This is how far this peak is from the assigned resonance)
+; --- 74.0549>>;MX El.:C lab:<2> CS 0:74.0549-74.0549
+95.8230, L=1, I=4666.7379, E=153.0849 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <-0.00023113616396130965>, w=0, v*larmor=0;errcs=-0.000231 ppm (This is how far this peak is from the assigned resonance)
+; --- 95.8232>>;MX El.:C lab:<1> CS 0:95.8232-95.8232
+75.8625, L=5, I=5383.8010, E=152.6797 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <-0.0009419457461632419>, w=0, v*larmor=0;errcs=-0.000942 ppm (This is how far this peak is from the assigned resonance)
+; --- 75.8635>>;MX El.:C lab:<5> CS 0:75.8635-75.8635
+60.6719, L=6, I=2289.9857, E=77.9303 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <0.010047421290245495>, w=0, v*larmor=0;errcs=0.010047 ppm (This is how far this peak is from the assigned resonance)
+; --- 60.6619>>;MX El.:C lab:<6> CS 0:60.6619-60.6619
 
 >  <NMREDATA_2D_1H_NJ_1H>
 Larmor=500.13

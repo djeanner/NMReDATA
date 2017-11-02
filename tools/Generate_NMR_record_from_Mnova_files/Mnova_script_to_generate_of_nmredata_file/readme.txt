@@ -4,4 +4,4 @@ The .qs script replaces the existing Mnova .qs file. (keep a copy before you ove
 To call the script from Mnova 11:
 1) open a document with some assignement
 2) use the menu "Scripts/Reports/Assignments..."
-It will create the nmredata.sdf files in your home directory (as version Nov. 2nd 2017)
+It will create the nmredata.sdf files in your home directory and close the document (as version Nov. 2nd 2017)

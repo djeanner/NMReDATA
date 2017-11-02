@@ -94,15 +94,12 @@ Spectrum_Location=file:MP-TFM-aniline/11/pdata/1/
 132.4855, S=q, N=2, L=1&5, J=32.96, E=13.4331; found multiplet by chemical shift 
 ; --- 132.4855, S=q, N=2, L=1&5, J=32.96, E=13.4331>>;MX El.:C lab:<1> CS 0:132.4855-132.4855
 114.1510, S=q, L=2&4, E=83.0180, J=4.3540; found multiplet by label chem shifts differ by -0.002269 ppm
-114.1345, L=2, I=4140.4438, E=131.9669 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <-0.014224744868386097>, w=0, v*larmor=0;errcs=-0.014225 ppm (This is how far this peak is from the assigned resonance)
 ; --- 114.1487>>;MX El.:C lab:<2> CS 0:114.1487-114.1487
 147.3268, S=s, N=1, L=3, E=8.8792; found multiplet by chemical shift 
 ; --- 147.3268, S=s, N=1, L=3, E=8.8792>>;MX El.:C lab:<3> CS 0:147.3268-147.3268
-114.1345, L=4, I=4140.4438, E=131.9669 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <-0.014224744868386097>, w=0, v*larmor=0;errcs=-0.014225 ppm (This is how far this peak is from the assigned resonance)
 ; --- 114.1487>>;MX El.:C lab:<4> CS 0:114.1487-114.1487
 ; --- 132.4855, S=q, N=2, L=1&5, J=32.96, E=13.4331>>;MX El.:C lab:<5> CS 0:132.4855-132.4855
 111.5410, S=hept, L=6, E=49.1521, J=3.7319; found multiplet by label chem shifts differ by 0.025264 ppm
-111.5679, L=6, I=1660.6407, E=64.4987 13Cmul <> flagtostring() <None> compoundLabel() <> kindToString() <Maximum> kurtosis <0> distance... <0.0016259723029463657>, w=0, v*larmor=0;errcs=0.001626 ppm (This is how far this peak is from the assigned resonance)
 ; --- 111.5663>>;MX El.:C lab:<6> CS 0:111.5663-111.5663
 123.4466, S=q, N=2, L=8&9, J=272.42, E=14.0040; found multiplet by chemical shift 
 ; --- 123.4466, S=q, N=2, L=8&9, J=272.42, E=14.0040>>;MX El.:C lab:<8> CS 0:123.4466-123.4466

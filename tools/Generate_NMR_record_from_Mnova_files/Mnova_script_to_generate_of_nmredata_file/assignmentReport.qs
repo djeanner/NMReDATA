@@ -1242,7 +1242,7 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                                 
                                 ///00//
                                 /// here serach for peak assigned to this...
-                               // if (found_one === 0){ // to
+                            if (found_one === 0){ // if found no multiplet look for peak...
                                 peaklist=  spectrum.peaks();
                                 
                                 ii=0;
@@ -1319,7 +1319,7 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                                     nmredata[looop_over_spectra] +=  "\n" ;
                                     
                                 }
-                                //}// too
+                                }// too
                                 //00//
                                 if (found_one === 0){
                                     

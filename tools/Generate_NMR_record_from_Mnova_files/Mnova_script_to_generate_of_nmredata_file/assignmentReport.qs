@@ -965,7 +965,7 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
     test_type,path_elements,full_path,multi,lab,//add dj
     spectra,spectrum,specIndex,found_it,found_sih,ii,ma,j,ama,apa,noEqHs,keep_type,full_path_orig,cur_spec_atom,found_one,tmpll,labArray = [],peaklist,//add dj
     separ = ", ",smallest_cs,
-    position_of_smallest_diff,debug=1,max_delta_chemshift_for_peak_to_be_assigned_to_chemical_shift = 0.05,conn,tmpi,tmparr = [],chem_shift,
+    position_of_smallest_diff,debug=0,max_delta_chemshift_for_peak_to_be_assigned_to_chemical_shift = 0.05,conn,tmpi,tmparr = [],chem_shift,
    // emptynmr = [],
     nmredata = [];
     nmredata_header = [];
@@ -1228,7 +1228,7 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                                                 if (j === 0){
                                                     nmredata[looop_over_spectra] +=  separ + "J=" ;//DJ_DEBUG
                                                 }
-                                                nmredata[looop_over_spectra] +=  lll.at(j).toFixed(4);//DJ_DEBUG
+                                                nmredata[looop_over_spectra] +=  lll.at(j).toFixed(2);//DJ_DEBUG
                                                 if (j+1 !== lll.length){
                                                     nmredata[looop_over_spectra] +=  "," ;//DJ_DEBUG
                                                 }
@@ -1381,27 +1381,27 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                             if (shift) {//add label in first column
                                 if (noEqHs.length > 1) {
                                     lab=AssignmentReporter.atomIndexToString(atomLabel, at, h, true);
-                                    nmredata[looop_over_spectra] +=  "; > " + lab + " ";//DJ_DEBUG
+                                    if (debug)   nmredata[looop_over_spectra] +=  "; > " + lab + " ";//DJ_DEBUG
                                     
                                     atomRow[0] = lab;
                                 } else if (noEqHs.length > 0) {
                                     lab=AssignmentReporter.atomIndexToString(atomLabel, at, h, false);
-                                    nmredata[looop_over_spectra] +=  ";>> " + lab + " ";//DJ_DEBUG
+                                 if (debug)    nmredata[looop_over_spectra] +=  ";>> " + lab + " ";//DJ_DEBUG
                                     
                                     atomRow[0] = lab;
                                 }
                                 label="H" + lab;
                                 // was here             }
-                                nmredata[looop_over_spectra] +=  " (label=" + lab + ") ";//DJ_DEBUG
+                           if (debug)      nmredata[looop_over_spectra] +=  " (label=" + lab + ") ";//DJ_DEBUG
                                 
                                 
                                 
                                 
-                                nmredata[looop_over_spectra] +=  " (shift0=" + shift[0].min.toFixed(4) + " - " + shift[0].max.toFixed(4) +") ";//.toFixed(4);//DJ_DEBUG
+                           if (debug)      nmredata[looop_over_spectra] +=  " (shift0=" + shift[0].min.toFixed(4) + " - " + shift[0].max.toFixed(4) +") ";//.toFixed(4);//DJ_DEBUG
                                 if (shift[1]){
-                                    nmredata[looop_over_spectra] +=  " (shift1=" + shift[1].min.toFixed(4) + " - " + shift[1].max.toFixed(4) + ") ";//.toFixed(4);//DJ_DEBUG
+                             if (debug)        nmredata[looop_over_spectra] +=  " (shift1=" + shift[1].min.toFixed(4) + " - " + shift[1].max.toFixed(4) + ") ";//.toFixed(4);//DJ_DEBUG
                                 }
-                                nmredata[looop_over_spectra] +=  " (atomRow[0]=" + atomRow[0] + ") ";//.toFixed(4);//DJ_DEBUG
+                             if (debug)    nmredata[looop_over_spectra] +=  " (atomRow[0]=" + atomRow[0] + ") ";//.toFixed(4);//DJ_DEBUG
                                 
                                 ////////
                                 
@@ -1450,7 +1450,7 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                                     //shiftH = Number((shift[0].max + shift[0].min) / 2).toFixed(4);
                                     shifts.push(shiftH);
                                 }
-                                nmredata[looop_over_spectra] += "\n";//.toFixed(4);//DJ_DEBUG
+                           if (debug)      nmredata[looop_over_spectra] += "\n";//.toFixed(4);//DJ_DEBUG
                                 
                                 /*
                                  atomNH = aAssignmentReporter.nucleids[atomRow[0] + "_" + shift];
@@ -1537,7 +1537,7 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                                                     if (j === 0){
                                                         nmredata[looop_over_spectra] +=  separ + "J=" ;//DJ_DEBUG
                                                     }
-                                                    nmredata[looop_over_spectra] +=  lll.at(j).toFixed(4);//DJ_DEBUG
+                                                    nmredata[looop_over_spectra] +=  lll.at(j).toFixed(2);//DJ_DEBUG
                                                     if (j+1 !== lll.length){
                                                         nmredata[looop_over_spectra] +=  "," ;//DJ_DEBUG
                                                     }
@@ -1609,7 +1609,7 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                                 nmredata[looop_over_spectra] +=  separ + "J=" ;//DJ_DEBUG
                             }
                             //nmredata[looop_over_spectra] +=  ">> " + lll.at(j);
-                            nmredata[looop_over_spectra] +=  lll.at(j).toFixed(4);//DJ_DEBUG
+                            nmredata[looop_over_spectra] +=  lll.at(j).toFixed(2);//DJ_DEBUG
                             if (j+1 !== lll.length){
                                 nmredata[looop_over_spectra] +=  "," ;//DJ_DEBUG
                             }

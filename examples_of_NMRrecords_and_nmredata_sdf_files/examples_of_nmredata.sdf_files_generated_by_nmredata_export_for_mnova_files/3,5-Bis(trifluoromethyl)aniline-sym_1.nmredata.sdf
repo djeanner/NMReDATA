@@ -88,10 +88,11 @@ Larmor=500.133088507
 Pulseprogram=zg30 ;optional in V1
 Spectrum_Location=file:MP-TFM-aniline/10/pdata/1/
 ;>> undefined  (label=undefined)  (shift0=7.0510 - 7.0510)  (atomRow[0]=undefined) 
-; 7.0510;  no multiplet found for this H
-;>> undefined  (label=undefined)  (shift0=7.2343 - 7.2343)  (atomRow[0]=undefined) 
-; 7.2343;  no multiplet found for this H
-;>> undefined  (label=undefined)  (shift0=4.0943 - 4.0943)  (atomRow[0]=undefined) 
+7.0544, S=m, L=3&2#, E=427.0247; found H multiplet by label chem shifts differ by -0.003355 ppm
+;>> 3  (label=3)  (shift0=7.0510 - 7.0510)  (atomRow[0]=3) 
+;>> 3'  (label=3')  (shift0=7.2343 - 7.2343)  (atomRow[0]=3') 
+7.2374, S=m, L=1, E=210.4295; found H multiplet by label chem shifts differ by -0.003077 ppm
+;>> 1  (label=1)  (shift0=4.0943 - 4.0943)  (atomRow[0]=1) 
 4.0943, S=s, N=2, L=7, E=265.1470; found multiplet for this H
 ;; for debug multiplet 0id:< {25512626-0cb4-44f3-a31c-37fac26ce822}> 7.2374, S=m, Nwrong=undefined multiId <1> peakId <> category <m> name <1> name <210.429451751709>, L=1, E=210.4295; HERE 
 ;; for debug multiplet 1id:< {c8bd79f2-4298-4882-8285-90e96494f2a9}> 7.0544, S=m, Nwrong=undefined multiId <3, 3'> peakId <> category <m> name <3,2#> name <427.0247128295898>, L=3&2#, E=427.0247; HERE 

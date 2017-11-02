@@ -104,21 +104,21 @@ Pulseprogram=zg30 ;optional in V1
 Spectrum_Location=file:dj_ca_2017_ernestin_EN4/10/pdata/1/
 ;>> undefined  (label=undefined)  (shift0=7.2778 - 7.2778)  (atomRow[0]=undefined) 
 7.2778, S=ddd, N=1, L=1, J=7.98,6.95,0.96, E=71.9113; found multiplet for this H
-;>> undefined  (label=undefined)  (shift0=7.7150 - 7.7150)  (atomRow[0]=undefined) 
+;>> 1  (label=1)  (shift0=7.7150 - 7.7150)  (atomRow[0]=1) 
 7.7150, S=ddd, N=1, L=2, J=8.67,7.02,1.79, E=80.9392; found multiplet for this H
-;>> undefined  (label=undefined)  (shift0=7.4896 - 7.4896)  (atomRow[0]=undefined) 
+;>> 2  (label=2)  (shift0=7.4896 - 7.4896)  (atomRow[0]=2) 
 7.4896, S=d, N=1, L=3, J=8.80, E=93.7083; found multiplet for this H
-;>> undefined  (label=undefined)  (shift0=8.4004 - 8.4004)  (atomRow[0]=undefined) 
+;>> 3  (label=3)  (shift0=8.4004 - 8.4004)  (atomRow[0]=3) 
 8.4004, S=dd, N=1, L=6, J=8.05,1.72, E=83.7424; found multiplet for this H
-;>> undefined  (label=undefined)  (shift0=6.2315 - 6.2315)  (atomRow[0]=undefined) 
+;>> 6  (label=6)  (shift0=6.2315 - 6.2315)  (atomRow[0]=6) 
 6.2315, S=s, N=1, L=11, E=70.0138; found multiplet for this H
-;>> undefined  (label=undefined)  (shift0=14.7674 - 14.7674)  (atomRow[0]=undefined) 
+;>> 11  (label=11)  (shift0=14.7674 - 14.7674)  (atomRow[0]=11) 
 14.7674, S=s, N=1, L=15, E=53.6547; found multiplet for this H
-;>> undefined  (label=undefined)  (shift0=3.8143 - 3.8143)  (atomRow[0]=undefined) 
+;>> 15  (label=15)  (shift0=3.8143 - 3.8143)  (atomRow[0]=15) 
 3.8143, S=s, N=3, L=17, E=245.7392; found multiplet for this H
-;>> undefined  (label=undefined)  (shift0=3.9391 - 3.9391)  (atomRow[0]=undefined) 
+;>> 17  (label=17)  (shift0=3.9391 - 3.9391)  (atomRow[0]=17) 
 3.9391, S=s, N=3, L=19, E=247.8047; found multiplet for this H
-;>> undefined  (label=undefined)  (shift0=4.0186 - 4.0186)  (atomRow[0]=undefined) 
+;>> 19  (label=19)  (shift0=4.0186 - 4.0186)  (atomRow[0]=19) 
 4.0186, S=s, N=3, L=21, E=250.9204; found multiplet for this H
 ;; for debug multiplet 0id:< {1d536a5d-dfee-4b77-9d97-808940a87464}> 14.7674, S=s, Nwrong=undefined multiId <15> peakId <> category <s> name <15> name <53.654690490116025>, L=15, E=53.6547; HERE 
 ;; for debug multiplet 1id:< {eaa90b1b-d91f-4de0-8d9a-fffb0ff64802}> 8.4004, S=dd, Nwrong=undefined multiId <6> peakId <> category <dd> name <6> name <83.74239338487578>, L=6, E=83.7424, J=1.7192,8.0469; HERE 

@@ -99,27 +99,16 @@ Larmor=500.13234410931
 Pulseprogram=zgpr ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/20/pdata/1/
 ;>> undefined  (label=undefined)  (shift0=3.6817 - 3.7049)  (atomRow[0]=undefined) 
-; 3.7049-3.6817;  no multiplet found for this H
-;>> undefined  (label=undefined)  (shift0=3.2910 - 3.3407)  (atomRow[0]=undefined) 
-; 3.3407-3.2910;  no multiplet found for this H
-;>> undefined  (label=undefined)  (shift0=3.5708 - 3.6259)  (atomRow[0]=undefined) 
-; 3.6259-3.5708;  no multiplet found for this H
-;>> undefined  (label=undefined)  (shift0=3.3966 - 3.4211)  (atomRow[0]=undefined) 
-; 3.4211-3.3966;  no multiplet found for this H
-;>> undefined  (label=undefined)  (shift0=5.2165 - 5.2887)  (atomRow[0]=undefined) 
-; 5.2887-5.2165;  no multiplet found for this H
-;>> undefined  (label=undefined)  (shift0=4.0407 - 4.0803)  (atomRow[0]=undefined) 
-; 4.0803-4.0407;  no multiplet found for this H
-;>> undefined  (label=undefined)  (shift0=3.8784 - 3.9196)  (atomRow[0]=undefined) 
-; 3.9196-3.8784;  no multiplet found for this H
-;>> undefined  (label=undefined)  (shift0=3.7194 - 3.7391)  (atomRow[0]=undefined) 
-; 3.7391-3.7194;  no multiplet found for this H
-;>> undefined  (label=undefined)  (shift0=3.5073 - 3.5264)  (atomRow[0]=undefined) 
-; 3.5264-3.5073;  no multiplet found for this H
-;>> undefined  (label=undefined)  (shift0=3.6568 - 3.6771)  (atomRow[0]=undefined) 
-; 3.6771-3.6568;  no multiplet found for this H
-;>> undefined  (label=undefined)  (shift0=3.6521 - 3.6725)  (atomRow[0]=undefined) 
-; 3.6725-3.6521;  no multiplet found for this H
+;>> 5  (label=5)  (shift0=3.2910 - 3.3407)  (atomRow[0]=5) 
+;>> 4  (label=4)  (shift0=3.5708 - 3.6259)  (atomRow[0]=4) 
+;>> 3  (label=3)  (shift0=3.3966 - 3.4211)  (atomRow[0]=3) 
+;>> 2  (label=2)  (shift0=5.2165 - 5.2887)  (atomRow[0]=2) 
+;>> 1  (label=1)  (shift0=4.0407 - 4.0803)  (atomRow[0]=1) 
+;>> 9  (label=9)  (shift0=3.8784 - 3.9196)  (atomRow[0]=9) 
+;>> 10  (label=10)  (shift0=3.7194 - 3.7391)  (atomRow[0]=10) 
+;>> 11  (label=11)  (shift0=3.5073 - 3.5264)  (atomRow[0]=11) 
+;>> 7  (label=7)  (shift0=3.6568 - 3.6771)  (atomRow[0]=7) 
+;>> 6  (label=6)  (shift0=3.6521 - 3.6725)  (atomRow[0]=6) 
 
 >  <NMREDATA_1D_13C>
 Larmor=125.770363831

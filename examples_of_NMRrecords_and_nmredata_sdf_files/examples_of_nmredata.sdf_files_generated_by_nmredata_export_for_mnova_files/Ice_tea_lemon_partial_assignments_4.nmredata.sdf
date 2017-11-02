@@ -58,9 +58,9 @@ Larmor=500.13234410931
 Pulseprogram=zgpr ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/20/pdata/1/
 ; > undefined'  (label=undefined')  (shift0=2.7611 - 2.8361)  (atomRow[0]=undefined') 
-; 2.8361-2.7611;  no multiplet found for this H
-; > undefined''  (label=undefined'')  (shift0=2.6200 - 2.6891)  (atomRow[0]=undefined'') 
-; 2.6891-2.6200;  no multiplet found for this H
+; > 3''  (label=3'')  (shift0=2.6200 - 2.6891)  (atomRow[0]=3'') 
+; > 3'  (label=3')  (shift0=2.7611 - 2.8361)  (atomRow[0]=3') 
+; > 5''  (label=5'')  (shift0=2.6200 - 2.6891)  (atomRow[0]=5'') 
 
 >  <NMREDATA_1D_13C>
 Larmor=125.770363831

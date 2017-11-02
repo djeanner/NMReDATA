@@ -105,32 +105,30 @@ Larmor=500.133088507
 Pulseprogram=zg30 ;optional in V1
 Spectrum_Location=file:MP-caryophyllene_oxide/10/pdata/1/
 ; > undefined'  (label=undefined')  (shift0=1.7034 - 1.7034)  (atomRow[0]=undefined') 
-; 1.7034;  no multiplet found for this H
-; > undefined''  (label=undefined'')  (shift0=1.6399 - 1.6399)  (atomRow[0]=undefined'') 
-; 1.6399;  no multiplet found for this H
-;>> undefined  (label=undefined)  (shift0=1.0244 - 1.0244)  (atomRow[0]=undefined) 
+; > 2''  (label=2'')  (shift0=1.6399 - 1.6399)  (atomRow[0]=2'') 
+;>> 2  (label=2)  (shift0=1.0244 - 1.0244)  (atomRow[0]=2) 
 1.0244, S=s, N=3, L=5, E=271.8249; found multiplet for this H
-;>> undefined  (label=undefined)  (shift0=1.0027 - 1.0027)  (atomRow[0]=undefined) 
+;>> 5  (label=5)  (shift0=1.0027 - 1.0027)  (atomRow[0]=5) 
 1.0027, S=s, N=3, L=5', E=275.1281; found multiplet for this H
-; > undefined'  (label=undefined')  (shift0=2.3574 - 2.3574)  (atomRow[0]=undefined') 
+; > 5''  (label=5'')  (shift0=2.3574 - 2.3574)  (atomRow[0]=5'') 
 2.3574, S=ddd, N=2, L=8a, J=12.65,8.12,4.40, E=86.6324; found multiplet for this H
-; > undefined''  (label=undefined'')  (shift0=2.1370 - 2.1370)  (atomRow[0]=undefined'') 
+; > 8''  (label=8'')  (shift0=2.1370 - 2.1370)  (atomRow[0]=8'') 
 2.1370, S=m, N=2, L=8b, E=91.4070; found multiplet for this H
-; > undefined'  (label=undefined')  (shift0=2.2663 - 2.2663)  (atomRow[0]=undefined') 
+; > 8'  (label=8')  (shift0=2.2663 - 2.2663)  (atomRow[0]=8') 
 2.2663, S=m, N=2, L=9a, E=87.5953; found multiplet for this H
-; > undefined''  (label=undefined'')  (shift0=1.3438 - 1.3438)  (atomRow[0]=undefined'') 
+; > 9''  (label=9'')  (shift0=1.3438 - 1.3438)  (atomRow[0]=9'') 
 1.3438, S=dddd, N=2, L=9b, J=12.65,10.59,8.12,4.54, E=89.1483; found multiplet for this H
-;>> undefined  (label=undefined)  (shift0=2.8939 - 2.8939)  (atomRow[0]=undefined) 
+;>> 9  (label=9)  (shift0=2.8939 - 2.8939)  (atomRow[0]=9) 
 2.8939, S=dd, N=1, L=10, J=10.59,4.26, E=85.4128; found multiplet for this H
-; > undefined'  (label=undefined')  (shift0=0.9757 - 0.9757)  (atomRow[0]=undefined') 
+; > 10'  (label=10')  (shift0=0.9757 - 0.9757)  (atomRow[0]=10') 
 0.9757, S=m, N=2, L=13a, E=82.4212; found multiplet for this H
-; > undefined''  (label=undefined'')  (shift0=2.1009 - 2.1009)  (atomRow[0]=undefined'') 
+; > 13''  (label=13'')  (shift0=2.1009 - 2.1009)  (atomRow[0]=13'') 
 2.1009, S=m, N=2, L=13b, E=84.8035; found multiplet for this H
-; > undefined'  (label=undefined')  (shift0=1.4460 - 1.4460)  (atomRow[0]=undefined') 
+; > 13'  (label=13')  (shift0=1.4460 - 1.4460)  (atomRow[0]=13') 
 1.4460, S=dddd, N=2, L=14a, J=14.72,13.34,10.38,4.13, E=87.1385; found multiplet for this H
-; > undefined''  (label=undefined'')  (shift0=1.6656 - 1.6656)  (atomRow[0]=undefined'') 
+; > 14''  (label=14'')  (shift0=1.6656 - 1.6656)  (atomRow[0]=14'') 
 1.6656, S=m, N=2, L=14b, E=89.2725; found multiplet for this H
-;>> undefined  (label=undefined)  (shift0=1.2197 - 1.2197)  (atomRow[0]=undefined) 
+;>> 14  (label=14)  (shift0=1.2197 - 1.2197)  (atomRow[0]=14) 
 1.2197, S=d, N=3, L=15, J=0.83, E=263.6407; found multiplet for this H
 2.6339, S=m, N=1, L=16, E=85.0548; found multiplet by chemical shift 
 ; --- 2.6339, S=m, N=1, L=16, E=85.0548>>;MX El.:H lab:<16> CS 0:2.6339-2.6339
@@ -142,7 +140,7 @@ Spectrum_Location=file:MP-caryophyllene_oxide/10/pdata/1/
 1.7808, S=m, N=1, L=17, E=87.0702; found multiplet for this H
 ; > 17'  (label=17')  (shift0=4.9921 - 4.9921)  (atomRow[0]=17') 
 4.9921, S=d, N=2, L=18a, J=2.06, E=87.4843; found multiplet for this H
-; > 17''  (label=17'')  (shift0=4.8765 - 4.8765)  (atomRow[0]=17'') 
+; > 18''  (label=18'')  (shift0=4.8765 - 4.8765)  (atomRow[0]=18'') 
 4.8765, S=dd, N=2, L=18b, J=1.72,0.76, E=87.0594; found multiplet for this H
 ;; for debug multiplet 0id:< {8f6f7e48-3153-4b39-bbcc-c376055c83c8}> 4.9921, S=d, Nwrong=undefined multiId <18a> peakId <> category <d> name <18a> name <87.4843247756362>, L=18a, E=87.4843, J=2.0632; HERE 
 ;; for debug multiplet 1id:< {e6b98b23-f9c0-4a12-835c-34758bd88a76}> 4.8765, S=dd, Nwrong=undefined multiId <18b> peakId <> category <dd> name <18b> name <87.05943967081606>, L=18b, E=87.0594, J=0.7566,1.7195; HERE 

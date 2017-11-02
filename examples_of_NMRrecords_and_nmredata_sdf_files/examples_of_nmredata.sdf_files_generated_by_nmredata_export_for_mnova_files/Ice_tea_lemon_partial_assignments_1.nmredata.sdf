@@ -59,19 +59,12 @@ Larmor=500.13234410931
 Pulseprogram=zgpr ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/20/pdata/1/
 ;>> undefined  (label=undefined)  (shift0=3.6263 - 3.6394)  (atomRow[0]=undefined) 
-; 3.6394-3.6263;  no multiplet found for this H
-;>> undefined  (label=undefined)  (shift0=3.7391 - 3.7611)  (atomRow[0]=undefined) 
-; 3.7611-3.7391;  no multiplet found for this H
-;>> undefined  (label=undefined)  (shift0=3.8264 - 3.8490)  (atomRow[0]=undefined) 
-; 3.8490-3.8264;  no multiplet found for this H
-; > undefined'  (label=undefined')  (shift0=3.5525 - 3.5705)  (atomRow[0]=undefined') 
-; 3.5705-3.5525;  no multiplet found for this H
-; > undefined''  (label=undefined'')  (shift0=3.3952 - 3.4012)  (atomRow[0]=undefined'') 
-; 3.4012-3.3952;  no multiplet found for this H
-; > undefined'  (label=undefined')  (shift0=3.8490 - 3.8789)  (atomRow[0]=undefined') 
-; 3.8789-3.8490;  no multiplet found for this H
-; > undefined''  (label=undefined'')  (shift0=3.5291 - 3.5684)  (atomRow[0]=undefined'') 
-; 3.5684-3.5291;  no multiplet found for this H
+;>> 3  (label=3)  (shift0=3.7391 - 3.7611)  (atomRow[0]=3) 
+;>> 4  (label=4)  (shift0=3.8264 - 3.8490)  (atomRow[0]=4) 
+; > 5'  (label=5')  (shift0=3.5525 - 3.5705)  (atomRow[0]=5') 
+; > 1''  (label=1'')  (shift0=3.3952 - 3.4012)  (atomRow[0]=1'') 
+; > 1'  (label=1')  (shift0=3.8490 - 3.8789)  (atomRow[0]=1') 
+; > 6''  (label=6'')  (shift0=3.5291 - 3.5684)  (atomRow[0]=6'') 
 
 >  <NMREDATA_1D_13C>
 Larmor=125.770363831

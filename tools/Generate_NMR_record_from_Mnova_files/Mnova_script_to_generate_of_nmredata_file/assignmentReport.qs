@@ -1458,13 +1458,60 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                                  mul=AssignmentReporter.findInformation(4, multi, shifts, atomNH, true, true, label);
                                  nmredata[looop_over_spectra] +=  " MH " + mul + " HAARE del\n";//.toFixed(4);//DJ_DEBUG
                                  */
-                                
+                                atomLabel = aMolecule.atom(at).number;
+
                                 atomNH = aMolecule.atom(at).nHAll;
                                 mul="";
                                 mul=AssignmentReporter.findInformation(4, multi, shifts, atomNH, true, true, label);
                                 if (mul.find(",",0) <0){// no multiplet found}
                                     found_sih=0;
-                                    nmredata[looop_over_spectra] += "; " +  mul + ";  no multiplet found for this H\n";//.toFixed(4);//DJ_DEBUG
+                                 //   nmredata[looop_over_spectra] += "; " +  mul + ";  no multiplet found for this H\n";//.toFixed(4);//DJ_DEBUG
+                                    
+                                    /// here serach for H multiplet assigned to lablel
+                                    ii=0;
+                                    while ((ii < multi.count) && (found_sih === 0)) {
+                                        tmpll=multi.at(ii).name;
+                                        labArray = tmpll.split(",");
+                                        // labArray = labArray();
+                                        for (loi=0 ; loi < labArray.length ; loi ++) {
+                                           // nmredata[looop_over_spectra] += ";;; Testing " + labArray[loi] + " === " + atomLabel + "\n";
+
+                                            if (labArray[loi] === atomLabel) {
+                                                found_sih=1;
+                                                nmredata[looop_over_spectra] +=   multi.at(ii).delta.toFixed(4) ;//DJ_DEBUG
+                                                nmredata[looop_over_spectra] +=  separ + "S=" + multi.at(ii).category.toLowerCase() ;//DJ_DEBUG
+                                                // nmredata[looop_over_spectra] +=  separ+ "Nwrong="  + multi.at(ii).nH ;//DJ_DEBUG
+                                                conn=-1;tmpi=0;
+                                                while (multi.at(ii).name.find("&",tmpi) > 0){
+                                                    tmpi=multi.at(ii).name.find("&",tmpi);
+                                                    tmpi++;
+                                                    conn++;
+                                                }
+                                                if (conn>0){
+                                                    nmredata[looop_over_spectra] += separ + "N=" +  conn;//UZ
+                                                }
+                                                nmredata[looop_over_spectra] +=  separ + "L="  + multi.at(ii).name.replace(/,/g,"&");//DJ_DEBUG
+                                                nmredata[looop_over_spectra] +=  separ + "E="  + multi.at(ii).integralValue(1e3).toFixed(4);//DJ_DEBUG
+                                                lll=multi.at(ii).jList();
+                                                for (j = 0; j < lll.length; ++j) {
+                                                    if (j === 0){
+                                                        nmredata[looop_over_spectra] +=  separ + "J=" ;//DJ_DEBUG
+                                                    }
+                                                    nmredata[looop_over_spectra] +=  lll.at(j).toFixed(4);//DJ_DEBUG
+                                                    if (j+1 !== lll.length){
+                                                        nmredata[looop_over_spectra] +=  "," ;//DJ_DEBUG
+                                                    }
+                                                }
+                                                nmredata[looop_over_spectra] +=  "; found H multiplet by label chem shifts differ by " + Number(mul- multi.at(ii).delta).toFixed(6) + " ppm\n";//DJ_DEBUG
+                                                
+                                            }
+                                        }
+                                        ii++;
+                                    }
+                                    
+                                    
+                                    
+                                    
                                 }else{
                                     nmredata[looop_over_spectra] +=  mul + "; found multiplet for this H\n";//.toFixed(4);//DJ_DEBUG
                                     found_sih=1;

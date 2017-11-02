@@ -72,18 +72,31 @@ Larmor=500.133088507
 Pulseprogram=zg30 ;optional in V1
 Spectrum_Location=file:AN-menthol/10/pdata/1/
 ; > undefined'  (label=undefined')  (shift0=0.8620 - 0.8620)  (atomRow[0]=undefined') 
-; > 1''  (label=1'')  (shift0=1.6810 - 1.6810)  (atomRow[0]=1'') 
-; > 1'  (label=1')  (shift0=1.6285 - 1.6285)  (atomRow[0]=1') 
-; > 2''  (label=2'')  (shift0=1.0067 - 1.0067)  (atomRow[0]=2'') 
-;>> 2  (label=2)  (shift0=1.1282 - 1.1282)  (atomRow[0]=2) 
+;0.8620, L=H1a;found no H multiplet for this H
+; > 1a''  (label=1a'')  (shift0=1.6810 - 1.6810)  (atomRow[0]=1a'') 
+;1.6810, L=H1b;found no H multiplet for this H
+; > 1b'  (label=1b')  (shift0=1.6285 - 1.6285)  (atomRow[0]=1b') 
+;1.6285, L=H2a;found no H multiplet for this H
+; > 2a''  (label=2a'')  (shift0=1.0067 - 1.0067)  (atomRow[0]=2a'') 
+;1.0067, L=H2b;found no H multiplet for this H
+;>> 2b  (label=2b)  (shift0=1.1282 - 1.1282)  (atomRow[0]=2b) 
+;1.1282, L=H3;found no H multiplet for this H
 ;>> 3  (label=3)  (shift0=3.4281 - 3.4281)  (atomRow[0]=3) 
+;3.4281, L=H4;found no H multiplet for this H
 ; > 4'  (label=4')  (shift0=1.9840 - 1.9840)  (atomRow[0]=4') 
-; > 5''  (label=5'')  (shift0=0.9720 - 0.9720)  (atomRow[0]=5'') 
-;>> 5  (label=5)  (shift0=1.4415 - 1.4415)  (atomRow[0]=5) 
+;1.9840, L=H5a;found no H multiplet for this H
+; > 5a''  (label=5a'')  (shift0=0.9720 - 0.9720)  (atomRow[0]=5a'') 
+;0.9720, L=H5b;found no H multiplet for this H
+;>> 5b  (label=5b)  (shift0=1.4415 - 1.4415)  (atomRow[0]=5b) 
+;1.4415, L=H6;found no H multiplet for this H
 ;>> 6  (label=6)  (shift0=0.9331 - 0.9331)  (atomRow[0]=6) 
+;0.9331, L=H7;found no H multiplet for this H
 ;>> 7  (label=7)  (shift0=2.1883 - 2.1883)  (atomRow[0]=7) 
+;2.1883, L=H9;found no H multiplet for this H
 ;>> 9  (label=9)  (shift0=0.8308 - 0.8308)  (atomRow[0]=9) 
+;0.8308, L=H10;found no H multiplet for this H
 ;>> 10  (label=10)  (shift0=0.9493 - 0.9493)  (atomRow[0]=10) 
+;0.9493, L=H11;found no H multiplet for this H
 
 >  <NMREDATA_1D_13C>
 Larmor=125.770363831
@@ -178,18 +191,31 @@ Larmor=500.13
 Pulseprogram=bbhd_psyche_diag_apc.mb ;optional in V1
 Spectrum_Location=file:AN-menthol/18/pdata/100/
 ; > 11'  (label=11')  (shift0=0.8620 - 0.8620)  (atomRow[0]=11') 
-; > 1''  (label=1'')  (shift0=1.6810 - 1.6810)  (atomRow[0]=1'') 
-; > 1'  (label=1')  (shift0=1.6285 - 1.6285)  (atomRow[0]=1') 
-; > 2''  (label=2'')  (shift0=1.0067 - 1.0067)  (atomRow[0]=2'') 
-;>> 2  (label=2)  (shift0=1.1282 - 1.1282)  (atomRow[0]=2) 
+;0.8620, L=H1a;found no H multiplet for this H
+; > 1a''  (label=1a'')  (shift0=1.6810 - 1.6810)  (atomRow[0]=1a'') 
+;1.6810, L=H1b;found no H multiplet for this H
+; > 1b'  (label=1b')  (shift0=1.6285 - 1.6285)  (atomRow[0]=1b') 
+;1.6285, L=H2a;found no H multiplet for this H
+; > 2a''  (label=2a'')  (shift0=1.0067 - 1.0067)  (atomRow[0]=2a'') 
+;1.0067, L=H2b;found no H multiplet for this H
+;>> 2b  (label=2b)  (shift0=1.1282 - 1.1282)  (atomRow[0]=2b) 
+;1.1282, L=H3;found no H multiplet for this H
 ;>> 3  (label=3)  (shift0=3.4281 - 3.4281)  (atomRow[0]=3) 
+;3.4281, L=H4;found no H multiplet for this H
 ; > 4'  (label=4')  (shift0=1.9840 - 1.9840)  (atomRow[0]=4') 
-; > 5''  (label=5'')  (shift0=0.9720 - 0.9720)  (atomRow[0]=5'') 
-;>> 5  (label=5)  (shift0=1.4415 - 1.4415)  (atomRow[0]=5) 
+;1.9840, L=H5a;found no H multiplet for this H
+; > 5a''  (label=5a'')  (shift0=0.9720 - 0.9720)  (atomRow[0]=5a'') 
+;0.9720, L=H5b;found no H multiplet for this H
+;>> 5b  (label=5b)  (shift0=1.4415 - 1.4415)  (atomRow[0]=5b) 
+;1.4415, L=H6;found no H multiplet for this H
 ;>> 6  (label=6)  (shift0=0.9331 - 0.9331)  (atomRow[0]=6) 
+;0.9331, L=H7;found no H multiplet for this H
 ;>> 7  (label=7)  (shift0=2.1883 - 2.1883)  (atomRow[0]=7) 
+;2.1883, L=H9;found no H multiplet for this H
 ;>> 9  (label=9)  (shift0=0.8308 - 0.8308)  (atomRow[0]=9) 
+;0.8308, L=H10;found no H multiplet for this H
 ;>> 10  (label=10)  (shift0=0.9493 - 0.9493)  (atomRow[0]=10) 
+;0.9493, L=H11;found no H multiplet for this H
 
 >  <NMREDATA_2D_1H_unidentified_heteronuclear_2d_spectrum_1H>
 Larmor=500.13

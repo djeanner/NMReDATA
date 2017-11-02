@@ -93,29 +93,29 @@ Larmor=500.130008551672
 Pulseprogram=zg ;optional in V1
 Spectrum_Location=file:djhap_benapyr/10/pdata/1/
 ;>> undefined  (label=undefined)  (shift0=7.8453 - 7.8453)  (atomRow[0]=undefined) 
-7.8453, S=ddd, N=1, L=1, J=8.39,6.74,1.46, E=1328004.4090; found multiplet for this H
+7.8453, S=ddd, N=1, L=1, J=8.39,6.74,1.46, E=1328004.4090; found multiplet for this H Will remove...
 ;>> 1  (label=1)  (shift0=7.7914 - 7.7914)  (atomRow[0]=1) 
-7.7947, S=ddd, L=2, E=1299166.5993, J=1.2280,6.7394,7.9705; found H multiplet by label chem shifts differ by -0.003281 ppm
+7.7947, S=ddd, L=H2, E=1299166.5993, J=1.2280,6.7394,7.9705; found H multiplet by label chem shifts differ by -0.003281 ppm
 ;>> 2  (label=2)  (shift0=8.3041 - 8.3041)  (atomRow[0]=2) 
-8.3041, S=ddd, N=1, L=3, J=8.05,1.41,0.66, E=1283747.5915; found multiplet for this H
+8.3041, S=ddd, N=1, L=3, J=8.05,1.41,0.66, E=1283747.5915; found multiplet for this H Will remove...
 ;>> 3  (label=3)  (shift0=9.0623 - 9.0623)  (atomRow[0]=3) 
-9.0577, S=m, L=6, E=1249532.3315; found H multiplet by label chem shifts differ by 0.004586 ppm
+9.0577, S=m, L=H6, E=1249532.3315; found H multiplet by label chem shifts differ by 0.004586 ppm
 ;>> 6  (label=6)  (shift0=8.5270 - 8.5270)  (atomRow[0]=6) 
-8.5270, S=s, N=1, L=7, E=1277812.8565; found multiplet for this H
+8.5270, S=s, N=1, L=7, E=1277812.8565; found multiplet for this H Will remove...
 ;>> 7  (label=7)  (shift0=8.3446 - 8.3446)  (atomRow[0]=7) 
-8.3446, S=d, N=1, L=13, J=9.07, E=1321484.5150; found multiplet for this H
+8.3446, S=d, N=1, L=13, J=9.07, E=1321484.5150; found multiplet for this H Will remove...
 ;>> 13  (label=13)  (shift0=9.0690 - 9.0690)  (atomRow[0]=13) 
-9.0748, S=m, L=14, E=1303885.0280; found H multiplet by label chem shifts differ by -0.005810 ppm
+9.0748, S=m, L=H14, E=1303885.0280; found H multiplet by label chem shifts differ by -0.005810 ppm
 ;>> 14  (label=14)  (shift0=8.0175 - 8.0175)  (atomRow[0]=14) 
-8.0162, S=d, L=15, E=1347898.2014, J=8.7498; found H multiplet by label chem shifts differ by 0.001315 ppm
+8.0162, S=d, L=H15, E=1347898.2014, J=8.7498; found H multiplet by label chem shifts differ by 0.001315 ppm
 ;>> 15  (label=15)  (shift0=7.9387 - 7.9387)  (atomRow[0]=15) 
-7.9387, S=d, N=1, L=16, J=9.07, E=1329445.4210; found multiplet for this H
+7.9387, S=d, N=1, L=16, J=9.07, E=1329445.4210; found multiplet for this H Will remove...
 ;>> 16  (label=16)  (shift0=8.1023 - 8.1023)  (atomRow[0]=16) 
-8.1023, S=dd, N=1, L=18, J=7.10,0.87, E=1302429.6890; found multiplet for this H
+8.1023, S=dd, N=1, L=18, J=7.10,0.87, E=1302429.6890; found multiplet for this H Will remove...
 ;>> 18  (label=18)  (shift0=7.9904 - 7.9904)  (atomRow[0]=18) 
-7.9904, S=d, N=1, L=19, J=7.53, E=865114.0568; found multiplet for this H
+7.9904, S=d, N=1, L=19, J=7.53, E=865114.0568; found multiplet for this H Will remove...
 ;>> 19  (label=19)  (shift0=8.2514 - 8.2514)  (atomRow[0]=19) 
-8.2514, S=m, N=1, L=20, E=1295942.7452; found multiplet for this H
+8.2514, S=m, N=1, L=20, E=1295942.7452; found multiplet for this H Will remove...
 ;; for debug multiplet 0id:< {2a32ef04-90fe-4e41-a1c5-b58c80a90b1c}> 9.0748, S=m, Nwrong=undefined multiId <14> peakId <> category <m> name <14> name <1303885.028>, L=14, E=1303885.0280; HERE 
 ;; for debug multiplet 1id:< {310e4627-7ada-4864-b578-5b544682b113}> 9.0577, S=m, Nwrong=undefined multiId <6> peakId <> category <m> name <6> name <1249532.3315>, L=6, E=1249532.3315; HERE 
 ;; for debug multiplet 2id:< {d48facbb-e8c9-44f4-94f1-367098ed8301}> 8.5270, S=s, Nwrong=undefined multiId <7> peakId <> category <s> name <7> name <1277812.8565>, L=7, E=1277812.8565; HERE 

@@ -99,16 +99,27 @@ Larmor=500.13234410931
 Pulseprogram=zgpr ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/20/pdata/1/
 ;>> undefined  (label=undefined)  (shift0=3.6817 - 3.7049)  (atomRow[0]=undefined) 
+;3.7049-3.6817, L=H5;found no H multiplet for this H
 ;>> 5  (label=5)  (shift0=3.2910 - 3.3407)  (atomRow[0]=5) 
+;3.3407-3.2910, L=H4;found no H multiplet for this H
 ;>> 4  (label=4)  (shift0=3.5708 - 3.6259)  (atomRow[0]=4) 
+;3.6259-3.5708, L=H3;found no H multiplet for this H
 ;>> 3  (label=3)  (shift0=3.3966 - 3.4211)  (atomRow[0]=3) 
+;3.4211-3.3966, L=H2;found no H multiplet for this H
 ;>> 2  (label=2)  (shift0=5.2165 - 5.2887)  (atomRow[0]=2) 
+;5.2887-5.2165, L=H1;found no H multiplet for this H
 ;>> 1  (label=1)  (shift0=4.0407 - 4.0803)  (atomRow[0]=1) 
+;4.0803-4.0407, L=H9;found no H multiplet for this H
 ;>> 9  (label=9)  (shift0=3.8784 - 3.9196)  (atomRow[0]=9) 
+;3.9196-3.8784, L=H10;found no H multiplet for this H
 ;>> 10  (label=10)  (shift0=3.7194 - 3.7391)  (atomRow[0]=10) 
+;3.7391-3.7194, L=H11;found no H multiplet for this H
 ;>> 11  (label=11)  (shift0=3.5073 - 3.5264)  (atomRow[0]=11) 
+;3.5264-3.5073, L=H7;found no H multiplet for this H
 ;>> 7  (label=7)  (shift0=3.6568 - 3.6771)  (atomRow[0]=7) 
+;3.6771-3.6568, L=H6;found no H multiplet for this H
 ;>> 6  (label=6)  (shift0=3.6521 - 3.6725)  (atomRow[0]=6) 
+;3.6725-3.6521, L=H12;found no H multiplet for this H
 
 >  <NMREDATA_1D_13C>
 Larmor=125.770363831

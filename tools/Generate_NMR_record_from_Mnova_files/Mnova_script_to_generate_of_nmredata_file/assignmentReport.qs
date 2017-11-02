@@ -1701,12 +1701,21 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                 // nmredata[looop_over_spectra] += ";UNIX_CREATE cp  \"" + parameters.name_compound + ".sdf\"  \"CSH_NAME_CSH" + "/" + parameters.name_compound + ".sdf" + "\"\n";
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE if (! $?notok) then\n";
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo \"Zipping folder CSH_NAME_CSH\" \n";
+           //     nmredata_header[looop_over_spectra] += ";UNIX_CREATE cd \"" + "CSH_NAME_CSH" + seppath + "\"\n";
+
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE rm \"CSH_NAME_CSH.zip\" \n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE sleep 1\n";
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE zip -q -r \"CSH_NAME_CSH.zip\" \"CSH_NAME_CSH\" -x \"*.DS_Store\" -x \".*\" -x \"_*\"\n";
+          //      nmredata_header[looop_over_spectra] += ";UNIX_CREATE cd ..\n";
+
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE else\n";
                // nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo \"Could not find all spectra. When done with copy, compress the folder in unix with:\" \n";
-                nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo \"cd \"\\\"\"UNIX_WO_PATH" + seppath + "CSH_NAME_CSH" +  "\"\\" + "\"\n";
-                nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo 'zip -r \"CSH_NAME_CSH.zip\" \"CSH_NAME_CSH\" -x \"*.DS_Store\" -x \".*\" -x \"_*\"'\n";
-                
+               // nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo \"cd \"\\\"\"UNIX_WO_PATH" + seppath + "CSH_NAME_CSH" +  "\"\\" + "\"\n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo \"cd \"\\\"\"UNIX_WO_PATH"  +  "\"\\" + "\"\n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo 'rm  \"CSH_NAME_CSH.zip\" '\n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo sleep 1\n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo 'zip -q -r \"CSH_NAME_CSH.zip\" \"CSH_NAME_CSH\" -x \"*.DS_Store\" -x \".*\" -x \"_*\"'\n";
+
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE endif\n";
                 
             }

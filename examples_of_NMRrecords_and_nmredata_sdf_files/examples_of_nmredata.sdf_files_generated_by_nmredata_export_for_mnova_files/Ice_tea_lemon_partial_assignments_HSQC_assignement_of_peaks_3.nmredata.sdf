@@ -94,19 +94,12 @@ H6, 3.6670, H16
 H12, 3.6623, H21
 12, 62.3086, 21
 
-;INFO_DEBUG 2D correlation found ... reporter # 0type undefined extracted for atom 1: 
 
-;INFO_DEBUG 2D correlation found ... reporter # 1type undefined extracted for atom 1: 
 
-;INFO_DEBUG 2D correlation found ... reporter # 2type undefined extracted for atom 1: 
 
-;INFO_DEBUG 2D correlation found ... reporter # 3type undefined extracted for atom 1: 
 
-;INFO_DEBUG 2D correlation found ... reporter # 4type undefined extracted for atom 1: 
 
-;INFO_DEBUG 2D correlation found ... reporter # 5type undefined extracted for atom 1: 
 
-;INFO_DEBUG 2D correlation found ... reporter # 6type undefined extracted for atom 1: 
 
 >  <NMREDATA_1D_1H>
 Larmor=500.13234410931

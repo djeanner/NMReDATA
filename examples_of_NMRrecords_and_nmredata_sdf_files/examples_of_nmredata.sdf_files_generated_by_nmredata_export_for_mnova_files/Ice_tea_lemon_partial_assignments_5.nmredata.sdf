@@ -1,4 +1,4 @@
-
+luc
   ChemDraw09271711102D
 
  12 12  0  0  0  0  0  0  0  0999 V2000
@@ -54,6 +54,20 @@ H5, 3.3158, H6
 H6a, 3.7501, H10
 6, 60.6895, 10
 H6b, 3.5487, H10
+
+;INFO_DEBUG 2D correlation found ... reporter # 0type undefined extracted for atom 1: 
+
+;INFO_DEBUG 2D correlation found ... reporter # 1type undefined extracted for atom 1: 
+
+;INFO_DEBUG 2D correlation found ... reporter # 2type undefined extracted for atom 1: 
+
+;INFO_DEBUG 2D correlation found ... reporter # 3type undefined extracted for atom 1: 
+
+;INFO_DEBUG 2D correlation found ... reporter # 4type undefined extracted for atom 1: 
+
+;INFO_DEBUG 2D correlation found ... reporter # 5type undefined extracted for atom 1: 
+
+;INFO_DEBUG 2D correlation found ... reporter # 6type undefined extracted for atom 1: 
 
 >  <NMREDATA_1D_1H>
 Larmor=500.13234410931

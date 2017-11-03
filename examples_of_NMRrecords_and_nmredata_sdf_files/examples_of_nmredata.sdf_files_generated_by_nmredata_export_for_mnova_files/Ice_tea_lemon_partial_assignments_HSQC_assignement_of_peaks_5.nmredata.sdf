@@ -1,4 +1,4 @@
-
+luc
   ChemDraw09271711102D
 
  12 12  0  0  0  0  0  0  0  0999 V2000
@@ -55,10 +55,25 @@ H6a, 3.7501, H10
 6, 60.6895, 10
 H6b, 3.5487, H10
 
+;INFO_DEBUG 2D correlation found ... reporter # 0type undefined extracted for atom 1: 
+
+;INFO_DEBUG 2D correlation found ... reporter # 1type undefined extracted for atom 1: 
+
+;INFO_DEBUG 2D correlation found ... reporter # 2type undefined extracted for atom 1: 
+
+;INFO_DEBUG 2D correlation found ... reporter # 3type undefined extracted for atom 1: 
+
+;INFO_DEBUG 2D correlation found ... reporter # 4type undefined extracted for atom 1: 
+
+;INFO_DEBUG 2D correlation found ... reporter # 5type undefined extracted for atom 1: 
+
+;INFO_DEBUG 2D correlation found ... reporter # 6type undefined extracted for atom 1: 
+
 >  <NMREDATA_1D_1H>
 Larmor=500.13234410931
 Pulseprogram=zgpr ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/20/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 ;3.2775-3.2200, L=H4;found no H multiplet for this H
 ;3.3407-3.2910, L=H3;found no H multiplet for this H
 ;3.1182-3.0492, L=H2;found no H multiplet for this H
@@ -71,6 +86,7 @@ Spectrum_Location=file:MP_ice_tea_lemon/20/pdata/1/
 Larmor=125.770363831
 Pulseprogram=zgdc ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/16/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 69.5385, L=4, I=4669.1643, E=181.3486;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
 75.7250, L=3, I=4708.9362, E=182.8933;errcs=-0.000737 ppm (This is how far this peak is from the assigned resonance)
 74.1079, L=2, I=4470.6244, E=173.6374;errcs=-0.000377 ppm (This is how far this peak is from the assigned resonance)
@@ -82,6 +98,7 @@ Spectrum_Location=file:MP_ice_tea_lemon/16/pdata/1/
 Larmor=125.770363831
 Pulseprogram=dept135 ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/17/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 ;nothing at 69.5385 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
 ;nothing at 75.7257 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
 ;nothing at 74.1083 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list

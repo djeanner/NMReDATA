@@ -67,6 +67,8 @@ H10, 0.8308, H10
 H11, 0.9493, H11
 11, 20.9880, 11
 
+;INFO_DEBUG 2D correlation found ... reporter # 0type undefined extracted for atom 1: 1
+
 >  <NMREDATA_1D_1H>
 Larmor=500.133088507
 Pulseprogram=zg30 ;optional in V1
@@ -153,7 +155,7 @@ H9/H11
 
 >  <NMREDATA_2D_1H_unidentified_heteronuclear_2d_spectrum_1H>
 Larmor=500.13
-CorrType=na
+CorrType=na;Type was not identifiedUnknown
 Pulseprogram=bbhd_psyche_clip_cosy.mb ;optional in V1
 
 >  <NMREDATA_2D_13C_1J_1H>
@@ -255,7 +257,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 
 >  <NMREDATA_2D_1H_unidentified_heteronuclear_2d_spectrum_1H>
 Larmor=500.13
-CorrType=na
+CorrType=na;Type was not identifiedUnknown
 Pulseprogram=bbhd_psyche_diag_apc.mb ;optional in V1
 
 $$$$

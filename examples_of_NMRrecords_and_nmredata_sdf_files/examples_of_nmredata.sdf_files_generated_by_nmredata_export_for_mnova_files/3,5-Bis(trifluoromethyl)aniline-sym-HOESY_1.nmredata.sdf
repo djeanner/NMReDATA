@@ -156,12 +156,12 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 
 >  <NMREDATA_2D_19F_D_1H>
 Larmor=300.13180078
-CorrType=na;Type was not identified2D-UNDEFINED
+CorrType=na;Type was not identifiedUnknown
 Pulseprogram=hoesyetgp.2 ;optional in V1
 
 >  <NMREDATA_2D_1H_D_19F>
 Larmor=282.404355214
-CorrType=na;Type was not identified2D-UNDEFINED
+CorrType=na;Type was not identifiedUnknown
 Pulseprogram=FHAhoesytp1_2.txt ;optional in V1
 
 $$$$

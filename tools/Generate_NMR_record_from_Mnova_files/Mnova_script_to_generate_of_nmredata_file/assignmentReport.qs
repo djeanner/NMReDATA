@@ -1625,7 +1625,7 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
             
             
             
-            if (nmredata[looop_over_spectra] !== "" ) {
+            if (nmredata_header[looop_over_spectra] !== "" ) {
                 
                 full_path_orig=spectrum.getParam("Data File Name");
                 full_path=spectrum.getParam("Data File Name");
@@ -1705,7 +1705,6 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                 //     nmredata_header[looop_over_spectra] += ";UNIX_CREATE cd \"" + "CSH_NAME_CSH" + seppath + "\"\n";
                 
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE rm \"CSH_NAME_CSH.zip\" \n";
-                nmredata_header[looop_over_spectra] += ";UNIX_CREATE sleep 1\n";
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE zip -q -r \"CSH_NAME_CSH.zip\" \"CSH_NAME_CSH\" -x \"*.DS_Store\" -x \".*\" -x \"_*\"\n";
                 //      nmredata_header[looop_over_spectra] += ";UNIX_CREATE cd ..\n";
                 
@@ -1714,7 +1713,6 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                 // nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo \"cd \"\\\"\"UNIX_WO_PATH" + seppath + "CSH_NAME_CSH" +  "\"\\" + "\"\n";
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo \"cd \"\\\"\"UNIX_WO_PATH"  +  "\"\\" + "\"\n";
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo 'rm  \"CSH_NAME_CSH.zip\" '\n";
-                nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo sleep 1\n";
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo 'zip -q -r \"CSH_NAME_CSH.zip\" \"CSH_NAME_CSH\" -x \"*.DS_Store\" -x \".*\" -x \"_*\"'\n";
                 
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE endif\n";

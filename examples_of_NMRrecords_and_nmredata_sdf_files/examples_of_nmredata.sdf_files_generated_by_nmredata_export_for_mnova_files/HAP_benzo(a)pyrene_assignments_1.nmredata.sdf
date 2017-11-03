@@ -163,6 +163,8 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=500.13
 CorrType=COSY
 Pulseprogram=cosygpppqf ;optional in V1
+Spectrum_Location=file:MP_HAP_benzoapyrene/23/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 H2/H1
 H6/H1
 H1/H2
@@ -182,6 +184,8 @@ H19/H20
 Larmor=500.13000855
 CorrType=HSQC
 Pulseprogram=hsqcetgpsi ;optional in V1
+Spectrum_Location=file:djhap_benapyr/12/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 1/H1
 2/H2
 3/H3
@@ -199,6 +203,8 @@ Pulseprogram=hsqcetgpsi ;optional in V1
 Larmor=500.13
 CorrType=HMBC
 Pulseprogram=hmbcetgpl3nd ;optional in V1
+Spectrum_Location=file:MP_HAP_benzoapyrene/24/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 3/H1
 5/H1
 4/H2

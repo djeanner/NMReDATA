@@ -1,19 +1,19 @@
-luc
+b
   ChemDraw09271711102D
 
  12 12  0  0  0  0  0  0  0  0999 V2000
-   -1.2326    0.3320    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
-   -0.4287   -1.0603    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
-    1.1265   -0.6529    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
-    2.6724   -1.0603    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
-    1.8686    0.3320    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
-    0.3132   -0.0754    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
-   -2.0545   -0.1426    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
-   -1.3454   -0.8147    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
-    1.7976   -1.3240    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
-   -0.3578    0.5957    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
-   -0.3578    1.5448    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
-    3.8066   -0.4649    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5156    0.7496    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9886   -0.1632    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0310    0.1040    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0445   -0.1632    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5175    0.7496    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5022    0.4826    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0545    0.4385    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5896   -0.0021    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4710   -0.3360    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9421    0.9226    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9421    1.5448    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7881    0.2272    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
   1  2  1  0  0  0  0
   2  3  1  0  0  0  0
   3  4  1  0  0  0  0
@@ -54,12 +54,6 @@ H5, 3.3158, H6
 H6a, 3.7501, H10
 6, 60.6895, 10
 H6b, 3.5487, H10
-
-
-
-
-
-
 
 
 >  <NMREDATA_1D_1H>
@@ -103,20 +97,58 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=500.13
 CorrType=COSY
 Pulseprogram=cosyprqf ;optional in V1
+Spectrum_Location=file:MP_ice_tea_lemon/15/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+H3/H4
+H5/H4
+H4/H3
+H2/H3
+H3/H2
+H1/H2
+H2/H1
+H4/H5
+H6a/H5
+H6b/H5
+H5/H6a
+H6b/H6a
+H6a/H6a
+H5/H6b
+H6a/H6b
 
 >  <NMREDATA_2D_13C_1J_1H>
 Larmor=500.13234410931
 CorrType=HSQC
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
+Spectrum_Location=file:MP_ice_tea_lemon/21/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 
 >  <NMREDATA_2D_13C_NJ_1H>
 Larmor=500.13234410931
 CorrType=HMBC
 Pulseprogram=hmbcgplpndqf ;optional in V1
+Spectrum_Location=file:MP_ice_tea_lemon/23/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+6/H4
+1/H3
+1/H2
+3/H2
+2/H1
+3/H1
+5/H1
+1/H5
 
 >  <NMREDATA_2D_13C_1J_1H>
 Larmor=500.13234410931
 CorrType=HSQC
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
+Spectrum_Location=file:MP_ice_tea_lemon/13/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+4/H4
+3/H3
+2/H2
+1/H1
+5/H5
+6/H6a
+6/H6b
 
 $$$$

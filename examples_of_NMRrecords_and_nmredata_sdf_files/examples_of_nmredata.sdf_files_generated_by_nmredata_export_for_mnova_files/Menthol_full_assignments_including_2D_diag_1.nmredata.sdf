@@ -123,6 +123,8 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=500.13
 CorrType=COSY
 Pulseprogram=cosygpppqf ;optional in V1
+Spectrum_Location=file:AN-menthol/13/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 H1b/H1a
 H2b/H1a
 H2a/H1a
@@ -156,11 +158,15 @@ H9/H11
 Larmor=500.13
 CorrType=na;Type was not identifiedUnknown
 Pulseprogram=bbhd_psyche_clip_cosy.mb ;optional in V1
+Spectrum_Location=file:AN-menthol/17/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 
 >  <NMREDATA_2D_13C_1J_1H>
 Larmor=500.13
 CorrType=HSQC
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
+Spectrum_Location=file:AN-menthol/14/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 1/H1a
 1/H1b
 2/H2a
@@ -179,6 +185,8 @@ Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
 Larmor=500.13
 CorrType=HMBC
 Pulseprogram=hmbcetgpl3nd ;optional in V1
+Spectrum_Location=file:AN-menthol/15/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 2/H1a
 3/H1a
 5/H1a
@@ -232,6 +240,8 @@ Pulseprogram=hmbcetgpl3nd ;optional in V1
 Larmor=500.13
 CorrType=NOESY
 Pulseprogram=noesygpphpp ;optional in V1
+Spectrum_Location=file:AN-menthol/16/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 H10/H4
 H4/H10
 
@@ -258,5 +268,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=500.13
 CorrType=na;Type was not identifiedUnknown
 Pulseprogram=bbhd_psyche_diag_apc.mb ;optional in V1
+Spectrum_Location=file:Menthol/18/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 
 $$$$

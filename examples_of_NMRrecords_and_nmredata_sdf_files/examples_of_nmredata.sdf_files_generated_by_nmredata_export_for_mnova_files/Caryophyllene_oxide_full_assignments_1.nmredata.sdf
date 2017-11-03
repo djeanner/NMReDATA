@@ -172,6 +172,8 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=500.13
 CorrType=COSY
 Pulseprogram=cosygpppqf ;optional in V1
+Spectrum_Location=file:MP-caryophyllene_oxide/13/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 H16/H2a
 H16/H2b
 H8b/H8a
@@ -207,6 +209,8 @@ H18a/H18b
 Larmor=500.131750455
 CorrType=HSQC
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
+Spectrum_Location=file:MP-caryophyllene_oxide/14/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 2/H2a
 2/H2b
 5/H5
@@ -230,6 +234,8 @@ Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
 Larmor=500.131750455
 CorrType=HMBC
 Pulseprogram=hmbcetgpl3nd ;optional in V1
+Spectrum_Location=file:MP-caryophyllene_oxide/15/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 1/H2a
 3/H2a
 4/H2a

@@ -94,21 +94,29 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=500.13
 CorrType=COSY
 Pulseprogram=cosyprqf ;optional in V1
+Spectrum_Location=file:MP_ice_tea_lemon/15/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 
 >  <NMREDATA_2D_13C_1J_1H>
 Larmor=500.13234410931
 CorrType=HSQC
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
+Spectrum_Location=file:MP_ice_tea_lemon/21/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 
 >  <NMREDATA_2D_13C_NJ_1H>
 Larmor=500.13234410931
 CorrType=HMBC
 Pulseprogram=hmbcgplpndqf ;optional in V1
+Spectrum_Location=file:MP_ice_tea_lemon/23/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 
 >  <NMREDATA_2D_13C_1J_1H>
 Larmor=500.13234410931
 CorrType=HSQC
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
+Spectrum_Location=file:MP_ice_tea_lemon/13/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 4/H4
 
 $$$$

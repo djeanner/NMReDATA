@@ -1652,7 +1652,6 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                 }
                 
                 //   nmredata[looop_over_spectra] += "Exp_name=" + path_elements[path_elements.length-5]  + " ;  not in format\n";
-                
                 root_path="";
                 for (lo=0 ; lo <=path_elements.length-6 ; lo ++) {
                     root_path +=  path_elements[lo]  + seppath;
@@ -1662,7 +1661,8 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                     rel_path +=  path_elements[lo]  + seppath;
                 }
                 nmredata_header[looop_over_spectra] += "Spectrum_Location=file:" + rel_path + "\n";
-                
+                nmredata_header[looop_over_spectra] += "zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1\n";
+
                 //prepare script to prepare NMR record:
                 /*   nmredata[looop_over_spectra] += ";UNIX_CREATE mkdir -p \"" + path_elements[path_elements.length-5]  + "\"\n";
                  nmredata[looop_over_spectra] += ";UNIX_CREATE cp -rp  \"" + root_path + path_elements[path_elements.length-5] + seppath + path_elements[path_elements.length-4] + "\" \"" + path_elements[path_elements.length-5]  + "\"\n";
@@ -1697,7 +1697,7 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE \n";
             }
             if ( specIndex+1 === spectra){
-                nmredata[looop_over_spectra] += ";UNIX_CREATE cat  \"" + parameters.name_compound + ".nmredata.sdf\"| grep -v  UNIX_CREATE> \"CSH_NAME_CSH" + "/" + parameters.name_compound + ".nmredata.sdf" + "\"\n";
+                nmredata_header[looop_over_spectra] += ";UNIX_CREATE cat  \"" + parameters.name_compound + ".nmredata.sdf\"| grep -v  UNIX_CREATE> \"CSH_NAME_CSH" + "/" + parameters.name_compound + ".nmredata.sdf" + "\"\n";
                 // nmredata[looop_over_spectra] += ";UNIX_CREATE cp  \"" + parameters.name_compound + ".sdf\"  \"CSH_NAME_CSH" + "/" + parameters.name_compound + ".sdf" + "\"\n";
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE if (! $?notok) then\n";
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE echo \"Zipping folder CSH_NAME_CSH\" \n";

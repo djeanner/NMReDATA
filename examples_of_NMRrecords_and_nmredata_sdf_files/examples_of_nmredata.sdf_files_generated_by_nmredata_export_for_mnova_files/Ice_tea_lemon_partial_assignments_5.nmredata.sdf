@@ -128,14 +128,24 @@ CorrType=HMBC
 Pulseprogram=hmbcgplpndqf ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/23/pdata/1/
 zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+3/H4
+5/H4
 6/H4
 1/H3
+2/H3
+4/H3
 1/H2
 3/H2
+4/H2
 2/H1
 3/H1
 5/H1
 1/H5
+4/H5
+4/H6a
+5/H6a
+4/H6b
+5/H6b
 
 >  <NMREDATA_2D_13C_1J_1H>
 Larmor=500.13234410931

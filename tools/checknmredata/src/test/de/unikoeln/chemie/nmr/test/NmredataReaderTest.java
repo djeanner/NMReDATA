@@ -13,7 +13,7 @@ import junit.framework.TestCase;
 public class NmredataReaderTest  extends TestCase{
 	
 	public void testSimple() throws Exception, IOException{
-		String filename = "testdata/example.sd";
+		String filename = "testdata/example.nmredata.sdf";
         InputStream ins = this.getClass().getClassLoader().getResourceAsStream(filename);
         NmredataReader reader = new NmredataReader(ins);
         NmreData data = reader.read();

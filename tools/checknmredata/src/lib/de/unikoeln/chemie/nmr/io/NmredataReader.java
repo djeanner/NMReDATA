@@ -80,7 +80,7 @@ public class NmredataReader {
 			while(st2.hasMoreTokens()){
 				String atom = st2.nextToken();
 				if(atom.indexOf("H")>-1){
-					int atomid=Integer.parseInt(atom.trim().substring(1));
+					int atomid=Integer.parseInt(atom.trim().substring(1))-1;
 					if(atomid>=data.getMolecule().getAtomCount())
 						throw new Exception("Atom "+atomid+" specified in MREDATA_ASSIGNMENT block, but only "+data.getMolecule().getAtomCount()+" atoms are in Molecule");
                     for(int k=0;k<data.getMolecule().getConnectedAtomsCount(data.getMolecule().getAtom(atomid));k++){
@@ -91,7 +91,7 @@ public class NmredataReader {
                     }
 					atoms.add(new AtomReference(null, atomid));
 				}else{
-					int atomid=Integer.parseInt(atom.trim());
+					int atomid=Integer.parseInt(atom.trim())-1;
 					atoms.add(new AtomReference(null, atomid));
 				}
 				IAssignmentTarget[] assigns = new IAssignmentTarget[atoms.size()];

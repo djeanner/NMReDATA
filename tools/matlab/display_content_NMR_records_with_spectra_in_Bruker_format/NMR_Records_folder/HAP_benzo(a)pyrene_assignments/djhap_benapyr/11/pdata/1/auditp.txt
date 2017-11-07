@@ -1,0 +1,37 @@
+##TITLE= Audit trail, TOPSPIN		Version 2.1
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmr
+$$ /opt/topspin/data/jeannerat/data/nmr/nmr/djhap_benapyr/11/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2013-06-08 18:12:17.153 +0200>,<nmr>,<EP-10012183>,<go>,<TOPSPIN 2.1>,
+      <created by zg
+	started at 2013-06-08 17:53:51.291 +0200,
+	POWCHK enabled, PULCHK disabled,
+       terminated by command 'halt'
+       configuration hash MD5:
+       25 B5 63 FC 29 04 5B 4F 20 64 0B EA DD 94 21 93
+       data hash MD5: 64K
+       E4 08 02 8F 19 C7 46 A6 59 E4 DE 1B 82 E4 15 FE>)
+(   2,<2013-06-08 18:12:17.314 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <Start of raw data processing
+       ef LB = 1 FT_mod = 6 PKNL = 1 SI = 32K 
+       data hash MD5: 32K
+       5E AB 35 3A E1 81 E8 79 CB 19 74 34 6C 05 EC 28>)
+(   3,<2013-06-08 18:12:17.513 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <apk 
+       data hash MD5: 32K
+       12 16 FC B6 4B 4A 74 0A 7A 07 4F 1D 2D A9 F8 24>)
+(   4,<2013-06-08 18:12:17.541 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
+      <abs ABSG = 5 
+       data hash MD5: 32K
+       8B DF D9 49 58 B0 21 AC 04 46 4A C1 84 19 23 7D>)
+(   5,<2013-06-08 18:12:18.759 +0200>,<nmr>,<EP-10012183>,<audit>,<TOPSPIN 2.1>,
+      <user comment:
+       ICON-NMR User ID: nmr
+       data hash MD5: 32K
+       8B DF D9 49 58 B0 21 AC 04 46 4A C1 84 19 23 7D>)
+##END=
+
+$$ hash MD5
+$$ 49 5A 5D 53 29 FE B8 0C A6 55 5B EB C6 1C 58 C8

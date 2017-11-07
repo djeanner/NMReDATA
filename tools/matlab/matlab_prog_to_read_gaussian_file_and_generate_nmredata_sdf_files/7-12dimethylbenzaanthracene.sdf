@@ -1,6 +1,6 @@
 7-12dimethylbenzaanthracene
 Demo .sdf files generated from gaussian DFT/GIAO by matlab functions written by Damien Jeannerat in April 2017
-dj_test_generationV_0.93 1 07-Aug-2017
+dj_test_generationV_0.93 1 06-Nov-2017
 36 39  0  0  0  0  0  0  0  0999 V2000
    -0.6060    3.3560    0.2293 H   0  0  0  0  0  0  0  0  0  0  0  0
    -0.9594    2.3331    0.1855 C   0  0  0  0  0  0  0  0  0  0  0  0

@@ -1,0 +1,27 @@
+##TITLE= Parameter file, TopSpin 3.5 pl 5
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 3	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmr
+$$ 2016-11-17 14:56:07.777 +0100  nmr@CZC60678L0
+$$ /opt/topspin3.5pl5/data/marion/data/nmr/nmr/MP_HAP_benzoapyrene/24/acqu2
+$$ process /opt/topspin3.5pl5/prog/mod/dataserver
+##$ACQT0= 0
+##$BF1= 125.757788526
+##$DE= 124.2331
+##$DECIM= 1
+##$DR= 16
+##$FW= 3150
+##$FnMODE= 6
+##$NUC1= <13C>
+##$NusJSP= 0
+##$NusT2= 1
+##$NusTD= 0
+##$O1= 15719.72356575
+##$ProjAngle= 0
+##$SFO1= 125.773508249566
+##$SW= 19.999700037537
+##$SW_h= 2515.43243766
+##$TD= 256
+##END=

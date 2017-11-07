@@ -39,7 +39,7 @@ for loo=1:size(super_obj,2)
         end
     end
 end
-drawnow
+
 %%%%%%%%%%%%%%%%%%%%%%%% dft data
 
 name='androsten';

@@ -5,3 +5,4 @@ To call the script from Mnova 11:
 1) open a document with some assignement
 2) use the menu "Scripts/Reports/Assignments..."
 It will create the nmredata.sdf files in your home directory and close the document (as version Nov. 2nd 2017)
+This program was used to generate the NMR records in the example folder.

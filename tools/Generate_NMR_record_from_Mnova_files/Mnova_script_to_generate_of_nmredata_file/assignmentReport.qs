@@ -1012,33 +1012,21 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
             }
             //
             cur_spec_atom="";
+            label="";
+
             if (spectrum.dimCount === 1) {
-                nmredata_header[looop_over_spectra] += ">  <NMREDATA_1D_" +  spectrum.nucleus(1) + ">\n";
+                label = ">  <NMREDATA_1D_" +  spectrum.nucleus(1) + ">";
                 cur_spec_atom=spectrum.nucleus(1);
-                /*  cur_spec_atom=cur_spec_atom.replace("0","").replace("1","").replace("2","").replace("3","");
-                 cur_spec_atom=cur_spec_atom.replace("4","").replace("5","").replace("6","").replace("7","");
-                 cur_spec_atom=cur_spec_atom.replace("8","").replace("9","").replace("6","").replace("7","");
-                 cur_spec_atom=cur_spec_atom.replace("0","").replace("1","").replace("2","").replace("3","");
-                 cur_spec_atom=cur_spec_atom.replace("4","").replace("5","").replace("6","").replace("7","");
-                 cur_spec_atom=cur_spec_atom.replace("8","").replace("9","").replace("6","").replace("7","");
-                 cur_spec_atom=cur_spec_atom.replace("0","").replace("1","").replace("2","").replace("3","");
-                 cur_spec_atom=cur_spec_atom.replace("4","").replace("5","").replace("6","").replace("7","");
-                 cur_spec_atom=cur_spec_atom.replace("8","").replace("9","").replace("6","").replace("7","");//           .replace(/,/g,"&");//DJ_DEBUG*/
-                cur_spec_atom=cur_spec_atom.replace(/[0-9]/g,"");// should replace all above
-                //           .replace(/d/g,"&");//DJ_DEBUG
-                //           .replace(/d/g,"");//DJ_DEBUG
-                
-                
+                cur_spec_atom=cur_spec_atom.replace(/[0-9]/g,"");// reploaces "13C" in to "C" - removed the numbers... convert isotope into element name
             }
             // the following lines apear at two places in the program... if change... change both...
             
-            label="";
-            if (keep_type === "HSQC") { label = ">  <NMREDATA_2D_" +  spectrum.nucleus(1) + "_1J_" + spectrum.nucleus(2)  + ">\n"; }
-            if (keep_type === "HMBC") { label = ">  <NMREDATA_2D_13C_NJ_1H>\n"; }
-            if (keep_type === "H2BC") { label = ">  <NMREDATA_2D_13C_2J_1H>\n"; }
-            if (keep_type === "COSY") { label = ">  <NMREDATA_2D_" +  spectrum.nucleus(1) + "_NJ_" + spectrum.nucleus(1)  + ">\n"; }
-            if (keep_type === "NOESY") { label= ">  <NMREDATA_2D_" +  spectrum.nucleus(1) + "_D_" + spectrum.nucleus(1)  + ">\n"; }
-            if (keep_type === "TOCSY") { label= ">  <NMREDATA_2D_" +  spectrum.nucleus(1) + "_TJ_" + spectrum.nucleus(1)  + ">\n"; }
+            if (keep_type === "HSQC") { label = ">  <NMREDATA_2D_" +  spectrum.nucleus(1) + "_1J_" + spectrum.nucleus(2)  + ">"; }
+            if (keep_type === "HMBC") { label = ">  <NMREDATA_2D_13C_NJ_1H>"; }
+            if (keep_type === "H2BC") { label = ">  <NMREDATA_2D_13C_2J_1H>"; }
+            if (keep_type === "COSY") { label = ">  <NMREDATA_2D_" +  spectrum.nucleus(1) + "_NJ_" + spectrum.nucleus(1)  + ">"; }
+            if (keep_type === "NOESY") { label= ">  <NMREDATA_2D_" +  spectrum.nucleus(1) + "_D_" + spectrum.nucleus(1)  + ">"; }
+            if (keep_type === "TOCSY") { label= ">  <NMREDATA_2D_" +  spectrum.nucleus(1) + "_TJ_" + spectrum.nucleus(1)  + ">"; }
             if (spectrum.dimCount === 2){
                 if (label === ""){
                     // try to determine the type of experiment when not in the list of "official" Mnova type
@@ -1049,14 +1037,14 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                         if ( spectrum.getParam("Pulse Sequence").find("hoesy",0) > -1){ lab="_D_";}// this is for hoesy see http://nmredata.org/wiki/NMReDATA_tag_format#Naming_tags_for_nD
                     }
                     if (spectrum.nucleus(2)===""){
-                        nmredata_header[looop_over_spectra] += ">  <NMREDATA_2D_" + spectrum.nucleus(1)  + lab + spectrum.nucleus(1)  + ">\n";
+                        label += ">  <NMREDATA_2D_" + spectrum.nucleus(1)  + lab + spectrum.nucleus(1)  + ">";
                     }else{
-                        nmredata_header[looop_over_spectra] += ">  <NMREDATA_2D_" + spectrum.nucleus(1)  + lab + spectrum.nucleus(2)  + ">\n";
+                        label += ">  <NMREDATA_2D_" + spectrum.nucleus(1)  + lab + spectrum.nucleus(2)  + ">";
                     }
-                }else{
-                    nmredata_header[looop_over_spectra] +=label;
                 }
             }
+            nmredata_header[looop_over_spectra] +=label+ "\n";
+
             if ((spectrum.dimCount === 1) || (keep_type !== "")){
                 
                 nmredata_header[looop_over_spectra] += "Larmor=" + spectrum.frequency(spectrum.dimCount) + "\n";

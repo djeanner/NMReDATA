@@ -65,10 +65,22 @@ for loop_over_fields=1:size(list_equalsign,2)
             end
         end
     end
+     if code=='N'%nb atoms...
+        values=sscanf(content,'%d');
+        if size(values,1)<1
+            error_message=['expect int integral value following "E=" '   current_line];
+            disp(['Error :  ' error_message]);
+        else
+            obj.integral{pieces_of_information}=values;
+            if verbose
+                disp(['Found number of atom N :' num2str(obj.N{pieces_of_information}) ])
+            end
+        end
+    end
     if code=='I'%intensity
         values=sscanf(content,'%f');
         if size(values,1)<1
-            error_message=['expect float intensity value following "E=" '   current_line];
+            error_message=['expect float intensity value following "I=" '   current_line];
             disp(['Error :  ' error_message]);
         else
             obj.intensity{pieces_of_information}=values;
@@ -78,6 +90,7 @@ for loop_over_fields=1:size(list_equalsign,2)
         end
     end
     if code=='S'%signal multiplicity
+        
         if length(content)<1
             error_message=['expect multiplicity after "S=" '   current_line];
             disp(['Error :  ' error_message]);
@@ -85,6 +98,18 @@ for loop_over_fields=1:size(list_equalsign,2)
             obj.multiplicity{pieces_of_information}=content;
             if verbose
                 disp(['Found multiplicity :' num2str(obj.multiplicity{pieces_of_information}) ])
+            end
+        end
+    end
+     if code=='L'%signal label
+
+        if length(content)<1
+            error_message=['expect label after "L=" '   current_line];
+            disp(['Error :  ' error_message]);
+        else
+            obj.label{pieces_of_information}=content;
+            if verbose
+                disp(['Found label :' num2str(obj.label{pieces_of_information}) ])
             end
         end
     end

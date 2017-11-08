@@ -23,9 +23,19 @@ end
 % end
 if nargin<4
     sizes_in=[0 0 15 10];
+else
+    if size(sizes_in,2)==0,
+       
+            sizes_in=[0 0 15 10];
+
+    end
 end
 if nargin<3
     scales_in=[min(spectrum.scale2) max(spectrum.scale2) min(spectrum.scale1) max(spectrum.scale1)];
+else
+    if size(scales_in,2)==0
+    scales_in=[min(spectrum.scale2) max(spectrum.scale2) min(spectrum.scale1) max(spectrum.scale1)];
+    end
 end
 if nargin<2
     hold_me=0;

@@ -58,7 +58,8 @@ folder_location_full=[folder_location 'HAP_benzo(a)pyrene_assignments/'];
 file_name=[folder_location_full 'compound1.nmredata.sdf'];
 
 [super_obj, returned_value, text_of_the_problem]=check_nmredata_sdf_file(file_name);
-
+list_1d=[]; pointer_1d=1;
+list_2d=[]; pointer_2d=1;
 %% plot spectra
 for loo=3:size(super_obj,2)%search all spectral objects (assignment is object 1 and J is object 2)
     if isfield(super_obj{loo},'spectrum_location')
@@ -75,10 +76,12 @@ for loo=3:size(super_obj,2)%search all spectral objects (assignment is object 1 
                     if exist([folder_location_full actualfile '/1r'],'file')
                         disp(['Element ' num2str(loo) ' Folder ' super_obj{loo}.spectrum_location ' exists with 1r file']);
                         super_obj{loo}.spectrum=read_data_bruker([folder_location_full exp_name '/'],expno,procno,0);
+                        figure(loo);clf;
                         
-                        plot_1d(super_obj{loo}.spectrum);
-                        print(['./spectrum_' num2str(loo) '.eps']);%here
-                        
+                        plot_1d(super_obj{loo}.spectrum,0,[],[],loo);
+                        title(super_obj{loo}.tag_name,'interpreter','none')
+                        list_1d(pointer_1d,1)=loo;
+                        pointer_1d=pointer_1d+1;
                         OK=1;
                     else
                         disp(['No 1r file found in folder ' super_obj{loo}.spectrum_location ]);
@@ -91,9 +94,13 @@ for loo=3:size(super_obj,2)%search all spectral objects (assignment is object 1 
                         [super_obj{loo}.spectrum.noise_level, super_obj{loo}.spectrum.list_peaks]=determine_noise_level(super_obj{loo}.spectrum);
                         
                         super_obj{loo}.spectrum.cont_level_list=generate_contour_level_list(super_obj{loo}.spectrum.noise_level * min_lev ,max(max(super_obj{loo}.spectrum.list_peaks)) , 2.00);
-                        plot_2d_interp(super_obj{loo}.spectrum);
-                        print(['./spectrum_' num2str(loo) '.eps']);%here
+                        figure(loo);clf;
+                        
+                        plot_2d_interp(super_obj{loo}.spectrum,0,[],[],loo);
+                        title(super_obj{loo}.tag_name,'interpreter','none')
                         OK=1;
+                        list_2d(pointer_2d,1)=loo;
+                        pointer_2d=pointer_2d+1;
                     else
                         disp(['No 2rr file found in folder ' super_obj{loo}.spectrum_location ]);
                     end
@@ -105,7 +112,33 @@ for loo=3:size(super_obj,2)%search all spectral objects (assignment is object 1 
     end
 end
 
+%% plot NMReDATA
+used_color='b';
+for loop_over_spectra=1:pointer_1d-1
+    figure(list_1d(loop_over_spectra,1));hold on;
+    tmp_obj=super_obj{list_1d(loop_over_spectra,1)};
+    for loop_over_peaks=1:size(tmp_obj.label,2)
+        disp(['For Peak : ' num2str(loop_over_peaks) ' Label= ' tmp_obj.label{1,loop_over_peaks}])
+        plot(tmp_obj.chemical_shift{1,loop_over_peaks},0,[used_color '+'])
+        text(tmp_obj.chemical_shift{1,loop_over_peaks},0,tmp_obj.label{1,loop_over_peaks},'color',used_color)
+    end
+    fig_num=list_1d(loop_over_spectra,1);
+    if  exist('OCTAVE_VERSION', 'builtin') ~= 0
+        print(['./O_spectrum_' num2str(fig_num) '.eps'],'-color');%for octave
+    else
+        print(['./M_spectrum_' num2str(fig_num) '.eps'],'-depsc');%for matlab
+    end
+end
+for loop_over_spectra=1:pointer_2d-1
+    figure(list_2d(loop_over_spectra,1));hold on;
+        fig_num=list_2d(loop_over_spectra,1);
 
+  if  exist('OCTAVE_VERSION', 'builtin') ~= 0
+        print(['./O_spectrum_' num2str(fig_num) '.eps'],'-color');%for octave
+    else
+        print(['./M_spectrum_' num2str(fig_num) '.eps'],'-depsc');%for matlab
+    end
+end
 
 
 drawnow

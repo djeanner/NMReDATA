@@ -103,7 +103,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 ;nothing at 16.1017 ppm , for signal 10; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
 ;nothing at 20.9880 ppm , for signal 11; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
 
->  <NMREDATA_1D_13C>
+>  <NMREDATA_1D_13C.2>
 Larmor=125.770363831
 Pulseprogram=dept135 ;optional in V1
 Spectrum_Location=file:AN-menthol/12/pdata/1/
@@ -245,7 +245,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 H10/H4
 H4/H10
 
->  <NMREDATA_1D_1H>
+>  <NMREDATA_1D_1H.2>
 Larmor=500.13
 Pulseprogram=bbhd_psyche_diag_apc.mb ;optional in V1
 Spectrum_Location=file:AN-menthol/18/pdata/100/
@@ -264,7 +264,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 ;0.8308, L=H10;found no H multiplet for this H
 ;0.9493, L=H11;found no H multiplet for this H
 
->  <NMREDATA_2D_1H_unidentified_heteronuclear_2d_spectrum_1H>
+>  <NMREDATA_2D_1H_unidentified_heteronuclear_2d_spectrum_1H.2>
 Larmor=500.13
 CorrType=na;Type was not identifiedUnknown
 Pulseprogram=bbhd_psyche_diag_apc.mb ;optional in V1

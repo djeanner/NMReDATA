@@ -1015,18 +1015,18 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
             label="";
 
             if (spectrum.dimCount === 1) {
-                label = ">  <NMREDATA_1D_" +  spectrum.nucleus(1) + ">";
+                label = ">  <NMREDATA_1D_" +  spectrum.nucleus(1) + "";
                 cur_spec_atom=spectrum.nucleus(1);
                 cur_spec_atom=cur_spec_atom.replace(/[0-9]/g,"");// reploaces "13C" in to "C" - removed the numbers... convert isotope into element name
             }
             // the following lines apear at two places in the program... if change... change both...
             
-            if (keep_type === "HSQC") { label = ">  <NMREDATA_2D_" +  spectrum.nucleus(1) + "_1J_" + spectrum.nucleus(2)  + ">"; }
-            if (keep_type === "HMBC") { label = ">  <NMREDATA_2D_13C_NJ_1H>"; }
-            if (keep_type === "H2BC") { label = ">  <NMREDATA_2D_13C_2J_1H>"; }
-            if (keep_type === "COSY") { label = ">  <NMREDATA_2D_" +  spectrum.nucleus(1) + "_NJ_" + spectrum.nucleus(1)  + ">"; }
-            if (keep_type === "NOESY") { label= ">  <NMREDATA_2D_" +  spectrum.nucleus(1) + "_D_" + spectrum.nucleus(1)  + ">"; }
-            if (keep_type === "TOCSY") { label= ">  <NMREDATA_2D_" +  spectrum.nucleus(1) + "_TJ_" + spectrum.nucleus(1)  + ">"; }
+            if (keep_type === "HSQC") { label = ">  <NMREDATA_2D_" +  spectrum.nucleus(1) + "_1J_" + spectrum.nucleus(2)  + ""; }
+            if (keep_type === "HMBC") { label = ">  <NMREDATA_2D_13C_NJ_1H"; }
+            if (keep_type === "H2BC") { label = ">  <NMREDATA_2D_13C_2J_1H"; }
+            if (keep_type === "COSY") { label = ">  <NMREDATA_2D_" +  spectrum.nucleus(1) + "_NJ_" + spectrum.nucleus(1)  + ""; }
+            if (keep_type === "NOESY") { label= ">  <NMREDATA_2D_" +  spectrum.nucleus(1) + "_D_" + spectrum.nucleus(1)  + ""; }
+            if (keep_type === "TOCSY") { label= ">  <NMREDATA_2D_" +  spectrum.nucleus(1) + "_TJ_" + spectrum.nucleus(1)  + ""; }
             if (spectrum.dimCount === 2){
                 if (label === ""){
                     // try to determine the type of experiment when not in the list of "official" Mnova type
@@ -1037,14 +1037,29 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                         if ( spectrum.getParam("Pulse Sequence").find("hoesy",0) > -1){ lab="_D_";}// this is for hoesy see http://nmredata.org/wiki/NMReDATA_tag_format#Naming_tags_for_nD
                     }
                     if (spectrum.nucleus(2)===""){
-                        label += ">  <NMREDATA_2D_" + spectrum.nucleus(1)  + lab + spectrum.nucleus(1)  + ">";
+                        label += ">  <NMREDATA_2D_" + spectrum.nucleus(1)  + lab + spectrum.nucleus(1)  + "";
                     }else{
-                        label += ">  <NMREDATA_2D_" + spectrum.nucleus(1)  + lab + spectrum.nucleus(2)  + ">";
+                        label += ">  <NMREDATA_2D_" + spectrum.nucleus(1)  + lab + spectrum.nucleus(2)  + "";
                     }
                 }
             }
-            nmredata_header[looop_over_spectra] +=label+ "\n";
-
+            // add number to tag name when name already exist example : <NMREDATA_1D_1H> <NMREDATA_1D_1H.2> <NMREDATA_1D_1H.3>
+            // count number of occurances of the current label in the alread existing tags.
+            iii=1;
+            for (at = 1; at < looop_over_spectra+1; at++) {// loop over spectra spectra
+                lab=nmredata_header[at];
+                if (lab !== ""){
+                    if (lab.find(label,0) > -1){
+                        iii++
+                    }
+                }
+            }
+            if (iii>1){
+                label += "." + iii ;// add number when more than one with the same name
+            }
+            // dump tag name
+            nmredata_header[looop_over_spectra] +=label+ ">\n";
+            
             if ((spectrum.dimCount === 1) || (keep_type !== "")){
                 
                 nmredata_header[looop_over_spectra] += "Larmor=" + spectrum.frequency(spectrum.dimCount) + "\n";

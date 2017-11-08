@@ -94,7 +94,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 111.5410, S=hept, L=6, E=49.1521, J=3.73; found multiplet by label chem shifts differ by 0.025264 ppm
 123.4466, S=q, N=2, L=8&9, J=272.42, E=14.0040; found multiplet by chemical shift 
 
->  <NMREDATA_1D_13C>
+>  <NMREDATA_1D_13C.2>
 Larmor=125.770363831
 Pulseprogram=dept135 ;optional in V1
 Spectrum_Location=file:MP-TFM-aniline/12/pdata/1/

@@ -105,7 +105,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 111.5679, L=1, I=1660.6407, E=64.4987;errcs=0.001626 ppm (This is how far this peak is from the assigned resonance)
 123.4466, S=q, N=2, L=5'&5, J=272.42, E=14.0040; found multiplet by chemical shift 
 
->  <NMREDATA_1D_13C>
+>  <NMREDATA_1D_13C.2>
 Larmor=125.770363831
 Pulseprogram=dept135 ;optional in V1
 Spectrum_Location=file:MP-TFM-aniline/12/pdata/1/

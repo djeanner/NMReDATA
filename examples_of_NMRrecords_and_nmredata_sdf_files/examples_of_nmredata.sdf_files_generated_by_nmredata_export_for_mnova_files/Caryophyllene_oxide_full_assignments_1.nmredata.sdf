@@ -147,7 +147,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 17.0105, L=15, I=2494.4067, E=77.5055;errcs=-0.000245 ppm (This is how far this peak is from the assigned resonance)
 112.7597, L=18, I=3331.5470, E=129.3960;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
 
->  <NMREDATA_1D_13C>
+>  <NMREDATA_1D_13C.2>
 Larmor=125.770363831
 Pulseprogram=dept135 ;optional in V1
 Spectrum_Location=file:MP-caryophyllene_oxide/12/pdata/1/

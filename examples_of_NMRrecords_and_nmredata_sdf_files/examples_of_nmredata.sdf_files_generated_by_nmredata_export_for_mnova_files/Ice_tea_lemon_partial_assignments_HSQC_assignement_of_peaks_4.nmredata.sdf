@@ -82,7 +82,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 174.1793, L=6, I=81.4263, E=13.9153;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
 177.9723, L=9, I=53.2339, E=14.4731;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
 
->  <NMREDATA_1D_13C>
+>  <NMREDATA_1D_13C.2>
 Larmor=125.770363831
 Pulseprogram=dept135 ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/17/pdata/1/
@@ -115,7 +115,7 @@ Pulseprogram=hmbcgplpndqf ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/23/pdata/1/
 zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
 
->  <NMREDATA_2D_13C_1J_1H>
+>  <NMREDATA_2D_13C_1J_1H.2>
 Larmor=500.13234410931
 CorrType=HSQC
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1

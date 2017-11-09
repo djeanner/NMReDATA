@@ -31,9 +31,14 @@ if nargin<2
     hold_me=0;
 end
 %% could include here interpolation...
-    int_scale2=spectrum.scale2;
+    int_scale2=spectrum.scale2-0*spectrum.offset2/spectrum.sf2;
     data=spectrum.spectrum;
-    
+  %  spectrum.ABSF1
+   % spectrum.ABSF2
+   % spectrum.scale2(1)
+ %   spectrum.scale2(end)
+  %  spectrum.scale2(1)-spectrum.ABSF1
+ %   spectrum.scale2(end)-spectrum.ABSF2
 
 
 hhf=figure(fig_number);

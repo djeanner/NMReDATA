@@ -120,6 +120,9 @@ end
 
 if exist([path '/pdata/' num2str(procno) '/procs'],'file')
     content=textread([path '/pdata/' num2str(procno) '/procs'],'%s');
+    
+    data.ABSF1         = str2num(char(content(strmatch('##$ABSF1=',content')+1)));
+    data.ABSF2         = str2num(char(content(strmatch('##$ABSF2=',content')+1)));
     data.si2         = str2num(char(content(strmatch('##$SI=',content')+1)));
     data.wdw         = str2num(char(content(strmatch('##$WDW=',content')+1)));
     data.ssb         = str2num(char(content(strmatch('##$SSB=',content')+1)));
@@ -127,6 +130,7 @@ if exist([path '/pdata/' num2str(procno) '/procs'],'file')
     data.phc1         = str2num(char(content(strmatch('##$PHC1=',content')+1)));
     data.xdim         = str2num(char(content(strmatch('##$XDIM=',content')+1)));
     data.tdeff2         = str2num(char(content(strmatch('##$TDeff=',content')+1)));
+    data.offset2         = str2num(char(content(strmatch('##$OFFSET=',content')+1)));
         data.sf2         = str2num(char(content(strmatch('##$SF=',content')+1)));
 
     data.scale2=[data.o1p+data.sw2/2:-data.sw2/data.si2:(data.o1p-data.sw2/2)+data.sw2/data.si2];

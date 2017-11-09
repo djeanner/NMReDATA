@@ -135,7 +135,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 60.7954, L=19, I=7055.8890, E=203.1638;errcs=-0.002088 ppm (This is how far this peak is from the assigned resonance)
 55.9788, L=21, I=12614.9756, E=363.2294;errcs=0.000750 ppm (This is how far this peak is from the assigned resonance)
 
->  <NMREDATA_1D_13C.2>
+>  <NMREDATA_1D_13C#2>
 Larmor=125.770363831
 Pulseprogram=dept135 ;optional in V1
 Spectrum_Location=file:dj_ca_2017_ernestin_EN4/12/pdata/1/

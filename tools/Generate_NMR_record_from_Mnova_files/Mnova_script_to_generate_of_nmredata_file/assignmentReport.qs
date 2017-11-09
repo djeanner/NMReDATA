@@ -349,7 +349,7 @@ function assignmentReport() {
                             }
                             
                             out_mol = mol.getMolfile();
-                            stream.write(out_mol);// bug reported by JMN Nov 9 replace writeln with write to have one less end-of-line char in the file
+                            stream.write(out_mol);// bug reported by JMN Nov 9 replaced writeln with write to have one less end-of-line char in the file
                             
                             // output some comments
                             if (debug){
@@ -1055,7 +1055,7 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                 }
             }
             if (iii>1){
-                label += "." + iii ;// add number when more than one with the same name
+                label += "#" + iii ;// add number when more than one with the same name. The period is not allowed in sdf names. We replaced it with "#"
             }
             // dump tag name
             nmredata_header[looop_over_spectra] +=label+ ">\n";

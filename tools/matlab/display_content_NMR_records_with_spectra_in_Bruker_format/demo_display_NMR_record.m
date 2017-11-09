@@ -258,10 +258,7 @@ for loop_over_spectra=1:pointer_2d-1
     max_chem_shift_spectrum2=max_chem_shift_spectrum2 +margin;max_chem_shift_spectrum2=round(max_chem_shift_spectrum2*10)/10;
     xlim([min_chem_shift_spectrum2 max_chem_shift_spectrum2])
     ylim([min_chem_shift_spectrum1 max_chem_shift_spectrum1])
-    
-    
-    
-    
+
     fig_num=list_2d(loop_over_spectra,1);
     drawnow
     if  exist('OCTAVE_VERSION', 'builtin') ~= 0

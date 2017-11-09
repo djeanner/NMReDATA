@@ -1,15 +1,15 @@
-##TITLE= Parameter file, TOPSPIN		Version 2.1
+##TITLE= Parameter file, TOPSPIN		Version 3.1
 ##JCAMPDX= 5.0
 ##DATATYPE= Parameter Values
-##NPOINTS= 12	$$ modification sequence number
+##NPOINTS= 11	$$ modification sequence number
 ##ORIGIN= Bruker BioSpin GmbH
 ##OWNER= nmr
-$$ 2015-01-09 14:50:49.233 +0100  nmr@EP-10012183
-$$ /opt/topspin/data/jeannerat/data/nmr/nmr/djhap_benapyr/12/pdata/1/proc2s
-$$ process /opt/topspin/prog/mod/dataserver
-##$ABSF1= 130.0012
-##$ABSF2= 109.9988
-##$ABSG= 5
+$$ 2013-06-09 15:56:58.489 +0200  nmr@macnmr.local
+$$ /Volumes/nmrdata/nmrge500_data/data/jeannerat/nmr/djhap_benapyr/12/pdata/1/proc2s
+$$ process /opt/topspin3.1/prog/mod/proc2d
+##$ABSF1= 0
+##$ABSF2= 0
+##$ABSG= 0
 ##$ABSL= 0
 ##$ALPHA= 0
 ##$AQORDER= 0
@@ -17,7 +17,7 @@ $$ process /opt/topspin/prog/mod/dataserver
 ##$ASSFACI= 0
 ##$ASSFACX= 0
 ##$ASSWID= 0
-##$AUNMP= <        >
+##$AUNMP= <>
 ##$AXLEFT= 0
 ##$AXNAME= <F1>
 ##$AXNUC= <13C>
@@ -35,6 +35,7 @@ $$ process /opt/topspin/prog/mod/dataserver
 ##$DC= 0
 ##$DFILT= <>
 ##$DTYPP= 0
+##$ERETIC= no
 ##$F1P= 0
 ##$F2P= 0
 ##$FCOR= 0.5
@@ -53,6 +54,24 @@ $$ process /opt/topspin/prog/mod/dataserver
 ##$MEAN= 0
 ##$ME_mod= 2
 ##$MI= 1
+##$MddCEXP= no
+##$MddCT_SP= no
+##$MddF180= no
+##$MddLAMBDA= 0
+##$MddMEMORY= 0
+##$MddMERGE= 0
+##$MddNCOMP= 0
+##$MddNITER= 0
+##$MddNOISE= 0
+##$MddPHASE= 0
+##$MddSEED= 0
+##$MddSRSIZE= 0
+##$Mdd_CsALG= 0
+##$Mdd_CsLAMBDA= 0
+##$Mdd_CsNITER= 0
+##$Mdd_CsNORM= 0
+##$Mdd_CsZF= 0
+##$Mdd_mod= 0
 ##$NCOEF= 32
 ##$NC_proc= -10
 ##$NLEV= 6
@@ -78,8 +97,8 @@ $$ process /opt/topspin/prog/mod/dataserver
 ##$REVERSE= no
 ##$SF= 125.757789
 ##$SI= 1024
-##$SIGF1= 130.0012
-##$SIGF2= 109.9988
+##$SIGF1= 0
+##$SIGF2= 0
 ##$SINO= 16
 ##$SIOLD= 1024
 ##$SPECTYP= <>
@@ -89,10 +108,10 @@ $$ process /opt/topspin/prog/mod/dataserver
 ##$STSR= 0
 ##$SW_p= 2515.4575986936
 ##$SYMM= 0
-##$S_DEV= 385146
+##$S_DEV= 413439
 ##$TDeff= 496
 ##$TDoff= 0
-##$TI= <        >
+##$TI= <>
 ##$TILT= no
 ##$TM1= 0
 ##$TM2= 0
@@ -103,7 +122,7 @@ $$ process /opt/topspin/prog/mod/dataserver
 ##$USERP4= <user>
 ##$USERP5= <user>
 ##$WDW= 4
-##$XDIM= 128
-##$YMAX_p= 463027358
-##$YMIN_p= -28410821
+##$XDIM= 1024
+##$YMAX_p= 463187008
+##$YMIN_p= -28396709
 ##END=

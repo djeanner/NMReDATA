@@ -1,12 +1,12 @@
-##TITLE= Parameter file, TopSpin 3.5 pl 5
+##TITLE= Parameter file, TOPSPIN		Version 2.1
 ##JCAMPDX= 5.0
 ##DATATYPE= Parameter Values
-##NPOINTS= 13	$$ modification sequence number
+##NPOINTS= 12	$$ modification sequence number
 ##ORIGIN= Bruker BioSpin GmbH
 ##OWNER= nmr
-$$ 2016-11-11 08:34:08.322 +0100  pupier@djmini-dec2011.local
-$$ /Users/pupier/Documents/Marion_P/Recherche/HAP/NMR Data/djhap_benapyr/12/acqu
-$$ process /opt/topspin3.5pl5/prog/mod/go4
+$$ 2013-06-08 18:13:56.601 +0200  nmr@EP-10012183
+$$ /opt/topspin/data/jeannerat/data/nmr/nmr/djhap_benapyr/12/acqu
+$$ process /opt/topspin/prog/mod/shimcntl
 ##$ACQT0= 0
 ##$AMP= (0..31)
 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
@@ -354,8 +354,6 @@ $$ process /opt/topspin3.5pl5/prog/mod/go4
 ##$SWfinal= 0
 ##$TD= 2048
 ##$TD0= 1
-##$TD_INDIRECT= (0..7)
-0 1024 0 0 0 0 0 0
 ##$TE= 300
 ##$TE2= 300
 ##$TE3= 300

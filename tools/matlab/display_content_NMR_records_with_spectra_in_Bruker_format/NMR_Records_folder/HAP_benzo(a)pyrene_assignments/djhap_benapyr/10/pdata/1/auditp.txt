@@ -30,15 +30,7 @@ $$ /opt/topspin/data/jeannerat/data/nmr/nmr/djhap_benapyr/10/pdata/1/auditp.txt
        ICON-NMR User ID: nmr
        data hash MD5: 128K
        21 AE FD E9 F0 98 0A A2 84 E9 0B BC E2 B2 8E 22>)
-(   6,<2013-10-21 14:58:51.977 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
-      <apk 
-       data hash MD5: 128K
-       32 02 D9 45 5A 21 44 EE 45 D3 23 BB E4 56 86 15>)
-(   7,<2013-10-21 14:59:15.308 +0200>,<nmr>,<EP-10012183>,<proc1d>,<TOPSPIN 2.1>,
-      <pk fgphup PHC0 = 4.111651 PHC1 = -10.4 
-       data hash MD5: 128K
-       B5 F9 F7 62 39 EE 8F 32 25 27 D7 70 39 78 55 4A>)
 ##END=
 
 $$ hash MD5
-$$ 88 1B A9 8E E1 CA 3A 04 5C 2C B9 0D 5A 35 9D D6
+$$ 7C 80 3B B9 C5 2E 35 A3 F3 74 52 11 49 C3 6F 05

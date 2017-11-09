@@ -1,12 +1,12 @@
-##TITLE= Parameter file, TOPSPIN		Version 2.1
+##TITLE= Parameter file, TopSpin 3.5 pl 7
 ##JCAMPDX= 5.0
 ##DATATYPE= Parameter Values
-##NPOINTS= 32	$$ modification sequence number
+##NPOINTS= 27	$$ modification sequence number
 ##ORIGIN= Bruker BioSpin GmbH
 ##OWNER= nmr
-$$ 2014-07-25 16:13:31.431 +0200  nmr@EP-10012183
-$$ /opt/topspin/data/jeannerat/data/nmr/nmr/djhap_benapyr/10/pdata/1/procs
-$$ process /opt/topspin/prog/mod/peak
+$$ 2017-11-09 13:42:14.985 +0100  pupier@djmini-dec2011.local
+$$ /Volumes/data/nmr/nmrdata/nmrge500_old/data/jeannerat/nmr/djhap_benapyr_COPY/10/pdata/1/procs
+$$ process /opt/topspin3.5pl7/prog/mod/dataserver
 ##$ABSF1= 15.18749
 ##$ABSF2= -2.83667
 ##$ABSG= 5
@@ -35,8 +35,8 @@ $$ process /opt/topspin/prog/mod/peak
 ##$DC= 0
 ##$DFILT= <>
 ##$DTYPP= 0
-##$F1P= 7.29009915795398
-##$F2P= 7.24778005579713
+##$F1P= 0
+##$F2P= 0
 ##$FCOR= 0.5
 ##$FTSIZE= 131072
 ##$FT_mod= 6
@@ -52,7 +52,7 @@ $$ process /opt/topspin/prog/mod/peak
 ##$MC2= 0
 ##$MEAN= 0
 ##$ME_mod= 0
-##$MI= 50
+##$MI= 0
 ##$NCOEF= 0
 ##$NC_proc= -2
 ##$NLEV= 6
@@ -61,10 +61,10 @@ $$ process /opt/topspin/prog/mod/peak
 ##$NSP= 0
 ##$NTH_PI= 0
 ##$NZP= 0
-##$OFFSET= 15.17039
-##$PC= 4
-##$PHC0= -70.25945
-##$PHC1= -162.4042
+##$OFFSET= 15.17027
+##$PC= 1
+##$PHC0= -78.95551
+##$PHC1= -142.2052
 ##$PH_mod= 1
 ##$PKNL= yes
 ##$PPARMOD= 0
@@ -72,11 +72,11 @@ $$ process /opt/topspin/prog/mod/peak
 ##$PPIPTYP= 0
 ##$PPMPNUM= 2147483647
 ##$PPRESOL= 1
-##$PSCAL= 1
+##$PSCAL= 0
 ##$PSIGN= 0
 ##$PYNMP= <proc.py>
 ##$REVERSE= no
-##$SF= 500.130008551672
+##$SF= 500.130008611291
 ##$SI= 131072
 ##$SIGF1= 0
 ##$SIGF2= 0
@@ -106,6 +106,6 @@ $$ process /opt/topspin/prog/mod/peak
 ##$USERP5= <user>
 ##$WDW= 1
 ##$XDIM= 8192
-##$YMAX_p= 447599580
-##$YMIN_p= -237993
+##$YMAX_p= 440692897
+##$YMIN_p= -1120823
 ##END=

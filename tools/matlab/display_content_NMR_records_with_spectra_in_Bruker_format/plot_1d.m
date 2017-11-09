@@ -31,16 +31,8 @@ if nargin<2
     hold_me=0;
 end
 %% could include here interpolation...
-    int_scale2=spectrum.scale2-0*spectrum.offset2/spectrum.sf2;
-    data=spectrum.spectrum;
-  %  spectrum.ABSF1
-   % spectrum.ABSF2
-   % spectrum.scale2(1)
- %   spectrum.scale2(end)
-  %  spectrum.scale2(1)-spectrum.ABSF1
- %   spectrum.scale2(end)-spectrum.ABSF2
-
-
+    int_scale2=spectrum.scale2+(spectrum.offset2-spectrum.scale2(1));
+  
 hhf=figure(fig_number);
 if ~hold_me
     clf;
@@ -60,7 +52,7 @@ set(gca,'XDir','reverse');
 % size(int_scale2)
 % size(int_scale1)
 % size(data)
-plot(int_scale2,data)
+plot(int_scale2,spectrum.spectrum)
 
 drawnow
 

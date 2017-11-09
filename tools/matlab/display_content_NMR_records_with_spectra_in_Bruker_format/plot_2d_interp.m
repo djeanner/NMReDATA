@@ -41,6 +41,7 @@ if nargin<2
     hold_me=0;
 end
 interpolate=1;
+ %   int_scale2=spectrum.scale2+(spectrum.offset2-spectrum.scale2(1));
 
 if interpolate
     %     pt_per_mm=5;%resolution in pt per mm
@@ -54,8 +55,8 @@ if interpolate
     
     inc2=(abs(scales_in(1,2)-scales_in(1,1))    /(nbpt2-1) ) ;
     inc1=(abs(scales_in(1,3)-scales_in(1,4))    /(nbpt1-1) ) ;
-    int_scale2=[scales_in(1,1):inc2:scales_in(1,2)];
-    int_scale1=[scales_in(1,3):inc1:scales_in(1,4)];
+    int_scale2=[scales_in(1,1):inc2:scales_in(1,2)]+(spectrum.offset2-spectrum.scale2(1));
+    int_scale1=[scales_in(1,3):inc1:scales_in(1,4)]+(spectrum.offset1-spectrum.scale1(1));
     [mgr2, mgr1]=meshgrid(int_scale2,int_scale1);
     
     %     after=size(mgr2)
@@ -117,8 +118,8 @@ if interpolate
     end
     inc2=(abs(scales_in(1,2)-scales_in(1,1))    /(nbpt2-1) ) ;
     inc1=(abs(scales_in(1,3)-scales_in(1,4))    /(nbpt1-1) ) ;
-    int_scale2=[scales_in(1,1):inc2:scales_in(1,2)];
-    int_scale1=[scales_in(1,3):inc1:scales_in(1,4)];
+    int_scale2=[scales_in(1,1):inc2:scales_in(1,2)]+(spectrum.offset2-spectrum.scale2(1));
+    int_scale1=[scales_in(1,3):inc1:scales_in(1,4)]+(spectrum.offset1-spectrum.scale1(1));
     
     %      toc
     %      data=interpft(data,nbpt1,1);

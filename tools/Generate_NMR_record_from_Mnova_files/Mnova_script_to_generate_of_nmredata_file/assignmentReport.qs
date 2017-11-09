@@ -349,7 +349,7 @@ function assignmentReport() {
                             }
                             
                             out_mol = mol.getMolfile();
-                            stream.writeln(out_mol);
+                            stream.write(out_mol);// bug reported by JMN Nov 9 replace writeln with write to have one less end-of-line char in the file
                             
                             // output some comments
                             if (debug){

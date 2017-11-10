@@ -9,6 +9,14 @@ end
 list_of_line_break=findstr(content_of_tag,10);
 from=1;
 pieces_of_information=1;%will be incremented while reading the tag
+if contains(tag_identyfyer,[header_tag '1D_'])
+    obj.nb_dim=1;
+    disp(['This a 1D spectrum' tag_identyfyer ' ' header_tag])
+end
+if contains(tag_identyfyer,[header_tag '2D_'])
+    obj.nb_dim=2;
+    disp(['This a 2D spectrum' tag_identyfyer ' ' header_tag])
+end
 for loop_over_content=list_of_line_break
     % extract each line from the tag paragraph
     current_line=content_of_tag(from:loop_over_content-1);
@@ -65,17 +73,17 @@ for loop_over_content=list_of_line_break
             
             if contains(tag_identyfyer,[header_tag '1D'])
                 obj=extract_data_1d(obj,current_line,pieces_of_information,field_separator);
-                obj.nb_dim=1;
             end
             if contains(tag_identyfyer,[header_tag '2D'])
                 obj=extract_data_2d(obj,current_line,pieces_of_information,field_separator);
-                obj.nb_dim=2;
             end
             if contains(tag_identyfyer,[header_tag 'J'])
                 obj=extract_data_J(obj,current_line,pieces_of_information,field_separator);
+
             end
             if contains(tag_identyfyer,[header_tag 'ASSIGNMENT'])
                 obj=extract_data_signals(obj,current_line,pieces_of_information,field_separator);
+
             end
             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

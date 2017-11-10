@@ -49,7 +49,7 @@ while ischar(tline)
         if size(post,1)<1
             returned_value=0;text_of_the_problem=[text_of_the_problem 'No closing caracter in tag label (>)'];
         end
-        tag_name=tag_name(1:post(1,1)-1);
+        tag_name=tag_name(1:post(1,1)-1);%removes the closing ">"
         if length(tag_name)<1
             returned_value=0;text_of_the_problem=[text_of_the_problem 'Invalid tag name'];
         end
@@ -65,7 +65,7 @@ while ischar(tline)
         if  verbose>0
             disp(['End of tag ' tag_name ]);
         end
-        if contains(tag_name,tag_identyfyer)
+        if contains(tag_name,tag_identyfyer)%check NMREDATAT_ is in the name
             if  verbose>0
                 disp(['Analysing ' tag_name ' tag']);
             end
@@ -74,33 +74,17 @@ while ischar(tline)
             %%%%%%%%%%%%%%%%%%%%%%%
             %%%%%%%%%%%%%%%%%%%%%%%
             obj=verify_nmredata_tag(tag_name,content_of_tag,tag_identyfyer);
-            if strcmp(obj.tag_name,[tag_identyfyer '1D_1H'])
+            if contains(obj.tag_name,[tag_identyfyer '1D_'])
                 super_obj{object_counter+2}=obj;
                 object_counter=object_counter+1;
             end
-            if strcmp(obj.tag_name,[tag_identyfyer '1D_13C'])
-                super_obj{object_counter+2}=obj;
-                                object_counter=object_counter+1;
-
-            end
-            if strcmp(obj.tag_name,[tag_identyfyer '2D_1H_NJ_1H'])
-                super_obj{object_counter+2}=obj;
-                                object_counter=object_counter+1;
-
-            end
-            if strcmp(obj.tag_name,[tag_identyfyer '2D_13C_1J_1H'])
-                super_obj{object_counter+2}=obj;
-                                object_counter=object_counter+1;
-
-            end
-            if strcmp(obj.tag_name,[tag_identyfyer '2D_13C_NJ_1H'])
+            if contains(obj.tag_name,[tag_identyfyer '2D_'])
                 super_obj{object_counter+2}=obj;
                                 object_counter=object_counter+1;
 
             end
             if strcmp(obj.tag_name,[tag_identyfyer 'J'])
                 super_obj{2}=obj;
-                                object_counter=object_counter+1;
 
             end
             if strcmp(obj.tag_name,[tag_identyfyer 'ASSIGNMENT'])

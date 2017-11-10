@@ -36,6 +36,7 @@ folder_location='/Volumes/s-chior-jeannera/group_jeannerat/pupier/mnova_conversi
 if ~exist(folder_location,'dir')
     folder_location='./NMR_Records_folder/';
 end
+
 dataset_name='HAP_benzo(a)pyrene_assignments';
 F = dir([  folder_location    '*.zip'] );
 for ii = 1:length(F)
@@ -55,19 +56,26 @@ for ii = 1:length(F)
         list_2d=[]; pointer_2d=1;
         %% plot spectra
         for loo=3:size(super_obj,2)%search all spectral objects (assignment is object 1 and J is object 2)
+            disp(['testing element ' num2str(loo) ' ' super_obj{loo}.tag_name ]);
+            
             if isfield(super_obj{loo},'spectrum_location')
-                %  disp( super_obj{loo}.spectrum_location);
                 actualfile=super_obj{loo}.spectrum_location;
                 actualfile=actualfile(6:end);
+                disp(['found field ' actualfile ]);
+                
                 OK=0;
                 if exist([folder_location_full actualfile],'dir')
+                    disp(['found spectrum directory ' [folder_location_full actualfile] ]);
+                    
                     if isfield(super_obj{loo},'nb_dim')
+                        disp(['found nb_dim ' super_obj{loo}.nb_dim]);
+                        
                         pieces=strsplit(actualfile,'/');exp_name=pieces{1,1};expno=str2num(pieces{1,2});procno=str2num(pieces{1,4});
                         
                         if super_obj{loo}.nb_dim == 1
                             
                             if exist([folder_location_full actualfile '/1r'],'file')
-                                disp(['Element ' num2str(loo) ' Folder ' super_obj{loo}.spectrum_location ' exists with 1r file']);
+                                disp(['Plotting spectrum ' num2str(loo) ' ' super_obj{loo}.tag_name ' Folder ' super_obj{loo}.spectrum_location ' exists with 1r file']);
                                 super_obj{loo}.spectrum=read_data_bruker([folder_location_full exp_name '/'],expno,procno,0);
                                 figure(loo);clf;
                                 
@@ -82,7 +90,7 @@ for ii = 1:length(F)
                         end
                         if super_obj{loo}.nb_dim == 2
                             if exist([folder_location_full actualfile '/2rr'],'file')
-                                disp(['Element ' num2str(loo) ' Folder ' super_obj{loo}.spectrum_location ' exists with 2rr file']);
+                                disp(['Plotting spectrum ' num2str(loo) ' ' super_obj{loo}.tag_name ' Folder ' super_obj{loo}.spectrum_location ' exists with 2rr file']);
                                 super_obj{loo}.spectrum=read_data_bruker([folder_location_full exp_name '/'],expno,procno,0);
                                 [super_obj{loo}.spectrum.noise_level, super_obj{loo}.spectrum.list_peaks]=determine_noise_level(super_obj{loo}.spectrum);
                                 
@@ -112,16 +120,21 @@ for ii = 1:length(F)
             tmp_obj=super_obj{list_1d(loop_over_spectra,1)};
             min_chem_shift_spectrum=10000000;
             max_chem_shift_spectrum=-10000000000;
-            for loop_over_peaks=1:size(tmp_obj.label,2)
+         if isfield(tmp_obj,'chemical_shift')
+            for loop_over_peaks=1:size(tmp_obj.chemical_shift,2)
                 % disp(['For Peak : ' num2str(loop_over_peaks) ' Label= ' tmp_obj.label{1,loop_over_peaks}])
                 %  plot(tmp_obj.chemical_shift{1,loop_over_peaks},0,[used_color '+'])
                 % text(tmp_obj.chemical_shift{1,loop_over_peaks},0,tmp_obj.label{1,loop_over_peaks},'color',used_color)
+                if isfield(tmp_obj,'label')
                 txt=tmp_obj.label{1,loop_over_peaks};
+                else
+                                    txt='?';
+                end
                 txt=[txt ' '];
                 if isfield(tmp_obj,'multiplicity')
-                    if tmp_obj.integral{1,loop_over_peaks}~=0
-                        %  txt=[txt num2str(tmp_obj.multiplicity{1,loop_over_peaks}) ' '];
-                    end
+                  %  if tmp_obj.multiplicity{1,loop_over_peaks}~=''
+                         txt=[txt num2str(tmp_obj.multiplicity{1,loop_over_peaks}) ' '];
+                   % end
                 end
                 if isfield(tmp_obj,'integral')
                     if tmp_obj.integral{1,loop_over_peaks}~=0
@@ -194,12 +207,13 @@ for ii = 1:length(F)
             min_chem_shift_spectrum=min_chem_shift_spectrum -margin;min_chem_shift_spectrum=round(min_chem_shift_spectrum*10)/10;
             max_chem_shift_spectrum=max_chem_shift_spectrum +margin;max_chem_shift_spectrum=round(max_chem_shift_spectrum*10)/10;
             xlim([min_chem_shift_spectrum max_chem_shift_spectrum])
-            
+         end
             fig_num=list_1d(loop_over_spectra,1);
+            mkdir('./plots_of_figures')
             if  exist('OCTAVE_VERSION', 'builtin') ~= 0
-                print(['./O_' dataset_name '_compound' num2str(izi) '_' num2str(list_1d(loop_over_spectra,1)) '_' tmp_obj.tag_name '.eps'],'-color');%for octave
+                print(['./plots_of_figures/O_' dataset_name '_compound' num2str(izi) '_'  tmp_obj.tag_name '.eps'],'-color');%for octave
             else
-                print(['./M_' dataset_name '_compound' num2str(izi) '_' num2str(list_1d(loop_over_spectra,1)) '_' tmp_obj.tag_name '.eps'],'-depsc');%for matlab
+                print(['./plots_of_figures/M_' dataset_name '_compound' num2str(izi) '_'  tmp_obj.tag_name '.eps'],'-depsc');%for matlab
             end
         end
         for loop_over_spectra=1:pointer_2d-1
@@ -270,10 +284,11 @@ for ii = 1:length(F)
             end
             fig_num=list_2d(loop_over_spectra,1);
             drawnow
+            mkdir('./plots_of_figures')
             if  exist('OCTAVE_VERSION', 'builtin') ~= 0
-                print(['./O_' dataset_name '_compound' num2str(izi) '_' num2str(list_2d(loop_over_spectra,1)) '_' tmp_obj.tag_name '.eps'],'-color');%for octave
+                print(['./plots_of_figures/O_' dataset_name '_compound' num2str(izi) '_'  tmp_obj.tag_name '.eps'],'-color');%for octave
             else
-                print(['./M_' dataset_name '_compound' num2str(izi) '_' num2str(list_2d(loop_over_spectra,1)) '_' tmp_obj.tag_name '.eps'],'-depsc');%for matlab
+                print(['./plots_of_figures/M_' dataset_name '_compound' num2str(izi) '_'  tmp_obj.tag_name '.eps'],'-depsc');%for matlab
             end
         end
     end

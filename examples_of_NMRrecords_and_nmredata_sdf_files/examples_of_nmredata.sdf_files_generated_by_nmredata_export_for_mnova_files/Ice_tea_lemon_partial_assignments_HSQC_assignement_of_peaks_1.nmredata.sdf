@@ -52,7 +52,6 @@ H1b, 3.3982, H7
 H6a, 3.8639, H11
 6, 63.2750, 11
 H6b, 3.5487, H11
-
 >  <NMREDATA_1D_1H>
 Larmor=500.13234410931
 Pulseprogram=zgpr ;optional in V1

@@ -47,7 +47,6 @@ ne
  19 20  2  0  0  0  0
  20 12  1  0  0  0  0
 M  END
-
 >  <NMREDATA_SOLVENT>
 CDCl3
 
@@ -133,7 +132,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 126.0841, L=19, I=2699327.0877, E=99655.3176;errcs=-0.001246 ppm (This is how far this peak is from the assigned resonance)
 125.5490, L=20, I=2986978.2692, E=62502.9548;errcs=-0.001317 ppm (This is how far this peak is from the assigned resonance)
 
->  <NMREDATA_1D_13C>
+>  <NMREDATA_1D_13C#2>
 Larmor=125.757789
 Pulseprogram=dept45 ;optional in V1
 Spectrum_Location=file:djhap_benapyr/11/pdata/1/

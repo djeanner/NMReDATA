@@ -44,7 +44,7 @@ while ischar(tline)
         break
     end
     if contains(tline,'>  <') && (state==1)%start of tag
-        tag_name=tline(5:end);
+        tag_name=tline(5:end);% ignores '>  <'
         post=findstr(tag_name,'>');%look for the end of the field
         if size(post,1)<1
             returned_value=0;text_of_the_problem=[text_of_the_problem 'No closing caracter in tag label (>)'];

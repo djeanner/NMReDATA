@@ -897,7 +897,7 @@ AssignmentReporter.assignmentReport = function (parameters) {
             
         }
     }
-    stream.writeln("");// end of asignmenet tag
+   // stream.writeln("");// end of asignmenet tag
     /// dj add to dump in file
     if (dataFile !== "") {
         if (debug){

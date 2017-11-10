@@ -98,7 +98,6 @@ H17, 1.7808, 17
 H18a, 4.9921, H18
 18, 112.7597, 18
 H18b, 4.8765, H18
-
 >  <NMREDATA_1D_1H>
 Larmor=500.133088507
 Pulseprogram=zg30 ;optional in V1

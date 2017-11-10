@@ -32,7 +32,7 @@ min_coupling_for_table_Jxy_HH_coupling=0.5;%min coupling for table table_Jxy use
 atoms_no_exchange=[6 ];%for cdcl3
 average_ch2_chem_shift=0;
 %atoms_no_exchange=[6 7 8];%for dmso
-folder_location='/Volumes/s-chior-jeannera/group_jeannerat/pupier/mnova_conversion_work/compounds/working_directory_pupier_nov.8.2017/';
+folder_location='/Volumes/s-chior-jeannera/group_jeannerat/pupier/mnova_conversion_work/compounds/working_directory_pupier/';
 if ~exist(folder_location,'dir')
     folder_location='./NMR_Records_folder/';
 end
@@ -197,9 +197,9 @@ for ii = 1:length(F)
             
             fig_num=list_1d(loop_over_spectra,1);
             if  exist('OCTAVE_VERSION', 'builtin') ~= 0
-                print(['./O_' dataset_name '_' num2str(izi) '_compound' tmp_obj.tag_name '.eps'],'-color');%for octave
+                print(['./O_' dataset_name '_compound' num2str(izi) '_' num2str(list_1d(loop_over_spectra,1)) '_' tmp_obj.tag_name '.eps'],'-color');%for octave
             else
-                print(['./M_' dataset_name '_' num2str(izi) '_compound' tmp_obj.tag_name '.eps'],'-depsc');%for matlab
+                print(['./M_' dataset_name '_compound' num2str(izi) '_' num2str(list_1d(loop_over_spectra,1)) '_' tmp_obj.tag_name '.eps'],'-depsc');%for matlab
             end
         end
         for loop_over_spectra=1:pointer_2d-1
@@ -271,9 +271,9 @@ for ii = 1:length(F)
             fig_num=list_2d(loop_over_spectra,1);
             drawnow
             if  exist('OCTAVE_VERSION', 'builtin') ~= 0
-                print(['./O_' dataset_name '_compound' num2str(izi) '_' tmp_obj.tag_name '.eps'],'-color');%for octave
+                print(['./O_' dataset_name '_compound' num2str(izi) '_' num2str(list_2d(loop_over_spectra,1)) '_' tmp_obj.tag_name '.eps'],'-color');%for octave
             else
-                print(['./M_' dataset_name '_compound' num2str(izi) '_' tmp_obj.tag_name '.eps'],'-depsc');%for matlab
+                print(['./M_' dataset_name '_compound' num2str(izi) '_' num2str(list_2d(loop_over_spectra,1)) '_' tmp_obj.tag_name '.eps'],'-depsc');%for matlab
             end
         end
     end

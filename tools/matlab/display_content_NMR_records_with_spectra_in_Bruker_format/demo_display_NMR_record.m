@@ -61,17 +61,13 @@ for ii = 1:length(F)
             if isfield(super_obj{loo},'spectrum_location')
                 actualfile=super_obj{loo}.spectrum_location;
                 actualfile=actualfile(6:end);
-                disp(['found field ' actualfile ]);
-                
+               % disp(['found field ' actualfile ]);
                 OK=0;
                 if exist([folder_location_full actualfile],'dir')
-                    disp(['found spectrum directory ' [folder_location_full actualfile] ]);
-                    
+                    %disp(['found spectrum directory ' [folder_location_full actualfile] ]);
                     if isfield(super_obj{loo},'nb_dim')
-                        disp(['found nb_dim ' super_obj{loo}.nb_dim]);
-                        
+                      %  disp(['found nb_dim ' super_obj{loo}.nb_dim]);
                         pieces=strsplit(actualfile,'/');exp_name=pieces{1,1};expno=str2num(pieces{1,2});procno=str2num(pieces{1,4});
-                        
                         if super_obj{loo}.nb_dim == 1
                             
                             if exist([folder_location_full actualfile '/1r'],'file')

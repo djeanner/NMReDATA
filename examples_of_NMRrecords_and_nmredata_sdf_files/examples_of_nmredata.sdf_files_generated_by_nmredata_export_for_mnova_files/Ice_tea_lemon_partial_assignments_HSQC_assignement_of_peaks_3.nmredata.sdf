@@ -103,7 +103,7 @@ H12, 3.6623, H21
 Larmor=500.13234410931
 Pulseprogram=zgpr ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/20/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 ;3.7049-3.6817, L=H5;found no H multiplet for this H
 ;3.3407-3.2910, L=H4;found no H multiplet for this H
 ;3.6259-3.5708, L=H3;found no H multiplet for this H
@@ -120,7 +120,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=125.770363831
 Pulseprogram=zgdc ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/16/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 72.2930, L=5, I=10849.7176, E=421.3990;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
 69.1330, L=4, I=11172.1259, E=502.7501;errcs=-0.000010 ppm (This is how far this peak is from the assigned resonance)
 72.5205, L=3, I=10408.3628, E=306.6777;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
@@ -138,7 +138,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=125.770363831
 Pulseprogram=dept135 ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/17/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 ;nothing at 72.2930 ppm , for signal 5; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
 ;nothing at 69.1330 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
 ;nothing at 72.5205 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
@@ -157,27 +157,27 @@ Larmor=500.13
 CorrType=COSY
 Pulseprogram=cosyprqf ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/15/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 
 >  <NMREDATA_2D_13C_1J_1H>
 Larmor=500.13234410931
 CorrType=HSQC
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/21/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 
 >  <NMREDATA_2D_13C_NJ_1H>
 Larmor=500.13234410931
 CorrType=HMBC
 Pulseprogram=hmbcgplpndqf ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/23/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 
 >  <NMREDATA_2D_13C_1J_1H#2>
 Larmor=500.13234410931
 CorrType=HSQC
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
 Spectrum_Location=file:MP_ice_tea_lemon/13/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 
 $$$$

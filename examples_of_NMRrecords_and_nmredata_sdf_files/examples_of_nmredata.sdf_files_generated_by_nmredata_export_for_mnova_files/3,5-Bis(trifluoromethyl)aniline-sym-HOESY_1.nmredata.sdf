@@ -85,7 +85,7 @@ H7, 4.0943, H7
 Larmor=500.133088507
 Pulseprogram=zg30 ;optional in V1
 Spectrum_Location=file:MP-TFM-aniline/10/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 7.0544, S=m, L=H3, E=427.0247; found H multiplet by label chem shifts differ by -0.003353 ppm
 ;7.0510, L=H3';found no H multiplet for this H
 7.2374, S=m, L=H1, E=210.4295; found H multiplet by label chem shifts differ by -0.003068 ppm
@@ -95,7 +95,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=125.770363831
 Pulseprogram=zgdc ;optional in V1
 Spectrum_Location=file:MP-TFM-aniline/11/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 132.4855, S=q, N=2, L=2&1#, J=32.96, E=13.4331; found multiplet by chemical shift 
 114.1345, L=3, I=4140.4438, E=131.9669;errcs=-0.014225 ppm (This is how far this peak is from the assigned resonance)
 147.3268, S=s, N=1, L=4, E=8.8792; found multiplet by chemical shift 
@@ -107,7 +107,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=125.770363831
 Pulseprogram=dept135 ;optional in V1
 Spectrum_Location=file:MP-TFM-aniline/12/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 ;nothing at 132.4855 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-18.290787)
 114.1333, L=3, I=1221.0503, E=46.5574;errcs=-0.015402 ppm (This is how far this peak is from the assigned resonance)
 ;nothing at 147.3268 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-33.132078)
@@ -122,7 +122,7 @@ Larmor=500.132764225861
 CorrType=COSY
 Pulseprogram=cosygpppqf ;optional in V1
 Spectrum_Location=file:MP-TFM-aniline/13/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 H1/H3
 H3/H1
 H3'/H1
@@ -132,7 +132,7 @@ Larmor=500.13300078
 CorrType=HSQC
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
 Spectrum_Location=file:MP-TFM-aniline/14/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 3/H3
 3'/H3'
 1/H1
@@ -142,7 +142,7 @@ Larmor=500.13
 CorrType=HMBC
 Pulseprogram=hmbcetgpl3nd ;optional in V1
 Spectrum_Location=file:MP-TFM-aniline/15/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 1/H3
 2/H3
 2'/H3
@@ -155,7 +155,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=282.376114779
 Pulseprogram=zgfhigqn.2 ;optional in V1
 Spectrum_Location=file:MP-trifluoromethyl-aniline/11/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 -63.3196, S=s, N=6, L=6''''''&6'''''&6''''&6'&6&6'', E=1004.3478; found multiplet by chemical shift 
 
 >  <NMREDATA_2D_19F_D_1H>
@@ -163,13 +163,13 @@ Larmor=300.13180078
 CorrType=na;Type was not identified2D-UNDEFINED
 Pulseprogram=hoesyetgp.2 ;optional in V1
 Spectrum_Location=file:MP-trifluoromethyl-aniline/13/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 
 >  <NMREDATA_2D_1H_D_19F>
 Larmor=282.404355214
 CorrType=na;Type was not identified2D-UNDEFINED
 Pulseprogram=FHAhoesytp1_2.txt ;optional in V1
 Spectrum_Location=file:MP-trifluoromethyl-aniline/22/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 
 $$$$

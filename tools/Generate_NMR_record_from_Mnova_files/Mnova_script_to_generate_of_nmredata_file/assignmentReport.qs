@@ -1665,7 +1665,7 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                     rel_path +=  path_elements[lo]  + seppath;
                 }
                 nmredata_header[looop_over_spectra] += "Spectrum_Location=file:" + rel_path + "\n";
-                nmredata_header[looop_over_spectra] += "zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1\n";
+                nmredata_header[looop_over_spectra] += "zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\n";
                 
                 //prepare script to prepare NMR record:
                 /*   nmredata[looop_over_spectra] += ";UNIX_CREATE mkdir -p \"" + path_elements[path_elements.length-5]  + "\"\n";

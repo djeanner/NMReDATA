@@ -58,7 +58,7 @@ H6b, 3.6496, H11
 Larmor=500.1320755395
 Pulseprogram=zg30 ;optional in V1
 Spectrum_Location=file:MP-glucose-oct17/10/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 ;3.3164-3.2518, L=H4;found no H multiplet for this H
 ;3.5918, L=H3;found no H multiplet for this H
 3.4150, S=dd, L=H2, E=11.3539, J=3.79,9.83; found H multiplet by label chem shifts differ by -0.002081 ppm
@@ -71,7 +71,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=125.770363831
 Pulseprogram=zgdc ;optional in V1
 Spectrum_Location=file:MP-glucose-oct17/11/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 69.5534, L=4, I=11008.6355, E=342.0571;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
 72.6738, L=3, I=9998.4635, E=388.3366;errcs=-0.026237 ppm (This is how far this peak is from the assigned resonance)
 71.3930, L=2, I=10482.8115, E=407.1485;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
@@ -83,7 +83,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=125.770363831
 Pulseprogram=dept135 ;optional in V1
 Spectrum_Location=file:MP-glucose-oct17/12/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 69.5545, L=4, I=2616.6991, E=56.1538;errcs=0.001099 ppm (This is how far this peak is from the assigned resonance)
 72.6742, L=3, I=2391.5881, E=67.8233;errcs=-0.025844 ppm (This is how far this peak is from the assigned resonance)
 71.3924, L=2, I=2701.4087, E=76.6095;errcs=-0.000628 ppm (This is how far this peak is from the assigned resonance)
@@ -96,28 +96,28 @@ Larmor=500.13
 CorrType=COSY
 Pulseprogram=cosygpppqf ;optional in V1
 Spectrum_Location=file:MP-glucose-oct17/13/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 
 >  <NMREDATA_2D_13C_1J_1H>
 Larmor=500.13
 CorrType=HSQC
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
 Spectrum_Location=file:MP-glucose-oct17/14/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 
 >  <NMREDATA_2D_13C_NJ_1H>
 Larmor=500.13
 CorrType=HMBC
 Pulseprogram=hmbcetgpl3nd ;optional in V1
 Spectrum_Location=file:MP-glucose-oct17/15/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 
 >  <NMREDATA_2D_13C_1J_1H#2>
 Larmor=500.13
 CorrType=HSQC
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
 Spectrum_Location=file:MP-glucose-oct17/16/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 4/H4
 3/H3
 2/H2

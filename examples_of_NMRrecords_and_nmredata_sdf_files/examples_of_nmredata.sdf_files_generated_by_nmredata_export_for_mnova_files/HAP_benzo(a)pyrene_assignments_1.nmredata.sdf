@@ -91,7 +91,7 @@ H20, 8.2514, H20
 Larmor=500.130008551672
 Pulseprogram=zg ;optional in V1
 Spectrum_Location=file:djhap_benapyr/10/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 7.8453, S=ddd, L=H1, E=1328004.4090, J=1.46,6.74,8.39; found H multiplet by label chem shifts differ by 0.000000 ppm
 7.7947, S=ddd, L=H2, E=1299166.5993, J=1.23,6.74,7.97; found H multiplet by label chem shifts differ by -0.003285 ppm
 8.3041, S=ddd, L=H3, E=1283747.5915, J=0.66,1.41,8.05; found H multiplet by label chem shifts differ by 0.000000 ppm
@@ -109,7 +109,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=125.757789
 Pulseprogram=zgpg30 ;optional in V1
 Spectrum_Location=file:djhap_benapyr/13/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 125.9676, L=1, I=3235688.9336, E=55572.3604;errcs=0.001182 ppm (This is how far this peak is from the assigned resonance)
 126.0841, L=2, I=2699327.0877, E=99655.3176;errcs=0.025831 ppm (This is how far this peak is from the assigned resonance)
 128.9288, L=3, I=2461183.6796, E=52031.4075;errcs=0.004261 ppm (This is how far this peak is from the assigned resonance)
@@ -135,7 +135,7 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=125.757789
 Pulseprogram=dept45 ;optional in V1
 Spectrum_Location=file:djhap_benapyr/11/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 ;nothing at 125.9665 ppm , for signal 1; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
 ;nothing at 126.0583 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
 ;nothing at 128.9245 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
@@ -162,7 +162,7 @@ Larmor=500.13
 CorrType=COSY
 Pulseprogram=cosygpppqf ;optional in V1
 Spectrum_Location=file:MP_HAP_benzoapyrene/23/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 H2/H1
 H6/H1
 H1/H2
@@ -183,7 +183,7 @@ Larmor=500.13000855
 CorrType=HSQC
 Pulseprogram=hsqcetgpsi ;optional in V1
 Spectrum_Location=file:djhap_benapyr/12/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 1/H1
 2/H2
 3/H3
@@ -202,7 +202,7 @@ Larmor=500.13
 CorrType=HMBC
 Pulseprogram=hmbcetgpl3nd ;optional in V1
 Spectrum_Location=file:MP_HAP_benzoapyrene/24/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=1
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
 3/H1
 5/H1
 4/H2

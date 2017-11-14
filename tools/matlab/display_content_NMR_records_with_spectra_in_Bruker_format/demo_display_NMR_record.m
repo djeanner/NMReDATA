@@ -3,9 +3,11 @@ clear all
 %% create and manage archive %dj version
 create_archive=0;% should always do this to keep the matlab files with the data generated...
 validate=zeros(1,3);
-validate(1,1)=0;% validate spectrum as whole when plotting
-validate(1,2)=0;% validate 1d multiplets... (can be 1H but also 13C)
+validate(1,1)=1;% validate 1D spectrum as whole when plotting
+validate(1,2)=1;% validate 2D spectrum as whole when plotting
 validate(1,3)=1;% validate 1d multiplets... (can be 1H but also 13C)
+validate(1,4)=1;% validate presence of signals in 2d (can be 1H but also 13C)
+
 if create_archive
     pack_vers='1.0';package_name=[mfilename '_package_folder_' pack_vers '/'];
     location_package=['./' package_name];
@@ -84,8 +86,9 @@ for ii = 1:length(F)
                                 pointer_1d=pointer_1d+1;
                                 OK=1;
                                 %  answer = inputdlg('Is this spectrum a +D ?1h? spectrum','Check 1D spectrum',[1 40],defaultans,options);
-                                if validate(1,1)==1
+                                if validate(1,1)>0
                                     choice = questdlg(['Is this spectrum really a ' super_obj{loo}.tag_name ' '], 'Validation of 1D spectrum', 'OK','not OK','OK')
+                                    validate(1,1)=validate(1,1)-1;
                                 end
                             else
                                 disp(['No 1r file found in folder ' super_obj{loo}.spectrum_location ]);
@@ -105,8 +108,10 @@ for ii = 1:length(F)
                                 OK=1;
                                 list_2d(pointer_2d,1)=loo;
                                 pointer_2d=pointer_2d+1;
-                                if validate(1,1)==1
+                                if validate(1,2)>0
                                     choice = questdlg(['Is this spectrum really a ' super_obj{loo}.tag_name ' '], 'Validation of 2D spectrum', 'OK','not OK','OK')
+                                    validate(1,2)=validate(1,2)-1;
+                                    
                                 end
                             else
                                 disp(['No 2rr file found in folder ' super_obj{loo}.spectrum_location ]);
@@ -209,13 +214,14 @@ for ii = 1:length(F)
                     min_chem_shift_spectrum=min(min([min_chem_shift_spectrum list_pos]));
                     max_chem_shift_spectrum=max(max([max_chem_shift_spectrum list_pos]));
                 end
-              
+                
                 
                 
                 %% ask to validate each multiplet...
-                if validate(1,2)==1
-                    for loop_over_peaks=1:size(tmp_obj.chemical_shift,2)
-                        if isfield(tmp_obj,'multiplicity')
+                for loop_over_peaks=1:size(tmp_obj.chemical_shift,2)
+                    if isfield(tmp_obj,'multiplicity')
+                        if validate(1,3)>0
+                            
                             list_pos=tmp_obj.chemical_shift{1,loop_over_peaks};
                             %  if tmp_obj.multiplicity{1,loop_over_peaks}~=''
                             txt=[ num2str(tmp_obj.multiplicity{1,loop_over_peaks}) ' '];
@@ -232,7 +238,19 @@ for ii = 1:length(F)
                             if isfield(tmp_obj,'label')
                                 labb=tmp_obj.label{1,loop_over_peaks};
                             end
-                            choice = questdlg(['Is this multiplet of ' labb ' really a ' txt ' ?'], 'Validation of 1D multiplet', 'Yes','No','No, add comment','Yes')
+                            % see if couplings are available for this...
+                            coupling_present=0;
+                            if size(tmp_obj.J,1)>=loop_over_peaks
+                                if  size(tmp_obj.J{loop_over_peaks,1}) >0
+                                    coupling_present=1;
+                                end
+                            end
+                            if coupling_present
+                                choice = questdlg(['Is this multiplet of ' labb ' really a ' txt ' with these splittings ?'], 'Validation of 1D multiplet', 'Yes','No','No, add comment','Yes')
+                            else
+                                choice = questdlg(['Is this multiplet of ' labb ' really a ' txt ' ?'], 'Validation of 1D multiplet', 'Yes','No','No, add comment','Yes')
+                            end
+                            validate(1,3)=validate(1,3)-1;
                         end
                     end
                 end
@@ -252,6 +270,7 @@ for ii = 1:length(F)
         end
         for loop_over_spectra=1:pointer_2d-1
             figure(list_2d(loop_over_spectra,1));hold on;
+            
             tmp_obj=super_obj{list_2d(loop_over_spectra,1)};
             
             
@@ -303,14 +322,15 @@ for ii = 1:length(F)
                         text(list_pos2,list_pos1,txt,'color',used_color)
                         
                         
-                         if validate(1,3)==1% validate 2D correlations
-                          
+                        if validate(1,4)>0% validate 2D correlations
+                            
                             xlim(list_pos2+[-0.25 0.25]);
                             ylim(list_pos1+[-0.25 0.25]);
                             
-                      
+                            
                             choice = questdlg(['Is the signal assigned to ' txt ' really present?'], 'Validation of 2D correlations', 'Yes','No','No, add comment','Yes')
-                end
+                            validate(1,4)=validate(1,4)-1;
+                        end
                         
                         
                         min_chem_shift_spectrum1=min(min([min_chem_shift_spectrum1 list_pos1]));
@@ -319,10 +339,10 @@ for ii = 1:length(F)
                         max_chem_shift_spectrum2=max(max([max_chem_shift_spectrum2 list_pos2]));
                     end
                     
-                   
+                    
                     
                 end
-                 
+                
                 margin=0.2;
                 min_chem_shift_spectrum1=min_chem_shift_spectrum1 -margin;min_chem_shift_spectrum1=round(min_chem_shift_spectrum1*10)/10;
                 max_chem_shift_spectrum1=max_chem_shift_spectrum1 +margin;max_chem_shift_spectrum1=round(max_chem_shift_spectrum1*10)/10;

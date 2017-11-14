@@ -30,11 +30,103 @@ tline = fgetl(fid);
 state=0;%=0 when reading the mol part. 1 between tag 2 inside tag
 inc=1;
 object_counter=1;
+mol_block=[];lo_bl=1;
 while ischar(tline)
+    if state==0
+        mol_block{lo_bl}= tline;
+        lo_bl=lo_bl+1;
+    end
     if contains(tline,'M  END') && (state==0)%end of the mol part
         if  verbose>0
             disp('End of mol. section');
         end
+        line_num_before_list_atoms=4;
+        ret_val= sscanf(mol_block{line_num_before_list_atoms},'%d %d');
+        if size(ret_val,1)<2
+            disp(['Could not find the number of atoms and bouds in the line ' num2str(line_num_before_list_atoms)  'of the molblock!'])
+        else
+            structure=[];
+            nb_atoms=ret_val(1,1);
+            nb_bounds=ret_val(2,1);
+            structure.atom.XYZ=zeros(3,nb_atoms);
+            
+            structure.bond.a1=zeros(1,nb_bounds);
+            structure.bond.a2=zeros(1,nb_bounds);
+            structure.bond.type=zeros(1,nb_bounds);
+            for loop_over_atom_list=1:nb_atoms
+                disp(['Found atom line : ' mol_block{line_num_before_list_atoms+1+loop_over_atom_list-1}])
+                % work on atoms
+                pieces=textscan(mol_block{line_num_before_list_atoms+1+loop_over_atom_list-1},'%f %f %f %s ');
+                tt= pieces{1,4};
+                tta= tt{1,1};
+                structure.atom.XYZ(:,loop_over_atom_list)=[pieces{1,1}(1,1) pieces{1,2}(1,1) pieces{1,3}(1,1)];
+                structure.atom.n{1,loop_over_atom_list}=tta;
+            end
+             for loop_over_bond_list=1:nb_bounds
+                disp(['Found bond line : ' mol_block{line_num_before_list_atoms+1+loop_over_bond_list+nb_atoms-1}])
+                % work on atoms
+                pieces=textscan(mol_block{line_num_before_list_atoms+1+loop_over_bond_list+nb_atoms-1},'%d %d %d ');
+                structure.bond.a1(1,loop_over_bond_list)=pieces{1,1}(1,1) ;
+                structure.bond.a2(1,loop_over_bond_list)=pieces{1,2}(1,1) ;
+                structure.bond.type(1,loop_over_bond_list)=pieces{1,3}(1,1) ;
+             end
+          %caluclates the number of bond betweeb pairs of atoms
+          
+% % %           function nb_bond_between=create_nb_bonds_between_atoms(bond_list)
+% % %           nb_bond_between=bond_list;
+% % %           nb_bond_between=bond_list*0+(nb_bond_between>0);
+% % %           
+% % %           
+% % %           %symmetrize in case it is not
+% % %           for l1=1:size(nb_bond_between,1)
+% % %               for l2=1:size(nb_bond_between,1)
+% % %                   if nb_bond_between(l1,l2)
+% % %                       nb_bond_between(l2,l1)=nb_bond_between(l1,l2);
+% % %                   end
+% % %                   if nb_bond_between(l2,l1)
+% % %                       nb_bond_between(l1,l2)=nb_bond_between(l2,l1);
+% % %                   end
+% % %               end
+% % %           end
+% % %           for dist_in_bounds=1:100000%number of maximal number of bonds
+% % %               count=0;
+% % %               for l1=1:size(nb_bond_between,1)
+% % %                   for l2=1:size(nb_bond_between,1)
+% % %                       if l1~=l2
+% % %                           if nb_bond_between(l1,l2)==dist_in_bounds
+% % %                               for other=1:size(nb_bond_between,1)
+% % %                                   if (other~=l1) && (other~=l2)
+% % %                                       if nb_bond_between(l1,other)==1
+% % %                                           if nb_bond_between(l2,other)==0
+% % %                                               nb_bond_between(l2,other)=dist_in_bounds+1;
+% % %                                               nb_bond_between(other,l2)=dist_in_bounds+1;
+% % %                                               count=count+1;
+% % %                                           end
+% % %                                       end
+% % %                                       if nb_bond_between(l2,other)==1
+% % %                                           if nb_bond_between(l1,other)==0
+% % %                                               nb_bond_between(l1,other)=dist_in_bounds+1;
+% % %                                               nb_bond_between(other,l1)=dist_in_bounds+1;
+% % %                                               count=count+1;
+% % %                                           end
+% % %                                       end
+% % %                                   end
+% % %                               end
+% % %                               
+% % %                           end
+% % %                       end
+% % %                   end
+% % %               end
+% % %               if count==0 break;end
+% % %           end
+% % %           
+% % %           
+% % %           end
+% % %           
+         %   super_obj.structure=structure;
+        end
+        
+        
         state=1;
     end
     if contains(tline,'$$$$') && (state==1)%end of record
@@ -89,6 +181,7 @@ while ischar(tline)
             end
             if strcmp(obj.tag_name,[tag_identyfyer 'ASSIGNMENT'])
                 super_obj{1}=obj;
+                super_obj{1}.structure=structure;
             end
             inc=inc+1;
             %%%%%%%%%%%%%%%%%%%%%%%

@@ -7,4 +7,5 @@ As Nov. 9th, this is what it does:
 
 
 When octave (a free clone of matlab) is installed, the demo can be run as follows:
-octave  --no-gui --no-window-system demo_display_NMR_record.m 
+octave demo_display_NMR_record.m 
+Figures (as .eps) will be saved in a plot_of_figures directory.

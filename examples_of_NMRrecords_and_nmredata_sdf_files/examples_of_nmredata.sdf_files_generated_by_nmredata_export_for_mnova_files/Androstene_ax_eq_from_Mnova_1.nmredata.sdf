@@ -1,0 +1,467 @@
+1
+  ChemDraw11131710142D
+
+ 24 27  0  0  0  0  0  0  0  0999 V2000
+   -2.1434   -0.6188    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.1434   -1.4438    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4289   -1.8562    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7145   -1.4438    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7145   -0.6188    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4289   -0.2062    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000   -1.8562    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7145   -1.4438    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7145   -0.6188    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000   -0.2062    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4289   -0.2062    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4289    0.6188    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7145    1.0312    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.6188    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1434    1.0312    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8579    0.6188    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8579   -0.2062    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1434    1.8562    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.8579   -1.8562    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7145    0.2062    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4289    1.4438    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7145    0.2062    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000   -1.0312    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4289   -1.0312    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  2  3  1  0  0  0  0
+  3  4  2  0  0  0  0
+  4  5  1  0  0  0  0
+  5  6  1  0  0  0  0
+  6  1  1  0  0  0  0
+  4  7  1  0  0  0  0
+  7  8  1  0  0  0  0
+  8  9  1  0  0  0  0
+  9 10  1  0  0  0  0
+ 10  5  1  0  0  0  0
+  9 11  1  0  0  0  0
+ 11 12  1  0  0  0  0
+ 12 13  1  0  0  0  0
+ 13 14  1  0  0  0  0
+ 14 10  1  0  0  0  0
+ 12 15  1  0  0  0  0
+ 15 16  1  0  0  0  0
+ 16 17  1  0  0  0  0
+ 17 11  1  0  0  0  0
+ 15 18  2  0  0  0  0
+  2 19  2  0  0  0  0
+  5 20  1  1  0  0  0
+ 12 21  1  1  0  0  0
+  9 22  1  1  0  0  0
+ 10 23  1  6  0  0  0
+ 11 24  1  6  0  0  0
+M  ZZC   1 2
+M  ZZC   2 3
+M  ZZC   3 4
+M  ZZC   4 5
+M  ZZC   5 10
+M  ZZC   6 1
+M  ZZC   7 6
+M  ZZC   8 7
+M  ZZC   9 8
+M  ZZC  10 9
+M  ZZC  11 14
+M  ZZC  12 13
+M  ZZC  13 12
+M  ZZC  14 11
+M  ZZC  15 17
+M  ZZC  16 16
+M  ZZC  17 15
+M  ZZC  20 19
+M  ZZC  21 18
+M  ZZC  22 H8
+M  ZZC  23 H9
+M  ZZC  24 H14
+M  END
+>  <NMREDATA_SOLVENT>
+CDCl3
+
+>  <NMREDATA_LEVEL>
+0
+
+>  <NMREDATA_ASSIGNMENT>
+H2a, 2.4250, H1
+2, 33.9039, 1
+H2b, 2.3550, H1
+3, 199.4691, 2
+H4, 5.7491, H3
+4, 124.1151, 3
+5, 170.5248, 4
+10, 38.6529, 5
+H1a, 1.7046, H6
+1, 35.6712, 6
+H1b, 2.0379, H6
+H6a, 2.4250, H7
+6, 32.5810, 7
+H6b, 2.3250, H7
+H7a, 1.1145, H8
+7, 30.7332, 8
+H7b, 1.9718, H8
+8, 35.1217, 9
+9, 53.7870, 10
+14, 50.8071, 11
+13, 47.5273, 12
+H12a, 1.2607, H13
+12, 31.2511, 13
+H12b, 1.8587, H13
+H11a, 1.4520, H14
+11, 20.3047, 14
+H11b, 1.6797, H14
+17, 220.5428, 15
+H16a, 2.1108, H16
+16, 35.7727, 16
+H16b, 2.4697, H16
+H15a, 1.5662, H17
+15, 21.7592, 17
+H15b, 1.9718, H17
+H19, 1.2070, H20
+19, 17.3794, 20
+H18, 0.9113, H21
+18, 13.7179, 21
+HH8, 1.7341, 22
+HH9, 0.9939, 23
+HH14, 1.3069, 24
+
+>  <NMREDATA_1D_1H>
+Larmor=500.133088507
+Pulseprogram=zg30 ;optional in V1
+Spectrum_Location=file:dj_androstene/10/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+;2.4600-2.3900, L=H2a;found no H multiplet for this H
+;2.3900-2.3200, L=H2b;found no H multiplet for this H
+;5.7570-5.7412, L=H4;found no H multiplet for this H
+;1.7370-1.6722, L=H1a;found no H multiplet for this H
+;2.0649-2.0110, L=H1b;found no H multiplet for this H
+;2.4600-2.3900, L=H6a;found no H multiplet for this H
+;2.3500-2.3000, L=H6b;found no H multiplet for this H
+;1.1669-1.0621, L=H7a;found no H multiplet for this H
+;2.0060-1.9377, L=H7b;found no H multiplet for this H
+;1.2852-1.2362, L=H12a;found no H multiplet for this H
+;1.8919-1.8255, L=H12b;found no H multiplet for this H
+;1.5033-1.4007, L=H11a;found no H multiplet for this H
+;1.7054-1.6541, L=H11b;found no H multiplet for this H
+;2.1538-2.0679, L=H16a;found no H multiplet for this H
+;2.5053-2.4340, L=H16b;found no H multiplet for this H
+;1.6184-1.5140, L=H15a;found no H multiplet for this H
+;2.0060-1.9377, L=H15b;found no H multiplet for this H
+;1.2210-1.1929, L=H19;found no H multiplet for this H
+;0.9257-0.8969, L=H18;found no H multiplet for this H
+;nothing at 1.7793-1.6890 ppm , for signal H8; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;1.7793-1.6890, L=HH8;found no H multiplet for this H
+;nothing at 1.0375-0.9502 ppm , for signal H9; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;1.0375-0.9502, L=HH9;found no H multiplet for this H
+;nothing at 1.3286-1.2852 ppm , for signal H14; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;1.3286-1.2852, L=HH14;found no H multiplet for this H
+
+>  <NMREDATA_1D_13C>
+Larmor=125.772250696
+Pulseprogram=zgpg30 ;optional in V1
+Spectrum_Location=file:dj_androstene/21/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+33.9039, L=2, I=588.8459, E=12.9481;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+199.4691, L=3, I=312.8105, E=7.3382;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+124.1151, L=4, I=657.7229, E=12.9353;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+170.5248, L=5, I=328.2177, E=7.8888;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+38.6529, L=10, I=464.9202, E=9.9315;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+35.6712, L=1, I=582.0197, E=12.4330;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+32.5810, L=6, I=568.8345, E=15.6350;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+30.7332, L=7, I=577.7472, E=15.8800;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+35.1217, L=8, I=627.0513, E=13.7882;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+53.7870, L=9, I=669.4819, E=15.1481;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+50.8071, L=14, I=699.6198, E=10.2352;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+47.5273, L=13, I=522.8496, E=9.7237;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+31.2511, L=12, I=585.4988, E=12.5073;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+20.3047, L=11, I=625.7526, E=10.9209;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+220.5428, L=17, I=292.1025, E=6.5467;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+35.7727, L=16, I=563.9867, E=12.0478;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+21.7592, L=15, I=637.1929, E=12.9471;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+17.3794, L=19, I=683.6747, E=12.6304;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+13.7179, L=18, I=726.7079, E=14.1216;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+
+>  <NMREDATA_1D_13C#2>
+Larmor=125.772250696
+Pulseprogram=dept135 ;optional in V1
+Spectrum_Location=file:dj_androstene/23/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+;nothing at 33.9039 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 199.4691 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 124.1151 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 170.5248 ppm , for signal 5; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 38.6529 ppm , for signal 10; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 35.6712 ppm , for signal 1; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 32.5810 ppm , for signal 6; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 30.7332 ppm , for signal 7; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 35.1217 ppm , for signal 8; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 53.7870 ppm , for signal 9; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 50.8071 ppm , for signal 14; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 47.5273 ppm , for signal 13; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 31.2511 ppm , for signal 12; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 20.3047 ppm , for signal 11; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 220.5428 ppm , for signal 17; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 35.7727 ppm , for signal 16; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 21.7592 ppm , for signal 15; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 17.3794 ppm , for signal 19; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 13.7179 ppm , for signal 18; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+
+>  <NMREDATA_2D_1H_NJ_1H>
+Larmor=500.13000745
+CorrType=COSY
+Pulseprogram=cosygpppqf ;optional in V1
+Spectrum_Location=file:dj_androstene/24/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+
+>  <NMREDATA_2D_13C_1J_1H>
+Larmor=500.13
+CorrType=HSQC
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
+Spectrum_Location=file:dj_androstene/26/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+
+>  <NMREDATA_2D_13C_1J_1H#2>
+Larmor=500.13
+CorrType=HSQC
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
+Spectrum_Location=file:dj_androstene/27/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+2/H2a
+2/H2b
+4/H4
+1/H1a
+1/H1b
+6/H6a
+6/H6b
+7/H7a
+7/H7b
+12/H12a
+12/H12b
+11/H11a
+11/H11b
+16/H16a
+16/H16b
+15/H15a
+15/H15b
+19/H19
+18/H18
+8/HH8
+9/HH9
+14/HH14
+
+>  <NMREDATA_2D_13C_NJ_1H>
+Larmor=500.13000745
+CorrType=HMBC
+Pulseprogram=hmbcgplpndqf ;optional in V1
+Spectrum_Location=file:dj_androstene/28/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+1/H2a
+3/H2a
+4/H2a
+10/H2a
+1/H2b
+3/H2b
+4/H2b
+10/H2b
+3/H4
+5/H4
+2/H1a
+3/H1a
+9/H1a
+10/H1a
+2/H1b
+3/H1b
+5/H1b
+10/H1b
+19/H1b
+4/H6a
+5/H6a
+7/H6a
+8/H6a
+4/H6b
+5/H6b
+7/H6b
+8/H6b
+5/H7a
+6/H7a
+8/H7a
+9/H7a
+14/H7a
+5/H7b
+6/H7b
+8/H7b
+9/H7b
+14/H7b
+9/H12a
+11/H12a
+13/H12a
+14/H12a
+17/H12a
+18/H12a
+9/H12b
+11/H12b
+13/H12b
+14/H12b
+18/H12b
+9/H11a
+10/H11a
+12/H11a
+13/H11a
+8/H11b
+9/H11b
+10/H11b
+12/H11b
+13/H11b
+15/H16a
+17/H16a
+13/H16b
+14/H16b
+15/H16b
+17/H16b
+8/H15a
+13/H15a
+14/H15a
+16/H15a
+8/H15b
+13/H15b
+14/H15b
+16/H15b
+17/H15b
+1/H19
+5/H19
+10/H19
+12/H18
+13/H18
+14/H18
+17/H18
+6/HH8
+7/HH8
+8/HH8
+9/HH8
+10/HH8
+13/HH8
+14/HH8
+1/HH9
+5/HH9
+7/HH9
+8/HH9
+10/HH9
+14/HH9
+19/HH9
+7/HH14
+8/HH14
+9/HH14
+12/HH14
+13/HH14
+15/HH14
+
+>  <NMREDATA_1D_1H#2>
+Larmor=500.13
+Pulseprogram=bbhd_psyche_diag_apc.mb ;optional in V1
+Spectrum_Location=file:dj_androstene/30/pdata/100/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+;2.4600-2.3900, L=H2a;found no H multiplet for this H
+;2.3900-2.3200, L=H2b;found no H multiplet for this H
+;5.7570-5.7412, L=H4;found no H multiplet for this H
+;1.7370-1.6722, L=H1a;found no H multiplet for this H
+;2.0649-2.0110, L=H1b;found no H multiplet for this H
+;2.4600-2.3900, L=H6a;found no H multiplet for this H
+;2.3500-2.3000, L=H6b;found no H multiplet for this H
+;1.1669-1.0621, L=H7a;found no H multiplet for this H
+;2.0060-1.9377, L=H7b;found no H multiplet for this H
+;1.2852-1.2362, L=H12a;found no H multiplet for this H
+;1.8919-1.8255, L=H12b;found no H multiplet for this H
+;1.5033-1.4007, L=H11a;found no H multiplet for this H
+;1.7054-1.6541, L=H11b;found no H multiplet for this H
+;2.1538-2.0679, L=H16a;found no H multiplet for this H
+;2.5053-2.4340, L=H16b;found no H multiplet for this H
+;1.6184-1.5140, L=H15a;found no H multiplet for this H
+;2.0060-1.9377, L=H15b;found no H multiplet for this H
+;1.2210-1.1929, L=H19;found no H multiplet for this H
+;0.9257-0.8969, L=H18;found no H multiplet for this H
+;nothing at 1.7793-1.6890 ppm , for signal H8; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;1.7793-1.6890, L=HH8;found no H multiplet for this H
+;nothing at 1.0375-0.9502 ppm , for signal H9; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;1.0375-0.9502, L=HH9;found no H multiplet for this H
+;nothing at 1.3286-1.2852 ppm , for signal H14; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;1.3286-1.2852, L=HH14;found no H multiplet for this H
+
+>  <NMREDATA_2D_1H_unidentified_heteronuclear_2d_spectrum_1H>
+Larmor=500.13
+CorrType=na;Type was not identifiedUnknown
+Pulseprogram=bbhd_psyche_diag_apc.mb ;optional in V1
+Spectrum_Location=file:dj_androstene/30/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+
+>  <NMREDATA_2D_1H_NJ_1H#2>
+Larmor=500.13
+CorrType=COSY
+Pulseprogram=bbhd_psyche_clip_cosy.mb ;optional in V1
+Spectrum_Location=file:dj_androstene/32/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+H2b/H2a
+H1a/H2a
+H1b/H2a
+H2a/H2b
+H1b/H2b
+H1a/H2b
+H2b/H1a
+H2a/H1a
+H1b/H1a
+H2b/H1b
+H2a/H1b
+H1a/H1b
+H6b/H6a
+H7a/H6a
+H7b/H6a
+H6a/H6b
+H7b/H6b
+H7a/H6b
+H6b/H7a
+H6a/H7a
+H7b/H7a
+HH8/H7a
+H6b/H7b
+H6a/H7b
+H7a/H7b
+HH8/H7b
+H12b/H12a
+H11b/H12a
+H11a/H12a
+H12a/H12b
+H11b/H12b
+H11a/H12b
+H12a/H11a
+H12b/H11a
+H11b/H11a
+HH9/H11a
+H12b/H11b
+H12a/H11b
+H11a/H11b
+HH9/H11b
+H16b/H16a
+H15b/H16a
+H15a/H16a
+H16a/H16b
+H15b/H16b
+H15a/H16b
+H16a/H15a
+H16b/H15a
+H15b/H15a
+HH14/H15a
+H16a/H15b
+H16b/H15b
+H15a/H15b
+HH14/H15b
+H7a/HH8
+H7b/HH8
+HH9/HH8
+HH14/HH8
+H11b/HH9
+H11a/HH9
+HH8/HH9
+H15b/HH14
+H15a/HH14
+HH8/HH14
+
+$$$$

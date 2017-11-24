@@ -500,25 +500,25 @@ function assignmentReport() {
                             //		}
                             
                             //		if (diag.widgets.gbShowDeltaForCarbon.checked) {
-                            correlationsTableStart++;
+           //                 correlationsTableStart++;
                             //		}
                             
-                            table = AssignmentReporter.getFinalTable(standardTable, correlationsTable);
+           //                 table = AssignmentReporter.getFinalTable(standardTable, correlationsTable);
                             
                             
                             //		if (diag.widgets.ckOrder.checked) {
-                            table = AssignmentReporter.getOrderedTable(table);
+           //                 table = AssignmentReporter.getOrderedTable(table);
                             //		}
                             
                             //		if (diag.widgets.ckShowDeltaForCarbon.checked) {
                             // back//			table = AssignmentReporter.removeVoidAssignmentsRows(table, standardReporter.xNuclidesIndex);
                             
                             //		} else {
-                            table = AssignmentReporter.removeVoidAssignmentsRows(table, 1);
+          //                  table = AssignmentReporter.removeVoidAssignmentsRows(table, 1);
                             //		}
                             
                             //		if (diag.widgets.ckDropLinesWithoutCorrelation.checked && diag.widgets.gb2DCorrelations.checked) {
-                            table = AssignmentReporter.removeVoidCorrelationsRows(table, standardReporter.xNuclidesIndex);
+          //                  table = AssignmentReporter.removeVoidCorrelationsRows(table, standardReporter.xNuclidesIndex);
                             //		}
                             
                             //		table = AssignmentReporter.removeVoidColumns(table);
@@ -897,7 +897,7 @@ AssignmentReporter.assignmentReport = function (parameters) {
             
         }
     }
-   // stream.writeln("");// end of asignmenet tag
+    stream.writeln("");// end of asignmenet tag DJ put back Nov 23
     /// dj add to dump in file
     if (dataFile !== "") {
         if (debug){
@@ -976,9 +976,9 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
     }
     
     tableRows.header = headerRow;
-    
+
     if (aAssignmentReporter !== undefined) {
-        
+        stream.flush();
         //initialize output
         spectra = dw.itemCount("NMR Spectrum");
         specIndex=0;
@@ -1627,7 +1627,6 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
             //noEqHs = aAssignmentObject.notEqHs(at);
             
             
-            
             if (nmredata_header[looop_over_spectra] !== "" ) {
                 
                 full_path_orig=spectrum.getParam("Data File Name");
@@ -1721,6 +1720,7 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                 nmredata_header[looop_over_spectra] += ";UNIX_CREATE endif\n";
                 
             }
+
             //  getParam("Data File Name")
             // found_it=0;
             
@@ -1767,7 +1767,9 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                         
                         correlations = AssignmentReporter.correlationToString(aAssignmentObject, aMolecule, aProtonDecimals, aCarbonDecimals, at, h, aAssignmentReporter.fCorrelations[c], aFormat);
                         if (aAssignmentReporter.fCorrelationsDescription[i] === undefined && at === 1){
+                            if (debug){
                             stream.writeln (";INFO_DEBUG 2D correlation found ... reporter # " + c + "type " + aAssignmentReporter.fCorrelationsDescription[i] + " extracted for atom 1: " + correlations +  "\n");
+                            }
                         }
                         if (debug){
                             stream.write(";reporter # " + c + "type " + aAssignmentReporter.fCorrelationsDescription[i] + " extracted : ");
@@ -1826,9 +1828,12 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
     if (dataFile !== "") {
         //      for (c = 0; c < aAssignmentReporter.fCorrelations.length; c++) {
         for (c = 1; c <= looop_over_spectra; c++) {
+
             lab=nmredata_header[c] + nmredata[c];
+
             if ( lab !== "" ) {
                 stream.write(nmredata_header[c]);
+
                 // remove duplicate lines
                 tmparr = nmredata[c].split("\n");
                 for (ii=0;ii<tmparr.length;ii++){
@@ -1857,7 +1862,7 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                 
             }
             //                        stream.writeln(nmredata[c]);
-            
+
         }
         stream.flush();
         //  file.close;

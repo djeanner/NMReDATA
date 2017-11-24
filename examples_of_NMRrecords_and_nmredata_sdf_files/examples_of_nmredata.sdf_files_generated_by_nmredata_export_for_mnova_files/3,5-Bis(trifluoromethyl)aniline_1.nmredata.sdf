@@ -71,6 +71,7 @@ H7, 4.0943, H7
 8, 123.4466, 8
 9, 123.4466, 12
 10, -63.3196, 14
+
 >  <NMREDATA_1D_1H>
 Larmor=500.133088507
 Pulseprogram=zg30 ;optional in V1

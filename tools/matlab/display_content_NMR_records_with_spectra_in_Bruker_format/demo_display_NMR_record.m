@@ -1,5 +1,11 @@
 clear all
 
+
+% create table of typical coupling values and structures
+min_value_to_includeJ=3;%Hz Minimal natural abundance to take into account structure
+[J_structure,typ_coupling]=create_table_of_typical_J_coupling(min_value_to_includeJ);
+
+
 %% create and manage archive %dj version
 create_archive=0;% should always do this to keep the matlab files with the data generated...
 opt.validate=zeros(1,3);
@@ -109,7 +115,7 @@ for ii = 1:length(F)
                                     OK=1;
                                     %  answer = inputdlg('Is this spectrum a +D ?1h? spectrum','Check 1D spectrum',[1 40],defaultans,options);
                                     if opt.validate(1,1)>0
-                                        choice = questdlg(['Is this spectrum really a ' super_obj{loo}.tag_name ' '], 'Validation of 1D spectrum', 'OK','not OK','OK')
+                                        choice = questdlg(['Is this spectrum really a ' super_obj{loo}.tag_name ' '], 'Validation of 1D spectrum', 'OK','not OK','OK');
                                         opt.validate(1,1)=opt.validate(1,1)-1;
                                     end
                                 else
@@ -132,7 +138,7 @@ for ii = 1:length(F)
                                     list_2d(pointer_2d,1)=loo;
                                     pointer_2d=pointer_2d+1;
                                     if opt.validate(1,2)>0
-                                        choice = questdlg(['Is this spectrum really a ' super_obj{loo}.tag_name ' '], 'Validation of 2D spectrum', 'OK','not OK','OK')
+                                        choice = questdlg(['Is this spectrum really a ' super_obj{loo}.tag_name ' '], 'Validation of 2D spectrum', 'OK','not OK','OK');
                                         opt.validate(1,2)=opt.validate(1,2)-1;
                                         
                                     end
@@ -356,7 +362,7 @@ for ii = 1:length(F)
                                 ylim(list_pos1+[-0.25 0.25]);
                                 
                                 
-                                choice = questdlg(['Is the signal assigned to ' txt ' really present?'], 'Validation of 2D correlations', 'Yes','No','No, add comment','Yes')
+                                choice = questdlg(['Is the signal assigned to ' txt ' really present?'], 'Validation of 2D correlations', 'Yes','No','No, add comment','Yes');
                                 opt.validate(1,4)=opt.validate(1,4)-1;
                             end
                             

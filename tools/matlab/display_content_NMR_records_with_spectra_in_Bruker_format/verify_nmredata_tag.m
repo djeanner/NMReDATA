@@ -1,7 +1,7 @@
 function [obj]=verify_nmredata_tag(tag_identyfyer,content_of_tag,header_tag)
 field_separator=',';
 obj.tag_name=tag_identyfyer;
-verbose=0;
+verbose=1;
 if verbose==2
     disp(['Tag:  <' tag_identyfyer '>'])
     %   disp(content_of_tag)
@@ -27,7 +27,7 @@ for loop_over_content=list_of_line_break
     if size(list_of_line_comment_separator,1)>0
         comment=current_line(list_of_line_comment_separator(1,1)+1:end);
         current_line=current_line(1:list_of_line_comment_separator(1,1)-1);%shorten the line
-        if verbose==2
+        if verbose==0
             disp(['comment : ' comment])
         end
         
@@ -83,7 +83,6 @@ for loop_over_content=list_of_line_break
             end
             if contains(tag_identyfyer,[header_tag 'ASSIGNMENT'])
                 obj=extract_data_signals(obj,current_line,pieces_of_information,field_separator);
-
             end
             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

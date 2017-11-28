@@ -2,12 +2,18 @@ clear all
 
 %% create and manage archive %dj version
 create_archive=0;% should always do this to keep the matlab files with the data generated...
-validate=zeros(1,3);
-validate(1,1)=1;% validate 1D spectrum as whole when plotting
-validate(1,2)=1;% validate 2D spectrum as whole when plotting
-validate(1,3)=1;% validate 1d multiplets... (can be 1H but also 13C)
-validate(1,4)=1;% validate presence of signals in 2d (can be 1H but also 13C)
-
+opt.validate=zeros(1,3);
+opt.validate(1,1)=1;% validate 1D spectrum as whole when plotting
+opt.validate(1,2)=1;% validate 2D spectrum as whole when plotting
+opt.validate(1,3)=1;% validate 1d multiplets... (can be 1H but also 13C)
+opt.validate(1,4)=1;% validate presence of signals in 2d (can be 1H but also 13C)
+opt.validate=opt.validate*0;%%% CANCEL
+opt.plot_1D=000000000;
+opt.plot_2D=opt.plot_1D;
+opt.only_read_data=1;
+opt.draw_verbose=0*4;%0-4;this is to plot the 3d structure of the molecule in the molblok 1-4
+opt.reading_sdf_file_verbose=0*2;
+opt.main_prog_verbose=1;
 if create_archive
     pack_vers='1.0';package_name=[mfilename '_package_folder_' pack_vers '/'];
     location_package=['./' package_name];
@@ -46,7 +52,9 @@ dataset_name='HAP_benzo(a)pyrene_assignments';
 F = dir([  folder_location    '*.zip'] );
 for ii = 1:length(F)
     dataset_name=F(ii).name(1:end-4);
-    disp(['Try to read ' dataset_name])
+    if opt.main_prog_verbose
+        disp(['Try to read ' dataset_name])
+    end
     %%%%%%%%%%%%%%%%%%%%%%%% experimental data
     folder_location_full=[folder_location dataset_name '/'];
     F2 = dir([  folder_location_full    'compound*.nmredata.sdf'] );
@@ -54,311 +62,333 @@ for ii = 1:length(F)
         part=F2(izi).name(1:end);
         
         %file_name=[folder_location_full 'compound1.nmredata.sdf'];
-        file_name=[folder_location_full part]
-        
-        [super_obj, returned_value, text_of_the_problem]=check_nmredata_sdf_file(file_name);
-        list_1d=[]; pointer_1d=1;
-        list_2d=[]; pointer_2d=1;
-        %% plot spectra
-        for loo=3:size(super_obj,2)%search all spectral objects (assignment is object 1 and J is object 2)
-            disp(['testing element ' num2str(loo) ' ' super_obj{loo}.tag_name ]);
-            
-            if isfield(super_obj{loo},'spectrum_location')
-                actualfile=super_obj{loo}.spectrum_location;
-                actualfile=actualfile(6:end);
-                % disp(['found field ' actualfile ]);
-                OK=0;
-                if exist([folder_location_full actualfile],'dir')
-                    %disp(['found spectrum directory ' [folder_location_full actualfile] ]);
-                    if isfield(super_obj{loo},'nb_dim')
-                        %  disp(['found nb_dim ' super_obj{loo}.nb_dim]);
-                        pieces=strsplit(actualfile,'/');exp_name=pieces{1,1};expno=str2num(pieces{1,2});procno=str2num(pieces{1,4});
-                        if super_obj{loo}.nb_dim == 1
-                            
-                            if exist([folder_location_full actualfile '/1r'],'file')
-                                disp(['Plotting spectrum ' num2str(loo) ' ' super_obj{loo}.tag_name ' Folder ' super_obj{loo}.spectrum_location ' exists with 1r file']);
-                                super_obj{loo}.spectrum=read_data_bruker([folder_location_full exp_name '/'],expno,procno,0);
-                                figure(loo);clf;
-                                
-                                plot_1d(super_obj{loo}.spectrum,0,[],[],loo);
-                                title(super_obj{loo}.tag_name,'interpreter','none')
-                                list_1d(pointer_1d,1)=loo;
-                                pointer_1d=pointer_1d+1;
-                                OK=1;
-                                %  answer = inputdlg('Is this spectrum a +D ?1h? spectrum','Check 1D spectrum',[1 40],defaultans,options);
-                                if validate(1,1)>0
-                                    choice = questdlg(['Is this spectrum really a ' super_obj{loo}.tag_name ' '], 'Validation of 1D spectrum', 'OK','not OK','OK')
-                                    validate(1,1)=validate(1,1)-1;
-                                end
-                            else
-                                disp(['No 1r file found in folder ' super_obj{loo}.spectrum_location ]);
-                            end
-                        end
-                        if super_obj{loo}.nb_dim == 2
-                            if exist([folder_location_full actualfile '/2rr'],'file')
-                                disp(['Plotting spectrum ' num2str(loo) ' ' super_obj{loo}.tag_name ' Folder ' super_obj{loo}.spectrum_location ' exists with 2rr file']);
-                                super_obj{loo}.spectrum=read_data_bruker([folder_location_full exp_name '/'],expno,procno,0);
-                                [super_obj{loo}.spectrum.noise_level, super_obj{loo}.spectrum.list_peaks]=determine_noise_level(super_obj{loo}.spectrum);
-                                
-                                super_obj{loo}.spectrum.cont_level_list=generate_contour_level_list(super_obj{loo}.spectrum.noise_level * min_lev ,max(max(super_obj{loo}.spectrum.list_peaks)) , 2.00);
-                                figure(loo);clf;
-                                
-                                plot_2d_interp(super_obj{loo}.spectrum,0,[],[],loo);
-                                title(super_obj{loo}.tag_name,'interpreter','none')
-                                OK=1;
-                                list_2d(pointer_2d,1)=loo;
-                                pointer_2d=pointer_2d+1;
-                                if validate(1,2)>0
-                                    choice = questdlg(['Is this spectrum really a ' super_obj{loo}.tag_name ' '], 'Validation of 2D spectrum', 'OK','not OK','OK')
-                                    validate(1,2)=validate(1,2)-1;
-                                    
-                                end
-                            else
-                                disp(['No 2rr file found in folder ' super_obj{loo}.spectrum_location ]);
-                            end
-                        end
-                    end
-                else
-                    disp(['Element ' num2str(loo) ' Folder ' super_obj{loo}.spectrum_location ' does not exists']);
-                end
-            end
+        file_name=[folder_location_full part];
+        if opt.reading_sdf_file_verbose
+            disp(['> Reading file : ' file_name ])
         end
-        
-        %% plot NMReDATA
-        used_color='k';
-        for loop_over_spectra=1:pointer_1d-1
-            figure(list_1d(loop_over_spectra,1));hold on;
-            tmp_obj=super_obj{list_1d(loop_over_spectra,1)};
-            min_chem_shift_spectrum=10000000;
-            max_chem_shift_spectrum=-10000000000;
-            if isfield(tmp_obj,'chemical_shift')
-                for loop_over_peaks=1:size(tmp_obj.chemical_shift,2)
-                    % disp(['For Peak : ' num2str(loop_over_peaks) ' Label= ' tmp_obj.label{1,loop_over_peaks}])
-                    %  plot(tmp_obj.chemical_shift{1,loop_over_peaks},0,[used_color '+'])
-                    % text(tmp_obj.chemical_shift{1,loop_over_peaks},0,tmp_obj.label{1,loop_over_peaks},'color',used_color)
-                    if isfield(tmp_obj,'label')
-                        txt=tmp_obj.label{1,loop_over_peaks};
-                    else
-                        txt='?';
-                    end
-                    txt=[txt ' '];
-                    if isfield(tmp_obj,'multiplicity')
-                        %  if tmp_obj.multiplicity{1,loop_over_peaks}~=''
-                        txt=[txt num2str(tmp_obj.multiplicity{1,loop_over_peaks}) ' '];
-                        % end
-                    end
-                    if isfield(tmp_obj,'integral')
-                        if tmp_obj.integral{1,loop_over_peaks}~=0
-                            %  txt=[txt 'E=' num2str(tmp_obj.integral{1,loop_over_peaks}) ' '];
-                        end
-                    end
-                    pos_lab=max(max(tmp_obj.spectrum.spectrum))/2;
-                    nb_pt_for_broadening=1+round(0.025/(max(max(tmp_obj.spectrum.scale2))-min(min(tmp_obj.spectrum.scale2)))*tmp_obj.spectrum.si2);
-                    %%   broadened_spectrum=conv(,ones(nb_pt_for_broadening,1),'same')/nb_pt_for_broadening;
-                    [del, index]=min(abs(tmp_obj.spectrum.scale2-   tmp_obj.chemical_shift{1,loop_over_peaks}));
-                    from=index-nb_pt_for_broadening;
-                    to=index+nb_pt_for_broadening;
-                    if from<1, from=1;end
-                    if to>tmp_obj.spectrum.si2, to=si2;end
-                    pos_lab=max(max(tmp_obj.spectrum.spectrum(from:to,1)));
-                    
-                    if isfield(tmp_obj,'intensity')
-                        if size(tmp_obj.intensity,2)>=loop_over_peaks
-                            if tmp_obj.intensity{1,loop_over_peaks}~=0
-                                pos_lab=tmp_obj.intensity{1,loop_over_peaks};
-                            end
-                        end
-                    end
-                    %  disp(txt)
-                    list_pos=tmp_obj.chemical_shift{1,loop_over_peaks};
-                    
-                    text(list_pos,pos_lab,txt,'color',used_color)
-                    %% plot j structure
-                    if isfield(tmp_obj,'J')
-                        if size(tmp_obj.J,1)>=loop_over_peaks
-                            curJl=zeros(1,size(tmp_obj.J,2));
-                            for loo_j=1: size(tmp_obj.J,2)
-                                totm=tmp_obj.J{loop_over_peaks,loo_j};
-                                if size(totm,2)==0
-                                    curJl(1,loo_j)=0;
-                                else
-                                    curJl(1,loo_j)=totm;
-                                end
-                            end
-                            curJl=sort(curJl,'descend');
-                            for loo_j=1: size(curJl,2)
-                                curJ=curJl(1,loo_j);
-                                if curJ~=0
-                                    shiftJ=0.5*curJ/tmp_obj.spectrum.sf2;
-                                    alist_pos=[list_pos list_pos];
-                                    list_pos=[list_pos+shiftJ list_pos-shiftJ];
-                                    n_pos_lab=pos_lab-curJ*pos_lab*0.005;
-                                    for lol=1:size(alist_pos,2)
-                                        plot([alist_pos(1,lol) list_pos(1,lol)],[ pos_lab n_pos_lab],[used_color '-']);
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        [super_obj, returned_value, text_of_the_problem]=check_nmredata_sdf_file(file_name,opt);
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        if opt.reading_sdf_file_verbose
+            disp(['> End reading file : ' file_name ])
+        end
+        if ~opt.only_read_data
+            list_1d=[]; pointer_1d=1;
+            list_2d=[]; pointer_2d=1;
+            %% plot spectra
+            for loo=3:size(super_obj,2)%search all spectral objects (assignment is object 1 and J is object 2)
+                disp(['testing element ' num2str(loo) ' ' super_obj{loo}.tag_name ]);
+                
+                if isfield(super_obj{loo},'spectrum_location')
+                    actualfile=super_obj{loo}.spectrum_location;
+                    actualfile=actualfile(6:end);
+                    % disp(['found field ' actualfile ]);
+                    OK=0;
+                    if exist([folder_location_full actualfile],'dir')
+                        %disp(['found spectrum directory ' [folder_location_full actualfile] ]);
+                        if isfield(super_obj{loo},'nb_dim')
+                            %  disp(['found nb_dim ' super_obj{loo}.nb_dim]);
+                            pieces=strsplit(actualfile,'/');exp_name=pieces{1,1};expno=str2num(pieces{1,2});procno=str2num(pieces{1,4});
+                            if super_obj{loo}.nb_dim == 1
+                                
+                                if exist([folder_location_full actualfile '/1r'],'file')
+                                    disp(['Plotting spectrum ' num2str(loo) ' ' super_obj{loo}.tag_name ' Folder ' super_obj{loo}.spectrum_location ' exists with 1r file']);
+                                    super_obj{loo}.spectrum=read_data_bruker([folder_location_full exp_name '/'],expno,procno,0);
+                                    figure(loo);clf;
+                                    if opt.plot_1D
+                                        plot_1d(super_obj{loo}.spectrum,0,[],[],loo);
                                     end
-                                    pos_lab=n_pos_lab;
+                                    title(super_obj{loo}.tag_name,'interpreter','none')
+                                    list_1d(pointer_1d,1)=loo;
+                                    pointer_1d=pointer_1d+1;
+                                    OK=1;
+                                    %  answer = inputdlg('Is this spectrum a +D ?1h? spectrum','Check 1D spectrum',[1 40],defaultans,options);
+                                    if opt.validate(1,1)>0
+                                        choice = questdlg(['Is this spectrum really a ' super_obj{loo}.tag_name ' '], 'Validation of 1D spectrum', 'OK','not OK','OK')
+                                        opt.validate(1,1)=opt.validate(1,1)-1;
+                                    end
+                                else
+                                    disp(['No 1r file found in folder ' super_obj{loo}.spectrum_location ]);
                                 end
                             end
-                            
+                            if super_obj{loo}.nb_dim == 2
+                                if exist([folder_location_full actualfile '/2rr'],'file')
+                                    disp(['Plotting spectrum ' num2str(loo) ' ' super_obj{loo}.tag_name ' Folder ' super_obj{loo}.spectrum_location ' exists with 2rr file']);
+                                    super_obj{loo}.spectrum=read_data_bruker([folder_location_full exp_name '/'],expno,procno,0);
+                                    [super_obj{loo}.spectrum.noise_level, super_obj{loo}.spectrum.list_peaks]=determine_noise_level(super_obj{loo}.spectrum);
+                                    
+                                    super_obj{loo}.spectrum.cont_level_list=generate_contour_level_list(super_obj{loo}.spectrum.noise_level * min_lev ,max(max(super_obj{loo}.spectrum.list_peaks)) , 2.00);
+                                    figure(loo);clf;
+                                    if opt.plot_2D
+                                        plot_2d_interp(super_obj{loo}.spectrum,0,[],[],loo);
+                                    end
+                                    title(super_obj{loo}.tag_name,'interpreter','none')
+                                    OK=1;
+                                    list_2d(pointer_2d,1)=loo;
+                                    pointer_2d=pointer_2d+1;
+                                    if opt.validate(1,2)>0
+                                        choice = questdlg(['Is this spectrum really a ' super_obj{loo}.tag_name ' '], 'Validation of 2D spectrum', 'OK','not OK','OK')
+                                        opt.validate(1,2)=opt.validate(1,2)-1;
+                                        
+                                    end
+                                else
+                                    disp(['No 2rr file found in folder ' super_obj{loo}.spectrum_location ]);
+                                end
+                            end
                         end
+                    else
+                        disp(['Element ' num2str(loo) ' Folder ' super_obj{loo}.spectrum_location ' does not exists']);
                     end
-                    %% just little vertical line
-                    alist_pos=[list_pos];
-                    n_pos_lab=pos_lab-4*pos_lab*0.005;
-                    for lol=1:size(alist_pos,2)
-                        plot([alist_pos(1,lol) list_pos(1,lol)],[ pos_lab n_pos_lab],[used_color '-']);
-                    end
-                    
-                    
-                    
-                    min_chem_shift_spectrum=min(min([min_chem_shift_spectrum list_pos]));
-                    max_chem_shift_spectrum=max(max([max_chem_shift_spectrum list_pos]));
                 end
+            end
+            
+            %% plot NMReDATA
+            %% plot 1D NMReDATA
+            used_color='k';
+            for loop_over_spectra=1:pointer_1d-1
                 
                 
-                
-                %% ask to validate each multiplet...
-                for loop_over_peaks=1:size(tmp_obj.chemical_shift,2)
-                    if isfield(tmp_obj,'multiplicity')
-                        if validate(1,3)>0
-                            
-                            list_pos=tmp_obj.chemical_shift{1,loop_over_peaks};
+                figure(list_1d(loop_over_spectra,1));hold on;
+                tmp_obj=super_obj{list_1d(loop_over_spectra,1)};
+                min_chem_shift_spectrum=10000000;
+                max_chem_shift_spectrum=-10000000000;
+                if isfield(tmp_obj,'chemical_shift')
+                    for loop_over_peaks=1:size(tmp_obj.chemical_shift,2)
+                        % disp(['For Peak : ' num2str(loop_over_peaks) ' Label= ' tmp_obj.label{1,loop_over_peaks}])
+                        %  plot(tmp_obj.chemical_shift{1,loop_over_peaks},0,[used_color '+'])
+                        % text(tmp_obj.chemical_shift{1,loop_over_peaks},0,tmp_obj.label{1,loop_over_peaks},'color',used_color)
+                        if isfield(tmp_obj,'label')
+                            txt=tmp_obj.label{1,loop_over_peaks};
+                        else
+                            txt='?';
+                        end
+                        txt=[txt ' '];
+                        if isfield(tmp_obj,'multiplicity')
                             %  if tmp_obj.multiplicity{1,loop_over_peaks}~=''
-                            txt=[ num2str(tmp_obj.multiplicity{1,loop_over_peaks}) ' '];
+                            txt=[txt num2str(tmp_obj.multiplicity{1,loop_over_peaks}) ' '];
                             % end
-                            
-                            figure(list_1d(loop_over_spectra,1));hold on;
-                            xlim(list_pos+[-0.05 0.05]);
-                            
-                            %%%    plot(list_pos,0*list_pos,'k.')%just to bring figure to top in octove
-                            %%%  drawnow('expose')
-                            %%%   refresh
-                            %%%    title('test if this brings fig to top...')
-                            labb='';
-                            if isfield(tmp_obj,'label')
-                                labb=tmp_obj.label{1,loop_over_peaks};
+                        end
+                        if isfield(tmp_obj,'integral')
+                            if tmp_obj.integral{1,loop_over_peaks}~=0
+                                %  txt=[txt 'E=' num2str(tmp_obj.integral{1,loop_over_peaks}) ' '];
                             end
-                            % see if couplings are available for this...
-                            coupling_present=0;
+                        end
+                        pos_lab=max(max(tmp_obj.spectrum.spectrum))/2;
+                        nb_pt_for_broadening=1+round(0.025/(max(max(tmp_obj.spectrum.scale2))-min(min(tmp_obj.spectrum.scale2)))*tmp_obj.spectrum.si2);
+                        %%   broadened_spectrum=conv(,ones(nb_pt_for_broadening,1),'same')/nb_pt_for_broadening;
+                        [del, index]=min(abs(tmp_obj.spectrum.scale2-   tmp_obj.chemical_shift{1,loop_over_peaks}));
+                        from=index-nb_pt_for_broadening;
+                        to=index+nb_pt_for_broadening;
+                        if from<1, from=1;end
+                        if to>tmp_obj.spectrum.si2, to=si2;end
+                        pos_lab=max(max(tmp_obj.spectrum.spectrum(from:to,1)));
+                        
+                        if isfield(tmp_obj,'intensity')
+                            if size(tmp_obj.intensity,2)>=loop_over_peaks
+                                if tmp_obj.intensity{1,loop_over_peaks}~=0
+                                    pos_lab=tmp_obj.intensity{1,loop_over_peaks};
+                                end
+                            end
+                        end
+                        %  disp(txt)
+                        list_pos=tmp_obj.chemical_shift{1,loop_over_peaks};
+                        
+                        text(list_pos,pos_lab,txt,'color',used_color)
+                        %% plot j structure
+                        if isfield(tmp_obj,'J')
                             if size(tmp_obj.J,1)>=loop_over_peaks
-                                if  size(tmp_obj.J{loop_over_peaks,1}) >0
-                                    coupling_present=1;
+                                curJl=zeros(1,size(tmp_obj.J,2));
+                                for loo_j=1: size(tmp_obj.J,2)
+                                    totm=tmp_obj.J{loop_over_peaks,loo_j};
+                                    if size(totm,2)==0
+                                        curJl(1,loo_j)=0;
+                                    else
+                                        curJl(1,loo_j)=totm;
+                                    end
                                 end
+                                curJl=sort(curJl,'descend');
+                                for loo_j=1: size(curJl,2)
+                                    curJ=curJl(1,loo_j);
+                                    if curJ~=0
+                                        shiftJ=0.5*curJ/tmp_obj.spectrum.sf2;
+                                        alist_pos=[list_pos list_pos];
+                                        list_pos=[list_pos+shiftJ list_pos-shiftJ];
+                                        n_pos_lab=pos_lab-curJ*pos_lab*0.005;
+                                        for lol=1:size(alist_pos,2)
+                                            plot([alist_pos(1,lol) list_pos(1,lol)],[ pos_lab n_pos_lab],[used_color '-']);
+                                        end
+                                        pos_lab=n_pos_lab;
+                                    end
+                                end
+                                
                             end
-                            if coupling_present
-                                choice = questdlg(['Is this multiplet of ' labb ' really a ' txt ' with these splittings ?'], 'Validation of 1D multiplet', 'Yes','No','No, add comment','Yes')
-                            else
-                                choice = questdlg(['Is this multiplet of ' labb ' really a ' txt ' ?'], 'Validation of 1D multiplet', 'Yes','No','No, add comment','Yes')
+                        end
+                        %% just little vertical line
+                        alist_pos=[list_pos];
+                        n_pos_lab=pos_lab-4*pos_lab*0.005;
+                        for lol=1:size(alist_pos,2)
+                            plot([alist_pos(1,lol) list_pos(1,lol)],[ pos_lab n_pos_lab],[used_color '-']);
+                        end
+                        
+                        
+                        
+                        min_chem_shift_spectrum=min(min([min_chem_shift_spectrum list_pos]));
+                        max_chem_shift_spectrum=max(max([max_chem_shift_spectrum list_pos]));
+                    end
+                    
+                    
+                    
+                    %% ask to opt.validate each multiplet...
+                    for loop_over_peaks=1:size(tmp_obj.chemical_shift,2)
+                        if isfield(tmp_obj,'multiplicity')
+                            if opt.validate(1,3)>0
+                                
+                                list_pos=tmp_obj.chemical_shift{1,loop_over_peaks};
+                                %  if tmp_obj.multiplicity{1,loop_over_peaks}~=''
+                                txt=[ num2str(tmp_obj.multiplicity{1,loop_over_peaks}) ' '];
+                                % end
+                                
+                                figure(list_1d(loop_over_spectra,1));hold on;
+                                xlim(list_pos+[-0.05 0.05]);
+                                
+                                %%%    plot(list_pos,0*list_pos,'k.')%just to bring figure to top in octove
+                                %%%  drawnow('expose')
+                                %%%   refresh
+                                %%%    title('test if this brings fig to top...')
+                                labb='';
+                                if isfield(tmp_obj,'label')
+                                    labb=tmp_obj.label{1,loop_over_peaks};
+                                end
+                                % see if couplings are available for this...
+                                coupling_present=0;
+                                if size(tmp_obj.J,1)>=loop_over_peaks
+                                    if  size(tmp_obj.J{loop_over_peaks,1}) >0
+                                        coupling_present=1;
+                                    end
+                                end
+                                if coupling_present
+                                    choice = questdlg(['Is this multiplet of ' labb ' really a ' txt ' with these splittings ?'], 'Validation of 1D multiplet', 'Yes','No','No, add comment','Yes');
+                                else
+                                    choice = questdlg(['Is this multiplet of ' labb ' really a ' txt ' ?'], 'Validation of 1D multiplet', 'Yes','No','No, add comment','Yes');
+                                end
+                                opt.validate(1,3)=opt.validate(1,3)-1;
                             end
-                            validate(1,3)=validate(1,3)-1;
                         end
                     end
+                    
+                    margin=0.2;
+                    min_chem_shift_spectrum=min_chem_shift_spectrum -margin;min_chem_shift_spectrum=round(min_chem_shift_spectrum*10)/10;
+                    max_chem_shift_spectrum=max_chem_shift_spectrum +margin;max_chem_shift_spectrum=round(max_chem_shift_spectrum*10)/10;
+                    xlim([min_chem_shift_spectrum max_chem_shift_spectrum])
                 end
-                
-                margin=0.2;
-                min_chem_shift_spectrum=min_chem_shift_spectrum -margin;min_chem_shift_spectrum=round(min_chem_shift_spectrum*10)/10;
-                max_chem_shift_spectrum=max_chem_shift_spectrum +margin;max_chem_shift_spectrum=round(max_chem_shift_spectrum*10)/10;
-                xlim([min_chem_shift_spectrum max_chem_shift_spectrum])
-            end
-            fig_num=list_1d(loop_over_spectra,1);
-            mkdir('./plots_of_figures')
-            if  exist('OCTAVE_VERSION', 'builtin') ~= 0
-                print(['./plots_of_figures/O_' dataset_name '_compound' num2str(izi) '_'  tmp_obj.tag_name '.eps'],'-color');%for octave
-            else
-                print(['./plots_of_figures/M_' dataset_name '_compound' num2str(izi) '_'  tmp_obj.tag_name '.eps'],'-depsc');%for matlab
-            end
-        end
-        for loop_over_spectra=1:pointer_2d-1
-            figure(list_2d(loop_over_spectra,1));hold on;
-            
-            tmp_obj=super_obj{list_2d(loop_over_spectra,1)};
-            
-            
-            %%%%%%%%%%
-            
-            min_chem_shift_spectrum1=10000000;
-            max_chem_shift_spectrum1=-10000000000;
-            min_chem_shift_spectrum2=10000000;
-            max_chem_shift_spectrum2=-10000000000;
-            if isfield(tmp_obj,'signalf1')
-                for loop_over_peaks=1:size(tmp_obj.signalf1,2)
-                    list_pos1=0;
-                    
-                    list_pos2=0;
-                    
-                    % disp(['For Peak : ' num2str(loop_over_peaks) ' Label= ' tmp_obj.label{1,loop_over_peaks}])
-                    %  plot(tmp_obj.chemical_shift{1,loop_over_peaks},0,[used_color '+'])
-                    % text(tmp_obj.chemical_shift{1,loop_over_peaks},0,tmp_obj.label{1,loop_over_peaks},'color',used_color)
-                    txt='';
-                    txt=[txt tmp_obj.signalf1{1,loop_over_peaks} '/'];
-                    txt=[txt tmp_obj.signalf2{1,loop_over_peaks}];
-                    for loop_over_assigned_signals=1:size(super_obj{1,1}.label_signal,2)
-                        if size(super_obj{1,1}.label_signal{1,loop_over_assigned_signals},2)>0
-                            if size(tmp_obj.signalf1{1,loop_over_peaks},2)>0
-                                %  disp(['compare '      super_obj{1,1}.label_signal{1,loop_over_assigned_signals} ' '    tmp_obj.signalf1{1,loop_over_peaks}])
-                                %  disp(['compare '      num2str(size(super_obj{1,1}.label_signal{1,loop_over_assigned_signals},1)) ' '     num2str(size(tmp_obj.signalf1{1,loop_over_peaks},1))])
-                                %  disp(['compare '       num2str(size(super_obj{1,1}.label_signal{1,loop_over_assigned_signals},2)) ' '     num2str(size(tmp_obj.signalf1{1,loop_over_peaks},2))])
-                                if strcmp(super_obj{1,1}.label_signal{1,loop_over_assigned_signals} , tmp_obj.signalf1{1,loop_over_peaks})
-                                    list_pos1=super_obj{1,1}.chemical_shift{1,loop_over_assigned_signals};
-                                end
-                            end
-                        end
-                    end
-                    for loop_over_assigned_signals=1:size(super_obj{1,1}.label_signal,2)
-                        if size(super_obj{1,1}.label_signal{1,loop_over_assigned_signals},2)>0
-                            if size(tmp_obj.signalf2{1,loop_over_peaks},2)>0
-                                %  disp(['compare '      super_obj{1,1}.label_signal{1,loop_over_assigned_signals} ' '    tmp_obj.signalf1{1,loop_over_peaks}])
-                                %  disp(['compare '      num2str(size(super_obj{1,1}.label_signal{1,loop_over_assigned_signals},1)) ' '     num2str(size(tmp_obj.signalf1{1,loop_over_peaks},1))])
-                                %  disp(['compare '       num2str(size(super_obj{1,1}.label_signal{1,loop_over_assigned_signals},2)) ' '     num2str(size(tmp_obj.signalf1{1,loop_over_peaks},2))])
-                                if strcmp(super_obj{1,1}.label_signal{1,loop_over_assigned_signals} , tmp_obj.signalf2{1,loop_over_peaks})
-                                    list_pos2=super_obj{1,1}.chemical_shift{1,loop_over_assigned_signals};
-                                end
-                            end
-                        end
-                    end
-                    
-                    if (list_pos2~=0) && (list_pos1~=0)
-                        plot(list_pos2,list_pos1,[used_color '+'])
-                        text(list_pos2,list_pos1,txt,'color',used_color)
-                        
-                        
-                        if validate(1,4)>0% validate 2D correlations
-                            
-                            xlim(list_pos2+[-0.25 0.25]);
-                            ylim(list_pos1+[-0.25 0.25]);
-                            
-                            
-                            choice = questdlg(['Is the signal assigned to ' txt ' really present?'], 'Validation of 2D correlations', 'Yes','No','No, add comment','Yes')
-                            validate(1,4)=validate(1,4)-1;
-                        end
-                        
-                        
-                        min_chem_shift_spectrum1=min(min([min_chem_shift_spectrum1 list_pos1]));
-                        max_chem_shift_spectrum1=max(max([max_chem_shift_spectrum1 list_pos1]));
-                        min_chem_shift_spectrum2=min(min([min_chem_shift_spectrum2 list_pos2]));
-                        max_chem_shift_spectrum2=max(max([max_chem_shift_spectrum2 list_pos2]));
-                    end
-                    
-                    
-                    
+                fig_num=list_1d(loop_over_spectra,1);
+                mkdir('./plots_of_figures')
+                if  exist('OCTAVE_VERSION', 'builtin') ~= 0
+                    print(['./plots_of_figures/O_' dataset_name '_compound' num2str(izi) '_'  tmp_obj.tag_name '.eps'],'-color');%for octave
+                else
+                    print(['./plots_of_figures/M_' dataset_name '_compound' num2str(izi) '_'  tmp_obj.tag_name '.eps'],'-depsc');%for matlab
                 end
-                
-                margin=0.2;
-                min_chem_shift_spectrum1=min_chem_shift_spectrum1 -margin;min_chem_shift_spectrum1=round(min_chem_shift_spectrum1*10)/10;
-                max_chem_shift_spectrum1=max_chem_shift_spectrum1 +margin;max_chem_shift_spectrum1=round(max_chem_shift_spectrum1*10)/10;
-                min_chem_shift_spectrum2=min_chem_shift_spectrum2 -margin;min_chem_shift_spectrum2=round(min_chem_shift_spectrum2*10)/10;
-                max_chem_shift_spectrum2=max_chem_shift_spectrum2 +margin;max_chem_shift_spectrum2=round(max_chem_shift_spectrum2*10)/10;
-                xlim([min_chem_shift_spectrum2 max_chem_shift_spectrum2])
-                ylim([min_chem_shift_spectrum1 max_chem_shift_spectrum1])
             end
-            fig_num=list_2d(loop_over_spectra,1);
-            drawnow
-            mkdir('./plots_of_figures')
-            if  exist('OCTAVE_VERSION', 'builtin') ~= 0
-                print(['./plots_of_figures/O_' dataset_name '_compound' num2str(izi) '_'  tmp_obj.tag_name '.eps'],'-color');%for octave
-            else
-                print(['./plots_of_figures/M_' dataset_name '_compound' num2str(izi) '_'  tmp_obj.tag_name '.eps'],'-depsc');%for matlab
+            
+            %% plot 2D NMReDATA
+            for loop_over_spectra=1:pointer_2d-1
+                figure(list_2d(loop_over_spectra,1));hold on;
+                
+                tmp_obj=super_obj{list_2d(loop_over_spectra,1)};
+                
+                
+                %%%%%%%%%%
+                
+                min_chem_shift_spectrum1=10000000;
+                max_chem_shift_spectrum1=-10000000000;
+                min_chem_shift_spectrum2=10000000;
+                max_chem_shift_spectrum2=-10000000000;
+                if isfield(tmp_obj,'signalf1')
+                    for loop_over_peaks=1:size(tmp_obj.signalf1,2)
+                        list_pos1=0;
+                        
+                        list_pos2=0;
+                        
+                        % disp(['For Peak : ' num2str(loop_over_peaks) ' Label= ' tmp_obj.label{1,loop_over_peaks}])
+                        %  plot(tmp_obj.chemical_shift{1,loop_over_peaks},0,[used_color '+'])
+                        % text(tmp_obj.chemical_shift{1,loop_over_peaks},0,tmp_obj.label{1,loop_over_peaks},'color',used_color)
+                        txt='';
+                        txt=[txt tmp_obj.signalf1{1,loop_over_peaks} '/'];
+                        txt=[txt tmp_obj.signalf2{1,loop_over_peaks}];
+                        for loop_over_assigned_signals=1:size(super_obj{1,1}.label_signal,2)
+                            if size(super_obj{1,1}.label_signal{1,loop_over_assigned_signals},2)>0
+                                if size(tmp_obj.signalf1{1,loop_over_peaks},2)>0
+                                    %  disp(['compare '      super_obj{1,1}.label_signal{1,loop_over_assigned_signals} ' '    tmp_obj.signalf1{1,loop_over_peaks}])
+                                    %  disp(['compare '      num2str(size(super_obj{1,1}.label_signal{1,loop_over_assigned_signals},1)) ' '     num2str(size(tmp_obj.signalf1{1,loop_over_peaks},1))])
+                                    %  disp(['compare '       num2str(size(super_obj{1,1}.label_signal{1,loop_over_assigned_signals},2)) ' '     num2str(size(tmp_obj.signalf1{1,loop_over_peaks},2))])
+                                    if strcmp(super_obj{1,1}.label_signal{1,loop_over_assigned_signals} , tmp_obj.signalf1{1,loop_over_peaks})
+                                        list_pos1=super_obj{1,1}.chemical_shift{1,loop_over_assigned_signals};
+                                    end
+                                end
+                            end
+                        end
+                        for loop_over_assigned_signals=1:size(super_obj{1,1}.label_signal,2)
+                            if size(super_obj{1,1}.label_signal{1,loop_over_assigned_signals},2)>0
+                                if size(tmp_obj.signalf2{1,loop_over_peaks},2)>0
+                                    %  disp(['compare '      super_obj{1,1}.label_signal{1,loop_over_assigned_signals} ' '    tmp_obj.signalf1{1,loop_over_peaks}])
+                                    %  disp(['compare '      num2str(size(super_obj{1,1}.label_signal{1,loop_over_assigned_signals},1)) ' '     num2str(size(tmp_obj.signalf1{1,loop_over_peaks},1))])
+                                    %  disp(['compare '       num2str(size(super_obj{1,1}.label_signal{1,loop_over_assigned_signals},2)) ' '     num2str(size(tmp_obj.signalf1{1,loop_over_peaks},2))])
+                                    if strcmp(super_obj{1,1}.label_signal{1,loop_over_assigned_signals} , tmp_obj.signalf2{1,loop_over_peaks})
+                                        list_pos2=super_obj{1,1}.chemical_shift{1,loop_over_assigned_signals};
+                                    end
+                                end
+                            end
+                        end
+                        
+                        if (list_pos2~=0) && (list_pos1~=0)
+                            plot(list_pos2,list_pos1,[used_color '+'])
+                            text(list_pos2,list_pos1,txt,'color',used_color)
+                            
+                            
+                            if opt.validate(1,4)>0% opt.validate 2D correlations
+                                
+                                xlim(list_pos2+[-0.25 0.25]);
+                                ylim(list_pos1+[-0.25 0.25]);
+                                
+                                
+                                choice = questdlg(['Is the signal assigned to ' txt ' really present?'], 'Validation of 2D correlations', 'Yes','No','No, add comment','Yes')
+                                opt.validate(1,4)=opt.validate(1,4)-1;
+                            end
+                            
+                            
+                            min_chem_shift_spectrum1=min(min([min_chem_shift_spectrum1 list_pos1]));
+                            max_chem_shift_spectrum1=max(max([max_chem_shift_spectrum1 list_pos1]));
+                            min_chem_shift_spectrum2=min(min([min_chem_shift_spectrum2 list_pos2]));
+                            max_chem_shift_spectrum2=max(max([max_chem_shift_spectrum2 list_pos2]));
+                        end
+                        
+                        
+                        
+                    end
+                    
+                    margin=0.2;
+                    min_chem_shift_spectrum1=min_chem_shift_spectrum1 -margin;min_chem_shift_spectrum1=round(min_chem_shift_spectrum1*10)/10;
+                    max_chem_shift_spectrum1=max_chem_shift_spectrum1 +margin;max_chem_shift_spectrum1=round(max_chem_shift_spectrum1*10)/10;
+                    min_chem_shift_spectrum2=min_chem_shift_spectrum2 -margin;min_chem_shift_spectrum2=round(min_chem_shift_spectrum2*10)/10;
+                    max_chem_shift_spectrum2=max_chem_shift_spectrum2 +margin;max_chem_shift_spectrum2=round(max_chem_shift_spectrum2*10)/10;
+                    xlim([min_chem_shift_spectrum2 max_chem_shift_spectrum2])
+                    ylim([min_chem_shift_spectrum1 max_chem_shift_spectrum1])
+                end
+                fig_num=list_2d(loop_over_spectra,1);
+                drawnow
+                mkdir('./plots_of_figures')
+                if  exist('OCTAVE_VERSION', 'builtin') ~= 0
+                    print(['./plots_of_figures/O_' dataset_name '_compound' num2str(izi) '_'  tmp_obj.tag_name '.eps'],'-color');%for octave
+                else
+                    print(['./plots_of_figures/M_' dataset_name '_compound' num2str(izi) '_'  tmp_obj.tag_name '.eps'],'-depsc');%for matlab
+                end
             end
         end
     end
 end
+

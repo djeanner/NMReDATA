@@ -6,7 +6,9 @@ if isfield(opt,'reading_sdf_file_verbose')
 else
     verbose=0;
 end
-
+opt.dim1=1;
+opt.dim2=2;
+opt.dim3=3;
 fig_plot=1;
 
 forceexit=0;
@@ -135,21 +137,33 @@ while ischar(tline)
         if  verbose>0
             disp('End of mol. section');
         end
-         if  verbose>0
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%
+        if  verbose>0
             disp('Start analysis of molblock');
-         end
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%
+        end
         structure=read_mol_block(mol_block,opt);
-              %%%%%%%%%%%%%%%%%%%%%%%%%%%
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%
-  if  verbose>0
+        if  verbose>0
             disp('Finished analysis of molblock');
-         end
+        end
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%
+        if verbose
+            disp(['Starts generation of table of 1J, 2J, 3J between atoms ' ])
+        end
+        structure.nb_bond_between=create_nb_bonds_between_atoms(structure,opt);
+        if verbose
+            disp(['Ends generates table of 1J, 2J, 3J between atoms ' ])
+        end
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%
+        
         
         state=1;
         

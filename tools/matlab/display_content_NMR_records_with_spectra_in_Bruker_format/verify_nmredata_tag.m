@@ -78,7 +78,8 @@ for loop_over_content=list_of_line_break
                 obj=extract_data_2d(obj,current_line,pieces_of_information,field_separator);
             end
             if contains(tag_identyfyer,[header_tag 'J'])
-                obj=extract_data_J(obj,current_line,pieces_of_information,field_separator);
+                warning('not reading J yet... write function first....')
+             %   obj=extract_data_J(obj,current_line,pieces_of_information,field_separator);
 
             end
             if contains(tag_identyfyer,[header_tag 'ASSIGNMENT'])

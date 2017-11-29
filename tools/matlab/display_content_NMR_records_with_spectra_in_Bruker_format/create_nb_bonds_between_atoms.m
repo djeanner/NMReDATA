@@ -1,4 +1,4 @@
-function nb_bond_between=create_nb_bonds_between_atoms(structure,opt,dim1,dim2,dim3)
+function [nb_bond_between]=create_nb_bonds_between_atoms(structure,opt)
 % returns a 3D array:
 %
 % structure.nb_bonds_between  (a,n,n) 
@@ -9,6 +9,9 @@ function nb_bond_between=create_nb_bonds_between_atoms(structure,opt,dim1,dim2,d
 % atoms (eg. in cyclobutane). Need to know the presence of both the explai
 % HSQC & HMBC correlations
 %
+dim1=opt.dim1;
+dim2=opt.dim2;
+dim3=opt.dim3;
 
 if isfield(opt,'draw_verbose')
     verbose=opt.draw_verbose;
@@ -37,7 +40,9 @@ if verbose>1
 end
 drawnow
 sto=0;
-%stage 1/2 (main stage)
+%stage 1/2 (main stage) % note that this algorythm is not perfect. it is
+%general of any number of bounds but we don't need this. We only need 1-4
+%bonds. It may be better to  better to adapt the one of stage 2
 for dist_in_bounds=1:2%number of maximal number of bonds
     current=0;
     if verbose>2
@@ -142,11 +147,9 @@ for dist_in_bounds=1:2%number of maximal number of bonds
                                                     plot3([structure.atom.XYZ(dim1,p1) structure.atom.XYZ(dim1,p2)],[structure.atom.XYZ(dim2,p1) structure.atom.XYZ(dim2,p2)],[structure.atom.XYZ(dim3,p1) structure.atom.XYZ(dim3,p2)],colo2,'LineWidth',4.5)
                                                 end
                                             end
-                                            
                                         end
                                     end
                                 end
-                                
                             end
                         end
                     end
@@ -160,13 +163,12 @@ for dist_in_bounds=1:2%number of maximal number of bonds
     end
     
     drawnow
-    %   super_obj.structure=structure;
 end
 
 %stage 2/2 (for missed bond both 1J and 3J... for e.g. in cyclobutane)
 % l1-l3          %first  1J
 %....l3-l2       %seconc.1J...
-%....   l2-othe  %third. 1J... means 3J l1-l3-l2-other
+%....   l2-l4  %third. 1J... means 3J l1-l3-l2-other
 colo='b:';
 for l1=1:nn
     for l2=1:nn

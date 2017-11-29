@@ -10,9 +10,9 @@ function         structure= read_mol_block(mol_block,opt)
 % structure.nb_bonds_between  (a,n,n) if non-zero, the path of a bonds
 
 %dim1,dim2,dim3 inditace which dimension is used for 3D plot.
-dim1=1;
-dim2=2;
-dim3=3;
+dim1=opt.dim1;
+dim2=opt.dim2;
+dim3=opt.dim3;
 
 
 if isfield(opt,'draw_verbose')
@@ -64,17 +64,7 @@ else
     %%%%%
     %%%%%
     %%%%%
-    if verbose
-        disp(['Starts generates table of 1J, 2J, 3J between atoms ' ])
-    end
-    nb_bond_between=create_nb_bonds_between_atoms(structure,opt,dim1,dim2,dim3);
-    if verbose
-        disp(['Ends generates table of 1J, 2J, 3J between atoms ' ])
-    end
-    %%%%%
-    %%%%%
-    %%%%%
-    structure.nb_bonds_between=nb_bond_between;
+   
 end
 
 end

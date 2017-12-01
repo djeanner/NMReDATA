@@ -83,8 +83,23 @@ for super_loop_over_location=1:size(list_location,2)
             %%%%%%%%%%%%%%%%%%%%%%%% experimental data
             if looop_test_zip_sdf==1
                 folder_location_full=[folder_location dataset_name '/'];
+                if ~exist(folder_location_full,'dir')
+                    disp(['Unzippping :'  dataset_name '.zip from : ' folder_location]);
+                    disp(['unix commands: '])
+                    cmd1=['cd "' folder_location '";'];
+                    disp(cmd1)
+                    cmd2=(['unzip -oq "'  dataset_name '.zip"']);%"o" for not asking if already exist... "q" for quiete mode.
+                    disp(cmd2)
+                    unix([cmd1 cmd2])
+                    disp(['Unzippping done!']);
+                else
+                    if exist([folder_location dataset_name '.zip'],'file')
+                        disp(['cd "' folder_location '";unzip "'  dataset_name '.zip"'])
+                    else
+                        disp(['Where is  ' dataset_name '.zip from : ' folder_location]);
+                    end
+                end
                 F2 = dir([  folder_location_full    'compound*.nmredata.sdf'] );
-                
             else
                 folder_location_full=[folder_location ];
                 F2 = dir([  folder_location_full   '/' dataset_name  '.sdf'] );

@@ -24,7 +24,7 @@ end
 if nargin<4
     sizes_in=[0 0 15 10];
 else
-    if size(sizes_in,2)==0,
+    if size(sizes_in,2)==0
        
             sizes_in=[0 0 15 10];
 
@@ -173,7 +173,7 @@ my_col_map1=[ones(size(my_col_map1,1),1)*0000,ones(size(my_col_map1,1),1)*0000,o
 % size(int_scale2)
 % size(int_scale1)
 % size(data)
-for list_contour=1:max_list_cont,
+for list_contour=1:max_list_cont
     now= cont_level_list(list_contour);
     contour(int_scale2,int_scale1,data,[   cont_level_list(list_contour)  cont_level_list(list_contour)],'Linecolor',my_col_map1(max_list_cont-list_contour+1,:));
     contour(int_scale2,int_scale1,data,[  -cont_level_list(list_contour) -cont_level_list(list_contour)],'Linecolor',my_col_map2(max_list_cont-list_contour+1,:));
@@ -183,7 +183,7 @@ end
 drawnow
 
 drawnow;
-if ~interpolate,
+if ~interpolate
     axis([scales_in]);
 end
 

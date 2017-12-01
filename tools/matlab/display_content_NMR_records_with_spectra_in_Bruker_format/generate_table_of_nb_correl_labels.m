@@ -1,4 +1,6 @@
 function  [nb_bond_between_atoms_including_implicit_H,ref_from_label_number_to_nb_bond_table]=generate_table_of_nb_correl_labels(object)
+% starts from the table with explicit atoms (nb_bond_between)
+% extends to include implicit atoms. Also make a lookup table (ref_from_label_number_to_nb_bond_table)
 verbose=1;
 nb_bond_between_atoms_including_implicit_H=object.structure.nb_bond_between;% create_nb_bonds_between_atoms(structure,opt);
 ref_from_label_number_to_nb_bond_table=zeros(1,size(object.atom_num,2));
@@ -62,13 +64,18 @@ for lo_over_labels=1:size(object.label_signal,2)
                 point_tmp=(-last_tmp);
                 extract1= nb_bond_between_atoms_including_implicit_H(:,point_tmp,:);
                 extract1(2:end,:,:)=extract1(1:end-1,:,:);%shift one step because all atoms are one bound further away
+                extract1(2,size(extract1,2),point_tmp)=extract1(2,size(extract1,2),point_tmp)*point_tmp;%.*[1:size(extract1,2)];%replace 1 with the pivot atom number(the one between the two that are two bonds apart
+                
                 extract1(1,size(extract1,2),:)=0*extract1(1,size(extract1,2),:);%set line to zero
                 extract1(1,size(extract1,2),point_tmp)=1;%set directly attached atom one bond away
                 nb_bond_between_atoms_including_implicit_H(:,size(nb_bond_between_atoms_including_implicit_H,3)+1,:)=extract1(:,size(extract1,2),:);
+                extract8= nb_bond_between_atoms_including_implicit_H(:,:,point_tmp);
                 extract2= nb_bond_between_atoms_including_implicit_H(:,:,point_tmp);
                 extract2(2:end,:)=extract2(1:end-1,:);
+                extract2(2,:)=extract2(2,:)*point_tmp;%.*[1:size(extract2,2)];
                 extract2(1,:)=0*extract2(1,:);
                 extract2(1,point_tmp)=1;
+                extract2(:,size(extract2,2))=0*extract2(:,size(extract2,2));
                 nb_bond_between_atoms_including_implicit_H(:,:,size(nb_bond_between_atoms_including_implicit_H,3)+1)=extract2;
                 %store pointer:
                 ref_from_label_number_to_nb_bond_table(lo_over_labels)=size(nb_bond_between_atoms_including_implicit_H,2);

@@ -6,9 +6,7 @@ if isfield(opt,'reading_sdf_file_verbose')
 else
     verbose=0;
 end
-opt.dim1=1;
-opt.dim2=2;
-opt.dim3=3;
+
 fig_plot=1;
 
 forceexit=0;

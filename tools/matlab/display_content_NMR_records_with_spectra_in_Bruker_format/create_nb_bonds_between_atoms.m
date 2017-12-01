@@ -29,7 +29,10 @@ if verbose>1
     %    figure(343);clf;hold on;axis('equal')
     for lop=1:size(structure.atom.XYZ,2)
         % plot(structure.atom.XYZ(1,lop),structure.atom.XYZ(2,lop),'k.')
-        text(structure.atom.XYZ(dim1,lop),structure.atom.XYZ(dim2,lop),structure.atom.XYZ(dim3,lop),structure.atom.n{1,lop})
+        lab='';
+        
+        text_atom=[structure.atom.n{1,lop} ' ' lab ' ('  num2str(lop) ')'];
+        text(structure.atom.XYZ(dim1,lop),structure.atom.XYZ(dim2,lop),structure.atom.XYZ(dim3,lop),text_atom)
     end
     for lop=1:size(structure.bond.a1,2)
         % plot(structure.atom.XYZ(1,lop),structure.atom.XYZ(2,lop),'k.')
@@ -43,7 +46,7 @@ sto=0;
 %stage 1/2 (main stage) % note that this algorythm is not perfect. it is
 %general of any number of bounds but we don't need this. We only need 1-4
 %bonds. It may be better to  better to adapt the one of stage 2
-for dist_in_bounds=1:2%number of maximal number of bonds
+for dist_in_bounds=1:4%number of maximal number of bonds
     current=0;
     if verbose>2
         if dist_in_bounds==1 colo='g-';colob='go'; colo2='g--';current=1;liwi=0.5;end

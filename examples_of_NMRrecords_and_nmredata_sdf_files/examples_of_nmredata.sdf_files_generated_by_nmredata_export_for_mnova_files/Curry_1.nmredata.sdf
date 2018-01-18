@@ -1,0 +1,205 @@
+
+  Mnova   12181710432D
+
+ 27 28  0  0  0  0  0  0  0  0999 V2000
+   24.7386   52.1426    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   24.7386   45.4577    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   30.5279   42.1152    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   36.3173   45.4577    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   36.3173   52.1426    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   30.5279   55.4851    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   18.9493   55.4851    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   18.9493   42.1152    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   18.9493   35.4302    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   42.1066   42.1152    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   47.8960   45.4577    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   53.6853   42.1152    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   53.6853   35.4302    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   59.4746   45.4577    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   65.2640   42.1152    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   71.0533   45.4577    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   76.8426   42.1152    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   82.6320   45.4577    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   88.4213   42.1152    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   94.2107   45.4577    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   94.2107   52.1426    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   88.4213   55.4851    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   82.6320   52.1426    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  100.0000   55.4851    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  100.0000   42.1152    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  100.0000   35.4302    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   65.2640   35.4302    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0  0  0  0
+  2  3  1  0  0  0  0
+  3  4  2  0  0  0  0
+  4  5  1  0  0  0  0
+  5  6  2  0  0  0  0
+  6  1  1  0  0  0  0
+  1  7  1  0  0  0  0
+  2  8  1  0  0  0  0
+  8  9  1  0  0  0  0
+  4 10  1  0  0  0  0
+ 10 11  2  0  0  0  0
+ 11 12  1  0  0  0  0
+ 12 13  2  0  0  0  0
+ 12 14  1  0  0  0  0
+ 14 15  2  0  0  0  0
+ 15 16  1  0  0  0  0
+ 16 17  2  0  0  0  0
+ 17 18  1  0  0  0  0
+ 18 19  2  0  0  0  0
+ 19 20  1  0  0  0  0
+ 20 21  2  0  0  0  0
+ 21 22  1  0  0  0  0
+ 22 23  2  0  0  0  0
+ 23 18  1  0  0  0  0
+ 21 24  1  0  0  0  0
+ 20 25  1  0  0  0  0
+ 25 26  1  0  0  0  0
+ 15 27  1  0  0  0  0
+M  ZZC   1 8
+M  ZZC   2 9
+M  ZZC   3 10
+M  ZZC   4 5
+M  ZZC   5 6
+M  ZZC   6 7
+M  ZZC   9 11
+M  ZZC  10 4
+M  ZZC  11 3
+M  ZZC  12 2
+M  ZZC  14 1
+M  ZZC  15 2'
+M  ZZC  16 3'
+M  ZZC  17 4'
+M  ZZC  18 5'
+M  ZZC  19 10'
+M  ZZC  20 9'
+M  ZZC  21 8'
+M  ZZC  22 7'
+M  ZZC  23 6'
+M  ZZC  26 11'
+M  END
+>  <NMREDATA_VERSION>
+1.1\
+
+>  <NMREDATA_SOLVENT>
+MeOD\
+
+>  <NMREDATA_LEVEL>
+0\
+
+>  <NMREDATA_ASSIGNMENT>
+8, 149.0856, 1\
+9, 148.0266, 2\
+H10, 7.2477, H3\
+10, 110.2840, 3\
+H6, 7.1373, H5\
+6, 122.7257, 5\
+H7, 6.8493, H6\
+7, 115.1591, 6\
+H11, 3.9390, H9\
+11, 55.0465, 9\
+H4, 7.6016, H10\
+4, 140.7336, 10\
+H3, 6.6570, H11\
+3, 120.8373, 11\
+2, 183.3690, 12\
+2', 183.3690, 15\
+H3', 6.6570, H16\
+3', 120.8373, 16\
+H4', 7.6016, H17\
+4', 140.7336, 17\
+H10', 7.2477, H19\
+9', 148.0266, 20\
+8', 149.0856, 21\
+H7', 6.8493, H22\
+H6', 7.1373, H23\
+H11', 3.9390, H26\
+
+>  <NMREDATA_1D_1H>
+Larmor=500.133088507\
+Pulseprogram=zg30 ;optional in V1\
+Spectrum_Location=file:MP-curry/10/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+;7.2575-7.2378, L=H10;found no H multiplet for this H\
+;7.1555-7.1191, L=H6;found no H multiplet for this H\
+;6.8618-6.8367, L=H7;found no H multiplet for this H\
+;3.9479-3.9300, L=H11;found no H multiplet for this H\
+;7.6329-7.5702, L=H4;found no H multiplet for this H\
+;6.6877-6.6263, L=H3;found no H multiplet for this H\
+;6.6877-6.6263, L=H3';found no H multiplet for this H\
+;7.6329-7.5702, L=H4';found no H multiplet for this H\
+;7.2575-7.2378, L=H10';found no H multiplet for this H\
+;6.8618-6.8367, L=H7';found no H multiplet for this H\
+;7.1555-7.1191, L=H6';found no H multiplet for this H\
+;3.9479-3.9300, L=H11';found no H multiplet for this H\
+
+>  <NMREDATA_1D_13C>
+Larmor=125.770363831\
+Pulseprogram=zgdc ;optional in V1\
+Spectrum_Location=file:MP-curry/11/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+;nothing at 149.0856 ppm , for signal 8; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 148.0266 ppm , for signal 9; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 110.2840 ppm , for signal 10; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 122.7257 ppm , for signal 6; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 115.1591 ppm , for signal 7; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 55.0465 ppm , for signal 11; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 140.7336 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 120.8373 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 183.3690 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 183.3690 ppm , for signal 2'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 120.8373 ppm , for signal 3'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 140.7336 ppm , for signal 4'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 148.0266 ppm , for signal 9'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 149.0856 ppm , for signal 8'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+
+>  <NMREDATA_1D_13C#2>
+Larmor=125.770363831\
+Pulseprogram=dept135 ;optional in V1\
+Spectrum_Location=file:MP-curry/12/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+;nothing at 149.0856 ppm , for signal 8; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 148.0266 ppm , for signal 9; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 110.2840 ppm , for signal 10; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 122.7257 ppm , for signal 6; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 115.1591 ppm , for signal 7; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 55.0465 ppm , for signal 11; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 140.7336 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 120.8373 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 183.3690 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 183.3690 ppm , for signal 2'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 120.8373 ppm , for signal 3'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 140.7336 ppm , for signal 4'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 148.0266 ppm , for signal 9'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 149.0856 ppm , for signal 8'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+
+>  <NMREDATA_2D_1H_NJ_1H>
+Larmor=500.13\
+CorrType=COSY\
+Pulseprogram=cosygpppqf ;optional in V1\
+Spectrum_Location=file:MP-curry/13/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+
+>  <NMREDATA_2D_13C_1J_1H>
+Larmor=500.13\
+CorrType=HSQC\
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
+Spectrum_Location=file:MP-curry/14/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+
+>  <NMREDATA_2D_13C_NJ_1H>
+Larmor=500.13\
+CorrType=HMBC\
+Pulseprogram=hmbcetgpl3nd ;optional in V1\
+Spectrum_Location=file:MP-curry/15/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+
+>  <NMREDATA_2D_13C_1J_1H#2>
+Larmor=500.13\
+CorrType=HSQC\
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
+Spectrum_Location=file:MP-curry/16/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+
+$$$$

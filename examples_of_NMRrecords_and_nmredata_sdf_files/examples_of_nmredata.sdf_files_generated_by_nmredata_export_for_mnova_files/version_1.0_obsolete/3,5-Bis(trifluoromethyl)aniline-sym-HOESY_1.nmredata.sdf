@@ -1,0 +1,179 @@
+12
+  ChemDraw10241715392D
+
+ 15 15  0  0  0  0  0  0  0  0999 V2000
+   -0.7145    0.4678    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7145   -0.3572    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000   -0.7697    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7145   -0.3572    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7145    0.4678    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.8803    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000   -1.5947    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4289    0.8803    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8414    0.1658    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1434    1.2928    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0164    1.5947    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4289    0.8803    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0164    1.5947    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.1434    1.2928    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.8414    0.1658    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+  8  9  1  0  0  0  0
+  8 10  1  0  0  0  0
+  8 11  1  0  0  0  0
+  5  8  1  0  0  0  0
+ 12 13  1  0  0  0  0
+ 12 14  1  0  0  0  0
+ 12 15  1  0  0  0  0
+  1 12  1  0  0  0  0
+  1  2  2  0  0  0  0
+  2  3  1  0  0  0  0
+  3  4  2  0  0  0  0
+  4  5  1  0  0  0  0
+  5  6  2  0  0  0  0
+  6  1  1  0  0  0  0
+  3  7  1  0  0  0  0
+M  ZZC   1 2
+M  ZZC   2 3
+M  ZZC   3 4
+M  ZZC   4 3'
+M  ZZC   5 2'
+M  ZZC   6 1
+M  ZZC   7 7
+M  ZZC   8 5'
+M  ZZC   9 6''''''
+M  ZZC  10 6'''''
+M  ZZC  11 6''''
+M  ZZC  12 5
+M  ZZC  13 6'
+M  ZZC  14 6
+M  ZZC  15 6''
+M  STY  2   1 SUP   2 SUP
+M  SLB  2   1   1   2   2
+M  SAL   1  4   8   9  10  11
+M  SBL   1  1   4
+M  SMT   1 CF3
+M  SAL   2  4  12  13  14  15
+M  SBL   2  1   8
+M  SMT   2 ^CF3
+M  END
+>  <NMREDATA_VERSION>
+1
+
+>  <NMREDATA_SOLVENT>
+CDCl3
+
+>  <NMREDATA_LEVEL>
+0
+
+>  <NMREDATA_ASSIGNMENT>
+2, 132.4855, 1
+H3, 7.0510, H2
+3, 114.1487, 2
+4, 147.3268, 3
+H3', 7.0510, H4
+3', 114.1487, 4
+2', 132.4855, 5
+H1, 7.2343, H6
+1, 111.5663, 6
+H7, 4.0943, H7
+5', 123.4466, 8
+6'''''', -63.3196, 9
+6''''', -63.3196, 10
+6'''', -63.3196, 11
+5, 123.4466, 12
+6', -63.3196, 13
+6, -63.3196, 14
+6'', -63.3196, 15
+
+>  <NMREDATA_1D_1H>
+Larmor=500.133088507
+Pulseprogram=zg30 ;optional in V1
+Spectrum_Location=file:MP-TFM-aniline/10/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+7.0544, S=m, L=H3, E=427.0247; found H multiplet by label chem shifts differ by -0.003353 ppm
+;7.0510, L=H3';found no H multiplet for this H
+7.2374, S=m, L=H1, E=210.4295; found H multiplet by label chem shifts differ by -0.003068 ppm
+4.0943, S=s, L=H7, E=265.1470; found H multiplet by label chem shifts differ by 0.000000 ppm
+
+>  <NMREDATA_1D_13C>
+Larmor=125.770363831
+Pulseprogram=zgdc ;optional in V1
+Spectrum_Location=file:MP-TFM-aniline/11/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+132.4855, S=q, N=2, L=2&1#, J=32.96, E=13.4331; found multiplet by chemical shift 
+114.1345, L=3, I=4140.4438, E=131.9669;errcs=-0.014225 ppm (This is how far this peak is from the assigned resonance)
+147.3268, S=s, N=1, L=4, E=8.8792; found multiplet by chemical shift 
+114.1345, L=3', I=4140.4438, E=131.9669;errcs=-0.014225 ppm (This is how far this peak is from the assigned resonance)
+111.5679, L=1, I=1660.6407, E=64.4987;errcs=0.001626 ppm (This is how far this peak is from the assigned resonance)
+123.4466, S=q, N=2, L=5'&5, J=272.42, E=14.0040; found multiplet by chemical shift 
+
+>  <NMREDATA_1D_13C#2>
+Larmor=125.770363831
+Pulseprogram=dept135 ;optional in V1
+Spectrum_Location=file:MP-TFM-aniline/12/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+;nothing at 132.4855 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-18.290787)
+114.1333, L=3, I=1221.0503, E=46.5574;errcs=-0.015402 ppm (This is how far this peak is from the assigned resonance)
+;nothing at 147.3268 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-33.132078)
+114.1333, L=3', I=1221.0503, E=46.5574;errcs=-0.015402 ppm (This is how far this peak is from the assigned resonance)
+;nothing at 132.4855 ppm , for signal 2'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-18.290787)
+111.5660, L=1, I=470.7224, E=18.6890;errcs=-0.000258 ppm (This is how far this peak is from the assigned resonance)
+;nothing at 123.4466 ppm , for signal 5'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-9.251867)
+;nothing at 123.4466 ppm , for signal 5; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-9.251867)
+
+>  <NMREDATA_2D_1H_NJ_1H>
+Larmor=500.132764225861
+CorrType=COSY
+Pulseprogram=cosygpppqf ;optional in V1
+Spectrum_Location=file:MP-TFM-aniline/13/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+H1/H3
+H3/H1
+H3'/H1
+
+>  <NMREDATA_2D_13C_1J_1H>
+Larmor=500.13300078
+CorrType=HSQC
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
+Spectrum_Location=file:MP-TFM-aniline/14/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+3/H3
+3'/H3'
+1/H1
+
+>  <NMREDATA_2D_13C_NJ_1H>
+Larmor=500.13
+CorrType=HMBC
+Pulseprogram=hmbcetgpl3nd ;optional in V1
+Spectrum_Location=file:MP-TFM-aniline/15/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+1/H3
+2/H3
+2'/H3
+3'/H3
+4/H3
+3/H1
+3'/H1
+
+>  <NMREDATA_1D_19F>
+Larmor=282.376114779
+Pulseprogram=zgfhigqn.2 ;optional in V1
+Spectrum_Location=file:MP-trifluoromethyl-aniline/11/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+-63.3196, S=s, N=6, L=6''''''&6'''''&6''''&6'&6&6'', E=1004.3478; found multiplet by chemical shift 
+
+>  <NMREDATA_2D_19F_D_1H>
+Larmor=300.13180078
+CorrType=na;Type was not identified2D-UNDEFINED
+Pulseprogram=hoesyetgp.2 ;optional in V1
+Spectrum_Location=file:MP-trifluoromethyl-aniline/13/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+
+>  <NMREDATA_2D_1H_D_19F>
+Larmor=282.404355214
+CorrType=na;Type was not identified2D-UNDEFINED
+Pulseprogram=FHAhoesytp1_2.txt ;optional in V1
+Spectrum_Location=file:MP-trifluoromethyl-aniline/22/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+
+$$$$

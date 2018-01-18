@@ -1,0 +1,308 @@
+14
+  ChemDraw05181710242D
+
+ 18 20  0  0  0  0  0  0  0  0999 V2000
+   -1.2817    0.5333    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2817   -0.2917    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4567   -0.2917    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4567    0.5333    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0786    0.7468    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4952    1.3302    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0442   -1.0062    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7808   -1.0062    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1933   -0.2917    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7808    0.4228    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3641    1.0062    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6058    0.4228    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9516    1.7206    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1266    1.7206    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0786    1.4187    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8692   -1.0062    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8692    1.2478    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4567   -1.7206    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  2  3  1  0  0  0  0
+  3  4  1  0  0  0  0
+  4  1  1  0  0  0  0
+  1  5  1  0  0  0  0
+  1  6  1  0  0  0  0
+  3  7  1  0  0  0  0
+  7  8  1  0  0  0  0
+  8  9  1  0  0  0  0
+  9 10  1  0  0  0  0
+ 10 11  1  0  0  0  0
+ 10 12  1  0  0  0  0
+ 11 12  1  0  0  0  0
+ 11 13  1  0  0  0  0
+ 13 14  1  0  0  0  0
+ 14  4  1  0  0  0  0
+ 11 15  1  6  0  0  0
+  3 16  1  6  0  0  0
+  4 17  1  1  0  0  0
+  7 18  2  0  0  0  0
+M  ZZC   1 1
+M  ZZC   2 2
+M  ZZC   3 3
+M  ZZC   4 4
+M  ZZC   5 5
+M  ZZC   6 5'
+M  ZZC   7 7
+M  ZZC   8 8
+M  ZZC   9 9
+M  ZZC  10 10
+M  ZZC  11 11
+M  ZZC  13 13
+M  ZZC  14 14
+M  ZZC  15 15
+M  ZZC  16 16
+M  ZZC  17 17
+M  ZZC  18 18
+M  END
+>  <NMREDATA_VERSION>
+1
+
+>  <NMREDATA_SOLVENT>
+CDCl3
+
+>  <NMREDATA_LEVEL>
+0
+
+>  <NMREDATA_ASSIGNMENT>
+1, 34.0311, 1
+H2a, 1.7034, H2
+2, 39.7568, 2
+H2b, 1.6399, H2
+3, 48.7403, 3
+4, 50.7280, 4
+H5, 1.0244, H5
+5, 21.6330, 5
+H5', 1.0027, H6
+5', 29.9034, 6
+7, 151.8225, 7
+H8a, 2.3574, H8
+8, 29.7834, 8
+H8b, 2.1370, H8
+H9a, 2.2663, H9
+9, 30.2105, 9
+H9b, 1.3438, H9
+H10, 2.8939, H10
+10, 63.7576, 10
+11, 59.8360, 11
+H13a, 0.9757, H13
+13, 39.1521, 13
+H13b, 2.1009, H13
+H14a, 1.4460, H14
+14, 27.2131, 14
+H14b, 1.6656, H14
+H15, 1.2197, H15
+15, 17.0107, 15
+H16, 2.6339, 16
+H17, 1.7808, 17
+H18a, 4.9921, H18
+18, 112.7597, 18
+H18b, 4.8765, H18
+
+>  <NMREDATA_1D_1H>
+Larmor=500.133088507
+Pulseprogram=zg30 ;optional in V1
+Spectrum_Location=file:MP-caryophyllene_oxide/10/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+1.7041, S=m, L=H2a, E=78.7292; found H multiplet by label chem shifts differ by -0.000725 ppm
+1.6352, S=m, L=H2b, E=101.8348; found H multiplet by label chem shifts differ by 0.004609 ppm
+1.0244, S=s, L=H5, E=271.8249; found H multiplet by label chem shifts differ by 0.000000 ppm
+1.0027, S=s, L=H5', E=275.1281; found H multiplet by label chem shifts differ by 0.000000 ppm
+2.3574, S=ddd, L=H8a, E=86.6324, J=4.40,8.12,12.65; found H multiplet by label chem shifts differ by 0.000000 ppm
+2.1370, S=m, L=H8b, E=91.4070; found H multiplet by label chem shifts differ by 0.000000 ppm
+2.2663, S=m, L=H9a, E=87.5953; found H multiplet by label chem shifts differ by 0.000000 ppm
+1.3438, S=dddd, L=H9b, E=89.1483, J=4.54,8.12,10.59,12.65; found H multiplet by label chem shifts differ by 0.000000 ppm
+2.8939, S=dd, L=H10, E=85.4128, J=4.26,10.59; found H multiplet by label chem shifts differ by 0.000000 ppm
+0.9757, S=m, L=H13a, E=82.4212; found H multiplet by label chem shifts differ by 0.000000 ppm
+2.1009, S=m, L=H13b, E=84.8035; found H multiplet by label chem shifts differ by 0.000000 ppm
+1.4460, S=dddd, L=H14a, E=87.1385, J=4.13,10.38,13.34,14.72; found H multiplet by label chem shifts differ by 0.000000 ppm
+1.6656, S=m, L=H14b, E=89.2725; found H multiplet by label chem shifts differ by 0.000000 ppm
+1.2197, S=d, L=H15, E=263.6407, J=0.83; found H multiplet by label chem shifts differ by 0.000000 ppm
+2.6339, S=m, N=1, L=16, E=85.0548; found multiplet by chemical shift 
+2.6339, S=m, L=H16, E=85.0548; found H multiplet by label chem shifts differ by 0.000000 ppm
+1.7808, S=m, N=1, L=17, E=87.0702; found multiplet by chemical shift 
+1.7808, S=m, L=H17, E=87.0702; found H multiplet by label chem shifts differ by 0.000000 ppm
+4.9921, S=d, L=H18a, E=87.4843, J=2.06; found H multiplet by label chem shifts differ by 0.000000 ppm
+4.8765, S=dd, L=H18b, E=87.0594, J=0.76,1.72; found H multiplet by label chem shifts differ by 0.000000 ppm
+
+>  <NMREDATA_1D_13C>
+Larmor=125.770363831
+Pulseprogram=zgdc ;optional in V1
+Spectrum_Location=file:MP-caryophyllene_oxide/11/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+34.0319, L=1, I=586.2207, E=16.1562;errcs=0.000808 ppm (This is how far this peak is from the assigned resonance)
+39.7585, L=2, I=3266.8264, E=90.0335;errcs=0.001640 ppm (This is how far this peak is from the assigned resonance)
+48.7390, L=3, I=2100.5864, E=65.2688;errcs=-0.001289 ppm (This is how far this peak is from the assigned resonance)
+50.7269, L=4, I=1922.4833, E=74.6685;errcs=-0.001065 ppm (This is how far this peak is from the assigned resonance)
+21.6342, L=5, I=3769.9601, E=103.8999;errcs=0.001201 ppm (This is how far this peak is from the assigned resonance)
+29.9026, L=5', I=3536.8360, E=109.8955;errcs=-0.000769 ppm (This is how far this peak is from the assigned resonance)
+151.8220, L=7, I=706.1291, E=21.9406;errcs=-0.000525 ppm (This is how far this peak is from the assigned resonance)
+29.7840, L=8, I=3052.0169, E=84.1134;errcs=0.000556 ppm (This is how far this peak is from the assigned resonance)
+30.2092, L=9, I=3337.4698, E=103.7009;errcs=-0.001245 ppm (This is how far this peak is from the assigned resonance)
+63.7576, L=10, I=2330.1541, E=72.4019;errcs=0.000007 ppm (This is how far this peak is from the assigned resonance)
+59.8360, L=11, I=416.0472, E=11.4662;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+39.1502, L=13, I=3286.2537, E=127.6369;errcs=-0.001934 ppm (This is how far this peak is from the assigned resonance)
+27.2124, L=14, I=3400.3114, E=105.6535;errcs=-0.000629 ppm (This is how far this peak is from the assigned resonance)
+17.0105, L=15, I=2494.4067, E=77.5055;errcs=-0.000245 ppm (This is how far this peak is from the assigned resonance)
+112.7597, L=18, I=3331.5470, E=129.3960;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+
+>  <NMREDATA_1D_13C#2>
+Larmor=125.770363831
+Pulseprogram=dept135 ;optional in V1
+Spectrum_Location=file:MP-caryophyllene_oxide/12/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+;nothing at 34.0311 ppm , for signal 1; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 39.7568 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 48.7403 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 50.7280 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 21.6330 ppm , for signal 5; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 29.9034 ppm , for signal 5'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 151.8225 ppm , for signal 7; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 29.7834 ppm , for signal 8; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 30.2105 ppm , for signal 9; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 63.7576 ppm , for signal 10; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 59.8360 ppm , for signal 11; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 39.1521 ppm , for signal 13; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 27.2131 ppm , for signal 14; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 17.0107 ppm , for signal 15; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+;nothing at 112.7597 ppm , for signal 18; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+
+>  <NMREDATA_2D_1H_NJ_1H>
+Larmor=500.13
+CorrType=COSY
+Pulseprogram=cosygpppqf ;optional in V1
+Spectrum_Location=file:MP-caryophyllene_oxide/13/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+H16/H2a
+H16/H2b
+H8b/H8a
+H9a/H8a
+H13b/H8a
+H8a/H8b
+H9a/H8b
+H13b/H8b
+H8b/H9a
+H8a/H9a
+H10/H9a
+H13b/H9a
+H9a/H10
+H13b/H13a
+H14b/H13a
+H8b/H13b
+H8a/H13b
+H9a/H13b
+H13a/H13b
+H14b/H13b
+H17/H14a
+H13b/H14b
+H13a/H14b
+H2b/H16
+H2a/H16
+H17/H16
+H14a/H17
+H16/H17
+H18b/H18a
+H18a/H18b
+
+>  <NMREDATA_2D_13C_1J_1H>
+Larmor=500.131750455
+CorrType=HSQC
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
+Spectrum_Location=file:MP-caryophyllene_oxide/14/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+2/H2a
+2/H2b
+5/H5
+5'/H5'
+8/H8a
+8/H8b
+9/H9a
+9/H9b
+10/H10
+13/H13a
+13/H13b
+14/H14a
+14/H14b
+15/H15
+3/H16
+4/H17
+18/H18a
+18/H18b
+
+>  <NMREDATA_2D_13C_NJ_1H>
+Larmor=500.131750455
+CorrType=HMBC
+Pulseprogram=hmbcetgpl3nd ;optional in V1
+Spectrum_Location=file:MP-caryophyllene_oxide/15/pdata/1/
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+1/H2a
+3/H2a
+4/H2a
+5/H2a
+1/H2b
+3/H2b
+5/H2b
+5'/H2b
+7/H2b
+1/H5
+4/H5
+5'/H5
+13/H5
+2/H5'
+5/H5'
+3/H8a
+7/H8a
+9/H8a
+10/H8a
+18/H8a
+3/H8b
+7/H8b
+9/H8b
+10/H8b
+18/H8b
+7/H9a
+8/H9a
+11/H9a
+7/H9b
+8/H9b
+10/H9b
+8/H10
+10/H10
+11/H10
+13/H10
+10/H13a
+11/H13a
+14/H13a
+15/H13a
+4/H13b
+10/H13b
+15/H13b
+3/H14a
+4/H14a
+1/H14b
+4/H14b
+13/H14b
+10/H15
+11/H15
+13/H15
+2/H16
+4/H16
+7/H16
+8/H16
+1/H17
+3/H17
+5/H17
+5'/H17
+7/H17
+14/H17
+3/H18a
+5'/H18a
+7/H18a
+3/H18b
+5'/H18b
+7/H18b
+
+$$$$

@@ -13,8 +13,9 @@ position_of_separator_of_the_two=strfind(pair_of_signals,'/');
 % first_label_or_chemshift=pair_of_signals(1:
 % =sscanf(pair_of_signals,'%f/%f');%this returns either one or two values.
 if size(position_of_separator_of_the_two,1)<1
-    error_message=['2 expect separator slash in : '  pair_of_signals 'inside'  current_line];
+    error_message=['2 expect separator slash in : '  pair_of_signals ' in line: '  current_line];
     disp(['Error :  ' error_message]);
+    error(['Error :  ' error_message]);
 else
     first_label_or_chemshift =pair_of_signals(1:position_of_separator_of_the_two(1,1)-1);
     second_label_or_chemshift=pair_of_signals(position_of_separator_of_the_two(1,1)+1:end);

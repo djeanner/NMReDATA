@@ -9,9 +9,21 @@ function [nb_bond_between]=create_nb_bonds_between_atoms(structure,opt)
 % atoms (eg. in cyclobutane). Need to know the presence of both the explai
 % HSQC & HMBC correlations
 %
-dim1=opt.dim1;
-dim2=opt.dim2;
-dim3=opt.dim3;
+if isfield(opt,'dim1')
+    dim1=opt.dim1;
+else
+    dim1=1;
+end
+if isfield(opt,'dim2')
+    dim2=opt.dim2;
+else
+    dim2=2;
+end
+if isfield(opt,'dim3')
+    dim3=opt.dim3;
+else
+    dim3=3;
+end
 
 if isfield(opt,'draw_verbose')
     verbose=opt.draw_verbose;

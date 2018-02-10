@@ -1,6 +1,9 @@
 function [super_obj, returned_value, text_of_the_problem]=check_nmredata_sdf_file(file_name,opt)
 % reads and verifies the integrity of .nmredata.sdf files
 % for format version V 1.0
+if nargin<2
+    opt=0;%
+end
 if isfield(opt,'reading_sdf_file_verbose')
     verbose=opt.reading_sdf_file_verbose;
 else
@@ -39,7 +42,7 @@ inc=1;
 object_counter=1;
 mol_block=[];lo_bl=1;
 while ischar(tline)
-   
+    
     if state==0
         mol_block{lo_bl}= tline;
         lo_bl=lo_bl+1;
@@ -54,7 +57,7 @@ while ischar(tline)
     
     if contains(tline,'>  <')% && (state==1)%start of tag
         if (state==2)%when reading tag...
-            warning('should insert empty line betweeb tags')
+            warning('There should be an empty line between tags')
             forceexit=1;
             tag_name=next_tag_name;
         end
@@ -62,11 +65,11 @@ while ischar(tline)
         next_tag_name=tline(5:end);% skip first 4 char '>  <'
         post=findstr(next_tag_name,'>');%look for the end of the field
         if size(post,1)<1
-            returned_value=0;text_of_the_problem=[text_of_the_problem 'No closing caracter in tag label (>)'];
+            returned_value=0;text_of_the_problem=[text_of_the_problem ' There is no closing caracter in tag label (>) in ' next_tag_name];
         end
         next_tag_name=next_tag_name(1:post(1,1)-1);%removes the closing ">"
         if length(next_tag_name)<1
-            returned_value=0;text_of_the_problem=[text_of_the_problem 'Invalid tag name'];
+            returned_value=0;text_of_the_problem=[text_of_the_problem 'Invalid tag name' next_tag_name];
         end
         if  verbose>0
             disp(['Tag found: ' next_tag_name]);

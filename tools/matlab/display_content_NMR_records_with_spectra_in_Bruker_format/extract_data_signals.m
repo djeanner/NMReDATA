@@ -38,7 +38,7 @@ else
             if size(atomnum)<1
                 error_message=['expect a number after H of implicit atom  : ' current_string  ' inside '  current_line];
                 disp(['Error2 :  ' error_message]);
-                sadf
+                error('atom number is missing...')
                 
             else
             %    disp(['ImplicitAtom' num2str(loop_over_atoms-1) ': bound to atom ' num2str(atomnum) ])

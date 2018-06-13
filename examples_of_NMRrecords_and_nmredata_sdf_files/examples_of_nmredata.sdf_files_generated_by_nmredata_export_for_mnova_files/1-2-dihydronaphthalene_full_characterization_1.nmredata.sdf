@@ -1,0 +1,166 @@
+itled Document-2
+  ChemDraw03151814132D
+
+ 10 11  0  0  0  0  0  0  0  0999 V2000
+   -1.4289    0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4289   -0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7145   -0.8250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000   -0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7145    0.8250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7145   -0.8250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4289   -0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4289    0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7145    0.8250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0  0  0  0
+  2  3  1  0  0  0  0
+  3  4  2  0  0  0  0
+  4  5  1  0  0  0  0
+  5  6  2  0  0  0  0
+  6  1  1  0  0  0  0
+  4  7  1  0  0  0  0
+  7  8  1  0  0  0  0
+  8  9  1  0  0  0  0
+  9 10  2  0  0  0  0
+ 10  5  1  0  0  0  0
+M  END
+>  <NMREDATA_VERSION>
+1.1\
+
+>  <NMREDATA_SOLVENT>
+CDCl3\
+
+>  <NMREDATA_LEVEL>
+0\
+
+>  <NMREDATA_ASSIGNMENT>
+H1, 7.1894, H1\
+1, 126.4855, 1\
+H2, 7.2146, H2\
+2, 126.8959, 2\
+H3, 7.1541, H3\
+3, 127.5722, 3\
+4, 135.5114, 4\
+5, 134.1810, 5\
+H6, 7.0809, H6\
+6, 125.9315, 6\
+H7, 2.8640, H7\
+7, 27.5374, 7\
+H8, 2.3805, H8\
+8, 23.2334, 8\
+H9, 6.0832, H9\
+9, 128.7061, 9\
+H10, 6.5283, H10\
+10, 127.8406, 10\
+
+>  <NMREDATA_1D_1H>
+Larmor=500.133088507\
+Pulseprogram=zg30 ;optional in V1\
+Spectrum_Location=file:dj_dihydronaphthalene/10/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+;7.1894, L=H1;found no H multiplet for this H\
+;7.2359-7.1934, L=H2;found no H multiplet for this H\
+;7.1667-7.1416, L=H3;found no H multiplet for this H\
+7.0809, S=d, L=H6, E=280.9103, J=7.02; found H multiplet by label chem shifts differ by 0.000000 ppm\
+2.8639, S=t, L=H7, E=537.4290, J=8.18; found H multiplet by label chem shifts differ by 0.000140 ppm\
+2.3813, S=tdd, L=H8, E=703.6632, J=8.18,4.40,2.00; found H multiplet by label chem shifts differ by -0.000882 ppm\
+6.0914, S=dt, L=H9, E=282.8804, J=8.94,4.40; found H multiplet by label chem shifts differ by -0.008144 ppm\
+6.5283, S=ddt, L=H10, E=359.2415, J=8.94,2.30; found H multiplet by label chem shifts differ by 0.000000 ppm\
+
+>  <NMREDATA_1D_13C>
+Larmor=125.770363831\
+Pulseprogram=zgdc ;optional in V1\
+Spectrum_Location=file:dj_dihydronaphthalene/20/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+126.4855, L=1, I=4391.0122, E=87.5853;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+126.8959, L=2, I=4152.9463, E=81.2697;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+127.5735, L=3, I=3372.8752, E=66.9080;errcs=0.001351 ppm (This is how far this peak is from the assigned resonance)\
+135.5114, L=4, I=764.2277, E=14.6634;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+134.1810, L=5, I=738.4464, E=13.9055;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+125.9315, L=6, I=3451.3196, E=67.6491;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+27.5366, L=7, I=5816.8257, E=114.1330;errcs=-0.000761 ppm (This is how far this peak is from the assigned resonance)\
+23.2339, L=8, I=6053.6958, E=120.3199;errcs=0.000465 ppm (This is how far this peak is from the assigned resonance)\
+128.7061, L=9, I=4051.9395, E=76.6912;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+127.8406, L=10, I=2939.8916, E=58.7227;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+
+>  <NMREDATA_1D_13C#2>
+Larmor=125.770363831\
+Pulseprogram=dept135 ;optional in V1\
+Spectrum_Location=file:dj_dihydronaphthalene/21/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+;nothing at 126.4855 ppm , for signal 1; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 126.8959 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 127.5722 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 135.5114 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 134.1810 ppm , for signal 5; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 125.9315 ppm , for signal 6; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 27.5374 ppm , for signal 7; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 23.2334 ppm , for signal 8; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 128.7061 ppm , for signal 9; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 127.8406 ppm , for signal 10; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+
+>  <NMREDATA_2D_1H_NJ_1H>
+Larmor=500.13\
+CorrType=COSY\
+Pulseprogram=cosygpppqf ;optional in V1\
+Spectrum_Location=file:dj_dihydronaphthalene/22/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+H8/H7\
+H7/H8\
+H9/H8\
+H8/H9\
+H10/H9\
+H9/H10\
+
+>  <NMREDATA_2D_13C_1J_1H>
+Larmor=500.13\
+CorrType=HSQC\
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
+Spectrum_Location=file:dj_dihydronaphthalene/23/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+
+>  <NMREDATA_2D_13C_NJ_1H>
+Larmor=500.13\
+CorrType=HMBC\
+Pulseprogram=hmbcetgpl3nd ;optional in V1\
+Spectrum_Location=file:dj_dihydronaphthalene/27/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+3/H1\
+3/H2\
+4/H2\
+6/H2\
+1/H3\
+4/H3\
+7/H3\
+2/H6\
+4/H6\
+10/H6\
+3/H7\
+4/H7\
+5/H7\
+8/H7\
+9/H7\
+4/H8\
+7/H8\
+9/H8\
+10/H8\
+5/H9\
+7/H9\
+8/H9\
+4/H10\
+5/H10\
+6/H10\
+8/H10\
+
+>  <NMREDATA_2D_13C_1J_1H#2>
+Larmor=500.13\
+CorrType=HSQC\
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
+Spectrum_Location=file:dj_dihydronaphthalene/25/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+1/H1\
+2/H2\
+3/H3\
+6/H6\
+
+$$$$

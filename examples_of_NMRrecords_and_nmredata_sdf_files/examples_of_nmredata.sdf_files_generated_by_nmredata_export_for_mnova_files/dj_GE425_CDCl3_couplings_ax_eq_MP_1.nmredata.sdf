@@ -1,0 +1,158 @@
+Untitled Document-1
+  ChemDraw04241814162D
+
+ 17 17  0  0  0  0  0  0  0  0999 V2000
+  -21.8339   33.2812    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -23.3176   33.2812    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -23.7759   31.8702    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  -22.5757   30.9980    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -21.3753   31.8702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -22.5757   29.5144    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  -20.0906   31.1284    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+  -18.8057   31.8702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -17.5208   31.1284    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -16.2360   31.8702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -14.9511   31.1284    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -18.8057   33.3538    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  -24.1896   34.4815    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  -24.7829   33.0491    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  -20.7351   34.6992    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  -22.5347   34.8299    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  -20.2224   32.8039    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  2  3  1  0  0  0  0
+  3  4  1  0  0  0  0
+  4  5  1  0  0  0  0
+  5  1  1  0  0  0  0
+  4  6  2  0  0  0  0
+  5  7  1  0  0  0  0
+  7  8  1  0  0  0  0
+  8  9  1  0  0  0  0
+  9 10  1  0  0  0  0
+ 10 11  1  0  0  0  0
+  8 12  2  0  0  0  0
+  2 13  1  1  0  0  0
+  2 14  1  6  0  0  0
+  1 15  1  6  0  0  0
+  1 16  1  1  0  0  0
+  5 17  1  1  0  0  0
+M  ZZC   1 2
+M  ZZC   2 1
+M  ZZC   4 4
+M  ZZC   5 3#
+M  ZZC   7 5
+M  ZZC   8 6
+M  ZZC   9 7
+M  ZZC  10 8
+M  ZZC  11 9
+M  ZZC  13 1ax
+M  ZZC  14 1eq
+M  ZZC  15 2ax
+M  ZZC  16 2eq
+M  ZZC  17 3
+M  END
+>  <NMREDATA_VERSION>
+1.1\
+
+>  <NMREDATA_SOLVENT>
+CDCl3\
+
+>  <NMREDATA_LEVEL>
+0\
+
+>  <NMREDATA_ASSIGNMENT>
+2, 30.6772, 1\
+1, 66.1330, 2\
+4, 175.5667, 4\
+3#, 49.2681, 5\
+H5, 6.0447, H7\
+6, 173.5983, 8\
+H7, 2.2423, H9\
+7, 38.0512, 9\
+H8, 1.6921, H10\
+8, 18.8915, 10\
+H9, 0.9705, H11\
+9, 13.6897, 11\
+H1ax, 4.2928, 13\
+H1eq, 4.4773, 14\
+H2ax, 2.1369, 15\
+H2eq, 2.8684, 16\
+H3, 4.5597, 17\
+
+>  <NMREDATA_1D_1H>
+Larmor=500.133088507\
+Pulseprogram=zg30 ;optional in V1\
+Spectrum_Location=file:dj_GE425_CDCl3/10/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+6.0447, S=dd, L=H5, E=123.0442, J=5.78,2.00; found H multiplet by label chem shifts differ by 0.000000 ppm\
+2.2423, S=td, L=H7, E=278.9666, J=7.43,2.00; found H multiplet by label chem shifts differ by 0.000000 ppm\
+1.6921, S=h, L=H8, E=224.4089, J=7.43; found H multiplet by label chem shifts differ by 0.000000 ppm\
+0.9705, S=t, L=H9, E=362.1864, J=7.43; found H multiplet by label chem shifts differ by 0.000000 ppm\
+4.2928, S=ddd, N=1, L=1ax, J=11.28,9.15,5.85, E=133.1222; found multiplet by chemical shift \
+4.2928, S=ddd, L=H1ax, E=133.1222, J=11.28,9.15,5.85; found H multiplet by label chem shifts differ by 0.000000 ppm\
+4.4773, S=ddd, N=1, L=1eq, J=9.15,1.10, E=171.5966; found multiplet by chemical shift \
+4.4773, S=ddd, L=H1eq, E=171.5966, J=9.15,1.10; found H multiplet by label chem shifts differ by 0.000000 ppm\
+2.1369, S=dddd, N=1, L=2ax, J=12.52,11.69,11.28,8.89, E=129.8679; found multiplet by chemical shift \
+2.1369, S=dddd, L=H2ax, E=129.8679, J=12.52,11.69,11.28,8.89; found H multiplet by label chem shifts differ by 0.000000 ppm\
+2.8684, S=dddd, N=1, L=2eq, J=12.52,8.53,5.85,1.10, E=177.4395; found multiplet by chemical shift \
+2.8684, S=dddd, L=H2eq, E=177.4395, J=12.52,8.53,5.85,1.10; found H multiplet by label chem shifts differ by 0.000000 ppm\
+4.5597, S=ddd, N=1, L=3, J=11.69,8.53,5.78, E=137.3437; found multiplet by chemical shift \
+4.5597, S=ddd, L=H3, E=137.3437, J=5.78,8.53,11.69; found H multiplet by label chem shifts differ by 0.000000 ppm\
+
+>  <NMREDATA_1D_13C>
+Larmor=125.770363831\
+Pulseprogram=zgdc ;optional in V1\
+Spectrum_Location=file:dj_GE425_CDCl3/11/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+30.6772, L=2, I=12279.7390, E=476.9882;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+66.1330, L=1, I=11643.6002, E=350.4514;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+175.5667, L=4, I=1229.4219, E=37.0034;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+49.2681, L=3#, I=8795.7367, E=341.6573;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+173.5983, L=6, I=1598.7747, E=62.1020;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+38.0512, L=7, I=8558.4045, E=332.4385;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+18.8915, L=8, I=7929.7795, E=238.6721;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+13.6936, L=9, I=7193.2247, E=216.5031;errcs=0.003925 ppm (This is how far this peak is from the assigned resonance)\
+
+>  <NMREDATA_1D_13C#2>
+Larmor=125.770363831\
+Pulseprogram=dept135 ;optional in V1\
+Spectrum_Location=file:dj_GE425_CDCl3/12/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+;nothing at 30.6772 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-16.987492)\
+;nothing at 66.1330 ppm , for signal 1; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-16.866205)\
+;nothing at 175.5667 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-126.299922)\
+49.2668, L=3#, I=2501.9785, E=70.2547;errcs=-0.001335 ppm (This is how far this peak is from the assigned resonance)\
+;nothing at 173.5983 ppm , for signal 6; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-124.331530)\
+;nothing at 38.0512 ppm , for signal 7; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:11.215535)\
+;nothing at 18.8915 ppm , for signal 8; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-5.201866)\
+13.6897, L=9, I=2742.3894, E=69.8752;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+
+>  <NMREDATA_2D_1H_NJ_1H>
+Larmor=500.130043972064\
+CorrType=COSY\
+Pulseprogram=cosygpppqf ;optional in V1\
+Spectrum_Location=file:dj_GE425_CDCl3/13/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+
+>  <NMREDATA_2D_13C_1J_1H>
+Larmor=500.13\
+CorrType=HSQC\
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
+Spectrum_Location=file:dj_GE425_CDCl3/14/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+
+>  <NMREDATA_2D_13C_NJ_1H>
+Larmor=500.13\
+CorrType=HMBC\
+Pulseprogram=hmbcetgpl3nd ;optional in V1\
+Spectrum_Location=file:dj_GE425_CDCl3/15/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+
+>  <NMREDATA_2D_13C_1J_1H#2>
+Larmor=500.13\
+CorrType=HSQC\
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
+Spectrum_Location=file:dj_GE425_CDCl3/16/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+
+$$$$

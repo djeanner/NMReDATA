@@ -1,0 +1,84 @@
+Untitled Document-2
+  ChemDraw03151814132D
+
+ 10 11  0  0  0  0  0  0  0  0999 V2000
+   -1.4289    0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4289   -0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7145   -0.8250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000   -0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7145    0.8250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7145   -0.8250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4289   -0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4289    0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7145    0.8250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0  0  0  0
+  2  3  1  0  0  0  0
+  3  4  2  0  0  0  0
+  4  5  1  0  0  0  0
+  5  6  2  0  0  0  0
+  6  1  1  0  0  0  0
+  4  7  1  0  0  0  0
+  7  8  1  0  0  0  0
+  8  9  1  0  0  0  0
+  9 10  2  0  0  0  0
+ 10  5  1  0  0  0  0
+M  END
+>  <NMREDATA_VERSION>
+1.1\
+
+>  <NMREDATA_SOLVENT>
+CDCl3\
+
+>  <NMREDATA_LEVEL>
+0\
+
+>  <NMREDATA_ASSIGNMENT>
+H1, 7.1894, H1\
+1, 126.4855, 1\
+H2, 7.2146, H2\
+2, 126.8959, 2\
+H3, 7.1541, H3\
+3, 127.5722, 3\
+4, 135.5114, 4\
+5, 134.1810, 5\
+H6, 7.0809, H6\
+6, 125.9315, 6\
+H7, 2.8640, H7\
+7, 27.5374, 7\
+H8, 2.3805, H8\
+8, 23.2334, 8\
+H9, 6.0832, H9\
+9, 128.7061, 9\
+H10, 6.5283, H10\
+10, 127.8406, 10\
+
+>  <NMREDATA_1D_1H>
+Larmor=500.133088507\
+Pulseprogram=zg30 ;optional in V1\
+Spectrum_Location=file:dj_dihydronaphthalene/10/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+;7.1894, L=H1;found no H multiplet for this H\
+;7.2359-7.1934, L=H2;found no H multiplet for this H\
+;7.1667-7.1416, L=H3;found no H multiplet for this H\
+7.0809, S=d, L=H6, E=280.9103, J=7.02; found H multiplet by label chem shifts differ by 0.000000 ppm\
+2.8639, S=t, L=H7, E=537.4290, J=8.18; found H multiplet by label chem shifts differ by 0.000140 ppm\
+2.3813, S=tdd, L=H8, E=703.6632, J=8.18,4.40,2.00; found H multiplet by label chem shifts differ by -0.000882 ppm\
+6.0914, S=dt, L=H9, E=282.8804, J=8.94,4.40; found H multiplet by label chem shifts differ by -0.008144 ppm\
+6.5283, S=ddt, L=H10, E=359.2415, J=8.94,2.30; found H multiplet by label chem shifts differ by 0.000000 ppm\
+
+>  <NMREDATA_1D_1H#2>
+Larmor=500.13308830275\
+Pulseprogram=zghd.2 ;optional in V1\
+Spectrum_Location=file:dj_dihydronaphthalene/11/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+7.1894, S=m, L=H1, E=697.8716; found H multiplet by label chem shifts differ by 0.000000 ppm\
+;7.2359-7.1934, L=H2;found no H multiplet for this H\
+;7.1667-7.1416, L=H3;found no H multiplet for this H\
+;7.0809, L=H6;found no H multiplet for this H\
+;2.8640, L=H7;found no H multiplet for this H\
+;2.3805, L=H8;found no H multiplet for this H\
+;6.0832, L=H9;found no H multiplet for this H\
+;6.5283, L=H10;found no H multiplet for this H\
+
+$$$$

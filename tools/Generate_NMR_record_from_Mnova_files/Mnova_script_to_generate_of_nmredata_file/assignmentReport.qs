@@ -567,7 +567,25 @@ AssignmentReporter.assignmentReport = function (parameters) {
                     hIsHeavyIndex = true;//H not attached to any C
                 }
                 shift =  aAssignmentObject.chemShiftArr(at, h);
+           //     Jarray =  aAssignmentObject.jCounts(at, h); // here coupling to be tested...
+                /* dj suppose: if Jarray.length>0 {
+                 curJ=Jarray[0].value;
+                 curat=Jarray[0].atom;
+                 main_label_partner=curat.index;
+                 add_h_name=curat.h;
+                 full_nameH=main_label_partner + "H" +add_h_name;
+                 }
                 
+                */
+                /*For these Js in the Assignments Table: "-1.00(5'),-1.00(5''),6.20(6),7.90(7)" (atoms 5CH2, 6H, 7CH2 (equivalents)),
+                 we will have:
+                 
+                 { atom:{ index:'5', h:'a'}, value:'-1'},
+                 { atom:{ index:'5', h:'b'}, value:'-1'},
+                 { atom:{ index:'6'}, value:'6.2'},
+                 { atom:{ index:'7', h:'a'}, value:'7.9'},
+                 { atom:{ index:'7', h:'b'}, value:'7.9'}
+                 */
                 nmredataLine= "";
                 if (shift) {
                     if  (aMolecule.atom(at).elementSymbol !== "H") {

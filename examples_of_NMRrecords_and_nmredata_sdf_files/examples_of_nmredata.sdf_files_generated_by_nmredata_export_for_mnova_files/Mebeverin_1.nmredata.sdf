@@ -1,0 +1,296 @@
+
+  Mnova   01171811282D
+
+ 31 32  0  0  0  0  0  0  0  0999 V2000
+   15.4601   35.3866    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   15.4601   29.2855    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   20.7439   26.2349    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   26.0276   29.2855    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   26.0276   35.3866    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   20.7439   38.4372    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.1764   38.4372    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    4.8926   35.3866    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.1764   26.2349    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    4.8926   29.2855    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   31.3114   38.4372    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   36.5951   35.3866    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   31.3114   44.5383    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   41.8788   38.4372    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   47.1626   35.3866    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   52.4463   38.4372    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   57.7301   35.3866    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   63.0138   38.4372    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   68.2976   35.3866    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   63.0138   44.5383    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   68.2976   47.5889    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   73.5813   38.4372    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   68.2976   29.2855    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   78.8650   35.3866    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   78.8650   29.2855    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   84.1488   26.2349    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   89.4325   29.2855    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   89.4325   35.3866    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   84.1488   38.4372    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   94.7163   26.2349    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  100.0000   29.2855    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0  0  0  0
+  2  3  1  0  0  0  0
+  3  4  2  0  0  0  0
+  4  5  1  0  0  0  0
+  5  6  2  0  0  0  0
+  6  1  1  0  0  0  0
+  1  7  1  0  0  0  0
+  7  8  1  0  0  0  0
+  2  9  1  0  0  0  0
+  9 10  1  0  0  0  0
+  5 11  1  0  0  0  0
+ 11 12  1  0  0  0  0
+ 11 13  2  0  0  0  0
+ 12 14  1  0  0  0  0
+ 14 15  1  0  0  0  0
+ 15 16  1  0  0  0  0
+ 16 17  1  0  0  0  0
+ 17 18  1  0  0  0  0
+ 18 19  1  0  0  0  0
+ 18 20  1  0  0  0  0
+ 20 21  1  0  0  0  0
+ 19 22  1  0  0  0  0
+ 19 23  1  0  0  0  0
+ 22 24  1  0  0  0  0
+ 24 25  2  0  0  0  0
+ 25 26  1  0  0  0  0
+ 26 27  2  0  0  0  0
+ 27 28  1  0  0  0  0
+ 28 29  2  0  0  0  0
+ 29 24  1  0  0  0  0
+ 27 30  1  0  0  0  0
+ 30 31  1  0  0  0  0
+M  ZZC   1 1
+M  ZZC   2 2
+M  ZZC   3 3
+M  ZZC   4 4
+M  ZZC   5 5
+M  ZZC   6 6
+M  ZZC   8 8
+M  ZZC  10 10
+M  ZZC  11 11
+M  ZZC  14 14
+M  ZZC  15 15
+M  ZZC  16 16
+M  ZZC  17 17
+M  ZZC  19 19
+M  ZZC  20 20
+M  ZZC  21 21
+M  ZZC  22 22
+M  ZZC  23 23
+M  ZZC  24 24
+M  ZZC  25 25
+M  ZZC  26 26
+M  ZZC  27 27
+M  ZZC  28 28
+M  ZZC  29 29
+M  ZZC  31 31
+M  END
+>  <NMREDATA_VERSION>
+1.1\
+
+>  <NMREDATA_SOLVENT>
+MeOD\
+
+>  <NMREDATA_LEVEL>
+0\
+
+>  <NMREDATA_ASSIGNMENT>
+1, 148.8648, 1\
+2, 153.6077, 2\
+H3, 7.0369, H3\
+3, 110.5850, 3\
+H4, 7.7049, H4\
+4, 123.5180, 4\
+5, 122.2519, 5\
+H6, 7.5682, H6\
+6, 112.0143, 6\
+H8, 3.8656, H8\
+8, 55.1485, 8\
+H10, 3.9040, H10\
+10, 55.1189, 10\
+11, 166.4418, 11\
+H14, 4.4211, H14\
+14, 63.4573, 14\
+H15, 1.9314, H15\
+15, 25.7908, 15\
+H16, 2.0000, H16\
+16, 21.9876, 16\
+H17a, 3.3849, H17\
+17, 49.9160, 17\
+H17b, 3.2774, H17\
+H19, 3.6992, H19\
+19, 60.3860, 19\
+H20a, 3.3849, H20\
+20, 46.1671, 20\
+H20b, 3.2774, H20\
+H21, 1.4424, H21\
+21, 9.5244, 21\
+H22a, 3.1986, H22\
+22, 35.5734, 22\
+H22b, 2.7634, H22\
+H23, 1.2420, H23\
+23, 11.7994, 23\
+24, 127.7219, 24\
+H25, 7.1871, H25\
+25, 130.0661, 25\
+H26, 6.8777, H26\
+26, 113.9634, 26\
+27, 159.0530, 27\
+H28, 6.8777, H28\
+28, 113.9634, 28\
+H29, 7.1871, H29\
+29, 130.0661, 29\
+H31, 3.7826, H31\
+31, 54.3325, 31\
+
+>  <NMREDATA_1D_1H>
+Larmor=500.133088507\
+Pulseprogram=zg30 ;optional in V1\
+Spectrum_Location=file:dj_mebeverin/10/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+;7.0657-7.0081, L=H3;found no H multiplet for this H\
+;7.7306-7.6792, L=H4;found no H multiplet for this H\
+;7.5928-7.5437, L=H6;found no H multiplet for this H\
+;3.8755-3.8558, L=H8;found no H multiplet for this H\
+;3.9168-3.8911, L=H10;found no H multiplet for this H\
+;4.4643-4.3778, L=H14;found no H multiplet for this H\
+;1.9655-1.8973, L=H15;found no H multiplet for this H\
+;2.0345-1.9655, L=H16;found no H multiplet for this H\
+;3.4284-3.3415, L=H17a;found no H multiplet for this H\
+;3.3149-3.2400, L=H17b;found no H multiplet for this H\
+;3.7366-3.6618, L=H19;found no H multiplet for this H\
+;3.4284-3.3415, L=H20a;found no H multiplet for this H\
+;3.3149-3.2400, L=H20b;found no H multiplet for this H\
+;1.4894-1.3954, L=H21;found no H multiplet for this H\
+;3.2359-3.1612, L=H22a;found no H multiplet for this H\
+;2.8209-2.7060, L=H22b;found no H multiplet for this H\
+;1.2673-1.2166, L=H23;found no H multiplet for this H\
+;7.2206-7.1537, L=H25;found no H multiplet for this H\
+;6.9162-6.8391, L=H26;found no H multiplet for this H\
+;6.9162-6.8391, L=H28;found no H multiplet for this H\
+;7.2206-7.1537, L=H29;found no H multiplet for this H\
+;3.7926-3.7726, L=H31;found no H multiplet for this H\
+
+>  <NMREDATA_1D_13C>
+Larmor=125.770363831\
+Pulseprogram=zgdc ;optional in V1\
+Spectrum_Location=file:dj_mebeverin/11/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+148.8648, L=1, I=1122.5416, E=24.8682;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+153.6077, L=2, I=1274.0721, E=29.3924;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+110.5850, L=3, I=6681.9009, E=182.1815;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+123.5180, L=4, I=6862.9795, E=161.7248;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+122.2519, L=5, I=1770.4667, E=38.7133;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+112.0143, L=6, I=5638.9927, E=191.3124;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+55.1485, L=8, I=5865.2173, E=152.6907;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+55.1189, L=10, I=6384.4204, E=155.7247;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+166.4418, L=11, I=1573.8146, E=32.6162;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+63.4573, L=14, I=7623.9663, E=211.8195;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+25.7908, L=15, I=7781.4150, E=214.2514;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+21.9876, L=16, I=6441.6553, E=214.1861;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+49.9160, L=17, I=2108.8228, E=202.2423;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+60.3860, L=19, I=5105.0601, E=203.8713;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+46.1671, L=20, I=1896.8069, E=212.6657;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+9.5244, L=21, I=5962.5249, E=161.5952;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+35.5734, L=22, I=7098.7793, E=210.8645;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+11.7994, L=23, I=5547.6729, E=191.5882;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+127.7219, L=24, I=2768.2935, E=61.3218;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+130.0661, L=25, I=15496.0986, E=377.8889;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+113.9629, L=26, I=14749.0225, E=362.6809;errcs=-0.000497 ppm (This is how far this peak is from the assigned resonance)\
+159.0530, L=27, I=1921.4021, E=41.0910;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+113.9629, L=28, I=14749.0225, E=362.6809;errcs=-0.000497 ppm (This is how far this peak is from the assigned resonance)\
+130.0661, L=29, I=15496.0986, E=377.8889;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+54.3325, L=31, I=4846.1011, E=104.9812;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+
+>  <NMREDATA_1D_13C#2>
+Larmor=125.770363831\
+Pulseprogram=dept135 ;optional in V1\
+Spectrum_Location=file:dj_mebeverin/12/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+;nothing at 148.8648 ppm , for signal 1; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-18.798485)\
+;nothing at 153.6077 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-23.541421)\
+110.5805, L=3, I=2435.2239, E=58.6891;errcs=-0.004475 ppm (This is how far this peak is from the assigned resonance)\
+123.5157, L=4, I=2211.4963, E=50.3991;errcs=-0.002355 ppm (This is how far this peak is from the assigned resonance)\
+;nothing at 122.2519 ppm , for signal 5; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:1.263747)\
+112.0105, L=6, I=1974.9861, E=54.5357;errcs=-0.003768 ppm (This is how far this peak is from the assigned resonance)\
+55.1457, L=8, I=2048.0388, E=44.5694;errcs=-0.002826 ppm (This is how far this peak is from the assigned resonance)\
+55.1168, L=10, I=2193.9124, E=45.1619;errcs=-0.002041 ppm (This is how far this peak is from the assigned resonance)\
+;nothing at 166.4418 ppm , for signal 11; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-36.375538)\
+;nothing at 63.4573 ppm , for signal 14; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-3.075446)\
+;nothing at 25.7908 ppm , for signal 15; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-13.989764)\
+;nothing at 21.9876 ppm , for signal 16; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-10.186513)\
+;nothing at 49.9160 ppm , for signal 17; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:4.413614)\
+60.3819, L=19, I=1589.8103, E=58.9547;errcs=-0.004161 ppm (This is how far this peak is from the assigned resonance)\
+;nothing at 46.1671 ppm , for signal 20; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:8.162462)\
+9.5296, L=21, I=1061.8469, E=27.5627;errcs=0.005260 ppm (This is how far this peak is from the assigned resonance)\
+;nothing at 35.5734 ppm , for signal 22; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:18.756172)\
+11.8010, L=23, I=1083.8137, E=34.1840;errcs=0.001649 ppm (This is how far this peak is from the assigned resonance)\
+;nothing at 127.7219 ppm , for signal 24; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:2.344423)\
+130.0663, L=25, I=5175.7373, E=115.6828;errcs=0.000157 ppm (This is how far this peak is from the assigned resonance)\
+113.9606, L=26, I=4634.3232, E=107.2187;errcs=-0.002852 ppm (This is how far this peak is from the assigned resonance)\
+;nothing at 159.0530 ppm , for signal 27; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-28.986647)\
+113.9606, L=28, I=4634.3232, E=107.2187;errcs=-0.002852 ppm (This is how far this peak is from the assigned resonance)\
+130.0663, L=29, I=5175.7373, E=115.6828;errcs=0.000157 ppm (This is how far this peak is from the assigned resonance)\
+54.3296, L=31, I=1728.4031, E=33.6194;errcs=-0.002905 ppm (This is how far this peak is from the assigned resonance)\
+
+>  <NMREDATA_2D_1H_NJ_1H>
+Larmor=500.13\
+CorrType=COSY\
+Pulseprogram=cosygpppqf ;optional in V1\
+Spectrum_Location=file:dj_mebeverin/13/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+
+>  <NMREDATA_2D_13C_1J_1H>
+Larmor=500.13300078\
+CorrType=HSQC\
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
+Spectrum_Location=file:dj_mebeverin/14/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+
+>  <NMREDATA_2D_13C_NJ_1H>
+Larmor=500.13\
+CorrType=HMBC\
+Pulseprogram=hmbcetgpl3nd ;optional in V1\
+Spectrum_Location=file:dj_mebeverin/15/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+
+>  <NMREDATA_2D_13C_1J_1H#2>
+Larmor=500.13\
+CorrType=HSQC\
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
+Spectrum_Location=file:dj_mebeverin/16/pdata/1/\
+zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+3/H3\
+4/H4\
+6/H6\
+8/H8\
+10/H10\
+14/H14\
+15/H15\
+16/H16\
+17/H17a\
+17/H17b\
+19/H19\
+20/H20a\
+20/H20b\
+21/H21\
+22/H22a\
+22/H22b\
+23/H23\
+25/H25\
+29/H25\
+26/H26\
+28/H26\
+26/H28\
+28/H28\
+25/H29\
+29/H29\
+31/H31\
+
+$$$$

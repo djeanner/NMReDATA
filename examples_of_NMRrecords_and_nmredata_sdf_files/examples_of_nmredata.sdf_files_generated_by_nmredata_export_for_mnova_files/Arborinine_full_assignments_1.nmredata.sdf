@@ -67,11 +67,15 @@ M  END
 >  <NMREDATA_VERSION>
 1.1\
 
->  <NMREDATA_SOLVENT>
-CDCl3\
-
 >  <NMREDATA_LEVEL>
 0\
+
+>  <NMREDATA_ID>
+Record=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+Path=compound1.nmredata.sdf\
+
+>  <NMREDATA_SOLVENT>
+CDCl3\
 
 >  <NMREDATA_ASSIGNMENT>
 H1, 7.2778, H1\
@@ -100,11 +104,12 @@ H19, 3.9391, H19\
 H21, 4.0186, H21\
 21, 55.9780, 21\
 
+>  <NMREDATA_J>
+
 >  <NMREDATA_1D_1H>
 Larmor=500.133088507\
 Pulseprogram=zg30 ;optional in V1\
 Spectrum_Location=file:dj_ca_2017_ernestin_EN4/10/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 7.2778, S=ddd, L=H1, E=71.9113, J=0.96,6.95,7.98; found H multiplet by label chem shifts differ by 0.000000 ppm\
 7.7150, S=ddd, L=H2, E=80.9392, J=1.79,7.02,8.67; found H multiplet by label chem shifts differ by 0.000000 ppm\
 7.4896, S=d, L=H3, E=93.7083, J=8.80; found H multiplet by label chem shifts differ by 0.000000 ppm\
@@ -119,7 +124,6 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=125.770363831\
 Pulseprogram=zgdc ;optional in V1\
 Spectrum_Location=file:dj_ca_2017_ernestin_EN4/11/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 121.4485, L=1, I=13640.9236, E=392.7700;errcs=-0.005638 ppm (This is how far this peak is from the assigned resonance)\
 133.9104, L=2, I=13209.5661, E=380.3497;errcs=-0.003608 ppm (This is how far this peak is from the assigned resonance)\
 114.5697, L=3, I=13089.7744, E=376.9005;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
@@ -141,7 +145,6 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=125.770363831\
 Pulseprogram=dept135 ;optional in V1\
 Spectrum_Location=file:dj_ca_2017_ernestin_EN4/12/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 121.4452, L=1, I=3613.6938, E=102.4811;errcs=-0.008935 ppm (This is how far this peak is from the assigned resonance)\
 133.9096, L=2, I=3524.4651, E=73.7976;errcs=-0.004393 ppm (This is how far this peak is from the assigned resonance)\
 114.5666, L=3, I=3937.7826, E=111.6719;errcs=-0.003061 ppm (This is how far this peak is from the assigned resonance)\
@@ -164,7 +167,6 @@ Larmor=500.133973614509\
 CorrType=COSY\
 Pulseprogram=cosygpppqf ;optional in V1\
 Spectrum_Location=file:dj_ca_2017_ernestin_EN4/13/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 H2/H1\
 H6/H1\
 H1/H2\
@@ -177,7 +179,6 @@ Larmor=500.13300078\
 CorrType=HSQC\
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
 Spectrum_Location=file:dj_ca_2017_ernestin_EN4/14/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 1/H1\
 2/H2\
 3/H3\
@@ -192,7 +193,6 @@ Larmor=500.13300078\
 CorrType=HMBC\
 Pulseprogram=hmbcetgpl3nd ;optional in V1\
 Spectrum_Location=file:dj_ca_2017_ernestin_EN4/15/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 3/H1\
 5/H1\
 4/H2\

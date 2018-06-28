@@ -34,102 +34,104 @@ M  ZZC   5 5
 M  ZZC   6 6
 M  ZZC   9 9
 M  END
->  <NMREDATA_SOLVENT>
-D2O
+>  <NMREDATA_VERSION>
+1.1\
 
 >  <NMREDATA_LEVEL>
-0
+0\
+
+>  <NMREDATA_ID>
+Record=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+Path=compound1.nmredata.sdf\
+
+>  <NMREDATA_SOLVENT>
+D2O\
 
 >  <NMREDATA_ASSIGNMENT>
-2, 174.1793, 2
-H3a, 2.7986, H3
-3, 43.4822, 3
-H3b, 2.6545, H3
-4, 73.6132, 4
-H5a, 2.7986, H5
-5, 43.4822, 5
-H5b, 2.6545, H5
-6, 174.1793, 6
-9, 177.9723, 9
+2, 174.1793, 2\
+H3a, 2.7986, H3\
+3, 43.4822, 3\
+H3b, 2.6545, H3\
+4, 73.6132, 4\
+H5a, 2.7986, H5\
+5, 43.4822, 5\
+H5b, 2.6545, H5\
+6, 174.1793, 6\
+9, 177.9723, 9\
+
+>  <NMREDATA_J>
 
 >  <NMREDATA_1D_1H>
-Larmor=500.13234410931
-Pulseprogram=zgpr ;optional in V1
-Spectrum_Location=file:MP_ice_tea_lemon/20/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
-;2.8361-2.7611, L=H3a;found no H multiplet for this H
-;2.6891-2.6200, L=H3b;found no H multiplet for this H
-;2.8361-2.7611, L=H5a;found no H multiplet for this H
-;2.6891-2.6200, L=H5b;found no H multiplet for this H
+Larmor=500.13234410931\
+Pulseprogram=zgpr ;optional in V1\
+Spectrum_Location=file:MP_ice_tea_lemon/20/pdata/1/\
+;2.8361-2.7611, L=H3a;found no H multiplet for this H\
+;2.6891-2.6200, L=H3b;found no H multiplet for this H\
+;2.8361-2.7611, L=H5a;found no H multiplet for this H\
+;2.6891-2.6200, L=H5b;found no H multiplet for this H\
 
 >  <NMREDATA_1D_13C>
-Larmor=125.770363831
-Pulseprogram=zgdc ;optional in V1
-Spectrum_Location=file:MP_ice_tea_lemon/16/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
-174.1793, L=2, I=81.4263, E=13.9153;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
-43.4822, L=3, I=985.6276, E=44.3536;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
-73.6132, L=4, I=215.4223, E=6.3380;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
-43.4822, L=5, I=985.6276, E=44.3536;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
-174.1793, L=6, I=81.4263, E=13.9153;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
-177.9723, L=9, I=53.2339, E=14.4731;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)
+Larmor=125.770363831\
+Pulseprogram=zgdc ;optional in V1\
+Spectrum_Location=file:MP_ice_tea_lemon/16/pdata/1/\
+174.1793, L=2, I=81.4263, E=13.9153;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+43.4822, L=3, I=985.6276, E=44.3536;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+73.6132, L=4, I=215.4223, E=6.3380;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+43.4822, L=5, I=985.6276, E=44.3536;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+174.1793, L=6, I=81.4263, E=13.9153;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+177.9723, L=9, I=53.2339, E=14.4731;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
 
 >  <NMREDATA_1D_13C#2>
-Larmor=125.770363831
-Pulseprogram=dept135 ;optional in V1
-Spectrum_Location=file:MP_ice_tea_lemon/17/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
-;nothing at 174.1793 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
-;nothing at 43.4822 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
-;nothing at 73.6132 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
-;nothing at 43.4822 ppm , for signal 5; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
-;nothing at 174.1793 ppm , for signal 6; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
-;nothing at 177.9723 ppm , for signal 9; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list
+Larmor=125.770363831\
+Pulseprogram=dept135 ;optional in V1\
+Spectrum_Location=file:MP_ice_tea_lemon/17/pdata/1/\
+;nothing at 174.1793 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 43.4822 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 73.6132 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 43.4822 ppm , for signal 5; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 174.1793 ppm , for signal 6; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 177.9723 ppm , for signal 9; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
 
 >  <NMREDATA_2D_1H_NJ_1H>
-Larmor=500.13
-CorrType=COSY
-Pulseprogram=cosyprqf ;optional in V1
-Spectrum_Location=file:MP_ice_tea_lemon/15/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
-H3b/H3a
-H3a/H3a
-H3a/H3b
-H5b/H5a
-H5a/H5a
-H5a/H5b
+Larmor=500.13\
+CorrType=COSY\
+Pulseprogram=cosyprqf ;optional in V1\
+Spectrum_Location=file:MP_ice_tea_lemon/15/pdata/1/\
+H3b/H3a\
+H3a/H3a\
+H3a/H3b\
+H5b/H5a\
+H5a/H5a\
+H5a/H5b\
 
 >  <NMREDATA_2D_13C_1J_1H>
-Larmor=500.13234410931
-CorrType=HSQC
-Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
-Spectrum_Location=file:MP_ice_tea_lemon/21/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
+Larmor=500.13234410931\
+CorrType=HSQC\
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
+Spectrum_Location=file:MP_ice_tea_lemon/21/pdata/1/\
 
 >  <NMREDATA_2D_13C_NJ_1H>
-Larmor=500.13234410931
-CorrType=HMBC
-Pulseprogram=hmbcgplpndqf ;optional in V1
-Spectrum_Location=file:MP_ice_tea_lemon/23/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
-4/H3a
-4/H3b
-4/H5a
-4/H5b
+Larmor=500.13234410931\
+CorrType=HMBC\
+Pulseprogram=hmbcgplpndqf ;optional in V1\
+Spectrum_Location=file:MP_ice_tea_lemon/23/pdata/1/\
+4/H3a\
+4/H3b\
+4/H5a\
+4/H5b\
 
 >  <NMREDATA_2D_13C_1J_1H#2>
-Larmor=500.13234410931
-CorrType=HSQC
-Pulseprogram=hsqcetgpsisp2.2 ;optional in V1
-Spectrum_Location=file:MP_ice_tea_lemon/13/pdata/1/
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0
-3/H3a
-4/H3a
-3/H3b
-4/H3b
-4/H5a
-5/H5a
-4/H5b
-5/H5b
+Larmor=500.13234410931\
+CorrType=HSQC\
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
+Spectrum_Location=file:MP_ice_tea_lemon/13/pdata/1/\
+3/H3a\
+4/H3a\
+3/H3b\
+4/H3b\
+4/H5a\
+5/H5a\
+4/H5b\
+5/H5b\
 
 $$$$

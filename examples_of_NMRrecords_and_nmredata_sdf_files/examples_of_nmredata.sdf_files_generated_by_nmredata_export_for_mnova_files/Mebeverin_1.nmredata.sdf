@@ -94,11 +94,15 @@ M  END
 >  <NMREDATA_VERSION>
 1.1\
 
->  <NMREDATA_SOLVENT>
-MeOD\
-
 >  <NMREDATA_LEVEL>
 0\
+
+>  <NMREDATA_ID>
+Record=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+Path=compound1.nmredata.sdf\
+
+>  <NMREDATA_SOLVENT>
+MeOD\
 
 >  <NMREDATA_ASSIGNMENT>
 1, 148.8648, 1\
@@ -149,11 +153,12 @@ H29, 7.1871, H29\
 H31, 3.7826, H31\
 31, 54.3325, 31\
 
+>  <NMREDATA_J>
+
 >  <NMREDATA_1D_1H>
 Larmor=500.133088507\
 Pulseprogram=zg30 ;optional in V1\
 Spectrum_Location=file:dj_mebeverin/10/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 ;7.0657-7.0081, L=H3;found no H multiplet for this H\
 ;7.7306-7.6792, L=H4;found no H multiplet for this H\
 ;7.5928-7.5437, L=H6;found no H multiplet for this H\
@@ -181,7 +186,6 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=125.770363831\
 Pulseprogram=zgdc ;optional in V1\
 Spectrum_Location=file:dj_mebeverin/11/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 148.8648, L=1, I=1122.5416, E=24.8682;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
 153.6077, L=2, I=1274.0721, E=29.3924;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
 110.5850, L=3, I=6681.9009, E=182.1815;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
@@ -212,7 +216,6 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=125.770363831\
 Pulseprogram=dept135 ;optional in V1\
 Spectrum_Location=file:dj_mebeverin/12/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 ;nothing at 148.8648 ppm , for signal 1; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-18.798485)\
 ;nothing at 153.6077 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-23.541421)\
 110.5805, L=3, I=2435.2239, E=58.6891;errcs=-0.004475 ppm (This is how far this peak is from the assigned resonance)\
@@ -244,28 +247,24 @@ Larmor=500.13\
 CorrType=COSY\
 Pulseprogram=cosygpppqf ;optional in V1\
 Spectrum_Location=file:dj_mebeverin/13/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 
 >  <NMREDATA_2D_13C_1J_1H>
 Larmor=500.13300078\
 CorrType=HSQC\
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
 Spectrum_Location=file:dj_mebeverin/14/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 
 >  <NMREDATA_2D_13C_NJ_1H>
 Larmor=500.13\
 CorrType=HMBC\
 Pulseprogram=hmbcetgpl3nd ;optional in V1\
 Spectrum_Location=file:dj_mebeverin/15/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 
 >  <NMREDATA_2D_13C_1J_1H#2>
 Larmor=500.13\
 CorrType=HSQC\
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
 Spectrum_Location=file:dj_mebeverin/16/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 3/H3\
 4/H4\
 6/H6\

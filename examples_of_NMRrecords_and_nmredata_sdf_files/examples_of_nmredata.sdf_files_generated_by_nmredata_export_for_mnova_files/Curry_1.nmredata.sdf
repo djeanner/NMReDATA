@@ -82,11 +82,15 @@ M  END
 >  <NMREDATA_VERSION>
 1.1\
 
->  <NMREDATA_SOLVENT>
-MeOD\
-
 >  <NMREDATA_LEVEL>
 0\
+
+>  <NMREDATA_ID>
+Record=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+Path=compound1.nmredata.sdf\
+
+>  <NMREDATA_SOLVENT>
+MeOD\
 
 >  <NMREDATA_ASSIGNMENT>
 8, 149.0856, 1\
@@ -116,11 +120,12 @@ H7', 6.8493, H22\
 H6', 7.1373, H23\
 H11', 3.9390, H26\
 
+>  <NMREDATA_J>
+
 >  <NMREDATA_1D_1H>
 Larmor=500.133088507\
 Pulseprogram=zg30 ;optional in V1\
 Spectrum_Location=file:MP-curry/10/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 ;7.2575-7.2378, L=H10;found no H multiplet for this H\
 ;7.1555-7.1191, L=H6;found no H multiplet for this H\
 ;6.8618-6.8367, L=H7;found no H multiplet for this H\
@@ -138,7 +143,6 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=125.770363831\
 Pulseprogram=zgdc ;optional in V1\
 Spectrum_Location=file:MP-curry/11/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 ;nothing at 149.0856 ppm , for signal 8; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
 ;nothing at 148.0266 ppm , for signal 9; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
 ;nothing at 110.2840 ppm , for signal 10; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
@@ -158,7 +162,6 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=125.770363831\
 Pulseprogram=dept135 ;optional in V1\
 Spectrum_Location=file:MP-curry/12/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 ;nothing at 149.0856 ppm , for signal 8; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
 ;nothing at 148.0266 ppm , for signal 9; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
 ;nothing at 110.2840 ppm , for signal 10; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
@@ -179,27 +182,23 @@ Larmor=500.13\
 CorrType=COSY\
 Pulseprogram=cosygpppqf ;optional in V1\
 Spectrum_Location=file:MP-curry/13/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 
 >  <NMREDATA_2D_13C_1J_1H>
 Larmor=500.13\
 CorrType=HSQC\
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
 Spectrum_Location=file:MP-curry/14/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 
 >  <NMREDATA_2D_13C_NJ_1H>
 Larmor=500.13\
 CorrType=HMBC\
 Pulseprogram=hmbcetgpl3nd ;optional in V1\
 Spectrum_Location=file:MP-curry/15/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 
 >  <NMREDATA_2D_13C_1J_1H#2>
 Larmor=500.13\
 CorrType=HSQC\
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
 Spectrum_Location=file:MP-curry/16/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 
 $$$$

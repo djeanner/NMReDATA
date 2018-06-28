@@ -1,0 +1,327 @@
+
+  Mnova   01141510182D
+
+ 20 24  0  0  0  0  0  0  0  0999 V2000
+   -2.1483   97.6081    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7674   96.8108    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7674   95.2162    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.1483   94.4190    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.5293   95.2162    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.5293   96.8108    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6136   94.4190    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6136   92.8244    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7674   92.0271    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.1483   92.8244    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6136   97.6081    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9945   96.8108    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9945   95.2162    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6136   99.2027    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9945  100.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3755   99.2027    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3755   97.6081    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.7564   96.8108    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.7564   95.2162    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3755   94.4190    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0  0  0  0
+  2  3  1  0  0  0  0
+  3  4  2  0  0  0  0
+  4  5  1  0  0  0  0
+  5  6  2  0  0  0  0
+  1  6  1  0  0  0  0
+  3  7  1  0  0  0  0
+  7  8  2  0  0  0  0
+  8  9  1  0  0  0  0
+  9 10  2  0  0  0  0
+ 10  4  1  0  0  0  0
+  2 11  1  0  0  0  0
+ 11 12  2  0  0  0  0
+ 12 13  1  0  0  0  0
+ 13  7  1  0  0  0  0
+ 11 14  1  0  0  0  0
+ 14 15  2  0  0  0  0
+ 15 16  1  0  0  0  0
+ 16 17  2  0  0  0  0
+ 17 12  1  0  0  0  0
+ 17 18  1  0  0  0  0
+ 18 19  2  0  0  0  0
+ 19 20  1  0  0  0  0
+ 20 13  2  0  0  0  0
+M  ZZC   1 1
+M  ZZC   2 6
+M  ZZC   3 5
+M  ZZC   4 4
+M  ZZC   5 3
+M  ZZC   6 2
+M  ZZC   7 6'
+M  ZZC   8 1'
+M  ZZC   9 2'
+M  ZZC  10 3'
+M  ZZC  11 6'''
+M  ZZC  12 5'
+M  ZZC  13 6''
+M  ZZC  14 1'''
+M  ZZC  15 2'''
+M  ZZC  16 3'''
+M  ZZC  17 4'
+M  ZZC  18 3''
+M  ZZC  19 2''
+M  ZZC  20 1''
+M  END
+>  <NMREDATA_VERSION>
+1.1\
+
+>  <NMREDATA_LEVEL>
+0\
+
+>  <NMREDATA_ID>
+Record=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+Path=compound1.nmredata.sdf\
+
+>  <NMREDATA_SOLVENT>
+CDCl3\
+
+>  <NMREDATA_ASSIGNMENT>
+H1, 8.2013, H1\
+1, 120.2609, 1\
+6, 131.3089, 2\
+5, 128.8521, 3\
+4, 134.8209, 4\
+H3, 7.6896, H5\
+3, 127.9014, 5\
+H2, 7.4895, H6\
+2, 126.5953, 6\
+6', 131.3089, 7\
+H1', 8.2013, H8\
+1', 120.2609, 8\
+H2', 7.4895, H9\
+2', 126.5953, 9\
+H3', 7.6896, H10\
+3', 127.9014, 10\
+6''', 131.3089, 11\
+5', 128.8521, 12\
+6'', 131.3089, 13\
+H1''', 8.2013, H14\
+1''', 120.2609, 14\
+H2''', 7.4895, H15\
+2''', 126.5953, 15\
+H3''', 7.6896, H16\
+3''', 127.9014, 16\
+4', 134.8209, 17\
+H3'', 7.6896, H18\
+3'', 127.9014, 18\
+H2'', 7.4895, H19\
+2'', 126.5953, 19\
+H1'', 8.2013, H20\
+1'', 120.2609, 20\
+
+>  <NMREDATA_J>
+H1, H3, 0.9\
+H1, H2, 7.4\
+H3, H2, 8.2\
+
+>  <NMREDATA_1D_1H>
+Larmor=500.13\
+Pulseprogram=zg30 ;optional in V1\
+Spectrum_Location=file:djhap_perylene/10/pdata/1/\
+8.2013, S=dd, L=H1, E=151704.8132, J=7.44,0.90; found H multiplet by label chem shifts differ by 0.000000 ppm\
+7.6896, S=dd, L=H3, E=147628.3613, J=0.90,8.18; found H multiplet by label chem shifts differ by 0.000000 ppm\
+7.4895, S=dd, L=H2, E=144317.0873, J=8.18,7.44; found H multiplet by label chem shifts differ by 0.000000 ppm\
+;8.2013, L=H1';found no H multiplet for this H\
+;7.4895, L=H2';found no H multiplet for this H\
+;7.6896, L=H3';found no H multiplet for this H\
+;8.2013, L=H1''';found no H multiplet for this H\
+;7.4895, L=H2''';found no H multiplet for this H\
+;7.6896, L=H3''';found no H multiplet for this H\
+;7.6896, L=H3'';found no H multiplet for this H\
+;7.4895, L=H2'';found no H multiplet for this H\
+;8.2013, L=H1'';found no H multiplet for this H\
+
+>  <NMREDATA_1D_13C>
+Larmor=125.757789\
+Pulseprogram=zgpg30 ;optional in V1\
+Spectrum_Location=file:djhap_perylene/11/pdata/1/\
+120.2590, L=1, I=7263952.4828, E=243600.3610;errcs=-0.001828 ppm (This is how far this peak is from the assigned resonance)\
+131.3085, L=6, I=6040324.0592, E=134273.1609;errcs=-0.000348 ppm (This is how far this peak is from the assigned resonance)\
+128.8508, L=5, I=1362002.0152, E=38154.9412;errcs=-0.001260 ppm (This is how far this peak is from the assigned resonance)\
+;nothing at 134.8209 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-3.512352)\
+127.9024, L=3, I=14300923.3157, E=243754.3359;errcs=0.000997 ppm (This is how far this peak is from the assigned resonance)\
+126.5981, L=2, I=12620156.4873, E=305736.5106;errcs=0.002812 ppm (This is how far this peak is from the assigned resonance)\
+131.3085, L=6', I=6040324.0592, E=134273.1609;errcs=-0.000348 ppm (This is how far this peak is from the assigned resonance)\
+120.2590, L=1', I=7263952.4828, E=243600.3610;errcs=-0.001828 ppm (This is how far this peak is from the assigned resonance)\
+126.5981, L=2', I=12620156.4873, E=305736.5106;errcs=0.002812 ppm (This is how far this peak is from the assigned resonance)\
+127.9024, L=3', I=14300923.3157, E=243754.3359;errcs=0.000997 ppm (This is how far this peak is from the assigned resonance)\
+131.3085, L=6''', I=6040324.0592, E=134273.1609;errcs=-0.000348 ppm (This is how far this peak is from the assigned resonance)\
+128.8508, L=5', I=1362002.0152, E=38154.9412;errcs=-0.001260 ppm (This is how far this peak is from the assigned resonance)\
+131.3085, L=6'', I=6040324.0592, E=134273.1609;errcs=-0.000348 ppm (This is how far this peak is from the assigned resonance)\
+120.2590, L=1''', I=7263952.4828, E=243600.3610;errcs=-0.001828 ppm (This is how far this peak is from the assigned resonance)\
+126.5981, L=2''', I=12620156.4873, E=305736.5106;errcs=0.002812 ppm (This is how far this peak is from the assigned resonance)\
+127.9024, L=3''', I=14300923.3157, E=243754.3359;errcs=0.000997 ppm (This is how far this peak is from the assigned resonance)\
+;nothing at 134.8209 ppm , for signal 4'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-3.512352)\
+127.9024, L=3'', I=14300923.3157, E=243754.3359;errcs=0.000997 ppm (This is how far this peak is from the assigned resonance)\
+126.5981, L=2'', I=12620156.4873, E=305736.5106;errcs=0.002812 ppm (This is how far this peak is from the assigned resonance)\
+120.2590, L=1'', I=7263952.4828, E=243600.3610;errcs=-0.001828 ppm (This is how far this peak is from the assigned resonance)\
+
+>  <NMREDATA_1D_13C#2>
+Larmor=125.757789\
+Pulseprogram=dept135 ;optional in V1\
+Spectrum_Location=file:djhap_perylene/12/pdata/1/\
+;nothing at 120.2609 ppm , for signal 1; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 131.3089 ppm , for signal 6; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 128.8521 ppm , for signal 5; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 134.8209 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 127.9014 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 126.5953 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 131.3089 ppm , for signal 6'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 120.2609 ppm , for signal 1'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 126.5953 ppm , for signal 2'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 127.9014 ppm , for signal 3'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 131.3089 ppm , for signal 6'''; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 128.8521 ppm , for signal 5'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 131.3089 ppm , for signal 6''; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 120.2609 ppm , for signal 1'''; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 126.5953 ppm , for signal 2'''; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 127.9014 ppm , for signal 3'''; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 134.8209 ppm , for signal 4'; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 127.9014 ppm , for signal 3''; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 126.5953 ppm , for signal 2''; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 120.2609 ppm , for signal 1''; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+
+>  <NMREDATA_2D_1H_NJ_1H>
+Larmor=500.13\
+CorrType=COSY\
+Pulseprogram=cosygpqf ;optional in V1\
+Spectrum_Location=file:djhap_perylene/13/pdata/1/\
+H2/H1\
+H2/H3\
+H1/H2\
+H3/H2\
+H2'/H1'\
+H1'/H2'\
+H3'/H2'\
+H2'/H3'\
+H2''/H3''\
+H3''/H2''\
+H1''/H2''\
+H2''/H1''\
+
+>  <NMREDATA_2D_13C_1J_1H>
+Larmor=500.13000817\
+CorrType=HSQC\
+Pulseprogram=hsqcetgpsp ;optional in V1\
+Spectrum_Location=file:djhap_perylene/15/pdata/1/\
+1/H1\
+3/H3\
+2/H2\
+1'/H1'\
+2'/H2'\
+3'/H3'\
+1'''/H1'''\
+2'''/H2'''\
+3'''/H3'''\
+3''/H3''\
+2''/H2''\
+1''/H1''\
+
+>  <NMREDATA_2D_13C_NJ_1H>
+Larmor=500.130008\
+CorrType=HMBC\
+Pulseprogram=hmbcetgpl3nd ;optional in V1\
+Spectrum_Location=file:djhap_perylene/14/pdata/1/\
+3'/H1\
+3'''/H1\
+3''/H1\
+5/H1\
+5'/H1\
+6/H1\
+6'/H1\
+6'''/H1\
+6''/H1\
+1/H3\
+1'/H3\
+1'''/H3\
+1''/H3\
+5/H3\
+5'/H3\
+1/H2\
+4/H2\
+4'/H2\
+5/H2\
+5'/H2\
+6/H2\
+6'/H2\
+6'''/H2\
+6''/H2\
+3'/H1'\
+3'''/H1'\
+3''/H1'\
+5/H1'\
+5'/H1'\
+6/H1'\
+6'/H1'\
+6'''/H1'\
+6''/H1'\
+1/H2'\
+4/H2'\
+4'/H2'\
+5/H2'\
+5'/H2'\
+6/H2'\
+6'/H2'\
+6'''/H2'\
+6''/H2'\
+1/H3'\
+1'/H3'\
+1'''/H3'\
+1''/H3'\
+5/H3'\
+5'/H3'\
+3'/H1'''\
+3'''/H1'''\
+3''/H1'''\
+5/H1'''\
+5'/H1'''\
+6/H1'''\
+6'/H1'''\
+6'''/H1'''\
+6''/H1'''\
+1/H2'''\
+4/H2'''\
+4'/H2'''\
+5/H2'''\
+5'/H2'''\
+6/H2'''\
+6'/H2'''\
+6'''/H2'''\
+6''/H2'''\
+1/H3'''\
+1'/H3'''\
+1'''/H3'''\
+1''/H3'''\
+5/H3'''\
+5'/H3'''\
+1/H3''\
+1'/H3''\
+1'''/H3''\
+1''/H3''\
+5/H3''\
+5'/H3''\
+1/H2''\
+4/H2''\
+4'/H2''\
+5/H2''\
+5'/H2''\
+6/H2''\
+6'/H2''\
+6'''/H2''\
+6''/H2''\
+3'/H1''\
+3'''/H1''\
+3''/H1''\
+5/H1''\
+5'/H1''\
+6/H1''\
+6'/H1''\
+6'''/H1''\
+6''/H1''\
+
+$$$$

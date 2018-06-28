@@ -61,11 +61,15 @@ M  END
 >  <NMREDATA_VERSION>
 1.1\
 
->  <NMREDATA_SOLVENT>
-CDCl3\
-
 >  <NMREDATA_LEVEL>
 0\
+
+>  <NMREDATA_ID>
+Record=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+Path=compound1.nmredata.sdf\
+
+>  <NMREDATA_SOLVENT>
+CDCl3\
 
 >  <NMREDATA_ASSIGNMENT>
 1, 34.0311, 1\
@@ -102,11 +106,12 @@ H18a, 4.9921, H18\
 18, 112.7597, 18\
 H18b, 4.8765, H18\
 
+>  <NMREDATA_J>
+
 >  <NMREDATA_1D_1H>
 Larmor=500.133088507\
 Pulseprogram=zg30 ;optional in V1\
 Spectrum_Location=file:MP-caryophyllene_oxide/10/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 1.7041, S=m, L=H2a, E=78.7292; found H multiplet by label chem shifts differ by -0.000725 ppm\
 1.6352, S=m, L=H2b, E=101.8348; found H multiplet by label chem shifts differ by 0.004609 ppm\
 1.0244, S=s, L=H5, E=271.8249; found H multiplet by label chem shifts differ by 0.000000 ppm\
@@ -132,7 +137,6 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=125.770363831\
 Pulseprogram=zgdc ;optional in V1\
 Spectrum_Location=file:MP-caryophyllene_oxide/11/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 34.0319, L=1, I=586.2207, E=16.1562;errcs=0.000808 ppm (This is how far this peak is from the assigned resonance)\
 39.7585, L=2, I=3266.8264, E=90.0335;errcs=0.001640 ppm (This is how far this peak is from the assigned resonance)\
 48.7390, L=3, I=2100.5864, E=65.2688;errcs=-0.001289 ppm (This is how far this peak is from the assigned resonance)\
@@ -153,7 +157,6 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=125.770363831\
 Pulseprogram=dept135 ;optional in V1\
 Spectrum_Location=file:MP-caryophyllene_oxide/12/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 ;nothing at 34.0311 ppm , for signal 1; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
 ;nothing at 39.7568 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
 ;nothing at 48.7403 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
@@ -175,7 +178,6 @@ Larmor=500.13\
 CorrType=COSY\
 Pulseprogram=cosygpppqf ;optional in V1\
 Spectrum_Location=file:MP-caryophyllene_oxide/13/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 H16/H2a\
 H16/H2b\
 H8b/H8a\
@@ -212,7 +214,6 @@ Larmor=500.131750455\
 CorrType=HSQC\
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
 Spectrum_Location=file:MP-caryophyllene_oxide/14/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 2/H2a\
 2/H2b\
 5/H5\
@@ -237,7 +238,6 @@ Larmor=500.131750455\
 CorrType=HMBC\
 Pulseprogram=hmbcetgpl3nd ;optional in V1\
 Spectrum_Location=file:MP-caryophyllene_oxide/15/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 1/H2a\
 3/H2a\
 4/H2a\

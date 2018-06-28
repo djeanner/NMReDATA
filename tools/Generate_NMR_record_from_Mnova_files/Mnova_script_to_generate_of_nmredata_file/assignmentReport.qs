@@ -275,7 +275,13 @@ function assignmentReport() {
                             stream.write(out_mol);// bug reported by JMN Nov 9 replaced writeln with write to have one less end-of-line char in the file
 
                             // output some comments
+                            // output some comments
                             stream.writeln(">  <NMREDATA_VERSION>\n" + version_nmredata + end_of_line );
+                            stream.writeln(">  <NMREDATA_LEVEL>\n" + nmredata_level  + end_of_line);
+                            stream.writeln(">  <NMREDATA_ID>");
+                            stream.writeln("Record=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\\");
+                            stream.writeln("Path=compound1.nmredata.sdf\\");
+                            stream.writeln("");
 
                             if (debug){
                                 stream.writeln(">  <COMMENT_TO_DEL> ");
@@ -310,8 +316,6 @@ function assignmentReport() {
                                 specIndex++;
 
                             }
-                            stream.writeln(">  <NMREDATA_LEVEL>\n" + nmredata_level  + end_of_line);
-
 
                             ////////////////////////////////////////////////////
                             ////////////////////////////////////////////////////
@@ -326,7 +330,7 @@ function assignmentReport() {
                             //assignmentReport.qs:    element = aMolecule.atom(at).elementSymbol;
                             //   DBPlugin.qs:    dbItem.addField("Bonds", aMolecule.bondCount);
 
-                            stream.writeln(">  <NMREDATA_ASSIGNMENTS>");
+                            stream.writeln(">  <NMREDATA_ASSIGNMENT>");
                             stream.flush();
 
 
@@ -802,7 +806,7 @@ AssignmentReporter.jReport = function (parameters) {
                         print(jc0);
                                 if(i==0) {
                                         element = "(" + aMolecule.atom(at).elementSymbol + ")";
-                                        atomLabel2 = atomLabel;
+                                        atomLabel2 = /**/ "H" + atomLabel;// dj added H for explicit... (could remove it here AND at line 605)
                                 }
                                 if(i>0 && CHcount == 1) {
                                         element = "(H)";
@@ -839,7 +843,7 @@ AssignmentReporter.jReport = function (parameters) {
                                         }
                                         //case 2.3: not an implicit H (this will work for explicit Hs)
                                         if(jCH == 0) {
-                                                jatomLabel2 = aMolecule.atom(jat).number;
+                                                jatomLabel2 = /**/ "H" + aMolecule.atom(jat).number;// dj added H for explicit... (could remove it here AND at line 605)
                                         }
                                         jvalue =jc0[j].value.toFixed(aDecimals); //this is the J-coupling value
 //Step 3: write entry as stream
@@ -1601,7 +1605,7 @@ AssignmentReporter.assignmentReportWithCorrelations = function (parameters) {
                     rel_path +=  path_elements[lo]  + seppath;
                 }
                 nmredata_header[looop_over_spectra] += "Spectrum_Location=file:" + rel_path + end_of_line;
-                nmredata_header[looop_over_spectra] += "zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0"  + end_of_line;
+              /*  nmredata_header[looop_over_spectra] += "zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0"  + end_of_line;*/
 
                 //prepare script to prepare NMR record:
                 /*   nmredata[looop_over_spectra] += ";UNIX_CREATE mkdir -p \"" + path_elements[path_elements.length-5]  + "\"\n";

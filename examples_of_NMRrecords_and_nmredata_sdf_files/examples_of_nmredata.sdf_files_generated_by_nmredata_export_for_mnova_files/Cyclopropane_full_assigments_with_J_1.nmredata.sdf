@@ -1,0 +1,261 @@
+ns-cyclopropane
+  ChemDraw06251809042D
+
+ 18 19  0  0  0  0  0  0  0  0999 V2000
+14911.9204-9685.3396    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+11183.3215-9685.3396    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+13047.6209-12914.5321    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+ 7454.7227-9685.3396    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+18640.5192-9685.3396    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+11183.3215-16143.7247    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+14911.9204-16143.7247    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+ 9319.0221-6456.5989    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+16776.2198-6456.5989    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+20504.8186-6456.5989    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+22369.1180-3227.4064    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+20504.8186    1.7862    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+16776.2198    1.7862    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+14911.9204-3227.4064    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+ 5590.4233-12914.5321    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+ 5590.4233-6456.5989    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+ 1861.8244-6456.5989    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.4750-3227.4064    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  2  3  1  0  0  0  0
+  3  1  1  0  0  0  0
+  2  4  1  1  0  0  0
+  1  5  1  1  0  0  0
+  3  6  1  1  0  0  0
+  3  7  1  6  0  0  0
+  2  8  1  6  0  0  0
+  1  9  1  6  0  0  0
+  9 10  2  0  0  0  0
+ 10 11  1  0  0  0  0
+ 11 12  2  0  0  0  0
+ 12 13  1  0  0  0  0
+ 13 14  2  0  0  0  0
+ 14  9  1  0  0  0  0
+  4 15  2  0  0  0  0
+  4 16  1  0  0  0  0
+ 16 17  1  0  0  0  0
+ 17 18  1  0  0  0  0
+M  ZZC   1 2
+M  ZZC   2 1
+M  ZZC   3 3
+M  ZZC   4 4
+M  ZZC   5 H2
+M  ZZC   6 H3
+M  ZZC   7 H3'
+M  ZZC   8 H1
+M  ZZC   9 7
+M  ZZC  10 12
+M  ZZC  11 11
+M  ZZC  12 10
+M  ZZC  13 9
+M  ZZC  14 8
+M  ZZC  17 5
+M  ZZC  18 6
+M  END
+>  <NMREDATA_VERSION>
+1.1\
+
+>  <NMREDATA_LEVEL>
+0\
+
+>  <NMREDATA_ID>
+Record=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+Path=compound1.nmredata.sdf\
+
+>  <NMREDATA_SOLVENT>
+CDCl3\
+
+>  <NMREDATA_ASSIGNMENT>
+2, 25.4025, 1\
+1, 23.4232, 2\
+3, 16.2894, 3\
+4, 172.6257, 4\
+HH2, 2.4100, 5\
+HH3, 1.4870, 6\
+HH3', 1.1890, 7\
+HH1, 1.7920, 8\
+7, 139.3458, 9\
+H12, 6.9788, H10\
+12, 125.3821, 10\
+H11, 7.1510, H11\
+11, 127.6933, 11\
+H10, 7.0783, H12\
+10, 125.6930, 12\
+H9, 7.1510, H13\
+9, 127.6933, 13\
+H8, 6.9788, H14\
+8, 125.3821, 14\
+H5, 4.0568, H17\
+5, 59.9187, 17\
+H6, 1.1631, H18\
+6, 13.4982, 18\
+
+>  <NMREDATA_J>
+HH2, HH1, 4.1\
+HH2, HH3, 9.2\
+HH2, HH3', 6.5\
+HH3, HH1, 5.4\
+HH3, HH3', 4.5\
+HH3', HH1, 8.4\
+H5', H6, 7.2\
+H5'', H6, 7.2\
+
+>  <NMREDATA_1D_1H>
+Larmor=500.133088507\
+Pulseprogram=zg30 ;optional in V1\
+Spectrum_Location=file:MP_cyclopropane/10/pdata/1/\
+2.4100, S=ddd, N=1, L=H2, J=9.22,6.49,4.13, E=286.8250; found multiplet by chemical shift \
+2.4100, S=ddd, L=HH2, E=286.8250, J=9.22,6.49,4.13; found H multiplet by label chem shifts differ by 0.000000 ppm\
+1.4870, S=ddd, N=1, L=H3, J=9.22,5.36,4.54, E=405.2643; found multiplet by chemical shift \
+1.4870, S=ddd, L=HH3, E=405.2643, J=4.54,5.36,9.22; found H multiplet by label chem shifts differ by 0.000000 ppm\
+1.1890, S=ddd, N=1, L=H3', J=8.39,6.49,4.54, E=11.1016; found multiplet by chemical shift \
+1.1890, S=ddd, L=HH3', E=11.1016, J=8.39,6.49,4.54; found H multiplet by label chem shifts differ by 0.000000 ppm\
+1.7920, S=ddd, N=1, L=H1, J=8.39,5.36,4.13, E=352.9493; found multiplet by chemical shift \
+1.7920, S=ddd, L=HH1, E=352.9493, J=8.39,5.36,4.13; found H multiplet by label chem shifts differ by 0.000000 ppm\
+6.9788, S=m, L=H12, E=833.1930; found H multiplet by label chem shifts differ by 0.000000 ppm\
+7.1510, S=m, L=H11, E=1149.1167; found H multiplet by label chem shifts differ by 0.000000 ppm\
+7.0783, S=m, L=H10, E=491.4691; found H multiplet by label chem shifts differ by 0.000000 ppm\
+;7.1510, L=H9;found no H multiplet for this H\
+;6.9788, L=H8;found no H multiplet for this H\
+4.0568, S=q, L=H5, E=673.9601, J=7.15; found H multiplet by label chem shifts differ by 0.000000 ppm\
+1.1631, S=t, L=H6, E=1078.7112, J=7.08; found H multiplet by label chem shifts differ by 0.000000 ppm\
+
+>  <NMREDATA_1D_13C>
+Larmor=125.770363831\
+Pulseprogram=zgdc ;optional in V1\
+Spectrum_Location=file:esg_cyclopropane/11/pdata/1/\
+25.4025, L=2, I=32126.7835, E=676.8442;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+23.4232, L=1, I=35547.5361, E=880.9118;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+16.2894, L=3, I=48989.5474, E=1057.7232;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+172.6257, L=4, I=5700.3717, E=115.7678;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+139.3458, L=7, I=6837.6760, E=170.7484;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+125.3821, L=12, I=55509.3000, E=1201.4837;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+127.6933, L=11, I=61341.5963, E=1235.5193;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+125.6930, L=10, I=46424.4811, E=988.1528;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+127.6933, L=9, I=61341.5963, E=1235.5193;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+125.3821, L=8, I=55509.3000, E=1201.4837;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+59.9187, L=5, I=28991.0110, E=699.3473;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+13.4982, L=6, I=32984.1171, E=762.7994;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
+
+>  <NMREDATA_1D_13C#2>
+Larmor=125.770363831\
+Pulseprogram=dept135 ;optional in V1\
+Spectrum_Location=file:esg_cyclopropane/12/pdata/1/\
+;nothing at 25.4025 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 23.4232 ppm , for signal 1; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 16.2894 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 172.6257 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 139.3458 ppm , for signal 7; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 125.3821 ppm , for signal 12; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 127.6933 ppm , for signal 11; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 125.6930 ppm , for signal 10; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 127.6933 ppm , for signal 9; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 125.3821 ppm , for signal 8; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 59.9187 ppm , for signal 5; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;nothing at 13.4982 ppm , for signal 6; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+
+>  <NMREDATA_2D_1H_NJ_1H>
+Larmor=500.13\
+CorrType=COSY\
+Pulseprogram=cosygpppqf ;optional in V1\
+Spectrum_Location=file:esg_cyclopropane/13/pdata/1/\
+
+>  <NMREDATA_2D_1H_NJ_1H#2>
+Larmor=500.13\
+CorrType=COSY\
+Pulseprogram=cosygpmfph2 ;optional in V1\
+Spectrum_Location=file:MP_cyclopropane/11/pdata/1/\
+HH3/HH2\
+HH3'/HH2\
+HH1/HH2\
+HH2/HH3\
+HH3'/HH3\
+HH1/HH3\
+HH2/HH3'\
+HH3/HH3'\
+HH1/HH3'\
+HH2/HH1\
+HH3/HH1\
+HH3'/HH1\
+H6/H5\
+H5/H6\
+
+>  <NMREDATA_2D_13C_1J_1H>
+Larmor=500.13\
+CorrType=HSQC\
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
+Spectrum_Location=file:esg_cyclopropane/14/pdata/1/\
+
+>  <NMREDATA_2D_13C_NJ_1H>
+Larmor=500.13\
+CorrType=HMBC\
+Pulseprogram=hmbcetgpl3nd ;optional in V1\
+Spectrum_Location=file:MP_cyclopropane/12/pdata/1/\
+1/HH2\
+4/HH2\
+8/HH2\
+12/HH2\
+1/HH3\
+2/HH3\
+4/HH3\
+7/HH3\
+1/HH3'\
+2/HH3'\
+4/HH3'\
+7/HH3'\
+2/HH1\
+7/HH1\
+9/H12\
+10/H12\
+11/H12\
+7/H11\
+8/H10\
+12/H10\
+7/H9\
+9/H8\
+10/H8\
+11/H8\
+4/H5\
+6/H5\
+5/H6\
+
+>  <NMREDATA_2D_13C_1J_1H#2>
+Larmor=500.13\
+CorrType=HSQC\
+Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
+Spectrum_Location=file:MP_cyclopropane/13/pdata/1/\
+2/HH2\
+3/HH3\
+3/HH3'\
+1/HH1\
+12/H12\
+11/H11\
+10/H10\
+9/H9\
+8/H8\
+5/H5\
+6/H6\
+
+>  <NMREDATA_2D_1H_D_1H>
+Larmor=500.13\
+CorrType=NOESY\
+Pulseprogram=noesygpphpp ;optional in V1\
+Spectrum_Location=file:MP_cyclopropane/15/pdata/1/\
+H12/HH2\
+H8/HH2\
+H12/HH3'\
+H8/HH3'\
+H12/HH1\
+H8/HH1\
+HH2/H12\
+HH3'/H12\
+HH1/H12\
+HH2/H8\
+HH3'/H8\
+HH1/H8\
+
+$$$$

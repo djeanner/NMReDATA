@@ -87,13 +87,35 @@ H10, 0.8311, H10\
 H11, 0.9493, H11\
 11, 20.9880, 11\
 H1eq, 1.6822, 12\
-H1ax, 0.8760, 13\
+H1ax, 0.8630, 13\
 H2ax, 0.9933, 14\
 H2eq, 1.6293, 15\
 H5ax, 0.9535, 16\
 H5eq, 1.9844, 17\
 
 >  <NMREDATA_J>
+H3, H2ax, 12.8\
+H3, H2eq, 3.0\
+H3, H4, 9.9\
+H3, H9, 2.7\
+H4, H12, 4.8\
+H4, H5ax, 10.9\
+H4, H5eq, 4.5\
+H6, H7, 6.6\
+H6, H1eq, 3.0\
+H6, H1ax, 12.0\
+H6, H5ax, 12.0\
+H6, H5eq, 4.0\
+H9, H10, 7.0\
+H9, H11, 7.1\
+H1eq, H1ax, 12.8\
+H1eq, H2ax, 3.3\
+H1eq, H2eq, 3.2\
+H1eq, H5eq, 2.2\
+H1ax, H2ax, 12.0\
+H1ax, H2eq, 3.3\
+H2ax, H2eq, 13.0\
+H5ax, H5eq, 12.1\
 
 >  <NMREDATA_1D_1H>
 Larmor=500.133088507\
@@ -109,8 +131,8 @@ Spectrum_Location=file:AN-menthol/10/pdata/1/\
 ;0.9493, L=H11;found no H multiplet for this H\
 1.6822, S=ddddd, N=1, L=1eq, J=12.75,3.30,2.20, E=44.5449; found multiplet by chemical shift \
 1.6822, S=ddddd, L=H1eq, E=44.5449, J=12.75,3.30,2.20; found H multiplet by label chem shifts differ by 0.000000 ppm\
-0.8760, S=dddd, N=1, L=1ax, J=12.75,12.00,3.30, E=41.0392; found multiplet by chemical shift \
-0.8760, S=dddd, L=H1ax, E=41.0392, J=12.75,12.00,3.30; found H multiplet by label chem shifts differ by 0.000000 ppm\
+0.8630, S=dtd, N=1, L=1ax, J=12.75,12.00,3.30, E=33.0961; found multiplet by chemical shift \
+0.8630, S=dtd, L=H1ax, E=33.0961, J=12.75,12.00,3.30; found H multiplet by label chem shifts differ by 0.000000 ppm\
 0.9933, S=dddd, N=1, L=2ax, J=12.98,12.00,3.30, E=83.1578; found multiplet by chemical shift \
 0.9933, S=dddd, L=H2ax, E=83.1578, J=12.98,12.00,3.30; found H multiplet by label chem shifts differ by 0.000000 ppm\
 1.6293, S=dddd, N=1, L=2eq, J=12.98,3.30, E=40.6936; found multiplet by chemical shift \
@@ -155,10 +177,20 @@ Larmor=500.13\
 CorrType=COSY\
 Pulseprogram=cosygpppqf ;optional in V1\
 Spectrum_Location=file:AN-menthol/13/pdata/1/\
+
+>  <NMREDATA_2D_1H_NJ_1H#2>
+Larmor=500.13\
+CorrType=COSY\
+Pulseprogram=bbhd_psyche_clip_cosy.mb ;optional in V1\
+Spectrum_Location=file:AN-menthol/17/pdata/1/\
+
+>  <NMREDATA_2D_1H_NJ_1H#3>
+Larmor=500.13\
+CorrType=COSY\
+Pulseprogram=cosygpmfph2 ;optional in V1\
+Spectrum_Location=file:dj_menthol/21/pdata/1/\
 H4/H3\
 H9/H3\
-H2ax/H3\
-H2eq/H3\
 H3/H4\
 H12/H4\
 H5ax/H4\
@@ -168,41 +200,24 @@ H1eq/H6\
 H1ax/H6\
 H5ax/H6\
 H5eq/H6\
-H6/H7\
 H4/H12\
 H3/H9\
 H10/H9\
 H11/H9\
 H9/H10\
 H9/H11\
-H6/H1eq\
 H1ax/H1eq\
 H2ax/H1eq\
 H2eq/H1eq\
-H6/H1ax\
-H1eq/H1ax\
-H2ax/H1ax\
-H2eq/H1ax\
 H3/H2ax\
-H1eq/H2ax\
 H1ax/H2ax\
 H2eq/H2ax\
 H3/H2eq\
-H1eq/H2eq\
 H1ax/H2eq\
-H2ax/H2eq\
 H4/H5ax\
-H6/H5ax\
 H5eq/H5ax\
 H4/H5eq\
-H6/H5eq\
 H5ax/H5eq\
-
->  <NMREDATA_2D_1H_unidentified_heteronuclear_2d_spectrum_1H>
-Larmor=500.13\
-CorrType=na;Type was not identifiedUnknown\
-Pulseprogram=bbhd_psyche_clip_cosy.mb ;optional in V1\
-Spectrum_Location=file:AN-menthol/17/pdata/1/\
 
 >  <NMREDATA_2D_13C_1J_1H>
 Larmor=500.13\
@@ -216,7 +231,6 @@ Spectrum_Location=file:AN-menthol/14/pdata/1/\
 9/H9\
 10/H10\
 11/H11\
-1/H1eq\
 1/H1ax\
 2/H2ax\
 2/H2eq\
@@ -229,57 +243,29 @@ CorrType=HMBC\
 Pulseprogram=hmbcetgpl3nd ;optional in V1\
 Spectrum_Location=file:AN-menthol/15/pdata/1/\
 1/H3\
-2/H3\
-5/H3\
 9/H3\
-2/H4\
 9/H4\
 1/H6\
-5/H6\
 7/H6\
 1/H7\
-5/H7\
-6/H7\
-3/H12\
 4/H12\
-5/H12\
-2/H9\
-3/H9\
 10/H9\
 11/H9\
-3/H10\
 9/H10\
 11/H10\
-3/H11\
 9/H11\
 10/H11\
-2/H1eq\
-3/H1eq\
-5/H1eq\
-6/H1eq\
-2/H1ax\
-3/H1ax\
-5/H1ax\
-6/H1ax\
 1/H2ax\
-3/H2ax\
 4/H2ax\
-6/H2ax\
 9/H2ax\
 1/H2eq\
-3/H2eq\
 4/H2eq\
-6/H2eq\
 9/H2eq\
 1/H5ax\
-3/H5ax\
 4/H5ax\
-6/H5ax\
 7/H5ax\
 1/H5eq\
-3/H5eq\
 4/H5eq\
-6/H5eq\
 7/H5eq\
 
 >  <NMREDATA_2D_1H_D_1H>
@@ -288,7 +274,7 @@ CorrType=NOESY\
 Pulseprogram=noesygpphpp ;optional in V1\
 Spectrum_Location=file:AN-menthol/16/pdata/1/\
 
->  <NMREDATA_2D_1H_unidentified_heteronuclear_2d_spectrum_1H#2>
+>  <NMREDATA_2D_1H_unidentified_heteronuclear_2d_spectrum_1H>
 Larmor=500.13\
 CorrType=na;Type was not identifiedUnknown\
 Pulseprogram=bbhd_psyche_diag_apc.mb ;optional in V1\
@@ -308,8 +294,8 @@ Spectrum_Location=file:AN-menthol/18/pdata/100/\
 ;0.9493, L=H11;found no H multiplet for this H\
 ;nothing at 1.6822 ppm , for signal 1eq; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
 ;1.6822, L=H1eq;found no H multiplet for this H\
-;nothing at 0.8760 ppm , for signal 1ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
-;0.8760, L=H1ax;found no H multiplet for this H\
+;nothing at 0.8630 ppm , for signal 1ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
+;0.8630, L=H1ax;found no H multiplet for this H\
 ;nothing at 0.9933 ppm , for signal 2ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
 ;0.9933, L=H2ax;found no H multiplet for this H\
 ;nothing at 1.6293 ppm , for signal 2eq; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
@@ -333,8 +319,8 @@ Spectrum_Location=file:undefined\undefined\undefined\undefined\\
 ;0.9493, L=H11;found no H multiplet for this H\
 1.6820, L=1eq, I=26734.6501, E=122.9993;errcs=-0.000225 ppm (This is how far this peak is from the assigned resonance)\
 ;1.6822, L=H1eq;found no H multiplet for this H\
-;nothing at 0.8760 ppm , for signal 1ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:0.781287)\
-;0.8760, L=H1ax;found no H multiplet for this H\
+;nothing at 0.8630 ppm , for signal 1ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:0.794316)\
+;0.8630, L=H1ax;found no H multiplet for this H\
 ;nothing at 0.9933 ppm , for signal 2ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:0.664061)\
 ;0.9933, L=H2ax;found no H multiplet for this H\
 1.6573, L=2eq, I=20224.0260, E=85.2842;errcs=0.027974 ppm (This is how far this peak is from the assigned resonance)\
@@ -358,8 +344,8 @@ Spectrum_Location=file:undefined\undefined\undefined\undefined\\
 ;0.9493, L=H11;found no H multiplet for this H\
 ;nothing at 1.6822 ppm , for signal 1eq; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-0.647762)\
 ;1.6822, L=H1eq;found no H multiplet for this H\
-;nothing at 0.8760 ppm , for signal 1ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:0.099336)\
-;0.8760, L=H1ax;found no H multiplet for this H\
+;nothing at 0.8630 ppm , for signal 1ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:0.112364)\
+;0.8630, L=H1ax;found no H multiplet for this H\
 1.0022, L=2ax, I=111350.5841, E=532.0389;errcs=0.008958 ppm (This is how far this peak is from the assigned resonance)\
 ;0.9933, L=H2ax;found no H multiplet for this H\
 ;nothing at 1.6293 ppm , for signal 2eq; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-0.594911)\
@@ -383,8 +369,8 @@ Spectrum_Location=file:undefined\undefined\undefined\undefined\\
 ;0.9493, L=H11;found no H multiplet for this H\
 1.6519, L=1eq, I=58456.9346, E=224.1213;errcs=-0.030247 ppm (This is how far this peak is from the assigned resonance)\
 ;1.6822, L=H1eq;found no H multiplet for this H\
-;nothing at 0.8760 ppm , for signal 1ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:0.730275)\
-;0.8760, L=H1ax;found no H multiplet for this H\
+;nothing at 0.8630 ppm , for signal 1ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:0.743304)\
+;0.8630, L=H1ax;found no H multiplet for this H\
 ;nothing at 0.9933 ppm , for signal 2ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:0.613049)\
 ;0.9933, L=H2ax;found no H multiplet for this H\
 1.6324, L=2eq, I=43894.5901, E=168.2899;errcs=0.003078 ppm (This is how far this peak is from the assigned resonance)\
@@ -408,8 +394,8 @@ Spectrum_Location=file:undefined\undefined\undefined\undefined\\
 ;0.9493, L=H11;found no H multiplet for this H\
 ;nothing at 1.6822 ppm , for signal 1eq; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-0.675343)\
 ;1.6822, L=H1eq;found no H multiplet for this H\
-;nothing at 0.8760 ppm , for signal 1ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:0.061016)\
-;0.8760, L=H1ax;found no H multiplet for this H\
+;nothing at 0.8630 ppm , for signal 1ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:0.074044)\
+;0.8630, L=H1ax;found no H multiplet for this H\
 0.9854, L=2ax, I=154783.4844, E=534.0896;errcs=-0.007883 ppm (This is how far this peak is from the assigned resonance)\
 ;0.9933, L=H2ax;found no H multiplet for this H\
 ;nothing at 1.6293 ppm , for signal 2eq; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-0.622492)\
@@ -433,8 +419,8 @@ Spectrum_Location=file:undefined\undefined\undefined\undefined\\
 ;0.9493, L=H11;found no H multiplet for this H\
 ;nothing at 1.6822 ppm , for signal 1eq; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-0.778831)\
 ;1.6822, L=H1eq;found no H multiplet for this H\
-0.8777, L=1ax, I=96279.7489, E=394.8037;errcs=0.001705 ppm (This is how far this peak is from the assigned resonance)\
-;0.8760, L=H1ax;found no H multiplet for this H\
+0.8709, L=1ax, I=106121.0123, E=435.1587;errcs=0.007899 ppm (This is how far this peak is from the assigned resonance)\
+;0.8630, L=H1ax;found no H multiplet for this H\
 ;nothing at 0.9933 ppm , for signal 2ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-0.089893)\
 ;0.9933, L=H2ax;found no H multiplet for this H\
 ;nothing at 1.6293 ppm , for signal 2eq; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-0.725981)\
@@ -458,8 +444,8 @@ Spectrum_Location=file:undefined\undefined\undefined\undefined\\
 ;0.9493, L=H11;found no H multiplet for this H\
 ;nothing at 1.6822 ppm , for signal 1eq; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-0.742464)\
 ;1.6822, L=H1eq;found no H multiplet for this H\
-;nothing at 0.8760 ppm , for signal 1ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:0.050520)\
-;0.8760, L=H1ax;found no H multiplet for this H\
+;nothing at 0.8630 ppm , for signal 1ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:0.063549)\
+;0.8630, L=H1ax;found no H multiplet for this H\
 ;nothing at 0.9933 ppm , for signal 2ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-0.053526)\
 ;0.9933, L=H2ax;found no H multiplet for this H\
 ;nothing at 1.6293 ppm , for signal 2eq; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-0.689613)\
@@ -483,8 +469,8 @@ Spectrum_Location=file:undefined\undefined\undefined\undefined\\
 ;0.9493, L=H11;found no H multiplet for this H\
 ;nothing at 1.6822 ppm , for signal 1eq; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-0.726599)\
 ;1.6822, L=H1eq;found no H multiplet for this H\
-;nothing at 0.8760 ppm , for signal 1ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:0.065653)\
-;0.8760, L=H1ax;found no H multiplet for this H\
+;nothing at 0.8630 ppm , for signal 1ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:0.078681)\
+;0.8630, L=H1ax;found no H multiplet for this H\
 0.9556, L=2ax, I=2907170.2247, E=9357.5573;errcs=-0.037661 ppm (This is how far this peak is from the assigned resonance)\
 ;0.9933, L=H2ax;found no H multiplet for this H\
 ;nothing at 1.6293 ppm , for signal 2eq; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-0.673748)\
@@ -508,8 +494,8 @@ Spectrum_Location=file:undefined\undefined\undefined\undefined\\
 ;0.9493, L=H11;found no H multiplet for this H\
 ;nothing at 1.6822 ppm , for signal 1eq; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-0.844244)\
 ;1.6822, L=H1eq;found no H multiplet for this H\
-0.8379, L=1ax, I=3002887.9420, E=10361.6439;errcs=-0.038080 ppm (This is how far this peak is from the assigned resonance)\
-;0.8760, L=H1ax;found no H multiplet for this H\
+0.8379, L=1ax, I=3002887.9420, E=10361.6439;errcs=-0.025051 ppm (This is how far this peak is from the assigned resonance)\
+;0.8630, L=H1ax;found no H multiplet for this H\
 ;nothing at 0.9933 ppm , for signal 2ax; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-0.155306)\
 ;0.9933, L=H2ax;found no H multiplet for this H\
 ;nothing at 1.6293 ppm , for signal 2eq; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list (smallest:-0.791393)\

@@ -127,13 +127,17 @@ M  END
 >  <NMREDATA_VERSION>
 1.1\
 
->  <NMREDATA_SOLVENT>
-CDCl3\
-
 >  <NMREDATA_LEVEL>
 0\
 
->  <NMREDATA_ASSIGNMENTS>
+>  <NMREDATA_ID>
+Record=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
+Path=compound1.nmredata.sdf\
+
+>  <NMREDATA_SOLVENT>
+CDCl3\
+
+>  <NMREDATA_ASSIGNMENT>
 2, 33.9039, 1\
 3, 199.4691, 2\
 H4, 5.7491, H3\
@@ -182,7 +186,6 @@ H15eq, 1.9750, 40\
 Larmor=500.133088507\
 Pulseprogram=zg30 ;optional in V1\
 Spectrum_Location=file:dj_androstene/10/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 ;5.7570-5.7412, L=H4;found no H multiplet for this H\
 ;1.2210-1.1929, L=H19;found no H multiplet for this H\
 ;0.9257-0.8969, L=H18;found no H multiplet for this H\
@@ -229,7 +232,6 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=125.772250696\
 Pulseprogram=zgpg30 ;optional in V1\
 Spectrum_Location=file:dj_androstene/21/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 33.9039, L=2, I=588.8459, E=12.9481;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
 199.4691, L=3, I=312.8105, E=7.3382;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
 124.1151, L=4, I=657.7229, E=12.9353;errcs=0.000000 ppm (This is how far this peak is from the assigned resonance)\
@@ -254,7 +256,6 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=125.772250696\
 Pulseprogram=dept135 ;optional in V1\
 Spectrum_Location=file:dj_androstene/23/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 ;nothing at 33.9039 ppm , for signal 2; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
 ;nothing at 199.4691 ppm , for signal 3; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
 ;nothing at 124.1151 ppm , for signal 4; found 1) no multiplet at this EXACT chem shift or  label 2) no peak +/-0.05 pmm in peak list\
@@ -280,21 +281,18 @@ Larmor=500.13000745\
 CorrType=COSY\
 Pulseprogram=cosygpppqf ;optional in V1\
 Spectrum_Location=file:dj_androstene/24/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 
 >  <NMREDATA_2D_13C_1J_1H>
 Larmor=500.13\
 CorrType=HSQC\
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
 Spectrum_Location=file:dj_androstene/26/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 
 >  <NMREDATA_2D_13C_1J_1H#2>
 Larmor=500.13\
 CorrType=HSQC\
 Pulseprogram=hsqcetgpsisp2.2 ;optional in V1\
 Spectrum_Location=file:dj_androstene/27/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 4/H4\
 19/H19\
 18/H18\
@@ -323,7 +321,6 @@ Larmor=500.13000745\
 CorrType=HMBC\
 Pulseprogram=hmbcgplpndqf ;optional in V1\
 Spectrum_Location=file:dj_androstene/28/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 3/H4\
 5/H4\
 1/H19\
@@ -428,7 +425,6 @@ zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6
 Larmor=500.13\
 Pulseprogram=bbhd_psyche_diag_apc.mb ;optional in V1\
 Spectrum_Location=file:dj_androstene/30/pdata/100/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 ;5.7570-5.7412, L=H4;found no H multiplet for this H\
 ;1.2210-1.1929, L=H19;found no H multiplet for this H\
 ;0.9257-0.8969, L=H18;found no H multiplet for this H\
@@ -476,14 +472,12 @@ Larmor=500.13\
 CorrType=na;Type was not identifiedUnknown\
 Pulseprogram=bbhd_psyche_diag_apc.mb ;optional in V1\
 Spectrum_Location=file:dj_androstene/30/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 
 >  <NMREDATA_2D_1H_NJ_1H#2>
 Larmor=500.13\
 CorrType=COSY\
 Pulseprogram=bbhd_psyche_clip_cosy.mb ;optional in V1\
 Spectrum_Location=file:dj_androstene/32/pdata/1/\
-zip_file_Location=https://www.dropbox.com/sh/ma8v25g15wylfj4/AAA4xWi5w9yQv5RBLr6oDHila?dl=0\
 HH9/HH8\
 HH14/HH8\
 H7ax/HH8\

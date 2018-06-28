@@ -1,4 +1,4 @@
-ne
+zoapyrene
   Mnova   01091515502D
 
  20 24  0  0  0  0  0  0  0  0999 V2000
@@ -61,57 +61,68 @@ Path=compound1.nmredata.sdf\
 CDCl3\
 
 >  <NMREDATA_ASSIGNMENT>
-H1, 7.8453, H1\
+H1, 7.8466, H1\
 1, 125.9665, 1\
 H2, 7.7914, H2\
 2, 126.0583, 2\
-H3, 8.3041, H3\
+H3, 8.3024, H3\
 3, 128.9245, 3\
 4, 131.3481, 4\
 5, 128.2284, 5\
-H6, 9.0623, H6\
+H6, 9.0627, H6\
 6, 123.0232, 6\
-H7, 8.5270, H7\
+H7, 8.5190, H7\
 7, 124.7755, 7\
 8, 129.8533, 8\
 9, 123.8080, 9\
 10, 127.3904, 10\
 11, 125.4128, 11\
 12, 131.3988, 12\
-H13, 8.3446, H13\
+H13, 8.3443, H13\
 13, 127.5258, 13\
-H14, 9.0690, H14\
+H14, 9.0700, H14\
 14, 122.1975, 14\
-H15, 8.0175, H15\
+H15, 8.0187, H15\
 15, 128.1676, 15\
-H16, 7.9387, H16\
+H16, 7.9413, H16\
 16, 127.8430, 16\
 17, 131.5864, 17\
-H18, 8.1023, H18\
+H18, 8.1030, H18\
 18, 124.8461, 18\
-H19, 7.9904, H19\
+H19, 7.9950, H19\
 19, 126.0853, 19\
-H20, 8.2514, H20\
+H20, 8.2510, H20\
 20, 125.5503, 20\
 
 >  <NMREDATA_J>
+H1, H6, 8.4\
+H1, H2, 6.7\
+H1, H3, 1.5\
+H2, H6, 1.2\
+H2, H3, 8.0\
+H3, H7, 0.7\
+H13, H14, 9.0\
+H15, H16, 8.9\
+H18, H19, 7.4\
+H18, H20, 0.9\
+H19, H20, 7.7\
 
 >  <NMREDATA_1D_1H>
 Larmor=500.130008551672\
 Pulseprogram=zg ;optional in V1\
 Spectrum_Location=file:djhap_benapyr/10/pdata/1/\
-7.8453, S=ddd, L=H1, E=1328004.4090, J=1.46,6.74,8.39; found H multiplet by label chem shifts differ by 0.000000 ppm\
-7.7947, S=ddd, L=H2, E=1299166.5993, J=1.23,6.74,7.97; found H multiplet by label chem shifts differ by -0.003285 ppm\
-8.3041, S=ddd, L=H3, E=1283747.5915, J=0.66,1.41,8.05; found H multiplet by label chem shifts differ by 0.000000 ppm\
-9.0577, S=m, L=H6, E=1249532.3315; found H multiplet by label chem shifts differ by 0.004536 ppm\
-8.5270, S=s, L=H7, E=1277812.8565; found H multiplet by label chem shifts differ by 0.000000 ppm\
-8.3446, S=d, L=H13, E=1321484.5150, J=9.07; found H multiplet by label chem shifts differ by 0.000000 ppm\
-9.0748, S=m, L=H14, E=1303885.0280; found H multiplet by label chem shifts differ by -0.005814 ppm\
-8.0162, S=d, L=H15, E=1347898.2014, J=8.75; found H multiplet by label chem shifts differ by 0.001274 ppm\
-7.9387, S=d, L=H16, E=1329445.4210, J=9.07; found H multiplet by label chem shifts differ by 0.000000 ppm\
-8.1023, S=dd, L=H18, E=1302429.6890, J=0.87,7.10; found H multiplet by label chem shifts differ by 0.000000 ppm\
-7.9904, S=d, L=H19, E=865114.0568, J=7.53; found H multiplet by label chem shifts differ by 0.000000 ppm\
-8.2514, S=m, L=H20, E=1295942.7452; found H multiplet by label chem shifts differ by 0.000000 ppm\
+7.8466, S=ddd, L=H1, E=1328004.4090, J=1.46,6.74,8.39; found H multiplet by label chem shifts differ by 0.000000 ppm\
+7.7925, S=ddd, L=H2, E=1299166.5993, J=1.23,6.74,7.97; found H multiplet by label chem shifts differ by -0.001129 ppm\
+8.3038, S=dt, L=H3, E=1283747.5915, J=7.97,1.46,0.66; found H multiplet by label chem shifts differ by -0.001416 ppm\
+9.0627, S=dd, L=H6, E=2092957.7589, J=8.36,1.23; found H multiplet by label chem shifts differ by 0.000000 ppm\
+8.5270, S=d, L=H7, E=1277812.8565, J=0.66; found H multiplet by label chem shifts differ by -0.008010 ppm\
+8.3443, S=d, L=H13, E=1321484.5150, J=9.00; found H multiplet by label chem shifts differ by 0.000000 ppm\
+9.0700, S=d, L=H14, E=684485.9522, J=9.00; found H multiplet by label chem shifts differ by 0.000000 ppm\
+8.0187, S=d, L=H15, E=1364906.0165, J=8.90; found H multiplet by label chem shifts differ by 0.000000 ppm\
+7.9365, S=d, L=H16, E=1329445.4210, J=8.90; found H multiplet by label chem shifts differ by 0.004798 ppm\
+8.1030, S=dd, L=H18, E=1302429.6890, J=7.43,0.87; found H multiplet by label chem shifts differ by 0.000000 ppm\
+7.9950, S=t, L=H19, E=889205.3503, J=7.68; found H multiplet by label chem shifts differ by 0.000000 ppm\
+8.2510, S=dd, L=H20, E=1295942.7452, J=7.68,0.87; found H multiplet by label chem shifts differ by 0.000000 ppm\
 
 >  <NMREDATA_1D_13C>
 Larmor=125.757789\
@@ -170,7 +181,6 @@ Pulseprogram=cosygpppqf ;optional in V1\
 Spectrum_Location=file:MP_HAP_benzoapyrene/23/pdata/1/\
 H2/H1\
 H6/H1\
-H1/H2\
 H3/H2\
 H2/H3\
 H1/H6\
@@ -191,11 +201,8 @@ Spectrum_Location=file:djhap_benapyr/12/pdata/1/\
 1/H1\
 2/H2\
 3/H3\
-6/H6\
 7/H7\
 13/H13\
-14/H14\
-15/H15\
 16/H16\
 18/H18\
 19/H19\
@@ -207,38 +214,20 @@ CorrType=HMBC\
 Pulseprogram=hmbcetgpl3nd ;optional in V1\
 Spectrum_Location=file:MP_HAP_benzoapyrene/24/pdata/1/\
 3/H1\
-5/H1\
-4/H2\
 6/H2\
 1/H3\
-5/H3\
-7/H3\
-2/H6\
-4/H6\
-5/H6\
-10/H6\
+9/H6\
 3/H7\
-4/H7\
-9/H7\
-15/H7\
-10/H13\
 11/H13\
-12/H13\
 20/H13\
 9/H14\
-12/H14\
-15/H14\
-7/H15\
 8/H15\
 9/H15\
-8/H16\
 11/H16\
-17/H16\
+18/H16\
 11/H18\
 16/H18\
 20/H18\
-12/H19\
-17/H19\
 11/H20\
 13/H20\
 18/H20\

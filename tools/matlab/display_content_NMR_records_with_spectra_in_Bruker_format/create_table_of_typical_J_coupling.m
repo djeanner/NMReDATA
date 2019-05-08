@@ -1,6 +1,6 @@
 function [J_structure,typ_coupling]=create_table_of_typical_J_coupling(min_abundance_take_into_account,min_value_to_includeJ)
 if nargin==0
-    min_abundance_take_into_account=0.5/100;% 15C sat unit
+    min_abundance_take_into_account=0.5/100;% below 1/100 will take into account 13C sat unit
     min_abundance_take_into_account=0.01/100;% Deuterium sat..
         min_abundance_take_into_account=1.5/100;% standard...
     min_value_to_includeJ=0;

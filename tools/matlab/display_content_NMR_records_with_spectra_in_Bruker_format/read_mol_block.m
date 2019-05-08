@@ -10,24 +10,10 @@ function         structure= read_mol_block(mol_block,opt)
 % structure.nb_bonds_between  (a,n,n) if non-zero, the path of a bonds
 
 %dim1,dim2,dim3 inditace which dimension is used for 3D plot.
- structure=[];
-    structure.mol_block=mol_block;
+dim1=opt.dim1;
+dim2=opt.dim2;
+dim3=opt.dim3;
 
-if isfield(opt,'dim1')
-    dim1=opt.dim1;
-else
-    dim1=1;
-end
-if isfield(opt,'dim2')
-    dim2=opt.dim2;
-else
-    dim2=2;
-end
-if isfield(opt,'dim3')
-    dim3=opt.dim3;
-else
-    dim3=3;
-end
 
 if isfield(opt,'draw_verbose')
     verbose=opt.draw_verbose;
@@ -40,8 +26,7 @@ ret_val= sscanf(mol_block{line_num_before_list_atoms},'%d %d');
 if size(ret_val,1)<2
     error(['Could not find the number of atoms and bouds in the line ' num2str(line_num_before_list_atoms)  'of the molblock!'])
 else
-   
-
+    structure=[];
     nb_atoms=ret_val(1,1);
     nb_bounds=ret_val(2,1);
     structure.type_bond=zeros(nb_atoms,nb_atoms);

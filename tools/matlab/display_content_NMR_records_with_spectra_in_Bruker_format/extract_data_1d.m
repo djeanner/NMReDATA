@@ -1,9 +1,11 @@
-function obj=extract_data_1d(obj,current_line,pieces_of_information,field_separator)
+function obj=extract_data_1d(obj,current_line,pieces_of_information,field_separator,verbose)
+if nargin<5
+    verbose=0;
+end
 
 %example of current_line : 9.06, L=H31(C25), S=d, J=8.44(H28(C27)), E=1
 %extract first field, the chemical shift can be a float or a two float
 %separated by "-" (eg. 7.5-7.2)
-verbose=0;
 list_separator=strfind(current_line,field_separator);
 if size(list_separator,1)>0
     chem_shift_string=current_line(1:list_separator(1,1)-1);current_line=current_line(list_separator(1,1)+1:end);
@@ -73,7 +75,7 @@ for loop_over_fields=1:size(list_equalsign,2)
         else
             obj.integral{pieces_of_information}=values;
             if verbose
-                disp(['Found number of atom N :' num2str(obj.N{pieces_of_information}) ])
+                disp(['Found number of atom N :' num2str(obj.integral{pieces_of_information}) ])
             end
         end
     end

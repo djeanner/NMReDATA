@@ -1,3 +1,6 @@
+Update: May 7 2019
+Corrected encapsulation in zip files
+
 A set of nmredata.sdf and NMR records were generated from nova files using a Mnova script. They are just for illustration and test purpose. They were generated using a export script written by a Damien Jeannerat. Dont hesitate to contact me (damien.jeannerat@unige.ch) if you have any question... This dropbox folder is related to a github repository and a dropbox.
 
 Link to the Mnova script: https://github.com/djeanner/NMReDATA/tree/master/tools/Generate_NMR_record_from_Mnova_files/Mnova_script_to_generate_of_nmredata_file

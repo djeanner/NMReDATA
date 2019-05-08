@@ -102,6 +102,7 @@ if exist([path '/acqus'],'file')
     data.cnst31          =str2num(char(content(strmatch('##$CNST=',content')+2+31)));
     data.sw2= str2num(char(content(strmatch('##$SW=',content')+1)));
     data.sw2h= str2num(char(content(strmatch('##$SW_h=',content')+1)));
+    data.in= str2num(char(content(strmatch('##$IN=',content')+1)));
         
 else
     data.file_not_found=[path '/acqus'];
@@ -120,18 +121,18 @@ end
 
 if exist([path '/pdata/' num2str(procno) '/procs'],'file')
     content=textread([path '/pdata/' num2str(procno) '/procs'],'%s');
-    
-    data.ABSF1         = str2num(char(content(strmatch('##$ABSF1=',content')+1)));
-    data.ABSF2         = str2num(char(content(strmatch('##$ABSF2=',content')+1)));
+    data.offset         = str2num(char(content(strmatch('##$OFFSET=',content')+1)));
     data.si2         = str2num(char(content(strmatch('##$SI=',content')+1)));
     data.wdw         = str2num(char(content(strmatch('##$WDW=',content')+1)));
     data.ssb         = str2num(char(content(strmatch('##$SSB=',content')+1)));
+    data.lb         = str2num(char(content(strmatch('##$LB=',content')+1)));
+    data.gb         = str2num(char(content(strmatch('##$GB=',content')+1)));
     data.phc0         = str2num(char(content(strmatch('##$PHC0=',content')+1)));
     data.phc1         = str2num(char(content(strmatch('##$PHC1=',content')+1)));
     data.xdim         = str2num(char(content(strmatch('##$XDIM=',content')+1)));
     data.tdeff2         = str2num(char(content(strmatch('##$TDeff=',content')+1)));
-    data.offset2         = str2num(char(content(strmatch('##$OFFSET=',content')+1)));
         data.sf2         = str2num(char(content(strmatch('##$SF=',content')+1)));
+        data.lb         = str2num(char(content(strmatch('##$LB=',content')+1)));
 
     data.scale2=[data.o1p+data.sw2/2:-data.sw2/data.si2:(data.o1p-data.sw2/2)+data.sw2/data.si2];
     
@@ -150,7 +151,10 @@ if exist([path '/pdata/' num2str(procno) '/proc2s'],'file')
     content=textread([path '/pdata/' num2str(procno) '/proc2s'],'%s');
     data.xdim1         = str2num(char(content(strmatch('##$XDIM=',content')+1)));
     data.si1         = str2num(char(content(strmatch('##$SI=',content')+1)));
+    data.offset1         = str2num(char(content(strmatch('##$OFFSET=',content')+1)));
     data.wdw1         = str2num(char(content(strmatch('##$WDW=',content')+1)));
+    data.lb1         = str2num(char(content(strmatch('##$LB=',content')+1)));
+    data.gb1         = str2num(char(content(strmatch('##$GB=',content')+1)));
     data.ssb1         = str2num(char(content(strmatch('##$SSB=',content')+1)));
     data.phc01         = str2num(char(content(strmatch('##$PHC0=',content')+1)));
     data.phc11         = str2num(char(content(strmatch('##$PHC1=',content')+1)));
@@ -176,10 +180,18 @@ if exist([path '/pdata/' num2str(procno) '/proc2s'],'file')
     si1=data.si1;
 end
 
+if exist([path '/pdata/' num2str(procno) '/clevels'],'file'),
+    
+    content=textread([path '/pdata/' num2str(procno) '/clevels'],'%s');
+    data.MAXLEV        =str2num(char(content(strmatch('##$MAXLEV=',content')+1)));
+    data.level         =str2num(char(content(strmatch('##$LEVELS=',content')+2+data.MAXLEV)));
+    
+end
+
 %determines center in f1 (o1p or o2p)
 if isfield(data,'ftsize')
     if data.ftsize>0%only if FT data in f1
-        if data.sf1==data.sf2
+        if abs(data.sf1-data.sf2)<1%test different isotopes
             disp(['assuming homonuclear experiment set middle to o1p '])
             middle_of_spectrum_in_f1=data.o1p;
         else
@@ -249,7 +261,7 @@ if exist([path '/pdata/' num2str(procno)  '/' file_to_read],'file')
     file_id=fopen(file_name_to_read_now);
     disp(['Reading ' file_name_to_read_now]);
     if data.xdim~=si2
-        disp(['Decompressed data (xdim = ' num2str(data.xdim1) ' ' num2str(data.xdim) ])
+        disp(['Decompressed data (xdim = ' num2str(data.xdim1) ' ' num2str(data.xdim) ')'])
     end
     %     if data.xdim==si2
     %         for loptd=1:nbpt1

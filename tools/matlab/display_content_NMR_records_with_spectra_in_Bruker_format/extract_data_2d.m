@@ -1,4 +1,7 @@
-function obj=extract_data_2d(obj,current_line,pieces_of_information,field_separator)
+function obj=extract_data_2d(obj,current_line,pieces_of_information,field_separator,verbose)
+if nargin<5
+    verbose=0;
+end
 
 %example of current_line :H28(C27)/H30(C29), Ja=6.13, J1=7.85(H31(C25)), J2=7.40(H32(C26))
 %extract first field, the chemical shift or labels separated by "/"
@@ -13,9 +16,8 @@ position_of_separator_of_the_two=strfind(pair_of_signals,'/');
 % first_label_or_chemshift=pair_of_signals(1:
 % =sscanf(pair_of_signals,'%f/%f');%this returns either one or two values.
 if size(position_of_separator_of_the_two,1)<1
-    error_message=['2 expect separator slash in : '  pair_of_signals ' in line: '  current_line];
+    error_message=['2 expect separator slash in : '  pair_of_signals 'inside'  current_line];
     disp(['Error :  ' error_message]);
-    error(['Error :  ' error_message]);
 else
     first_label_or_chemshift =pair_of_signals(1:position_of_separator_of_the_two(1,1)-1);
     second_label_or_chemshift=pair_of_signals(position_of_separator_of_the_two(1,1)+1:end);
